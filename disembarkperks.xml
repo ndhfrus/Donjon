@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Override>
+<DisembarkPerks>
+  <!-- Talents -->
+  <DisembarkPerk identifier="talentpoints" cost="1" sortcategory="Talents" sortkey="0">
+    <GiveTalentPointPerk amount="3"/>
+  </DisembarkPerk>
+
+  <DisembarkPerk identifier="talentpointsadvanced" cost="2"  prerequisite="talentpoints" sortcategory="Talents" sortkey="1">
+    <GiveTalentPointPerk amount="2"/>
+  </DisembarkPerk>
+  
+  <DisembarkPerk identifier="talentpointselite" cost="4"  prerequisite="talentpointsadvanced" sortcategory="Talents" sortkey="2">
+    <GiveTalentPointPerk amount="3"/>
+  </DisembarkPerk>
+
+  <!-- Diving gear -->
+  <DisembarkPerk identifier="airlockbasic" cost="0" sortcategory="Diving">
+  </DisembarkPerk>
+  
+  <DisembarkPerk identifier="mobilitypack" cost="2" sortcategory="Diving">
+  </DisembarkPerk>
+
+  <DisembarkPerk identifier="boardingkits" cost="3" sortcategory="Diving">
+  </DisembarkPerk>
+
+  <!-- Armory -->
+  <DisembarkPerk identifier="armorysmall" cost="0" sortcategory="Armory">
+  </DisembarkPerk>
+
+  <DisembarkPerk identifier="armoryclosequarters" cost="2" sortcategory="Armory">
+  </DisembarkPerk>
+
+  <DisembarkPerk identifier="armorylongrange" cost="3" sortcategory="Armory">
+  </DisembarkPerk>
+
+  <DisembarkPerk identifier="armorypeacekeeping" cost="2" sortcategory="Armory">
+  </DisembarkPerk>
+
+  <!-- Medbay -->
+  <DisembarkPerk identifier="medbayfirstaid" cost="0" sortcategory="Medbay">
+  </DisembarkPerk>
+
+  <DisembarkPerk identifier="medbaylifesavers" cost="2" sortcategory="Medbay">
+  </DisembarkPerk>
+
+  <DisembarkPerk identifier="medbaycombatdrugs" cost="2" sortcategory="Medbay">
+  </DisembarkPerk>
+
+  <!-- Engineering -->
+  <DisembarkPerk identifier="engineeringshiprepair" cost="0" sortcategory="Engineering">
+  </DisembarkPerk>
+
+  <DisembarkPerk identifier="engineeringrawmaterials" cost="4" sortcategory="Engineering">
+  </DisembarkPerk>
+
+  <DisembarkPerk identifier="engineeringsabotage" cost="2" sortcategory="Engineering">
+  </DisembarkPerk>
+
+  <DisembarkPerk identifier="engineeringincendiumpack" cost="2" sortcategory="Engineering">
+  </DisembarkPerk>
+
+  <DisembarkPerk identifier="engineeringexosuit" cost="2" sortcategory="Engineering">
+  </DisembarkPerk>
+
+  <!-- Hull upgrades -->
+  <DisembarkPerk identifier="hullupgradesteel" cost="0" sortcategory="HullUpgrades" sortkey="0">
+    <UpgradeSubmarinePerk upgradeidentifier="increasewallhealth" categoryidentifier="walls" level="2"/>
+  </DisembarkPerk>
+
+  <DisembarkPerk identifier="hullupgradetaalloy" cost="4" sortcategory="HullUpgrades" prerequisite="hullupgradesteel" sortkey="1">
+    <UpgradeSubmarinePerk upgradeidentifier="increasewallhealth" categoryidentifier="walls" level="4"/>
+  </DisembarkPerk>
+
+  <DisembarkPerk identifier="hullupgradephysicorium" cost="3" sortcategory="HullUpgrades" prerequisite="hullupgradetaalloy" sortkey="2">
+    <UpgradeSubmarinePerk upgradeidentifier="increasewallhealth" categoryidentifier="walls" level="5"/>
+  </DisembarkPerk>
+
+  <!-- Turrets -->
+  <DisembarkPerk identifier="slotcoilgunturret" cost="1" sortcategory="Turrets" mutuallyexclusiveperks="slotchaingunturret,slotpulselaser">
+    <SubItemSwapPerk targetitem="turrethardpoint" replacementitem="coilgun"/>
+    <SpawnItemPerk identifier="coilgunammobox" MinAmount="3" PriorityContainerTag="coilgunammosource" />
+    <SpawnItemPerk identifier="coilgunharpoonbox" MinAmount="2"/>
+  </DisembarkPerk>
+
+  <DisembarkPerk identifier="slotchaingunturret" cost="2" sortcategory="Turrets" mutuallyexclusiveperks="slotcoilgunturret,slotpulselaser">
+    <SubItemSwapPerk targetitem="turrethardpoint" replacementitem="chaingun" />
+    <SpawnItemPerk identifier="chaingunammobox" MinAmount="3" PriorityContainerTag="chaingunammosource"/>
+  </DisembarkPerk>
+
+  <DisembarkPerk identifier="slotpulselaser" cost="2" sortcategory="Turrets" mutuallyexclusiveperks="slotcoilgunturret,slotchaingunturret">
+    <SubItemSwapPerk targetitem="turrethardpoint" replacementitem="pulselaser" />
+    <SpawnItemPerk identifier="pulselaserammobox" MinAmount="3" PriorityContainerTag="pulselaserammosource"/>
+  </DisembarkPerk>
+
+  <DisembarkPerk identifier="largeslotflakcannon" cost="3" sortcategory="Turrets" mutuallyexclusiveperks="largeslotdoublecoilgun,largeslotrailgun">
+    <SubItemSwapPerk targetitem="largeturrethardpoint" replacementitem="flakcannon" />
+    <SpawnItemPerk identifier="flakcannonammobox" MinAmount="3" PriorityContainerTag="flakcannonammosource"/>
+  </DisembarkPerk>
+
+  <DisembarkPerk identifier="largeslotdoublecoilgun" cost="3" sortcategory="Turrets" mutuallyexclusiveperks="largeslotflakcannon,largeslotrailgun">
+    <SubItemSwapPerk targetitem="largeturrethardpoint" replacementitem="doublecoilgun" />
+    <SpawnItemPerk identifier="coilgunammobox" MinAmount="4" PriorityContainerTag="coilgunammosource"/>
+    <SpawnItemPerk identifier="coilgunharpoonbox" MinAmount="2"/>
+  </DisembarkPerk>
+
+  <DisembarkPerk identifier="largeslotrailgun" cost="3" sortcategory="Turrets" mutuallyexclusiveperks="largeslotflakcannon,largeslotdoublecoilgun">
+    <SubItemSwapPerk targetitem="largeturrethardpoint" replacementitem="railgun" />
+    <SpawnItemPerk identifier="railgunshell" MinAmount="12" PriorityContainerTag="railgunammosource"/>
+    <SpawnItemPerk identifier="railgunharpoon" MinAmount="2"/>
+  </DisembarkPerk>
+</DisembarkPerks>
+</Override>

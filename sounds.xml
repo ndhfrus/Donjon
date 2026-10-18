@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sounds>
+  <impact_wood_light file="%ModDir%/Sounds/impact_wood_light.ogg" range="500" />
+  <impact_wood_heavy file="%ModDir%/Sounds/impact_wood_heavy1.ogg" range="800" />
+  <impact_wood_heavy file="%ModDir%/Sounds/impact_wood_heavy2.ogg" range="800" />
+  <impact_wood_heavy file="%ModDir%/Sounds/impact_wood_heavy3.ogg" range="800" />
+  <impact_wood_heavy file="%ModDir%/Sounds/impact_wood_heavy4.ogg" range="800" />
+  <impact_wood_heavy file="%ModDir%/Sounds/impact_wood_heavy5.ogg" range="800" />
+  <impact_wood_veryheavy file="%ModDir%/Sounds/bigtreefall1.ogg" range="3000" volume="2"/>
+  <impact_wood_veryheavy file="%ModDir%/Sounds/bigtreefall2.ogg" range="3000" volume="2"/>
+  <impact_stone_light file="%ModDir%/Sounds/stone_impact.ogg" range="700" />
+  <impact_stone_light file="%ModDir%/Sounds/stone_drop-01.ogg" range="700" />
+  <impact_stone_light file="%ModDir%/Sounds/stone_drop-02.ogg" range="700" />
+  <impact_stone_light file="%ModDir%/Sounds/stone_drop-03.ogg" range="700" />
+  <impact_bottle file="%ModDir%/Sounds/take_bottle.ogg" range="800" />
+  <impact_bottle file="%ModDir%/Sounds/bottle_01.ogg" range="800" />
+  <impact_bottle file="%ModDir%/Sounds/bottle_02.ogg" range="800" />
+  <impact_coin file="%ModDir%/Sounds/coin_drop1.ogg" range="800" />
+  <impact_coin file="%ModDir%/Sounds/coin_drop2.ogg" range="800" />
+  <impact_coin file="%ModDir%/Sounds/coin_drop3.ogg" range="800" />
+  <impact_chain file="%ModDir%/Sounds/chain_drop.ogg" range="900" />
+  <impact_armor_chain file="%ModDir%/Sounds/armor_chain_drop.ogg" range="1000" />
+  <impact_armor_cloth file="%ModDir%/Sounds/armorclothdrop.ogg" range="500" />
+  <impact_armor_leather file="%ModDir%/Sounds/armorleatherdrop.ogg" range="600" />
+  <impact_armor_scale file="%ModDir%/Sounds/armorscaledrop.ogg" range="900" />
+  <impact_armor_plate file="%ModDir%/Sounds/armorplatedrop.ogg" range="1000" />
+  <impact_paper file="%ModDir%/Sounds/impact_paper.ogg" range="400" />
+  <impact_gold file="%ModDir%/Sounds/valuable_drop.ogg" range="800" />
+
+  <KrisaStep file="%ModDir%/Characters/Krisa/Sounds/KrisaStep1.ogg" range="200" />
+  <KrisaStep file="%ModDir%/Characters/Krisa/Sounds/KrisaStep2.ogg" range="200" />
+  <KrisaStep file="%ModDir%/Characters/Krisa/Sounds/KrisaStep3.ogg" range="200" />
+  <KrisaStep file="%ModDir%/Characters/Krisa/Sounds/KrisaStep4.ogg" range="200" />
+  
+  <WolfStep file="%ModDir%/Characters/Wolf/wolf_step-01.ogg" range="400" />
+  <WolfStep file="%ModDir%/Characters/Wolf/wolf_step-02.ogg" range="400" />
+  <WolfStep file="%ModDir%/Characters/Wolf/wolf_step-03.ogg" range="400" />
+  <WolfStep file="%ModDir%/Characters/Wolf/wolf_step-04.ogg" range="400" />
+
+  <music file="%ModDir%/Sounds/Music/default_music_2.ogg" type="abandoned" />
+  <music file="%ModDir%/Sounds/Music/default_music_2.ogg" type="military" />
+  <music file="%ModDir%/Sounds/Music/default_music_2.ogg" type="research" />
+  <music file="%ModDir%/Sounds/Music/default_music_2.ogg" type="city" />
+  <music file="%ModDir%/Sounds/Music/default_music_2.ogg" type="mine" />
+  <music file="%ModDir%/Sounds/Music/default_music_2.ogg" type="ruins" />
+  <music file="%ModDir%/Sounds/Music/default_music_2.ogg" type="flooded" />
+  <music file="%ModDir%/Sounds/Music/default_music_2.ogg" type="floodedambience" />
+  <music file="%ModDir%/Sounds/Music/default_music_2.ogg" type="deep" />
+  <music file="%ModDir%/Sounds/Music/default_music_2.ogg" type="wreck" />
+  <music file="%ModDir%/Sounds/Music/default_music.ogg" type="stronghold" intensityrange="0,75"/>
+  <music file="%ModDir%/Sounds/Music/default_music_2.ogg" type="stronghold" intensityrange="0,75"/>
+  <music file="%ModDir%/Sounds/Music/default_music_3.ogg" type="stronghold" intensityrange="0,75"/>
+  <music file="%ModDir%/Sounds/Music/intensity_music.ogg" type="stronghold" intensityrange="75,100"/>
+  <music file="%ModDir%/Sounds/Music/default_music.ogg" type="alivestronghold" intensityrange="0,75"/>
+  <music file="%ModDir%/Sounds/Music/default_music_2.ogg" type="alivestronghold" intensityrange="0,75"/>
+  <music file="%ModDir%/Sounds/Music/default_music_3.ogg" type="alivestronghold" intensityrange="0,75"/>
+  <music file="%ModDir%/Sounds/Music/intensity_music.ogg" type="alivestronghold" intensityrange="75,100"/>
+
+  <Override>
+  <music file="Content/Sounds/Music/Wartrauma.ogg" type="military" volume="0" intensityrange="1,1"/>
+  <music file="Content/Sounds/Music/The Eerie And The Unknown.ogg" type="research" volume="0" intensityrange="1,1"/>
+  <music file="Content/Sounds/Music/Barotraumatropolis.ogg" type="city" volume="0" intensityrange="1,1"/>
+  <music file="Content/Sounds/Music/Space Miner's Song.ogg" type="mine" volume="0" intensityrange="1,1"/>
+  <music file="Content/Sounds/Music/Layer 2 - In The Ruins.ogg" type="ruins" volume="0" intensityrange="1,1"/>
+  <music file="Content/Sounds/Music/Layer 5 - Submarine Flooded.ogg" type="flooded" volume="0" intensityrange="1,1" StartFromRandomTime="true"/>
+  <music file="Content/Sounds/Music/Submarine Flooded - Extended.ogg" type="floodedambience" StartFromRandomTime="true" volume="0" intensityrange="1,1"/>
+  <music file="Content/Sounds/Music/Layer 11 - Crush Depth.ogg" type="deep" volume="0" intensityrange="1,1"/>
+  <music file="Content/Sounds/Music/Layer 12 - Objective Complete.ogg" type="levelend" volume="0" intensityrange="1,1"/>
+  <music file="Content/Sounds/Music/Look Behind The Watery Shadows.ogg" type="wreck" volume="0" intensityrange="1,1"/>
+  <music file="Content/Sounds/Music/Marching Upstream Part 2.ogg" type="endbossfight" ForceIntensityTrack="15.0" volume="1.5" intensityrange="1,1"/>
+  <music file="Content/Sounds/Music/Ballad For Whales.ogg" type="ending"/>
+  <music file="Content/Sounds/Music/Moribund In An Underwater Coffin.ogg" type="abandoned" volume="0" intensityrange="1,1"/>
+
+    
+    <music file="Content/Sounds/Music/Biome Noise Loop - Cold Caverns.ogg"        type="coldcaverns" volume="0.15"/>
+    <music file="Content/Sounds/Music/Biome Noise Loop - Europan Ridge.ogg"       type="europanridge" volume="0.15"/>
+    <music file="Content/Sounds/Music/Biome Noise Loop - The Aphotic Plateau.ogg" type="theaphoticplateau" volume="0.15"/>
+    <music file="Content/Sounds/Music/Biome Noise Loop - The Great Sea.ogg"       type="thegreatsea" volume="0.15"/>
+    <music file="Content/Sounds/Music/Biome Noise Loop - Hydrothermal Wastes.ogg" type="hydrothermalwastes" volume="0.15"/>
+
+    <ambient file="Content/Sounds/Ambient/Ambient1.ogg" intensityrange="1,1" type="alienruins" volume="0"/>
+    <ambient file="Content/Sounds/Ambient/Ambient2.ogg" intensityrange="1,1" type="alienruins" volume="0"/>
+    <ambient file="Content/Sounds/Ambient/Ambient3.ogg" intensityrange="1,1" type="alienruins" volume="0"/>
+    <ambient file="Content/Sounds/Ambient/Ambient4.ogg" intensityrange="1,1" type="alienruins" volume="0"/>
+    <ambient file="Content/Sounds/Ambient/Ambient5.ogg" intensityrange="1,1" type="alienruins" volume="0"/>
+    <ambient file="Content/Sounds/Ambient/Ambient6.ogg" intensityrange="1,1" type="alienruins" volume="0"/>
+    <ambient file="Content/Sounds/Ambient/Ambient7.ogg" intensityrange="1,1" type="alienruins" volume="0"/>
+    <ambient file="Content/Sounds/Ambient/Ambient8.ogg" intensityrange="1,1" type="alienruins" volume="0"/>
+    <ambient file="Content/Sounds/Ambient/Ambient9.ogg" intensityrange="1,1" type="alienruins" volume="0"/>
+    <ambient file="Content/Sounds/Ambient/Ambient10.ogg" intensityrange="1,1" type="alienruins" volume="0"/>
+    <ambient file="Content/Sounds/Ambient/Ambient11.ogg" intensityrange="1,1" type="alienruins" volume="0"/>
+    <ambient file="Content/Sounds/Ambient/DistantPod1.ogg" intensityrange="1,1" type="alienruins" volume="0"/>
+    <ambient file="Content/Sounds/Ambient/DistantPod2.ogg" intensityrange="1,1" type="alienruins" volume="0"/>
+    <ambient file="Content/Sounds/Ambient/DistantPod3.ogg" intensityrange="1,1" type="alienruins" volume="0"/>
+    <ambient file="Content/Sounds/Ambient/GlacialMovement.ogg" intensityrange="1,1" type="alienruins" volume="0"/>
+
+    <music file="Content/Sounds/Music/Water Of The SSN Rusty Clown.ogg" type="default" intensityrange="1,1"/>
+    <music file="Content/Sounds/Music/Wondrous Places.ogg" type="default" intensityrange="1,1"/>
+    <music file="Content/Sounds/Music/Overclocked Weakness.ogg" type="default" intensityrange="1,1"/>
+    <music file="Content/Sounds/Music/Engine room whales.ogg" type="default" intensityrange="1,1"/>
+    <music file="Content/Sounds/Music/Somethings outside.ogg" type="default" intensityrange="1,1"/>
+
+    <music file="Content/Sounds/Music/Fragile Waves.ogg" type="default" intensityrange="1,1"/>
+    <music file="Content/Sounds/Music/Marching Upstream Part 1.ogg" type="default" intensityrange="1,1"/>
+    <music file="Content/Sounds/Music/Seafloor Cries.ogg" type="default" intensityrange="1,1"/>
+    <music file="Content/Sounds/Music/Desperation.ogg" type="default" intensityrange="1,1"/>
+    <music file="Content/Sounds/Music/Explore the Abyss.ogg" type="default" intensityrange="1,1"/>
+
+    <music file="Content/Sounds/Music/Moribund In An Underwater Coffin.ogg" type="default" intensityrange="1,1"/>
+    <music file="Content/Sounds/Music/Alien Syndicate.ogg" type="default" intensityrange="1,1"/>
+    <music file="Content/Sounds/Music/Extraterrestrial Broadcast.ogg" type="default" intensityrange="1,1"/>
+    <music file="Content/Sounds/Music/Zack The Rabid Ripper.ogg" type="default" intensityrange="1,1"/>
+    <music file="Content/Sounds/Music/All But Systematic Chaos.ogg" type="default" intensityrange="1,1"/>
+
+    <music file="Content/Sounds/Music/Layer 1 - Monsters Nearby.ogg" type="monster" intensityrange="1,1" StartFromRandomTime="true"/>
+    <music file="Content/Sounds/Music/Monster Nearby - Extended.ogg" type="monsterambience" intensityrange="1,1" StartFromRandomTime="true"/>
+
+    <music file="Content/Sounds/Music/Layer 0 - Basic.ogg" type="intensity" duckvolume="true" intensityrange="1,1"/>
+    <music file="Content/Sounds/Music/Intensity Layer 1.ogg" type="intensity" intensityrange="1,1"/>
+    <music file="Content/Sounds/Music/Intensity Layer 2.ogg" type="intensity" intensityrange="1,1"/>
+    <music file="Content/Sounds/Music/Intensity Layer 3.ogg" type="intensity" intensityrange="1,1"/>
+    <music file="Content/Sounds/Music/Intensity Layer 4.ogg" type="intensity" intensityrange="1,1"/>
+
+  <damagesound file="Content/Sounds/Damage/StructureBlunt1.ogg" damagerange="10000.0,10000.0" damagesoundtype="StructureBlunt"/>
+  <damagesound file="Content/Sounds/Damage/StructureBlunt2.ogg" damagerange="10000.0,10000.0" damagesoundtype="StructureBlunt"/>
+  <damagesound file="Content/Sounds/Damage/StructureBlunt3.ogg" damagerange="10000.0,10000.0" damagesoundtype="StructureBlunt"/>
+  <damagesound file="Content/Sounds/Damage/StructureBlunt4.ogg" damagerange="10000.0,10000.0" damagesoundtype="StructureBlunt"/>
+  <damagesound file="Content/Sounds/Damage/StructureBlunt5.ogg" damagerange="10000.0,10000.0" damagesoundtype="StructureBlunt"/>
+  <damagesound file="Content/Sounds/Damage/StructureBlunt6.ogg" damagerange="10000.0,10000.0" damagesoundtype="StructureBlunt"/>
+  <damagesound file="Content/Sounds/Damage/StructureBlunt7.ogg" damagerange="10000.0,10000.0" damagesoundtype="StructureBlunt"/>
+
+    <damagesound file="Content/Sounds/Damage/StructureCrunch1.ogg" damagerange="10000.0,10000.0" damagesoundtype="StructureSlash"/>
+    <damagesound file="Content/Sounds/Damage/StructureCrunch2.ogg" damagerange="10000.0,10000.0" damagesoundtype="StructureSlash"/>
+    <damagesound file="Content/Sounds/Damage/StructureCrunch3.ogg" damagerange="10000.0,10000.0" damagesoundtype="StructureSlash"/>
+    <damagesound file="Content/Sounds/Damage/StructureCrunch4.ogg" damagerange="10000.0,10000.0" damagesoundtype="StructureSlash"/>
+    <damagesound file="Content/Sounds/Damage/StructureCrunch5.ogg" damagerange="10000.0,10000.0" damagesoundtype="StructureSlash"/>
+
+    <waterambiencein file="%ModDir%/Sounds/underground.ogg" volume="0.35" />
+    <waterambienceout file="Content/Sounds/Water/WaterAmbienceOut.ogg" volume="0.2" />
+    <waterambiencemoving file="%ModDir%/Sounds/underground.ogg" volume="0.35" />    
+
+    <music file="Content/Sounds/Music/Subaquatic Symphony for Hammer And Metal.ogg" type="editor" intensityrange="1,1"/>
+    <music file="Content/Sounds/Music/Main Menu Music.ogg" type="menu" intensityrange="1,1"/>
+
+    <rewire file="Content/Sounds/RewiringLoop.ogg" volume="0.0" range="0" intensityrange="1,1"/>
+    <repair file="Content/Sounds/RepairLoop.ogg" volume="0.0" range="0" intensityrange="1,1"/>
+
+    <zap file="Content/Items/Electricity/Zap1.ogg" volume="0.0" range="0" intensityrange="1,1"/>
+    <zap file="Content/Items/Electricity/Zap2.ogg" volume="0.0" range="0" intensityrange="1,1"/>
+    <zap file="Content/Items/Electricity/Zap3.ogg" volume="0.0" range="0" intensityrange="1,1"/>
+    <zap file="Content/Items/Electricity/Zap4.ogg" volume="0.0" range="0" intensityrange="1,1"/>
+    <zap file="Content/Items/Electricity/Zap5.ogg" volume="0.0" range="0" intensityrange="1,1"/>
+
+    <music file="Content/Sounds/Music/Layer 3 - Leaving Start Location.ogg" type="start" intensityrange="99,99"/>
+    <music file="Content/Sounds/Music/Layer 4 - Arriving at Destination.ogg" type="endround" intensityrange="1,1"/>
+  </Override>
+  <damagesound file="%ModDir%/Sounds/Hit_plate1.ogg" damagesoundtype="LimbPlateArmor" volume="2" range="2500"/>
+  <damagesound file="%ModDir%/Sounds/Hit_plate2.ogg" damagesoundtype="LimbPlateArmor" volume="2" range="2500"/>
+  <damagesound file="%ModDir%/Sounds/Hit_plate3.ogg" damagesoundtype="LimbPlateArmor" volume="2" range="2500"/>
+  <damagesound file="%ModDir%/Sounds/Hit_plate_blunt1.ogg" damagesoundtype="LimbPlateArmorWeak" volume="2" range="2000"/>
+  <damagesound file="%ModDir%/Sounds/Hit_plate_blunt2.ogg" damagesoundtype="LimbPlateArmorWeak" volume="2" range="2000"/>
+  <damagesound file="%ModDir%/Sounds/Hit_plate_blunt3.ogg" damagesoundtype="LimbPlateArmorWeak" volume="2" range="2000"/>
+  <damagesound file="%ModDir%/Sounds/Hit_plate_blunt4.ogg" damagesoundtype="LimbPlateArmorWeak" volume="2" range="2000"/>
+
+  <damagesound file="%ModDir%/Sounds/Hit_chain1.ogg" damagesoundtype="LimbChainArmor" volume="2" range="1500"/>
+  <damagesound file="%ModDir%/Sounds/Hit_chain2.ogg" damagesoundtype="LimbChainArmor" volume="2" range="1500"/>
+  <damagesound file="%ModDir%/Sounds/Hit_chain3.ogg" damagesoundtype="LimbChainArmor" volume="2" range="1500"/>
+  <damagesound file="%ModDir%/Sounds/armor_chainmail_impact_01.ogg" damagesoundtype="LimbChainArmor" volume="2" range="1500"/>
+  <damagesound file="%ModDir%/Sounds/armor_chainmail_impact_02.ogg" damagesoundtype="LimbChainArmor" volume="2" range="1500"/>
+  <damagesound file="%ModDir%/Sounds/armor_chainmail_impact_03.ogg" damagesoundtype="LimbChainArmor" volume="2" range="1500"/>
+
+  <footstep_tile file="%ModDir%/Sounds/tile1.ogg" volume="0.7" range="800"/>
+  <footstep_tile file="%ModDir%/Sounds/tile2.ogg" volume="0.7" range="800"/>
+  <footstep_tile file="%ModDir%/Sounds/tile3.ogg" volume="0.7" range="800"/>
+  <footstep_tile file="%ModDir%/Sounds/tile4.ogg" volume="0.7" range="800"/>
+
+  <footstep_plate_heavy file="%ModDir%/Sounds/plate_step1.ogg" volume="0.7" range="1200"/>
+  <footstep_plate_heavy file="%ModDir%/Sounds/plate_step2.ogg" volume="0.7" range="1200"/>
+  <footstep_plate_heavy file="%ModDir%/Sounds/plate_step3.ogg" volume="0.7" range="1200"/>
+  <footstep_plate_heavy file="%ModDir%/Sounds/plate_step4.ogg" volume="0.7" range="1200"/>
+
+  <footstep_dirt file="%ModDir%/Sounds/DIRT_000.ogg" volume="0.5" range="600"/>
+  <footstep_dirt file="%ModDir%/Sounds/DIRT_001.ogg" volume="0.5" range="600"/>
+  <footstep_dirt file="%ModDir%/Sounds/DIRT_002.ogg" volume="0.5" range="600"/>
+  <footstep_dirt file="%ModDir%/Sounds/DIRT_003.ogg" volume="0.5" range="600"/>
+  <footstep_dirt file="%ModDir%/Sounds/DIRT_004.ogg" volume="0.5" range="600"/>
+  <footstep_dirt file="%ModDir%/Sounds/DIRT_005.ogg" volume="0.5" range="600"/>
+  <footstep_dirt file="%ModDir%/Sounds/DIRT_006.ogg" volume="0.5" range="600"/>
+  <footstep_dirt file="%ModDir%/Sounds/DIRT_007.ogg" volume="0.5" range="600"/>
+  <footstep_dirt file="%ModDir%/Sounds/DIRT_008.ogg" volume="0.5" range="600"/>
+  <footstep_dirt file="%ModDir%/Sounds/DIRT_009.ogg" volume="0.5" range="600"/>
+  <footstep_dirt file="%ModDir%/Sounds/DIRT_010.ogg" volume="0.5" range="600"/>
+  <footstep_dirt file="%ModDir%/Sounds/DIRT_011.ogg" volume="0.5" range="600"/>
+  <footstep_dirt file="%ModDir%/Sounds/DIRT_012.ogg" volume="0.5" range="600"/>
+  <footstep_dirt file="%ModDir%/Sounds/DIRT_013.ogg" volume="0.5" range="600"/>
+  <footstep_dirt file="%ModDir%/Sounds/DIRT_014.ogg" volume="0.5" range="600"/>
+
+  <footstep_clothing file="%ModDir%/Sounds/CONCR001.ogg" volume="0.5" range="700"/>
+  <footstep_clothing file="%ModDir%/Sounds/CONCR002.ogg" volume="0.5" range="700"/>
+  <footstep_clothing file="%ModDir%/Sounds/CONCR003.ogg" volume="0.5" range="700"/>
+  <footstep_clothing file="%ModDir%/Sounds/CONCR004.ogg" volume="0.5" range="700"/>
+  <footstep_clothing file="%ModDir%/Sounds/CONCR005.ogg" volume="0.5" range="700"/>
+  <footstep_clothing file="%ModDir%/Sounds/CONCR006.ogg" volume="0.5" range="700"/>
+
+  <footstep_clothing_chain file="%ModDir%/Sounds/CONCR_CHAIN-01.ogg" volume="0.5" range="1100"/>
+  <footstep_clothing_chain file="%ModDir%/Sounds/CONCR_CHAIN-02.ogg" volume="0.5" range="1100"/>
+  <footstep_clothing_chain file="%ModDir%/Sounds/CONCR_CHAIN-03.ogg" volume="0.5" range="1100"/>
+  <footstep_clothing_chain file="%ModDir%/Sounds/CONCR_CHAIN-04.ogg" volume="0.5" range="1100"/>
+
+  <footstep_ogre file="%ModDir%/Sounds/foot_heavy1.ogg" volume="0.9" range="1600"/>
+  <footstep_ogre2 file="%ModDir%/Sounds/foot_heavy_plate1.ogg" volume="0.9" range="1700"/>
+  <footstep_ogre2 file="%ModDir%/Sounds/foot_heavy_plate2.ogg" volume="0.9" range="1700"/>
+
+  <rewire file="%ModDir%/Sounds/fletch1.ogg" volume="1" range="700"/>
+  <repair file="%ModDir%/Sounds/hammer_repairing.ogg" volume="0.5" range="1000"/>
+  <damagesound file="%ModDir%/Sounds/Wall_Attack_Weak1.ogg" damagerange="0.0,10.0" damagesoundtype="StructureBlunt" range="300"/>
+  <damagesound file="%ModDir%/Sounds/Wall_Attack_Weak2.ogg" damagerange="0.0,10.0" damagesoundtype="StructureBlunt" range="300"/>
+  <damagesound file="%ModDir%/Sounds/Wall_Attack_Normal1.ogg" damagerange="10.0,100.0" damagesoundtype="StructureBlunt" range="1000"/>
+  <damagesound file="%ModDir%/Sounds/Wall_Attack_Normal2.ogg" damagerange="10.0,100.0" damagesoundtype="StructureBlunt" range="1000"/>
+  <damagesound file="%ModDir%/Sounds/Wall_Attack_Heavy1.ogg" damagerange="100.0,1000.0" damagesoundtype="StructureBlunt" range="2000"/>
+
+  <damagesound file="%ModDir%/Sounds/Wall_Attack_Weak1.ogg" damagerange="0.0,10.0" damagesoundtype="StructureSlash" range="300"/>
+  <damagesound file="%ModDir%/Sounds/Wall_Attack_Weak2.ogg" damagerange="0.0,10.0" damagesoundtype="StructureSlash" range="300"/>
+  <damagesound file="%ModDir%/Sounds/Wall_Attack_Normal1.ogg" damagerange="10.0,100.0" damagesoundtype="StructureSlash" range="1000"/>
+  <damagesound file="%ModDir%/Sounds/Wall_Attack_Normal2.ogg" damagerange="10.0,100.0" damagesoundtype="StructureSlash" range="1000"/>
+  <damagesound file="%ModDir%/Sounds/Wall_Attack_Heavy1.ogg" damagerange="100.0,1000.0" damagesoundtype="StructureSlash" range="2000"/>
+
+  <music file="%ModDir%/Sounds/Music/Stronghold Soundtrack - Paranoia.ogg" type="start"/>
+  <music file="%ModDir%/Sounds/Music/Crusader.ogg" type="endround" />
+  <music file="%ModDir%/Sounds/Music/default_music.ogg" type="default" intensityrange="0,75"/>
+  <music file="%ModDir%/Sounds/Music/default_music_2.ogg" type="default" intensityrange="0,75"/>
+  <music file="%ModDir%/Sounds/Music/default_music_3.ogg" type="default" intensityrange="0,75"/>
+  <music file="%ModDir%/Sounds/Music/intensity_music.ogg" type="default" intensityrange="75,100"/>
+  <music file="%ModDir%/Sounds/Music/Stronghold Castle Jam.ogg" type="editor"/>
+  <music file="%ModDir%/Sounds/Music/The Last Drop.ogg" type="editor"/>
+  <music file="%ModDir%/Sounds/Music/Chant.ogg" type="menu"/>
+  <music file="%ModDir%/Sounds/Music/Exploration Stronghold OST.ogg" type="bossfight" intensityrange="50,100"/>
+  <music file="%ModDir%/Sounds/Music/boss1.ogg" type="bossfight2" intensityrange="50,100"/>
+  <music file="%ModDir%/Sounds/Music/rift.ogg" type="rift" intensityrange="35,100"/>
+  
+  <music file="%ModDir%/Sounds/Music/boss1.ogg" type="pvp_donjon" intensityrange="0,70"/>
+  <music file="%ModDir%/Sounds/Music/rift.ogg" type="pvp_donjon" intensityrange="0,70"/>
+  <music file="%ModDir%/Sounds/Music/Honor Medley Stronghold (2001) Original Soundtrack.ogg" type="pvp_donjon" intensityrange="0,70"/>
+  <music file="%ModDir%/Sounds/Music/Berserk OST Fear.ogg" type="pvp_donjon" intensityrange="0,70"/>
+  <music file="%ModDir%/Sounds/Music/Beasts.ogg" type="pvp_donjon" intensityrange="0,70"/>
+  <music file="%ModDir%/Sounds/Music/BlackIronPact.ogg" type="pvp_donjon" intensityrange="70,100"/>
+  <music file="%ModDir%/Sounds/Music/Stix And Stones.ogg" type="pvp_donjon" intensityrange="70,100"/>
+
+  <ambient file="%ModDir%/Sounds/Ambient/ambient_2.ogg" range="1500"/>
+  <ambient file="%ModDir%/Sounds/Ambient/ambient_3.ogg" range="1500"/>
+  <ambient file="%ModDir%/Sounds/Ambient/ambient_4.ogg" range="1500"/>
+  <ambient file="%ModDir%/Sounds/Ambient/ambient_5.ogg" range="1500"/>
+  <ambient file="%ModDir%/Sounds/Ambient/ambient_6.ogg" range="1500"/>
+  <ambient file="%ModDir%/Sounds/Ambient/ambient_7.ogg" range="1500"/>
+  <ambient file="%ModDir%/Sounds/Ambient/ambient_8.ogg" range="1500"/>
+  <ambient file="%ModDir%/Sounds/Ambient/ambient_9.ogg" range="1500"/>
+  <ambient file="%ModDir%/Sounds/Ambient/ambient_10.ogg" range="1500"/>
+  <ambient file="%ModDir%/Sounds/Ambient/ambient_11.ogg" range="1500"/>
+  <ambient file="%ModDir%/Sounds/Ambient/ambient_12.ogg" range="1500"/>
+  <ambient file="%ModDir%/Sounds/Ambient/ambient_13.ogg" range="1500"/>
+  <ambient file="%ModDir%/Sounds/Ambient/ambient_14.ogg" range="1500"/>
+  <ambient file="%ModDir%/Sounds/Ambient/ambient_15.ogg" range="1500"/>
+  <ambient file="%ModDir%/Sounds/Ambient/ambient_16.ogg" range="1500"/>
+  <ambient file="%ModDir%/Sounds/Ambient/ambient_17.ogg" range="1500"/>
+  <ambient file="%ModDir%/Sounds/Ambient/ambient_18.ogg" range="1500"/>
+  <ambient file="%ModDir%/Sounds/Ambient/ambient_19.ogg" range="1500"/>
+  <ambient file="%ModDir%/Sounds/Ambient/ambient_20.ogg" range="1500"/>
+  <ambient file="%ModDir%/Sounds/Ambient/ambient_21.ogg" range="1500"/>
+  <ambient file="%ModDir%/Sounds/Ambient/ambient_22.ogg" range="1500"/>
+  <ambient file="%ModDir%/Sounds/Ambient/ambient_23.ogg" range="1500"/>
+  <ambient file="%ModDir%/Sounds/Ambient/ambient_24.ogg" range="1500"/>
+  <ambient file="%ModDir%/Sounds/Ambient/ambient_25.ogg" range="1500"/>
+  <ambient file="%ModDir%/Sounds/Ambient/Cave4.ogg" range="1500"/>
+</sounds>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StartItems>
+  <Override>
+    <!--Diving masks handled via preferred containers, because we want to spawn 1 in each supplycab and 2 in divingcab.-->
+    <!--Similarly all diving suit lockers and oxygen tank shelves come fully loaded.-->
+    <!--Also 6 revolver rounds always spawned in the secarmcab via preferred container definition.-->
+    <!--Each turret loader comes with full ammunition, and all subs should start with 1 box of ammunition for each turret plus 6 railgun shells, if railgun is installed.-->
+    <!--We could spawn extra turret ammunition with the easy item set, but the issue is we don't know which turrets the subs have. However, all the vanilla subs come at least with one coilgun.-->
+    <ItemSet identifier="easy" order="2">
+    </ItemSet>
+    <ItemSet identifier="normal" order="1">
+    </ItemSet>
+    <ItemSet identifier="hard" order="0">
+    </ItemSet>
+  </Override>
+</StartItems>

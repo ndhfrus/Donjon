@@ -1,0 +1,1479 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Override>
+    <Item name="" identifier="duffelbag" category="Equipment" tags="mobilecontainer,despawncontainer" fireproof="true" description="" impactsoundtag="impact_soft" scale="0.5">
+      <Deconstruct time="5" />
+      <Sprite texture="%ModDir%/Jobs/sprites_clothing.png" sourcerect="6,958,286,59" origin="0.5,0.56" depth="0.56" />
+      <Body width="120" height="15" density="20" friction="1.0" restitution="0.01" />
+      <Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="0,30" handle2="0,30" aimable="false" msg="ItemMsgPickUpSelect">
+        <StatusEffect type="Always" targettype="This" Condition="-0.25" interval="4" disabledeltatime="true">
+          <Conditional hastag="neq grave" targetcontainer="true" />
+        </StatusEffect>
+        <StatusEffect type="OnBroken" target="This">
+          <Remove />
+        </StatusEffect>
+        <StatValue stattype="WalkingSpeed" value="-0.45" />
+        <StatValue stattype="SwimmingSpeed" value="-0.45" />
+      </Holdable>
+      <ItemContainer capacity="12" keepopenwhenequipped="false" movableframe="true">
+        <Containable items="smallitem,clothing,armor" excludeditems="artefact" />
+      </ItemContainer>
+    </Item>
+    <Item name="" identifier="dockingport" tags="dock" category="misc" subcategory="doorsandhatches" linkable="true" indestructible="true" scale="0.5" requirecursorinsidetrigger="true" requirebodyinsidetrigger="false">
+      <Upgrade gameversion="0.10.0.0" scale="*0.5" />
+      <Sprite texture="Content/Items/Door/dockingport.png" sourcerect="0,0,226,418" depth="0.94" origin="0.5,0.5" />
+      <trigger x="0" y="0" width="226" height="60" />
+      <trigger x="0" y="-358" width="226" height="60" />
+      <DockingPort IsHorizontal="true" DistanceTolerance="200,64" DockedDistance="172">
+        <StatusEffect type="OnSecondaryUse" target="This">
+          <sound file="Content/Items/Door/DockingPort2.ogg" type="OnSecondaryUse" range="1000.0" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This">
+          <Explosion range="5000.0" camerashake="5" stun="0" force="0.0" flames="false" shockwave="false" sparks="true" underwaterbubble="false" />
+          <sound file="Content/Items/Door/DockingPort1.ogg" type="OnUse" range="1000.0" />
+        </StatusEffect>
+        <StatusEffect type="OnBroken" target="This">
+          <sound file="Content/Items/Door/DoorBreak2.ogg" range="1000" />
+        </StatusEffect>
+      </DockingPort>
+      <PowerTransfer CanBeOverloaded="false" FireProbability="0.0" />
+      <Wire />
+      <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+        <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+        <RequiredItem identifier="screwdriver" type="Equipped" />
+        <input name="toggle" displayname="connection.togglestate" />
+        <input name="set_state" displayname="connection.setstate" />
+        <output name="power" displayname="connection.power" maxwires="6" maxplayerconnectablewires="5" />
+        <output name="state_out" displayname="connection.stateout" fallbackdisplayname="connection.signalout" />
+        <output name="proximity_sensor" displayname="connection.dockingproximitysensor" fallbackdisplayname="label.readytodock" />
+        <output name="on_dock" displayname="connection.ondock" />
+        <output name="on_undock" displayname="connection.onundock" />
+      </ConnectionPanel>
+    </Item>
+    <Item name="" identifier="dockinghatch" tags="dock" category="misc" subcategory="doorsandhatches" linkable="true" scale="0.5" indestructible="true" requirecursorinsidetrigger="true" requirebodyinsidetrigger="false" allowrotatingineditor="false">
+      <Upgrade gameversion="0.10.0.0" scale="*0.5" />
+      <Sprite texture="Content/Items/Door/dockingport.png" sourcerect="252,4,256,224" depth="0.94" origin="0.5,0.5" />
+      <trigger x="0" y="0" width="60" height="224" />
+      <trigger x="196" y="0" width="60" height="224" />
+      <DockingPort IsHorizontal="false" DistanceTolerance="64,200" DockedDistance="172">
+        <StatusEffect type="OnSecondaryUse" target="This">
+          <sound file="Content/Items/Door/DockingPort2.ogg" type="OnSecondaryUse" range="1000.0" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="This">
+          <Explosion range="5000.0" camerashake="5" stun="0" force="0.0" flames="false" shockwave="false" sparks="true" underwaterbubble="false" />
+          <sound file="Content/Items/Door/DockingPort1.ogg" type="OnUse" range="1000.0" />
+        </StatusEffect>
+        <StatusEffect type="OnBroken" target="This">
+          <sound file="Content/Items/Door/DoorBreak2.ogg" range="2000" />
+        </StatusEffect>
+      </DockingPort>
+      <PowerTransfer CanBeOverloaded="false" FireProbability="0.0" />
+      <Wire />
+      <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+        <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+        <RequiredItem items="screwdriver" type="Equipped" />
+        <input name="toggle" displayname="connection.togglestate" />
+        <input name="set_state" displayname="connection.setstate" />
+        <output name="power" displayname="connection.power" maxwires="6" maxplayerconnectablewires="5" />
+        <output name="state_out" displayname="connection.stateout" fallbackdisplayname="connection.signalout" />
+        <output name="proximity_sensor" displayname="connection.dockingproximitysensor" fallbackdisplayname="label.readytodock" />
+        <output name="on_dock" displayname="connection.ondock" />
+        <output name="on_undock" displayname="connection.onundock" />
+      </ConnectionPanel>
+    </Item>
+  </Override>
+  <Item name="Галлюцинации" identifier="gm_hallucinating" category="Misc" subcategory="MedievalGamemaster" cargocontaineridentifier="explosivecrate" noninteractable="true" tags="" scale="0.5" spritecolor="0,0,0,0" impactsoundtag="" hideinmenus="true">
+    <InventoryIcon texture="Content/UI/MainIconsAtlas.png" sourcerect="256,640,128,128" origin="0.5,0.5" />
+    <Sprite texture="Content/UI/MainIconsAtlas.png" sourcerect="256,640,128,128" depth="0.6" origin="0.5,0.5" />
+    <SuitableTreatment identifier="mana_drain" suitability="100" />
+    <Body width="35" height="70" density="20" gravityscale="0" />
+    <Holdable slots="Any,RightHand,LeftHand" selectkey="Action" pickkey="Use" msg="Поднять руками" PickingTime="1" holdpos="35,-30" holdangle="0" handle1="-5,18" aimable="false" attachable="false">
+      <StatusEffect type="OnSpawn" target="This">
+        <RemoveItem />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item name="ГМ_вспышка щита" identifier="shieldeffectancient" category="Misc" subcategory="MedievalGamemaster" Tags="" description="" scale="0.7" hideinmenus="false">
+    <Sprite texture="%ModDir%/Jobs/shield.png" sourcerect="131,9,269,264" depth="0.01" origin="0.5,0.5" />
+    <ItemComponent CanBeCombined="true">
+      <StatusEffect type="OnSpawn" target="This">
+        <Explosion range="0.0" camerashake="0" stun="0" force="0.0" shockwave="true" sparks="true" underwaterbubble="false" flashcolor="150,150,255,255" flashrange="500" flashduration="0.5" />
+        <ParticleEmitter particle="enchantment" AngleMax="360" ScaleMultiplier="0.5,0.5" Particleamount="30" ColorMultiplier="95,105,255,245" Distancemin="95" Distancemax="95" />
+        <Sound file="%ModDir%/Sounds/shock1.ogg" selectionmode="random" range="700" volume="1" />
+        <Sound file="%ModDir%/Sounds/shock2.ogg" selectionmode="random" range="700" volume="1" />
+        <Sound file="%ModDir%/Sounds/shock3.ogg" selectionmode="random" range="700" volume="1" />
+      </StatusEffect>
+      <StatusEffect type="OnSpawn" target="This" delay="0.1">
+        <RemoveItem />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="ГМ_стелс костюм" identifier="divingsuitgm" category="Misc" subcategory="MedievalGamemaster" tags="diving,deepdivinglarge" scale="0.5" fireproof="true" description="Невидимый скаф, и воздух тоже не нужен. Выбрось, чтобы удалить." allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy" botpriority="99" inventoryiconcolor="255,0,0,255" spritecolor="0,0,0,0" hideinmenus="false">
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas2.png" sourcerect="0,256,128,128" origin="0.5,0.5" />
+    <Sprite name="Diving Suit Item" texture="Content/Items/Diving/DivingSuit_Item.png" sourcerect="0,0,146,120" depth="0.55" origin="0.5,0.5" />
+    <Body radius="45" width="34" density="15" />
+    <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true" canbeselected="false" canbepicked="true" pickkey="Select">
+      <StatusEffect type="OnNotContained" targettype="This">
+        <RemoveItem />
+      </StatusEffect>
+      <StatusEffect type="OnWearing" targettype="Character" setvalue="true" interval="0.5">
+        <Affliction identifier="concealed" amount="100" />
+      </StatusEffect>
+      <sprite name="Diving Suit Helmet Wearable" texture="Content/Items/Jobgear/headgears.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.65" hidelimb="true" hideotherwearables="true" sourcerect="0,0,1,1" origin="0.5,0.5"></sprite>
+      <sprite name="Regular Diving Suit Torso" texture="Content/Items/Diving/reg_DivingSuit.png" limb="Torso" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="false" sourcerect="0,0,1,1" />
+      <sprite name="Regular Diving Suit Right Hand" texture="Content/Items/Diving/reg_DivingSuit.png" limb="RightHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="false" sourcerect="0,0,1,1" />
+      <sprite name="Regular Diving Suit Left Hand" texture="Content/Items/Diving/reg_DivingSuit.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="false" sourcerect="0,0,1,1" />
+      <sprite name="Regular Diving Suit Right Lower Arm" texture="Content/Items/Diving/reg_DivingSuit.png" limb="RightArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="false" sourcerect="0,0,1,1" />
+      <sprite name="Regular Diving Suit Left Lower Arm" texture="Content/Items/Diving/reg_DivingSuit.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="false" sourcerect="0,0,1,1" />
+      <sprite name="Regular Diving Suit Right Upper Arm" texture="Content/Items/Diving/reg_DivingSuit.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="false" sourcerect="0,0,1,1" />
+      <sprite name="Regular Diving Suit Left Upper Arm" texture="Content/Items/Diving/reg_DivingSuit.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="false" sourcerect="0,0,1,1" />
+      <sprite name="Regular Diving Suit Waist" texture="Content/Items/Diving/reg_DivingSuit.png" limb="Waist" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="false" sourcerect="0,0,1,1" />
+      <sprite name="Regular Diving Suit Right Thigh" texture="Content/Items/Diving/reg_DivingSuit.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="false" sourcerect="0,0,1,1" />
+      <sprite name="Regular Diving Suit Left Thigh" texture="Content/Items/Diving/reg_DivingSuit.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="false" sourcerect="0,0,1,1" />
+      <sprite name="Regular Diving Suit Right Leg" texture="Content/Items/Diving/reg_DivingSuit.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="false" sourcerect="0,0,1,1" />
+      <sprite name="Regular Diving Suit Left Leg" texture="Content/Items/Diving/reg_DivingSuit.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="false" sourcerect="0,0,1,1" />
+      <sprite name="Regular Diving Suit Left Shoe" texture="Content/Items/Diving/reg_DivingSuit.png" limb="LeftFoot" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="false" sourcerect="0,0,1,1" />
+      <sprite name="Regular Diving Suit Right Shoe" texture="Content/Items/Diving/reg_DivingSuit.png" limb="RightFoot" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="false" sourcerect="0,0,1,1" />
+      <StatusEffect type="OnWearing" target="Character" UseHullOxygen="true" OxygenAvailable="1500.0" HideFace="true" />
+      <StatusEffect type="OnWearing" target="Character" PressureProtection="40000.0" setvalue="true" disabledeltatime="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="damage" damagemultiplier="0.0" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="bleeding" damagemultiplier="0.0" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="poison" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.0" damagesound="" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictiontypes="stun" damagemultiplier="0.0" damagesound="LimbArmor" deflectprojectiles="true" />
+      <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.0" damagesound="LimbArmor" deflectprojectiles="true" />
+    </Wearable>
+    <aitarget maxsightrange="1500" />
+  </Item>
+  <Item name="ГМ_обвал" identifier="gm_stonefall" category="Misc" subcategory="MedievalGamemaster" cargocontaineridentifier="explosivecrate" tags="" scale="0.5" impactsoundtag="" noninteractable="true">
+    <Body width="120" height="15" density="20" friction="1.0" restitution="0.01" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <Holdable slots="Any" holdpos="0,-80" handle1="0,30" handle2="0,30" aimable="false" msg="ItemMsgPickUpSelect"></Holdable>
+    <ItemComponent characterusable="false">
+      <StatusEffect type="Always" target="This" interval="1.5">
+        <Explosion range="200.0" structuredamage="-450" itemdamage="100" force="4.0" camerashakerange="2000" ignorefireeffectsfortags="oxygensource,weldingtoolfuel" shockwave="true" camerashake="15.0">
+          <Affliction identifier="blunttrauma" strength="90" />
+          <Affliction identifier="stun" strength="4" />
+          <Affliction identifier="concussion" strength="10" />
+        </Explosion>
+        <sound file="%ModDir%/Sounds/wall_attack_heavy1.ogg" range="2000" volume="1" selectionmode="random" />
+        <ParticleEmitter particle="swirlysmoke" particleamount="40" scalemin="5.5" scalemax="7" anglemin="0" anglemax="360" liferimemultiplier="1.15" velocitymin="0" velocitymax="200" />
+        <ParticleEmitter particle="smoke" particleamount="10" scalemin="4.5" scalemax="6" anglemin="0" anglemax="360" liferimemultiplier="1.15" velocitymin="0" velocitymax="200" />
+        <particleemitter particle="iceshards" particleamount="30" velocitymin="100" velocitymax="700" anglemin="0" anglemax="360" scalemin="1.2" scalemax="3" drawontop="true" colormultiplier="120,150,225,200" />
+      </StatusEffect>
+      <StatusEffect type="Always" target="This" delay="1" interval="1">
+        <RemoveItem />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="ГМ_аура" identifier="gm_aura" category="Misc" subcategory="MedievalGamemaster" cargocontaineridentifier="explosivecrate" tags="" scale="0.5" impactsoundtag="" noninteractable="true" hideinmenus="false">
+    <Body width="120" height="15" density="20" friction="1.0" restitution="0.01" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <Holdable slots="Any" holdpos="0,-80" handle1="0,30" handle2="0,30" aimable="false" msg="ItemMsgPickUpSelect"></Holdable>
+    <ItemComponent characterusable="false">
+      <StatusEffect type="Always" target="This" interval="1.5">
+        <Explosion range="300.0" force="0" disablefireeffects="true" camerashake="2.0" playtinnitus="false" flashrange="1000" flashColor="255,100,100,255" flashduration="1.5" flames="false" smoke="false" shockwave="false" sparks="false" underwaterbubble="false" />
+        <ParticleEmitter particle="ElectricShock" DistanceMin="0" DistanceMax="20" ParticleAmount="2" ScaleMin="0.3" ScaleMax="0.6" colormultiplier="255,100,100,255" />
+      </StatusEffect>
+      <StatusEffect type="Always" target="This">
+        <ParticleEmitter particle="enchantment" AngleMax="360" DistanceMin="50" DistanceMax="120" ScaleMultiplier="0.35,0.35" Particlespersecond="5" ColorMultiplier="255,255,0,255" />
+      </StatusEffect>
+      <StatusEffect type="Always" target="This" interval="1">
+        <Conditional isdead="true" targetcontainer="true" />
+        <RemoveItem />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This" interval="1">
+        <RemoveItem />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="ГМ_молния" identifier="gm_lightning" category="Misc" subcategory="MedievalGamemaster" cargocontaineridentifier="explosivecrate" tags="" scale="0.5" impactsoundtag="" hideinmenus="false">
+    <InventoryIcon texture="Content/UI/CommandUIBackground.png" sourcerect="770,768,128,128" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent characterusable="false">
+      <StatusEffect type="OnSpawn" target="This" setvalue="true" allowwhenbroken="true">
+        <Explosion range="500.0" force="0" disablefireeffects="true" camerashake="9.0" playtinnitus="false" flashrange="10000" flashColor="160,160,255,255" flashduration="1.5" flames="false" smoke="false" shockwave="true" sparks="false" underwaterbubble="false" />
+        <ParticleEmitter particle="ElectricShock" DistanceMin="0" DistanceMax="250" ParticleAmount="3" ScaleMin="1.5" ScaleMax="2.5" />
+      </StatusEffect>
+      <StatusEffect type="OnSpawn" target="This" Condition="-100.0" setvalue="true" delay="1.2" allowwhenbroken="true">
+        <sound file="Content/Sounds/Ambient/Thunder1.ogg" range="30000" volume="1" selectionmode="random" />
+        <sound file="%ModDir%/Sounds/Thunder2.ogg" range="30000" volume="1" selectionmode="random" />
+        <sound file="%ModDir%/Sounds/Thunder3.ogg" range="30000" volume="1" selectionmode="random" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" delay="0.1">
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="ГМ_молния с уроном" identifier="gm_lightning_damage" category="Misc" subcategory="MedievalGamemaster" cargocontaineridentifier="explosivecrate" tags="" scale="0.5" impactsoundtag="" hideinmenus="false">
+    <InventoryIcon texture="Content/UI/CommandUIBackground.png" sourcerect="770,768,128,128" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <ItemComponent characterusable="false">
+      <StatusEffect type="OnSpawn" target="This" allowwhenbroken="true">
+        <Explosion range="500.0" force="0" disablefireeffects="true" camerashake="9.0" playtinnitus="false" flashrange="10000" flashColor="160,160,255,255" flashduration="1.5" flames="false" smoke="false" shockwave="true" sparks="false" underwaterbubble="false" />
+        <ParticleEmitter particle="ElectricShock" DistanceMin="0" DistanceMax="250" ParticleAmount="3" ScaleMin="1.5" ScaleMax="2.5" />
+        <Explosion range="350.0" itemdamage="25" force="0" flames="false" disablefireeffects="false" sparks="false" shockwave="false" camerashake="0.0" playtinnitus="false" flash="false">
+          <Affliction identifier="electricshock" strength="400" />
+          <Affliction identifier="burn" strength="80" />
+        </Explosion>
+      </StatusEffect>
+      <StatusEffect type="OnSpawn" target="This" Condition="-100.0" setvalue="true" delay="1.2" allowwhenbroken="true">
+        <sound file="Content/Sounds/Ambient/Thunder1.ogg" range="30000" volume="1" selectionmode="random" />
+        <sound file="%ModDir%/Sounds/Thunder2.ogg" range="30000" volume="1" selectionmode="random" />
+        <sound file="%ModDir%/Sounds/Thunder3.ogg" range="30000" volume="1" selectionmode="random" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" delay="0.1">
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="ГМ_все крысы ебанулись" identifier="gm_krisacrazy" category="Misc" subcategory="MedievalGamemaster" cargocontaineridentifier="explosivecrate" noninteractable="true" tags="" scale="0.5" spritecolor="0,0,0,0" impactsoundtag="" hideinmenus="false">
+    <InventoryIcon texture="Content/UI/CommandUIBackground.png" sourcerect="128,896,128,128" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Tools/gmtools_dice.png" sourcerect="0,0,64,64" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="70" density="20" gravityscale="0" />
+    <Holdable slots="Any,RightHand,LeftHand" selectkey="Action" pickkey="Use" msg="Поднять руками" PickingTime="1" holdpos="35,-30" holdangle="0" handle1="-5,18" aimable="false" attachable="false">
+      <StatusEffect type="OnSpawn" target="This,NearbyCharacters" range="2000" targets="krisa" disabledeltatime="true">
+        <affliction Strength="30" Identifier="krisa_affliction" Probability="1" />
+        <RemoveItem />
+      </StatusEffect>
+    </Holdable>
+    <ItemComponent isactive="true" />
+  </Item>
+  <Item name="ГМ_дать всем 1000 опыта" identifier="gm_victory" category="Misc" subcategory="MedievalGamemaster" cargocontaineridentifier="explosivecrate" noninteractable="true" tags="" scale="0.5" spritecolor="0,0,0,0" impactsoundtag="" hideinmenus="false">
+    <InventoryIcon texture="Content/UI/CommandUIBackground.png" sourcerect="128,896,128,128" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Tools/gmtools_dice.png" sourcerect="0,0,64,64" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="70" density="20" gravityscale="0" />
+    <Holdable slots="Any,RightHand,LeftHand" selectkey="Action" pickkey="Use" msg="Поднять руками" PickingTime="1" holdpos="35,-30" holdangle="0" handle1="-5,18" aimable="false" attachable="false">
+      <StatusEffect type="OnSpawn" target="This,NearbyCharacters" range="30000" targettags="human" disabledeltatime="true">
+        <GiveExperience amount="1000" />
+        <RemoveItem />
+      </StatusEffect>
+    </Holdable>
+    <ItemComponent isactive="true" />
+  </Item>
+  <Item name="ГМ_дождь у всех в радиусе 200 метров (5 минут)" identifier="gm_rain" category="Misc" subcategory="MedievalGamemaster" cargocontaineridentifier="explosivecrate" noninteractable="true" tags="" scale="0.5" spritecolor="0,0,0,0" impactsoundtag="" hideinmenus="false">
+    <Sprite texture="%ModDir%/Tools/gmtools_dice.png" sourcerect="0,0,64,64" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="70" density="20" gravityscale="0" />
+    <Holdable slots="Any,RightHand,LeftHand" selectkey="Action" pickkey="Use" msg="Поднять руками" PickingTime="1" holdpos="35,-30" holdangle="0" handle1="-5,18" aimable="false" attachable="false">
+      <StatusEffect type="Always" target="NearbyCharacters" range="20000" targettags="human" disabledeltatime="true" interval="10" setvalue="true">
+        <Affliction identifier="rainaffliction" strength="20" />
+      </StatusEffect>
+      <StatusEffect type="Always" interval="3" condition="-1" target="This" disabledeltatime="true" />
+      <StatusEffect type="OnBroken" target="This" disabledeltatime="true">
+        <RemoveItem />
+      </StatusEffect>
+    </Holdable>
+    <ItemComponent isactive="true" />
+  </Item>
+  <Item name="ГМ_дать 2 минуты дождя у всех в радиусе 500 метров" identifier="gm_rain2" category="Misc" subcategory="MedievalGamemaster" cargocontaineridentifier="explosivecrate" noninteractable="true" tags="" scale="0.5" spritecolor="0,0,0,0" impactsoundtag="" hideinmenus="false">
+    <Sprite texture="%ModDir%/Tools/gmtools_dice.png" sourcerect="0,0,64,64" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="70" density="20" gravityscale="0" />
+    <Holdable slots="Any,RightHand,LeftHand" selectkey="Action" pickkey="Use" msg="Поднять руками" PickingTime="1" holdpos="35,-30" holdangle="0" handle1="-5,18" aimable="false" attachable="false">
+      <StatusEffect type="OnSpawn" target="This,NearbyCharacters" range="50000" targettags="human" disabledeltatime="true" setvalue="true">
+        <Affliction identifier="rainaffliction" strength="120" />
+        <RemoveItem />
+      </StatusEffect>
+      <StatusEffect type="Always" target="This" delay="0.1">
+        <RemoveItem />
+      </StatusEffect>
+    </Holdable>
+    <ItemComponent isactive="true" />
+  </Item>
+  <Item name="ГМ_дать всем холод 1 уровня" identifier="gm_frost_setter_1" category="Misc" subcategory="MedievalGamemaster" cargocontaineridentifier="explosivecrate" noninteractable="true" tags="" scale="0.5" impactsoundtag="" hideinmenus="false">
+    <Sprite texture="%ModDir%/Medical/TEAffliction.png" sourcerect="0,806,128,128" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="70" density="20" gravityscale="0" />
+    <Holdable slots="Any,RightHand,LeftHand" selectkey="Action" pickkey="Use" msg="Поднять руками" PickingTime="1" holdpos="35,-30" holdangle="0" handle1="-5,18" aimable="false" attachable="false">
+      <StatusEffect type="OnSpawn" target="This,NearbyCharacters" range="50000" targettags="human" disabledeltatime="true" setvalue="true">
+        <Affliction identifier="frost_general" strength="1" />
+        <RemoveItem />
+      </StatusEffect>
+      <StatusEffect type="Always" target="This" delay="0.1">
+        <RemoveItem />
+      </StatusEffect>
+    </Holdable>
+    <ItemComponent isactive="true" />
+  </Item>
+  <Item name="ГМ_дать всем холод 2 уровня" identifier="gm_frost_setter_2" category="Misc" subcategory="MedievalGamemaster" cargocontaineridentifier="explosivecrate" noninteractable="true" tags="" scale="0.5" impactsoundtag="" hideinmenus="false">
+    <Sprite texture="%ModDir%/Medical/TEAffliction.png" sourcerect="0,806,128,128" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="70" density="20" gravityscale="0" />
+    <Holdable slots="Any,RightHand,LeftHand" selectkey="Action" pickkey="Use" msg="Поднять руками" PickingTime="1" holdpos="35,-30" holdangle="0" handle1="-5,18" aimable="false" attachable="false">
+      <StatusEffect type="OnSpawn" target="This,NearbyCharacters" range="50000" targettags="human" disabledeltatime="true" setvalue="true">
+        <Affliction identifier="frost_general" strength="2" />
+        <RemoveItem />
+      </StatusEffect>
+      <StatusEffect type="Always" target="This" delay="0.1">
+        <RemoveItem />
+      </StatusEffect>
+    </Holdable>
+    <ItemComponent isactive="true" />
+  </Item>
+  <Item name="ГМ_дать всем холод 3 уровня" identifier="gm_frost_setter_3" category="Misc" subcategory="MedievalGamemaster" cargocontaineridentifier="explosivecrate" noninteractable="true" tags="" scale="0.5" impactsoundtag="" hideinmenus="false">
+    <Sprite texture="%ModDir%/Medical/TEAffliction.png" sourcerect="0,806,128,128" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="70" density="20" gravityscale="0" />
+    <Holdable slots="Any,RightHand,LeftHand" selectkey="Action" pickkey="Use" msg="Поднять руками" PickingTime="1" holdpos="35,-30" holdangle="0" handle1="-5,18" aimable="false" attachable="false">
+      <StatusEffect type="OnSpawn" target="This,NearbyCharacters" range="50000" targettags="human" disabledeltatime="true" setvalue="true">
+        <Affliction identifier="frost_general" strength="3" />
+        <RemoveItem />
+      </StatusEffect>
+      <StatusEffect type="Always" target="This" delay="0.1">
+        <RemoveItem />
+      </StatusEffect>
+    </Holdable>
+    <ItemComponent isactive="true" />
+  </Item>
+  <Item name="ГМ_эмиттер пвп (навыки и опыт)" identifier="gm_pvpskill" category="Misc" subcategory="MedievalGamemaster" cargocontaineridentifier="explosivecrate" noninteractable="true" tags="" scale="0.5" spritecolor="0,0,0,0" impactsoundtag="" hideinmenus="false">
+    <InventoryIcon texture="Content/UI/CommandUIBackground.png" sourcerect="128,896,128,128" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Tools/gmtools_dice.png" sourcerect="0,0,64,64" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="70" density="20" gravityscale="0" />
+    <Holdable slots="Any,RightHand,LeftHand" selectkey="Action" pickkey="Use" msg="Поднять руками" PickingTime="1" holdpos="35,-30" holdangle="0" handle1="-5,18" aimable="false" attachable="false">
+      <StatusEffect type="OnSpawn" target="This,NearbyCharacters" targettags="human" range="30000" disabledeltatime="true">
+        <GiveExperience amount="14000" />
+        <GiveSkill skillidentifier="weapons" amount="100" triggertalents="false" />
+        <GiveSkill skillidentifier="medical" amount="100" triggertalents="false" />
+        <GiveSkill skillidentifier="mechanical" amount="100" triggertalents="false" />
+        <GiveSkill skillidentifier="electrical" amount="100" triggertalents="false" />
+        <GiveSkill skillidentifier="helm" amount="100" triggertalents="false" />
+        <GiveSkill skillidentifier="mining" amount="100" triggertalents="false" />
+        <Affliction identifier="bugurt_alwaysconscious" strength="10" />
+        <RemoveItem />
+      </StatusEffect>
+    </Holdable>
+    <ItemComponent isactive="true" />
+  </Item>
+  <Item name="ГМ_эмиттер пвп (без травм)" identifier="gm_pvpnotrauma" category="Misc" subcategory="MedievalGamemaster" cargocontaineridentifier="explosivecrate" noninteractable="true" tags="" scale="0.5" spritecolor="0,0,0,0" impactsoundtag="" hideinmenus="false">
+    <InventoryIcon texture="Content/UI/CommandUIBackground.png" sourcerect="128,896,128,128" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Tools/gmtools_dice.png" sourcerect="0,0,64,64" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="70" density="20" gravityscale="0" />
+    <Holdable slots="Any,RightHand,LeftHand" selectkey="Action" pickkey="Use" msg="Поднять руками" PickingTime="1" holdpos="35,-30" holdangle="0" handle1="-5,18" aimable="false" attachable="false">
+      <StatusEffect type="OnSpawn" target="This,NearbyCharacters" targettags="human" range="30000" disabledeltatime="true">
+        <Affliction identifier="bugurt_notrauma" strength="10" />
+        <RemoveItem />
+      </StatusEffect>
+    </Holdable>
+    <ItemComponent isactive="true" />
+  </Item>
+  <Item name="ГМ_точка интереса паука (60сек)" identifier="spidertrap_alert" health="60" category="Misc" subcategory="MedievalGamemaster" cargocontaineridentifier="explosivecrate" noninteractable="true" tags="spidertrap_alert" scale="0.5" spritecolor="0,0,0,0" impactsoundtag="" hideinmenus="false">
+    <InventoryIcon texture="Content/UI/MainIconsAtlas.png" sourcerect="256,640,128,128" origin="0.5,0.5" />
+    <Sprite texture="Content/UI/MainIconsAtlas.png" sourcerect="256,640,128,128" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="70" density="20" gravityscale="0" />
+    <Holdable slots="Any,RightHand,LeftHand" selectkey="Action" pickkey="Use" msg="Поднять руками" PickingTime="1" holdpos="35,-30" holdangle="0" handle1="-5,18" aimable="false" attachable="false">
+      <StatusEffect type="Always" interval="1" condition="-1" target="This" disabledeltatime="true" />
+      <StatusEffect type="OnBroken" target="This" disabledeltatime="true">
+        <RemoveItem />
+      </StatusEffect>
+    </Holdable>
+    <ItemComponent isactive="true" />
+    <AiTarget sightrange="20000" soundrange="10000" static="true" />
+  </Item>
+  <Item name="ГМ_точка атаки монстров (100сек)" identifier="gm_monstercall" category="Misc" subcategory="MedievalGamemaster" cargocontaineridentifier="explosivecrate" noninteractable="true" tags="monstercall" scale="0.5" spritecolor="0,0,0,0" impactsoundtag="" hideinmenus="false">
+    <InventoryIcon texture="Content/UI/MainIconsAtlas.png" sourcerect="896,512,128,128" origin="0.5,0.5" />
+    <Sprite texture="Content/UI/MainIconsAtlas.png" sourcerect="896,512,128,128" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="70" density="20" gravityscale="0" />
+    <Holdable slots="Any,RightHand,LeftHand" selectkey="Action" pickkey="Use" msg="Поднять руками" PickingTime="1" holdpos="35,-30" holdangle="0" handle1="-5,18" aimable="false" attachable="false">
+      <StatusEffect type="Always" interval="1" condition="-1" target="This" disabledeltatime="true" />
+      <StatusEffect type="OnBroken" target="This" disabledeltatime="true">
+        <RemoveItem />
+      </StatusEffect>
+    </Holdable>
+    <ItemComponent isactive="true" />
+    <AiTarget sightrange="20000" soundrange="10000" static="true" />
+  </Item>
+  <Item name="ГМ_точка атаки монстров (300сек)" identifier="gm_monstercall_long" category="Misc" subcategory="MedievalGamemaster" cargocontaineridentifier="explosivecrate" noninteractable="true" tags="monstercall" scale="0.5" spritecolor="0,0,0,0" impactsoundtag="" hideinmenus="false">
+    <InventoryIcon texture="Content/UI/MainIconsAtlas.png" sourcerect="896,512,128,128" origin="0.5,0.5" />
+    <Sprite texture="Content/UI/MainIconsAtlas.png" sourcerect="896,512,128,128" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="70" density="20" gravityscale="0" />
+    <Holdable slots="Any,RightHand,LeftHand" selectkey="Action" pickkey="Use" msg="Поднять руками" PickingTime="1" holdpos="35,-30" holdangle="0" handle1="-5,18" aimable="false" attachable="false">
+      <StatusEffect type="Always" interval="3" condition="-1" target="This" disabledeltatime="true" />
+      <StatusEffect type="OnBroken" target="This" disabledeltatime="true">
+        <RemoveItem />
+      </StatusEffect>
+    </Holdable>
+    <ItemComponent isactive="true" />
+    <AiTarget sightrange="20000" soundrange="10000" static="true" />
+  </Item>
+  <Item name="ГМ_место работы пчёл (10м)" identifier="gm_beescanworkhere" category="Misc" subcategory="MedievalGamemaster" cargocontaineridentifier="explosivecrate" tags="" scale="0.5" impactsoundtag="" hideinmenus="false">
+    <InventoryIcon texture="Content/UI/MainIconsAtlas.png" sourcerect="768,640,128,128" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+    <Body width="35" height="70" density="20" />
+    <Holdable slots="Any,RightHand,LeftHand" selectkey="Action" pickkey="Use" msg="Поднять руками" PickingTime="1" holdpos="35,-30" holdangle="0" handle1="-5,18" aimable="false" attachable="true" attachedbydefault="true">
+      <StatusEffect type="OnNotContained" target="This" interval="5" condition="0" setvalue="true" />
+      <StatusEffect type="OnBroken" target="NearbyItems" targettags="beehive" range="1000" disabledeltatime="true" charge="+1.5" />
+      <StatusEffect type="OnBroken" target="This" condition="100" setvalue="true" delay="0.1" />
+    </Holdable>
+  </Item>
+  <Item name="ГМ_кислород 100%" identifier="gm_oxygen" category="Misc" subcategory="MedievalGamemaster" cargocontaineridentifier="explosivecrate" tags="" scale="0.5" impactsoundtag="" hideinmenus="false" spritecolor="100,255,100,255">
+    <Sprite texture="Content/UI/MainIconsAtlas.png" sourcerect="512,640,128,128" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="70" density="20" />
+    <Holdable slots="Any,RightHand,LeftHand" selectkey="Action" pickkey="Use" msg="Поднять руками" PickingTime="1" holdpos="35,-30" holdangle="0" handle1="-5,18" aimable="false" attachable="true" attachedbydefault="true">
+      <StatusEffect type="Always" interval="60" Oxygen="1000000" target="This,Hull" disabledeltatime="true" />
+    </Holdable>
+  </Item>
+  <Item name="ГМ_кислород 0%" identifier="gm_nooxygen" category="Misc" subcategory="MedievalGamemaster" cargocontaineridentifier="explosivecrate" tags="" scale="0.5" impactsoundtag="" hideinmenus="false" spritecolor="255,100,100,255">
+    <Sprite texture="Content/UI/MainIconsAtlas.png" sourcerect="512,640,128,128" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="70" density="20" />
+    <Holdable slots="Any,RightHand,LeftHand" selectkey="Action" pickkey="Use" msg="Поднять руками" PickingTime="1" holdpos="35,-30" holdangle="0" handle1="-5,18" aimable="false" attachable="true" attachedbydefault="true">
+      <StatusEffect type="Always" interval="60" Oxygen="0" target="This,Hull" setvalue="true" />
+    </Holdable>
+  </Item>
+  <Item name="ГМ_болотные испарения (радиус 5 метров вправо)" identifier="gm_swampemitter" category="Misc" subcategory="MedievalGamemaster" description="Не забудьте сделать скрытым в игре" cargocontaineridentifier="explosivecrate" noninteractable="true" scale="0.5" impactsoundtag="" hideinmenus="false">
+    <Sprite texture="%ModDir%/Tools/gmtools_dice.png" sourcerect="0,0,64,64" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="70" density="20" gravityscale="0" />
+    <Holdable slots="Any,RightHand,LeftHand" selectkey="Action" pickkey="Use" msg="Поднять руками" PickingTime="1" holdpos="35,-30" holdangle="0" handle1="-5,18" aimable="false" attachable="true" attachedbydefault="true"></Holdable>
+    <ItemComponent isactive="true">
+      <StatusEffect type="Always" target="This">
+        <ParticleEmitter particle="raskumar_cloud" particlespersecond="1" scalemin="0.7" scalemax="1.0" anglemin="0" anglemax="0" velocitymin="0" velocitymax="90" distancemin="0" distancemax="500" ColorMultiplier="125,225,125,175" />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="ГМ_туман (радиус 5 метров вправо)" identifier="gm_mistemitter" category="Misc" subcategory="MedievalGamemaster" description="Не забудьте сделать скрытым в игре" cargocontaineridentifier="explosivecrate" noninteractable="true" scale="0.5" impactsoundtag="" hideinmenus="false">
+    <Sprite texture="%ModDir%/Tools/gmtools_dice.png" sourcerect="0,0,64,64" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="70" density="20" gravityscale="0" />
+    <Holdable slots="Any,RightHand,LeftHand" selectkey="Action" pickkey="Use" msg="Поднять руками" PickingTime="1" holdpos="35,-30" holdangle="0" handle1="-5,18" aimable="false" attachable="true" attachedbydefault="true"></Holdable>
+    <ItemComponent isactive="true">
+      <StatusEffect type="Always" target="This">
+        <ParticleEmitter particle="raskumar_cloud" particlespersecond="1" scalemin="0.9" scalemax="1.6" anglemin="0" anglemax="0" velocitymin="0" velocitymax="90" distancemin="0" distancemax="500" ColorMultiplier="185,185,185,155" />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+  <Item name="ГМ_проигрыватель с проводами (Сверчки, 500 метров)" identifier="gm_ambient_night" category="Misc" subcategory="MedievalGamemaster" cargocontaineridentifier="explosivecrate" tags="" scale="0.5" impactsoundtag="" hideinmenus="false">
+    <Sprite texture="Content/UI/CommandUIAtlas.png" sourcerect="0,0,128,128" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="70" density="20" />
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" MsgWhenDropped="ItemMsgPickupSelect" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench,deattachtool" excludeditems="multitool" type="Equipped" />
+    </Holdable>
+    <LightComponent canbeselected="false" lightcolor="255,0,0,100" alphablend="true" castshadows="false" blinkfrequency="2.6" range="20">
+      <sound file="%ModDir%/Sounds/cicadas_and_crickets.ogg" type="OnActive" range="50000" volume="0.35" stream="true" selectionmode="Manual" loop="true" />
+    </LightComponent>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="ГМ_проигрыватель (Природа, 12 - 20 метров)" description="1 - море, 2 - птицы, 3 - ветер, 4 - сверчки, 5 - болото, 6 - вода, 7 - пустыня" identifier="gm_jukebox" category="Misc" subcategory="MedievalGamemaster" cargocontaineridentifier="explosivecrate" tags="" scale="0.5" impactsoundtag="" hideinmenus="false">
+    <Sprite texture="Content/UI/CommandUIAtlas.png" sourcerect="0,0,128,128" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="70" density="20" />
+    <Holdable slots="Any,RightHand,LeftHand" selectkey="Action" pickkey="Use" msg="Поднять руками" PickingTime="1" holdpos="35,-30" holdangle="0" handle1="-5,18" aimable="false" attachable="true" attachedbydefault="true"></Holdable>
+    <Powered IsActive="true" PowerConsumption="50">
+      <sound file="%ModDir%/Sounds/sea.ogg" type="OnActive" range="2000" volume="0.01" stream="true" volumeproperty="PowerConsumption" selectionmode="Manual" loop="true" />
+      <sound file="%ModDir%/Sounds/birdsloop_01.ogg" type="OnActive" range="1200" volume="0.01" stream="true" volumeproperty="PowerConsumption" selectionmode="Manual" loop="true" />
+      <sound file="%ModDir%/Sounds/wind_long.ogg" type="OnActive" range="1500" volume="0.01" stream="true" volumeproperty="PowerConsumption" selectionmode="Manual" loop="true" />
+      <sound file="%ModDir%/Sounds/cicadas_and_crickets.ogg" type="OnActive" range="1500" volume="0.01" stream="true" volumeproperty="PowerConsumption" selectionmode="Manual" loop="true" />
+      <sound file="%ModDir%/Sounds/swamp.ogg" type="OnActive" range="1500" volume="0.01" stream="true" volumeproperty="PowerConsumption" selectionmode="Manual" loop="true" />
+      <sound file="%ModDir%/Sounds/water_loop.ogg" type="OnActive" range="1500" volume="0.01" stream="true" volumeproperty="PowerConsumption" selectionmode="Manual" loop="true" />
+      <sound file="%ModDir%/Sounds/loop_desert.ogg" type="OnActive" range="1500" volume="0.01" stream="true" volumeproperty="PowerConsumption" selectionmode="Manual" loop="true" />
+    </Powered>
+    <CustomInterface canbeselected="true" ElementStates="true,1,50">
+      <GuiFrame relativesize="0.2,0.15" anchor="CenterLeft" pivot="BottomLeft" relativeoffset="0.006,-0.05" style="ItemUI" />
+      <TickBox text="speaker.on" targetitemcomponent="Powered" propertyname="IsActive" ContinuousSignal="false" GetValueInterval="1" />
+      <IntegerInput text="speaker.trackselection" propertyname="ManuallySelectedSound" targetitemcomponent="Powered" min="0" max="6">
+        <StatusEffect type="OnUse" targettype="This"></StatusEffect>
+      </IntegerInput>
+      <IntegerInput text="speaker.volume" propertyname="PowerConsumption" targetitemcomponent="Powered" min="0" max="100" step="10" />
+    </CustomInterface>
+  </Item>
+  <Item name="ГМ_проигрыватель (Данж) (50м)" identifier="gm_jukebox2" category="Misc" subcategory="MedievalGamemaster" cargocontaineridentifier="explosivecrate" tags="" scale="0.5" impactsoundtag="" hideinmenus="false">
+    <Sprite texture="Content/UI/CommandUIAtlas.png" sourcerect="0,0,128,128" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="70" density="20" />
+    <Holdable slots="Any,RightHand,LeftHand" selectkey="Action" pickkey="Use" msg="Поднять руками" PickingTime="1" holdpos="35,-30" holdangle="0" handle1="-5,18" aimable="false" attachable="true" attachedbydefault="true"></Holdable>
+    <Powered IsActive="true" PowerConsumption="50">
+      <sound file="%ModDir%/Sounds/Music/Crypt.ogg" type="OnActive" range="5000" volume="0.01" stream="true" volumeproperty="PowerConsumption" selectionmode="Manual" loop="true" mutebackgroundmusic="true" />
+      <sound file="%ModDir%/Sounds/Music/Underworld.ogg" type="OnActive" range="5000" volume="0.01" stream="true" volumeproperty="PowerConsumption" selectionmode="Manual" loop="true" mutebackgroundmusic="true" />
+      <sound file="%ModDir%/Sounds/Music/graveyard.ogg" type="OnActive" range="5000" volume="0.01" stream="true" volumeproperty="PowerConsumption" selectionmode="Manual" loop="true" mutebackgroundmusic="true" />
+      <sound file="%ModDir%/Sounds/Music/Athens_catacombs_theme.ogg" type="OnActive" range="5000" volume="0.01" stream="true" volumeproperty="PowerConsumption" selectionmode="Manual" loop="true" mutebackgroundmusic="true" />
+    </Powered>
+    <CustomInterface canbeselected="true" ElementStates="true,1,50">
+      <GuiFrame relativesize="0.2,0.15" anchor="CenterLeft" pivot="BottomLeft" relativeoffset="0.006,-0.05" style="ItemUI" />
+      <TickBox text="speaker.on" targetitemcomponent="Powered" propertyname="IsActive" ContinuousSignal="false" GetValueInterval="1" />
+      <IntegerInput text="speaker.trackselection" propertyname="ManuallySelectedSound" targetitemcomponent="Powered" min="0" max="3">
+        <StatusEffect type="OnUse" targettype="This"></StatusEffect>
+      </IntegerInput>
+      <IntegerInput text="speaker.volume" propertyname="PowerConsumption" targetitemcomponent="Powered" min="0" max="100" step="10" />
+    </CustomInterface>
+  </Item>
+  <Item name="ГМ_проигрыватель (Музыка) (500м)" identifier="gm_jukebox3" category="Misc" subcategory="MedievalGamemaster" cargocontaineridentifier="explosivecrate" tags="" scale="0.5" impactsoundtag="" hideinmenus="false">
+    <Sprite texture="Content/UI/CommandUIAtlas.png" sourcerect="0,0,128,128" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="70" density="20" />
+    <Holdable slots="Any,RightHand,LeftHand" selectkey="Action" pickkey="Use" msg="Поднять руками" PickingTime="10" holdpos="35,-30" holdangle="0" handle1="-5,18" aimable="false" attachable="true" attachedbydefault="true"></Holdable>
+    <Powered IsActive="true" PowerConsumption="50">
+      <sound file="%ModDir%/Sounds/Music/Stronghold Soundtrack - Paranoia.ogg" type="OnActive" range="50000" volume="0.01" stream="true" volumeproperty="PowerConsumption" selectionmode="Manual" loop="true" mutebackgroundmusic="true" />
+      <sound file="%ModDir%/Sounds/Music/Honor Medley Stronghold (2001) Original Soundtrack.ogg" type="OnActive" range="50000" volume="0.01" stream="true" volumeproperty="PowerConsumption" selectionmode="Manual" loop="true" mutebackgroundmusic="true" />
+      <sound file="%ModDir%/Sounds/Music/Stix And Stones.ogg" type="OnActive" range="50000" volume="0.01" stream="true" volumeproperty="PowerConsumption" selectionmode="Manual" loop="true" mutebackgroundmusic="true" />
+      <sound file="%ModDir%/Sounds/Music/Berserk OST Fear.ogg" type="OnActive" range="50000" volume="0.01" stream="true" volumeproperty="PowerConsumption" selectionmode="Manual" loop="true" mutebackgroundmusic="true" />
+      <sound file="%ModDir%/Sounds/cicadas_and_crickets.ogg" type="OnActive" range="50000" volume="0.01" stream="true" volumeproperty="PowerConsumption" selectionmode="Manual" loop="true" />
+      <sound file="%ModDir%/Sounds/Music/Beasts.ogg" type="OnActive" range="50000" volume="0.01" stream="true" volumeproperty="PowerConsumption" selectionmode="Manual" loop="true" mutebackgroundmusic="true" />
+      <sound file="%ModDir%/Sounds/Music/BlackIronPact.ogg" type="OnActive" range="50000" volume="0.01" stream="true" volumeproperty="PowerConsumption" selectionmode="Manual" loop="true" mutebackgroundmusic="true" />
+    </Powered>
+    <CustomInterface canbeselected="true" ElementStates="true,1,50">
+      <GuiFrame relativesize="0.2,0.15" anchor="CenterLeft" pivot="BottomLeft" relativeoffset="0.006,-0.05" style="ItemUI" />
+      <TickBox text="speaker.on" targetitemcomponent="Powered" propertyname="IsActive" ContinuousSignal="false" GetValueInterval="1" />
+      <IntegerInput text="speaker.trackselection" propertyname="ManuallySelectedSound" targetitemcomponent="Powered" min="0" max="6">
+        <StatusEffect type="OnUse" targettype="This"></StatusEffect>
+      </IntegerInput>
+      <IntegerInput text="speaker.volume" propertyname="PowerConsumption" targetitemcomponent="Powered" min="0" max="100" step="10" />
+    </CustomInterface>
+  </Item>
+  <!-- Природа переключаемые! -->
+  <!-- !!!!!!!!!!!!!!!!!!!!!! -->
+  <Item name="ГМ_проигрыватель с проводами (Лес (день), 15 метров)" identifier="gm_ambient_togglable_1" category="Misc" subcategory="MedievalGamemasterZones" cargocontaineridentifier="explosivecrate" tags="" scale="0.5" impactsoundtag="" hideinmenus="false">
+    <Sprite texture="Content/UI/CommandUIAtlas.png" sourcerect="0,0,128,128" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="70" density="20" />
+    <TriggerComponent triggeredby="Character" width="6000" height="3000" sensor="true" interval="2">
+      <IsActiveConditional ison="true" targetitemcomponent="LightComponent"/>
+      <StatusEffect type="OnUse" target="This" interval="1" duration="4">
+        <Conditional islocalplayer="true"/>
+        <sound file="%ModDir%/Sounds/Ambient_Environment/AMB_forest_day.ogg" type="OnActive" volume="0.5" stream="true" selectionmode="Manual" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This" interval="5.5" RandomOffset="1000">
+        <Conditional islocalplayer="true"/>
+        <Sound file="%ModDir%/Sounds/Ambient_Environment/AMB_EXTRA_randombird-01.ogg" volume="0.8" range="2300" selectionmode="random" />
+        <Sound file="%ModDir%/Sounds/Ambient_Environment/AMB_EXTRA_randombird-02.ogg" volume="0.8" range="2300" selectionmode="random" />
+        <Sound file="%ModDir%/Sounds/Ambient_Environment/AMB_EXTRA_randombird-03.ogg" volume="0.8" range="2300" selectionmode="random" />
+        <Sound file="%ModDir%/Sounds/Ambient_Environment/AMB_EXTRA_randombird-04.ogg" volume="0.8" range="2300" selectionmode="random" />
+        <Sound file="%ModDir%/Sounds/Ambient_Environment/AMB_EXTRA_randombird-05.ogg" volume="0.8" range="2300" selectionmode="random" />
+        <Sound file="%ModDir%/Sounds/Ambient_Environment/AMB_EXTRA_randombird-06.ogg" volume="0.8" range="2300" selectionmode="random" />
+        <Sound file="%ModDir%/Sounds/Ambient_Environment/AMB_EXTRA_randombird-07.ogg" volume="0.8" range="2300" selectionmode="random" />
+        <Sound file="%ModDir%/Sounds/Ambient_Environment/AMB_EXTRA_randombird-08.ogg" volume="0.8" range="2300" selectionmode="random" />
+        <Sound file="%ModDir%/Sounds/Ambient_Environment/AMB_EXTRA_randombird-09.ogg" volume="0.8" range="2300" selectionmode="random" />
+        <Sound file="%ModDir%/Sounds/Ambient_Environment/AMB_EXTRA_randombird-10.ogg" volume="0.8" range="2300" selectionmode="random" />
+        <Sound file="%ModDir%/Sounds/Ambient_Environment/AMB_EXTRA_randombird-11.ogg" volume="0.8" range="2300" selectionmode="random" />
+        <Sound file="%ModDir%/Sounds/Ambient_Environment/AMB_EXTRA_randombird-12.ogg" volume="0.8" range="2300" selectionmode="random" />
+        <Sound file="%ModDir%/Sounds/Ambient_Environment/AMB_EXTRA_randombird-12.ogg" volume="0.0" range="0" selectionmode="random" />
+        <Sound file="%ModDir%/Sounds/Ambient_Environment/AMB_EXTRA_randombird-12.ogg" volume="0.0" range="0" selectionmode="random" />
+        <Sound file="%ModDir%/Sounds/Ambient_Environment/AMB_EXTRA_randombird-12.ogg" volume="0.0" range="0" selectionmode="random" />
+        <Sound file="%ModDir%/Sounds/Ambient_Environment/AMB_EXTRA_randombird-12.ogg" volume="0.0" range="0" selectionmode="random" />
+        <Sound file="%ModDir%/Sounds/Ambient_Environment/AMB_EXTRA_randombird-12.ogg" volume="0.0" range="0" selectionmode="random" />
+        <Sound file="%ModDir%/Sounds/Ambient_Environment/AMB_EXTRA_randombird-12.ogg" volume="0.0" range="0" selectionmode="random" />
+      </StatusEffect>
+    </TriggerComponent>
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" MsgWhenDropped="ItemMsgPickupSelect" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench,deattachtool" excludeditems="multitool" type="Equipped" />
+    </Holdable>
+    <LightComponent canbeselected="false" lightcolor="255,0,0,0" alphablend="true" ison="true" castshadows="false" blinkfrequency="2.6" range="20">
+    </LightComponent>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="ГМ_проигрыватель с проводами (Лес (ночь), 15 метров)" identifier="gm_ambient_togglable_1_1" category="Misc" subcategory="MedievalGamemasterZones" cargocontaineridentifier="explosivecrate" tags="" scale="0.5" impactsoundtag="" hideinmenus="false">
+    <Sprite texture="Content/UI/CommandUIAtlas.png" sourcerect="0,0,128,128" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="70" density="20" />
+    <TriggerComponent triggeredby="Character" width="6000" height="3000" sensor="true" interval="2">
+      <IsActiveConditional ison="true" targetitemcomponent="LightComponent"/>
+      <StatusEffect type="OnUse" target="This" interval="1" duration="4">
+        <Conditional islocalplayer="true"/>
+        <sound file="%ModDir%/Sounds/Ambient_Environment/AMB_forest_night.ogg" type="OnActive" volume="0.5" stream="true" selectionmode="Manual" loop="true" />
+      </StatusEffect>
+    </TriggerComponent>
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" MsgWhenDropped="ItemMsgPickupSelect" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench,deattachtool" excludeditems="multitool" type="Equipped" />
+    </Holdable>
+    <LightComponent canbeselected="false" lightcolor="255,0,0,0" alphablend="true" ison="true" castshadows="false" blinkfrequency="2.6" range="20"/>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="ГМ_проигрыватель с проводами (Злой лес, 15 метров)" identifier="gm_ambient_togglable_2" category="Misc" subcategory="MedievalGamemasterZones" cargocontaineridentifier="explosivecrate" tags="" scale="0.5" impactsoundtag="" hideinmenus="false">
+    <Sprite texture="Content/UI/CommandUIAtlas.png" sourcerect="0,0,128,128" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="70" density="20" />
+    <TriggerComponent triggeredby="Character" width="6000" height="3000" sensor="true" interval="2">
+      <IsActiveConditional ison="true" targetitemcomponent="LightComponent"/>
+      <StatusEffect type="OnUse" target="This" interval="1" duration="4">
+        <Conditional islocalplayer="true"/>
+        <sound file="%ModDir%/Sounds/Ambient_Environment/AMB_evilforest.ogg" type="OnActive" volume="0.5" stream="true" selectionmode="Manual" loop="true" />
+      </StatusEffect>
+    </TriggerComponent>
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" MsgWhenDropped="ItemMsgPickupSelect" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench,deattachtool" excludeditems="multitool" type="Equipped" />
+    </Holdable>
+    <LightComponent canbeselected="false" lightcolor="255,0,0,0" alphablend="true" ison="true" castshadows="false" blinkfrequency="2.6" range="20"/>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="ГМ_проигрыватель с проводами (Пустыня (день), 15 метров)" identifier="gm_ambient_togglable_3" category="Misc" subcategory="MedievalGamemasterZones" cargocontaineridentifier="explosivecrate" tags="" scale="0.5" impactsoundtag="" hideinmenus="false">
+    <Sprite texture="Content/UI/CommandUIAtlas.png" sourcerect="0,0,128,128" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="70" density="20" />
+    <TriggerComponent triggeredby="Character" width="6000" height="3000" sensor="true" interval="2">
+      <IsActiveConditional ison="true" targetitemcomponent="LightComponent"/>
+      <StatusEffect type="OnUse" target="This" interval="1" duration="4">
+        <Conditional islocalplayer="true"/>
+        <sound file="%ModDir%/Sounds/Ambient_Environment/AMB_desert_day.ogg" type="OnActive" volume="0.5" stream="true" selectionmode="Manual" loop="true" />
+      </StatusEffect>
+    </TriggerComponent>
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" MsgWhenDropped="ItemMsgPickupSelect" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench,deattachtool" excludeditems="multitool" type="Equipped" />
+    </Holdable>
+    <LightComponent canbeselected="false" lightcolor="255,0,0,0" alphablend="true" ison="true" castshadows="false" blinkfrequency="2.6" range="20"/>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="ГМ_проигрыватель с проводами (Пустыня (ночь), 15 метров)" identifier="gm_ambient_togglable_3_1" category="Misc" subcategory="MedievalGamemasterZones" cargocontaineridentifier="explosivecrate" tags="" scale="0.5" impactsoundtag="" hideinmenus="false">
+    <Sprite texture="Content/UI/CommandUIAtlas.png" sourcerect="0,0,128,128" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="70" density="20" />
+    <TriggerComponent triggeredby="Character" width="6000" height="3000" sensor="true" interval="2">
+      <IsActiveConditional ison="true" targetitemcomponent="LightComponent"/>
+      <StatusEffect type="OnUse" target="This" interval="1" duration="4">
+        <Conditional islocalplayer="true"/>
+        <sound file="%ModDir%/Sounds/Ambient_Environment/AMB_desert_night.ogg" type="OnActive" volume="0.5" stream="true" selectionmode="Manual" loop="true" />
+      </StatusEffect>
+    </TriggerComponent>
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" MsgWhenDropped="ItemMsgPickupSelect" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench,deattachtool" excludeditems="multitool" type="Equipped" />
+    </Holdable>
+    <LightComponent canbeselected="false" lightcolor="255,0,0,0" alphablend="true" ison="true" castshadows="false" blinkfrequency="2.6" range="20"/>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="ГМ_проигрыватель с проводами (Болото (день), 15 метров)" identifier="gm_ambient_togglable_4" category="Misc" subcategory="MedievalGamemasterZones" cargocontaineridentifier="explosivecrate" tags="" scale="0.5" impactsoundtag="" hideinmenus="false">
+    <Sprite texture="Content/UI/CommandUIAtlas.png" sourcerect="0,0,128,128" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="70" density="20" />
+    <TriggerComponent triggeredby="Character" width="6000" height="3000" sensor="true" interval="2">
+      <IsActiveConditional ison="true" targetitemcomponent="LightComponent"/>
+      <StatusEffect type="OnUse" target="This" interval="1" duration="4">
+        <Conditional islocalplayer="true"/>
+        <sound file="%ModDir%/Sounds/Ambient_Environment/AMB_swamp_day.ogg" type="OnActive" volume="0.5" stream="true" selectionmode="Manual" loop="true" />
+      </StatusEffect>
+    </TriggerComponent>
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" MsgWhenDropped="ItemMsgPickupSelect" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench,deattachtool" excludeditems="multitool" type="Equipped" />
+    </Holdable>
+    <LightComponent canbeselected="false" lightcolor="255,0,0,0" alphablend="true" ison="true" castshadows="false" blinkfrequency="2.6" range="20"/>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="ГМ_проигрыватель с проводами (Болото (ночь), 15 метров)" identifier="gm_ambient_togglable_4_1" category="Misc" subcategory="MedievalGamemasterZones" cargocontaineridentifier="explosivecrate" tags="" scale="0.5" impactsoundtag="" hideinmenus="false">
+    <Sprite texture="Content/UI/CommandUIAtlas.png" sourcerect="0,0,128,128" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="70" density="20" />
+    <TriggerComponent triggeredby="Human" width="6000" height="3000" sensor="true" interval="2">
+      <IsActiveConditional ison="true" targetitemcomponent="LightComponent"/>
+      <StatusEffect type="OnUse" target="This" interval="1" duration="4">
+        <Conditional islocalplayer="true"/>
+        <sound file="%ModDir%/Sounds/Ambient_Environment/AMB_swamp_night.ogg" type="OnActive" volume="0.5" stream="true" selectionmode="Manual" loop="true" />
+      </StatusEffect>
+    </TriggerComponent>
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" MsgWhenDropped="ItemMsgPickupSelect" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench,deattachtool" excludeditems="multitool" type="Equipped" />
+    </Holdable>
+    <LightComponent canbeselected="false" lightcolor="255,0,0,0" alphablend="true" ison="true" castshadows="false" blinkfrequency="2.6" range="20"/>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="ГМ_проигрыватель с проводами (Город (день), 15 метров)" identifier="gm_ambient_togglable_6" category="Misc" subcategory="MedievalGamemasterZones" cargocontaineridentifier="explosivecrate" tags="" scale="0.5" impactsoundtag="" hideinmenus="false">
+    <Sprite texture="Content/UI/CommandUIAtlas.png" sourcerect="0,0,128,128" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="70" density="20" />
+    <TriggerComponent triggeredby="Character" width="6000" height="3000" sensor="true" interval="2">
+      <IsActiveConditional ison="true" targetitemcomponent="LightComponent"/>
+      <StatusEffect type="OnUse" target="This" interval="1" duration="4">
+        <Conditional islocalplayer="true"/>
+        <sound file="%ModDir%/Sounds/Ambient_Environment/AMB_city_day.ogg" type="OnActive" volume="0.65" stream="true" selectionmode="Manual" loop="true" />
+      </StatusEffect>
+    </TriggerComponent>
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" MsgWhenDropped="ItemMsgPickupSelect" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench,deattachtool" excludeditems="multitool" type="Equipped" />
+    </Holdable>
+    <LightComponent canbeselected="false" lightcolor="255,0,0,0" alphablend="true" ison="true" castshadows="false" blinkfrequency="2.6" range="20"/>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="ГМ_проигрыватель с проводами (Город (ночь), 15 метров)" identifier="gm_ambient_togglable_6_1" category="Misc" subcategory="MedievalGamemasterZones" cargocontaineridentifier="explosivecrate" tags="" scale="0.5" impactsoundtag="" hideinmenus="false">
+    <Sprite texture="Content/UI/CommandUIAtlas.png" sourcerect="0,0,128,128" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="70" density="20" />
+    <TriggerComponent triggeredby="Human" width="6000" height="3000" sensor="true" interval="2">
+      <IsActiveConditional ison="true" targetitemcomponent="LightComponent"/>
+      <StatusEffect type="OnUse" target="This" interval="1" duration="4">
+        <Conditional islocalplayer="true"/>
+        <sound file="%ModDir%/Sounds/Ambient_Environment/AMB_city_night.ogg" type="OnActive" volume="0.65" stream="true" selectionmode="Manual" loop="true" />
+      </StatusEffect>
+    </TriggerComponent>
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" MsgWhenDropped="ItemMsgPickupSelect" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench,deattachtool" excludeditems="multitool" type="Equipped" />
+    </Holdable>
+    <LightComponent canbeselected="false" lightcolor="255,0,0,0" alphablend="true" ison="true" castshadows="false" blinkfrequency="2.6" range="20"/>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="ГМ_проигрыватель с проводами (Большое помещение)" identifier="gm_ambient_togglable_5_1" category="Misc" subcategory="MedievalGamemasterZones" cargocontaineridentifier="explosivecrate" tags="" scale="0.5" impactsoundtag="" hideinmenus="false">
+    <Sprite texture="Content/UI/CommandUIAtlas.png" sourcerect="0,0,128,128" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="70" density="20" />
+    <TriggerComponent triggeredby="Human" width="6000" height="3000" sensor="true" interval="2">
+      <IsActiveConditional ison="true" targetitemcomponent="LightComponent"/>
+      <StatusEffect type="OnUse" target="This" interval="0.5" tags="indoors" duration="1">
+        <Conditional islocalplayer="true"/>
+        <sound file="%ModDir%/Sounds/Ambient_Environment/AMB_bigstructure.ogg" type="OnActive" volume="0.35" stream="true" selectionmode="Manual" loop="true" />
+      </StatusEffect>
+    </TriggerComponent>
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" MsgWhenDropped="ItemMsgPickupSelect" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench,deattachtool" excludeditems="multitool" type="Equipped" />
+    </Holdable>
+    <LightComponent canbeselected="false" lightcolor="255,0,0,0" alphablend="true" ison="true" castshadows="false" blinkfrequency="2.6" range="20"/>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="ГМ_атака холодом (Настраиваемое)" identifier="gm_coldzone_1" category="Misc" subcategory="MedievalGamemasterZones" cargocontaineridentifier="explosivecrate" tags="" scale="0.5" impactsoundtag="" hideinmenus="false">
+    <Sprite texture="%ModDir%/Medical/TEAffliction.png" sourcerect="0,806,128,128" depth="0.4" origin="0.5,0.5" />
+    <Body width="35" height="70" density="20" />
+    <TriggerComponent triggeredby="Human" width="6000" height="3000" sensor="true" interval="2">
+      <IsActiveConditional ison="true" targetitemcomponent="LightComponent"/>
+      <StatusEffect type="OnUse" target="This" interval="1" disabledeltatime="true">
+        <Affliction identifier="frostbite" strength="0.25" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This" interval="1" disabledeltatime="true">
+        <Conditional inwater="true"/>
+        <Affliction identifier="frostbite" strength="0.5" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This" interval="2" duration="3" tags="cold_biome" disabledeltatime="true"/>
+    </TriggerComponent>
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" MsgWhenDropped="ItemMsgPickupSelect" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench,deattachtool" excludeditems="multitool" type="Equipped" />
+    </Holdable>
+    <LightComponent canbeselected="false" lightcolor="255,0,0,0" alphablend="true" ison="true" castshadows="false" blinkfrequency="2.6" range="20"/>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="ГМ_атака холодом (Настраиваемое, среднее)" identifier="gm_coldzone_2" category="Misc" subcategory="MedievalGamemasterZones" cargocontaineridentifier="explosivecrate" tags="" scale="0.5" impactsoundtag="" hideinmenus="false">
+    <Sprite texture="%ModDir%/Medical/TEAffliction.png" sourcerect="0,806,128,128" depth="0.4" origin="0.5,0.5" />
+    <Body width="35" height="70" density="20" />
+    <TriggerComponent triggeredby="Human" width="6000" height="3000" sensor="true" interval="2">
+      <IsActiveConditional ison="true" targetitemcomponent="LightComponent"/>
+      <StatusEffect type="OnUse" target="This" interval="1" disabledeltatime="true">
+        <Affliction identifier="frostbite" strength="0.5" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This" interval="1" disabledeltatime="true">
+        <Conditional inwater="true"/>
+        <Affliction identifier="frostbite" strength="1" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This" interval="2" duration="3" tags="cold_biome" disabledeltatime="true"/>
+    </TriggerComponent>
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" MsgWhenDropped="ItemMsgPickupSelect" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench,deattachtool" excludeditems="multitool" type="Equipped" />
+    </Holdable>
+    <LightComponent canbeselected="false" lightcolor="255,0,0,0" alphablend="true" ison="true" castshadows="false" blinkfrequency="2.6" range="20"/>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="ГМ_атака холодом (Настраиваемое, сильное)" identifier="gm_coldzone_3" category="Misc" subcategory="MedievalGamemasterZones" cargocontaineridentifier="explosivecrate" tags="" scale="0.5" impactsoundtag="" hideinmenus="false">
+    <Sprite texture="%ModDir%/Medical/TEAffliction.png" sourcerect="0,806,128,128" depth="0.4" origin="0.5,0.5" />
+    <Body width="35" height="70" density="20" />
+    <TriggerComponent triggeredby="Human" width="6000" height="3000" sensor="true" interval="2">
+      <IsActiveConditional ison="true" targetitemcomponent="LightComponent"/>
+      <StatusEffect type="OnUse" target="This" interval="1" disabledeltatime="true">
+        <Affliction identifier="frostbite" strength="1.5" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This" interval="1" disabledeltatime="true">
+        <Conditional inwater="true"/>
+        <Affliction identifier="frostbite" strength="3" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This" interval="2" duration="3" tags="cold_biome" disabledeltatime="true"/>
+    </TriggerComponent>
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" MsgWhenDropped="ItemMsgPickupSelect" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench,deattachtool" excludeditems="multitool" type="Equipped" />
+    </Holdable>
+    <LightComponent canbeselected="false" lightcolor="255,0,0,0" alphablend="true" ison="true" castshadows="false" blinkfrequency="2.6" range="20"/>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="ГМ_петербург (Настраиваемое)" identifier="gm_rainzone" category="Misc" subcategory="MedievalGamemasterZones" cargocontaineridentifier="explosivecrate" tags="" scale="0.5" impactsoundtag="" hideinmenus="false">
+    <Sprite texture="%ModDir%/Medical/TEAffliction.png" sourcerect="0,806,128,128" depth="0.4" origin="0.5,0.5" />
+    <Body width="35" height="70" density="20" />
+    <TriggerComponent triggeredby="Human" width="6000" height="3000" sensor="true" interval="2">
+      <IsActiveConditional ison="true" targetitemcomponent="LightComponent"/>
+      <StatusEffect type="OnUse" target="This" interval="1" disabledeltatime="true">
+        <Conditional rainaffliction="lt 4"/>
+        <Affliction identifier="rainaffliction" strength="4" />
+      </StatusEffect>
+    </TriggerComponent>
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" MsgWhenDropped="ItemMsgPickupSelect" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench,deattachtool" excludeditems="multitool" type="Equipped" />
+    </Holdable>
+    <LightComponent canbeselected="false" lightcolor="255,0,0,0" alphablend="true" ison="true" castshadows="false" blinkfrequency="2.6" range="20"/>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="ГМ_безопасная зона (Настраиваемое)" identifier="gm_safezone" category="Misc" subcategory="MedievalGamemasterZones" cargocontaineridentifier="explosivecrate" tags="friendlyguardzone" scale="0.5" impactsoundtag="" hideinmenus="false">
+    <Sprite texture="Content/UI/CommandUIAtlas.png" sourcerect="0,0,128,128" depth="0.4" origin="0.5,0.5" />
+    <Body width="35" height="70" density="20" />
+    <TriggerComponent triggeredby="Human" width="6000" height="3000" sensor="true" interval="2">
+      <IsActiveConditional ison="true" targetitemcomponent="LightComponent"/>
+      <StatusEffect type="OnUse" target="This" interval="1" disabledeltatime="true" setvalue="true">
+        <Affliction identifier="safezone_affliction" strength="5" />
+      </StatusEffect>
+    </TriggerComponent>
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" MsgWhenDropped="ItemMsgPickupSelect" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench,deattachtool" excludeditems="multitool" type="Equipped" />
+    </Holdable>
+    <LightComponent canbeselected="false" lightcolor="255,0,0,0" alphablend="true" ison="true" castshadows="false" blinkfrequency="2.6" range="20"/>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+    <AiTarget sightrange="20000" soundrange="10000" static="true" />
+  </Item>
+  <Item name="ГМ_PvE зона (Настраиваемое)" identifier="gm_pvezone" category="Misc" subcategory="MedievalGamemasterZones" cargocontaineridentifier="explosivecrate" tags="" scale="0.5" impactsoundtag="" hideinmenus="false">
+    <Sprite texture="Content/UI/CommandUIAtlas.png" sourcerect="0,0,128,128" depth="0.4" origin="0.5,0.5" />
+    <Body width="35" height="70" density="20" />
+    <TriggerComponent triggeredby="Human" width="6000" height="3000" sensor="true" interval="2">
+      <IsActiveConditional ison="true" targetitemcomponent="LightComponent"/>
+      <StatusEffect type="OnUse" target="This" interval="1" disabledeltatime="true" setvalue="true">
+        <Affliction identifier="pvezone_affliction" strength="5" />
+      </StatusEffect>
+    </TriggerComponent>
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" MsgWhenDropped="ItemMsgPickupSelect" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench,deattachtool" excludeditems="multitool" type="Equipped" />
+    </Holdable>
+    <LightComponent canbeselected="false" lightcolor="255,0,0,0" alphablend="true" ison="true" castshadows="false" blinkfrequency="2.6" range="20"/>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="ГМ_Киллзона (Настраиваемое)" identifier="gm_killzone" category="Misc" subcategory="MedievalGamemasterZones" cargocontaineridentifier="explosivecrate" tags="" scale="0.5" impactsoundtag="" hideinmenus="false" spritecolor="255,0,0,255">
+    <Sprite texture="Content/UI/CommandUIAtlas.png" sourcerect="0,0,128,128" depth="0.4" origin="0.5,0.5" />
+    <Body width="35" height="70" density="20" />
+    <TriggerComponent triggeredby="Human" width="2000" height="2000" sensor="true" interval="2">
+      <IsActiveConditional ison="true" targetitemcomponent="LightComponent"/>
+      <StatusEffect type="OnUse" target="This" interval="3" disabledeltatime="true" comparison="and" delay="0.25">
+        <Conditional hasspecifiertag="male" />
+        <Conditional isdead="eq false" />
+        <sound file="%ModDir%/Sounds/torture_male-01.ogg" range="2700.0" selectionmode="random" />
+        <sound file="%ModDir%/Sounds/torture_male-02.ogg" range="2700.0" selectionmode="random" />
+        <sound file="%ModDir%/Sounds/torture_male-03.ogg" range="2700.0" selectionmode="random" />
+        <sound file="%ModDir%/Sounds/torture_male-04.ogg" range="2700.0" selectionmode="random" />
+        <Affliction identifier="internaldamage" strength="50" penetration="1"/>
+        <Affliction identifier="critical_defence" strength="360" penetration="1"/>
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This" interval="3" disabledeltatime="true" comparison="and" delay="0.25">
+        <Conditional hasspecifiertag="female" />
+        <Conditional isdead="eq false" />
+        <sound file="%ModDir%/Sounds/torture-female-01.ogg" range="2700.0" selectionmode="random" />
+        <sound file="%ModDir%/Sounds/torture-female-02.ogg" range="2700.0" selectionmode="random" />
+        <sound file="%ModDir%/Sounds/torture-female-03.ogg" range="2700.0" selectionmode="random" />
+        <sound file="%ModDir%/Sounds/torture-female-04.ogg" range="2700.0" selectionmode="random" />
+        <Affliction identifier="internaldamage" strength="50" penetration="1"/>
+        <Affliction identifier="critical_defence" strength="360" penetration="1"/>
+      </StatusEffect>
+    </TriggerComponent>
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" MsgWhenDropped="ItemMsgPickupSelect" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench,deattachtool" excludeditems="multitool" type="Equipped" />
+    </Holdable>
+    <LightComponent canbeselected="false" lightcolor="255,0,0,0" alphablend="true" ison="true" castshadows="false" blinkfrequency="2.6" range="20"/>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="ГМ_Киллзона на монстров (Настраиваемое)" identifier="gm_killzone_mobs" category="Misc" subcategory="MedievalGamemasterZones" cargocontaineridentifier="explosivecrate" tags="" scale="0.5" impactsoundtag="" hideinmenus="false" spritecolor="255,0,0,255">
+    <Sprite texture="Content/UI/CommandUIAtlas.png" sourcerect="0,0,128,128" depth="0.4" origin="0.5,0.5" />
+    <Body width="35" height="70" density="20" />
+    <TriggerComponent triggeredby="Creature" width="2000" height="2000" sensor="true" interval="2">
+      <IsActiveConditional ison="true" targetitemcomponent="LightComponent"/>
+      <StatusEffect type="OnUse" target="This" interval="1" disabledeltatime="true" delay="0.25">
+        <RemoveCharacter/>
+      </StatusEffect>
+    </TriggerComponent>
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" MsgWhenDropped="ItemMsgPickupSelect" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench,deattachtool" excludeditems="multitool" type="Equipped" />
+    </Holdable>
+    <LightComponent canbeselected="false" lightcolor="255,0,0,0" alphablend="true" ison="true" castshadows="false" blinkfrequency="2.6" range="20"/>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="ГМ_Киллзона на предметы (Настраиваемое)" identifier="gm_killzone_items" category="Misc" subcategory="MedievalGamemasterZones" cargocontaineridentifier="explosivecrate" tags="" scale="0.5" impactsoundtag="" hideinmenus="false" spritecolor="255,0,0,255">
+    <Sprite texture="Content/UI/CommandUIAtlas.png" sourcerect="0,0,128,128" depth="0.4" origin="0.5,0.5" />
+    <Body width="35" height="70" density="20" />
+    <TriggerComponent triggeredby="Item" width="2000" height="2000" sensor="true" interval="2">
+      <IsActiveConditional ison="true" targetitemcomponent="LightComponent"/>
+      <StatusEffect type="OnUse" target="This" interval="1" disabledeltatime="true" comparison="and">
+        <Conditional IsContained="false"/>
+        <Conditional attached="false"/>
+        <Conditional isactive="false"/>
+        <Conditional hastag="neq plant"/>
+        <Conditional hastag="neq treeitem"/>
+        <Conditional hastag="neq door"/>
+        <Conditional hastag="neq artefact"/>
+        <Conditional hastag="neq krisatarget"/>
+        <Conditional pickingtime="lte 0"/>
+        <Conditional physicsbodyactive="true"/>
+        <RemoveItem/>
+      </StatusEffect>
+    </TriggerComponent>
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" MsgWhenDropped="ItemMsgPickupSelect" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench,deattachtool" excludeditems="multitool" type="Equipped" />
+    </Holdable>
+    <LightComponent canbeselected="false" lightcolor="255,0,0,0" alphablend="true" ison="false" castshadows="false" blinkfrequency="2.6" range="20"/>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="ГМ_Спавнер кабанов" identifier="gm_kabanspawner" category="Misc" subcategory="MedievalGamemasterZones" cargocontaineridentifier="explosivecrate" tags="" scale="0.5" impactsoundtag="" hideinmenus="false" spritecolor="255,0,0,255">
+    <Sprite texture="Content/UI/MainIconsAtlas.png" sourcerect="384,0,128,128" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="70" density="20" />
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" MsgWhenDropped="ItemMsgPickupSelect" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench,deattachtool" excludeditems="multitool" type="Equipped" />
+    </Holdable>
+    <LightComponent canbeselected="false" lightcolor="255,0,0,0" alphablend="true" ison="false" castshadows="false" blinkfrequency="2.6" range="20">
+      <StatusEffect type="OnSpawn" target="This" eventtargettag="boar_spawner">
+        <TriggerEvent identifier="boar_spawner_cycle" />
+      </StatusEffect>
+    </LightComponent>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="ГМ_Спавнер скелетов" identifier="gm_skeletonspawner" category="Misc" subcategory="MedievalGamemasterZones" cargocontaineridentifier="explosivecrate" tags="" scale="0.5" impactsoundtag="" hideinmenus="false" spritecolor="255,0,0,255">
+    <Sprite texture="Content/UI/MainIconsAtlas.png" sourcerect="384,0,128,128" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="70" density="20" />
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" MsgWhenDropped="ItemMsgPickupSelect" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench,deattachtool" excludeditems="multitool" type="Equipped" />
+    </Holdable>
+    <LightComponent canbeselected="false" lightcolor="255,0,0,0" alphablend="true" ison="false" castshadows="false" blinkfrequency="2.6" range="20">
+      <StatusEffect type="OnSpawn" target="This" eventtargettag="skeleton_spawner">
+        <TriggerEvent identifier="skeleton_spawner_cycle" />
+      </StatusEffect>
+    </LightComponent>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="ГМ_Спавнер волков" identifier="gm_wolfspawner" category="Misc" subcategory="MedievalGamemasterZones" cargocontaineridentifier="explosivecrate" tags="" scale="0.5" impactsoundtag="" hideinmenus="false" spritecolor="255,0,0,255">
+    <Sprite texture="Content/UI/MainIconsAtlas.png" sourcerect="384,0,128,128" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="70" density="20" />
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" MsgWhenDropped="ItemMsgPickupSelect" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench,deattachtool" excludeditems="multitool" type="Equipped" />
+    </Holdable>
+    <LightComponent canbeselected="false" lightcolor="255,0,0,0" alphablend="true" ison="false" castshadows="false" blinkfrequency="2.6" range="20">
+      <StatusEffect type="OnSpawn" target="This" eventtargettag="wolf_spawner">
+        <TriggerEvent identifier="wolf_spawner_cycle" />
+      </StatusEffect>
+    </LightComponent>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+  </Item>
+  <Item name="ГМ_Заспавнить рандомно денег древние" identifier="moneyiteminstanterc" category="Misc" subcategory="MedievalGamemaster" maxstacksize="8" cargocontaineridentifier="chemicalcrate" Tags="smallitem,money" useinhealthinterface="true" scale="0.5" RequireAimToUse="True" HitOnlyCharacters="true" hideinmenus="false">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Sprite texture="Content/UI/MainIconsAtlas.png" sourcerect="384,0,128,128" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="70" density="20" />
+    <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="Always" target="This" spawnItemRandomly="true" interval="0.15" delay="0.1">
+        <SpawnItem identifier="meleegm" spawnposition="This" count="1" spread="0" />
+        <SpawnItem identifier="meleegm" spawnposition="This" count="1" spread="0" />
+        <SpawnItem identifier="coin_old" spawnposition="SameInventory" count="1" spread="0" />
+        <SpawnItem identifier="coin_old" spawnposition="SameInventory" count="1" spread="0" />
+        <SpawnItem identifier="coin_old" spawnposition="SameInventory" count="1" spread="0" />
+        <SpawnItem identifier="coin_old" spawnposition="SameInventory" count="1" spread="0" />
+        <SpawnItem identifier="coin_old" spawnposition="SameInventory" count="1" spread="0" />
+        <SpawnItem identifier="coin_old" spawnposition="SameInventory" count="1" spread="0" />
+        <SpawnItem identifier="coin_old" spawnposition="SameInventory" count="1" spread="0" />
+        <SpawnItem identifier="coin_old" spawnposition="SameInventory" count="1" spread="0" />
+        <SpawnItem identifier="coin_old" spawnposition="SameInventory" count="1" spread="0" />
+        <SpawnItem identifier="coin_old" spawnposition="SameInventory" count="2" spread="0" />
+        <SpawnItem identifier="coin_old" spawnposition="SameInventory" count="2" spread="0" />
+        <SpawnItem identifier="coin_old" spawnposition="SameInventory" count="2" spread="0" />
+        <SpawnItem identifier="coin_old" spawnposition="SameInventory" count="3" spread="0" />
+        <SpawnItem identifier="coin_old" spawnposition="SameInventory" count="3" spread="0" />
+        <SpawnItem identifier="coin_old" spawnposition="SameInventory" count="4" spread="0" />
+        <SpawnItem identifier="talisman_broken_copper" spawnposition="SameInventory" count="1" spread="0" />
+        <SpawnItem identifier="talisman_broken_copper" spawnposition="SameInventory" count="1" spread="0" />
+        <SpawnItem identifier="talisman_broken_copper" spawnposition="SameInventory" count="1" spread="0" />
+      </StatusEffect>
+      <StatusEffect type="Always" target="This" delay="0.36">
+        <RemoveItem />
+      </StatusEffect>
+    </MeleeWeapon>
+  </Item>
+  <Item name="ГМ_Заспавнить шмот искаженным" identifier="riftwarrioriteminstanterc" category="Misc" subcategory="MedievalGamemaster" maxstacksize="8" cargocontaineridentifier="chemicalcrate" Tags="smallitem,money" useinhealthinterface="true" scale="0.5" RequireAimToUse="True" HitOnlyCharacters="true" hideinmenus="false">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Sprite texture="Content/UI/MainIconsAtlas.png" sourcerect="384,0,128,128" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="70" density="20" />
+    <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="Always" target="This" spawnItemRandomly="true" interval="2" delay="0.1">
+        <SpawnItem identifier="meleegm" spawnposition="This" count="1" spread="0" />
+        <SpawnItem identifier="meleegm" spawnposition="This" count="1" spread="0" />
+        <SpawnItem identifier="meleegm" spawnposition="This" count="1" spread="0" />
+        <SpawnItem identifier="potion_npc_2_2" spawnposition="SameInventory" count="1" spread="0" />
+        <SpawnItem identifier="potion_npc_3_2" spawnposition="SameInventory" count="1" spread="0" />
+        <SpawnItem identifier="horn_evilwarrior_2" spawnposition="SameInventory" count="1" spread="0" />
+      </StatusEffect>
+      <StatusEffect type="Always" target="This" spawnItemRandomly="true" interval="2" delay="0.15">
+        <SpawnItem identifier="moneyiteminstanterc" spawnposition="SameInventory" count="1" spread="0" />
+      </StatusEffect>
+      <StatusEffect type="Always" target="This" delay="0.36">
+        <RemoveItem />
+      </StatusEffect>
+    </MeleeWeapon>
+  </Item>
+  <Item name="ГМ_Заспавнить мясо" identifier="meatiteminstanterc" category="Misc" subcategory="MedievalGamemaster" maxstacksize="8" cargocontaineridentifier="chemicalcrate" Tags="smallitem,money" useinhealthinterface="true" scale="0.5" RequireAimToUse="True" HitOnlyCharacters="true" hideinmenus="false">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Sprite texture="Content/UI/MainIconsAtlas.png" sourcerect="384,0,128,128" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="70" density="20" />
+    <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="Always" target="This" comparison="and" spawnItemRandomly="true" interval="1">
+        <SpawnItem identifier="monstermeat_erc" spawnposition="SameInventory" count="1" spread="0" />
+        <RemoveItem />
+      </StatusEffect>
+    </MeleeWeapon>
+  </Item>
+  <Item name="ГМ_Заспавнить мясо жаренное" identifier="meatiteminstant_burn_erc" category="Misc" subcategory="MedievalGamemaster" maxstacksize="8" cargocontaineridentifier="chemicalcrate" Tags="smallitem,money" useinhealthinterface="true" scale="0.5" RequireAimToUse="True" HitOnlyCharacters="true" hideinmenus="false">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Sprite texture="Content/UI/MainIconsAtlas.png" sourcerect="384,0,128,128" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="70" density="20" />
+    <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="Always" target="This" comparison="and" spawnItemRandomly="true" interval="1">
+        <SpawnItem identifier="monstermeat3_erc" spawnposition="SameInventory" count="1" spread="0" />
+        <RemoveItem />
+      </StatusEffect>
+    </MeleeWeapon>
+  </Item>
+  <Item name="ГМ_покрасить одежду древнего" identifier="gmpainter" category="Misc" subcategory="MedievalGamemaster" maxstacksize="8" cargocontaineridentifier="chemicalcrate" Tags="smallitem,gm_paint" useinhealthinterface="true" scale="0.5" RequireAimToUse="True" HitOnlyCharacters="true" hideinmenus="false">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Sprite texture="Content/UI/MainIconsAtlas.png" sourcerect="384,0,128,128" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="70" density="20" />
+    <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="Always" target="This" spawnItemRandomly="true" interval="1">
+        <SpawnItem identifier="gmpainter_red" spawnposition="SameInventory" count="1" spread="0" />
+        <SpawnItem identifier="gmpainter_blue" spawnposition="SameInventory" count="1" spread="0" />
+        <SpawnItem identifier="gmpainter_green" spawnposition="SameInventory" count="1" spread="0" />
+        <SpawnItem identifier="gmpainter_yellow" spawnposition="SameInventory" count="1" spread="0" />
+        <SpawnItem identifier="gmpainter_black" spawnposition="SameInventory" count="1" spread="0" />
+        <SpawnItem identifier="meleegm" spawnposition="This" count="1" spread="0" />
+        <SpawnItem identifier="meleegm" spawnposition="This" count="1" spread="0" />
+        <SpawnItem identifier="meleegm" spawnposition="This" count="1" spread="0" />
+      </StatusEffect>
+      <StatusEffect type="Always" target="This" delay="0.1">
+        <RemoveItem />
+      </StatusEffect>
+    </MeleeWeapon>
+  </Item>
+  <Item name="ГМ_краска(Красная)" identifier="gmpainter_red" category="Misc" subcategory="MedievalGamemaster" maxstacksize="8" cargocontaineridentifier="chemicalcrate" Tags="smallitem,gm_paint" useinhealthinterface="true" scale="0.5" RequireAimToUse="True" HitOnlyCharacters="true" hideinmenus="false">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Sprite texture="Content/UI/MainIconsAtlas.png" sourcerect="384,0,128,128" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="70" density="20" />
+    <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="Always" target="Parent" spritecolor="175,95,95,255" inventoryiconcolor="175,95,95,255" interval="1" setvalue="true"></StatusEffect>
+      <StatusEffect type="Always" target="This" delay="0.1">
+        <RemoveItem />
+      </StatusEffect>
+    </MeleeWeapon>
+  </Item>
+  <Item name="ГМ_краска(Синяя)" identifier="gmpainter_blue" category="Misc" subcategory="MedievalGamemaster" maxstacksize="8" cargocontaineridentifier="chemicalcrate" Tags="smallitem,gm_paint" useinhealthinterface="true" scale="0.5" RequireAimToUse="True" HitOnlyCharacters="true" hideinmenus="false">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Sprite texture="Content/UI/MainIconsAtlas.png" sourcerect="384,0,128,128" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="70" density="20" />
+    <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="Always" target="Parent" spritecolor="95,141,185,255" inventoryiconcolor="95,141,185,255" interval="1" setvalue="true"></StatusEffect>
+      <StatusEffect type="Always" target="This" delay="0.1">
+        <RemoveItem />
+      </StatusEffect>
+    </MeleeWeapon>
+  </Item>
+  <Item name="ГМ_краска(Зеленая)" identifier="gmpainter_green" category="Misc" subcategory="MedievalGamemaster" maxstacksize="8" cargocontaineridentifier="chemicalcrate" Tags="smallitem,gm_paint" useinhealthinterface="true" scale="0.5" RequireAimToUse="True" HitOnlyCharacters="true" hideinmenus="false">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Sprite texture="Content/UI/MainIconsAtlas.png" sourcerect="384,0,128,128" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="70" density="20" />
+    <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="Always" target="Parent" spritecolor="126,179,90,255" inventoryiconcolor="126,179,90,255" interval="1" setvalue="true"></StatusEffect>
+      <StatusEffect type="Always" target="This" delay="0.1">
+        <RemoveItem />
+      </StatusEffect>
+    </MeleeWeapon>
+  </Item>
+  <Item name="ГМ_краска(Желтая)" identifier="gmpainter_yellow" category="Misc" subcategory="MedievalGamemaster" maxstacksize="8" cargocontaineridentifier="chemicalcrate" Tags="smallitem,gm_paint" useinhealthinterface="true" scale="0.5" RequireAimToUse="True" HitOnlyCharacters="true" hideinmenus="false">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Sprite texture="Content/UI/MainIconsAtlas.png" sourcerect="384,0,128,128" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="70" density="20" />
+    <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="Always" target="Parent" spritecolor="188,166,68,255" inventoryiconcolor="188,166,88,255" interval="1" setvalue="true"></StatusEffect>
+      <StatusEffect type="Always" target="This" delay="0.1">
+        <RemoveItem />
+      </StatusEffect>
+    </MeleeWeapon>
+  </Item>
+  <Item name="ГМ_краска(Черная)" identifier="gmpainter_black" category="Misc" subcategory="MedievalGamemaster" maxstacksize="8" cargocontaineridentifier="chemicalcrate" Tags="smallitem,gm_paint" useinhealthinterface="true" scale="0.5" RequireAimToUse="True" HitOnlyCharacters="true" hideinmenus="false">
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+    <Sprite texture="Content/UI/MainIconsAtlas.png" sourcerect="384,0,128,128" depth="0.6" origin="0.5,0.5" />
+    <Body width="35" height="70" density="20" />
+    <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="Always" target="Parent" spritecolor="110,110,110,255" inventoryiconcolor="110,110,110,255" interval="1" setvalue="true"></StatusEffect>
+      <StatusEffect type="Always" target="This" delay="0.1">
+        <RemoveItem />
+      </StatusEffect>
+    </MeleeWeapon>
+  </Item>
+  <Item name="ГМ_кулаки" identifier="meleegm" description="БАРОТРАВМА ДАЛИ РУКОПАШНЫЙ БОЙ" category="Misc" subcategory="MedievalGamemaster" Tags="unique" cargocontaineridentifier="metalcrate" Scale="0.1" impactsoundtag="impact_metal_light" RequireAimToUse="True" spritecolor="0,0,0,0" hideinmenus="false">
+    <Sprite texture="Content/Map/Outposts/Art/GenericAssets2.png" sourcerect="1859,23,188,201" depth="0.55" spritecolor="0,0,0,0" scale="0.1" origin="0.5,0.5" />
+    <Body width="60" height="12" density="50" />
+    <MeleeWeapon slots="RightHand,LeftHand" aimpos="40,-10" handle1="0,0" holdangle="60" reload="0.9" range="50" combatpriority="5" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnNotContained" targettype="This">
+        <RemoveItem />
+      </StatusEffect>
+      <Attack structuredamage="0" itemdamage="0" targetimpulse="2">
+        <Affliction identifier="blunttrauma" strength="2.5" />
+        <Affliction identifier="incrementalstun" strength="6" />
+        <Affliction identifier="incrementalstun" strength="5" probability="0.3" />
+        <Affliction identifier="stun" strength="0.15" />
+        <Sound file="Content/Items/Weapons/Smack1.ogg" range="500" selectionmode="Random" />
+        <Sound file="Content/Sounds/Impact/SoftImpact1.ogg" range="500" />
+        <Sound file="Content/Sounds/Impact/SoftImpact2.ogg" range="500" />
+        <Sound file="Content/Sounds/Impact/SoftImpact3.ogg" range="500" />
+      </Attack>
+    </MeleeWeapon>
+  </Item>
+  <Override>
+    <Item name="ГМ_Эмиттер пламени 10сек" identifier="firepvpemittererc" category="Misc" subcategory="MedievalGamemaster" Scale="1" tags="gas,fireemitter" sonarsize="0" hideinmenus="false" depth="0.1" isdangerous="true" noninteractable="true">
+      <!--Use this for debugging: sourcerect="185,159,41,17"-->
+      <InventoryIcon texture="Content/UI/MainIconsAtlas.png" sourcerect="768,640,128,128" origin="0.5,0.5" />
+      <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+      <!--Needs a body or doesn't stay inside the sub.-->
+      <Body width="38" height="15" density="10" />
+      <LightComponent LightColor="255,100,50,245" Flicker="0.5" range="800" powerconsumption="0" IsOn="True" VulnerableToEMP="false" canbeselected="false" allowingameediting="false">
+        <StatusEffect type="OnActive" targettype="NearbyItems" targettags="flammable" tags="firesource_nearby" range="150" duration="0.5" stackable="false" setvalue="true" interval="1" />
+      </LightComponent>
+      <ItemComponent>
+        <StatusEffect type="InWater" target="This">
+          <Remove />
+        </StatusEffect>
+        <StatusEffect target="Hull,This" disabledeltatime="true" interval="1" setvalue="true">
+          <Conditional OxygenPercentage="lte 10" />
+          <ParticleEmitter particle="MistSmoke" copyentityangle="true" velocitymin="00" velocitymax="80" particleamount="15" scalemin="1" scalemax="2.5" />
+          <Remove />
+        </StatusEffect>
+        <StatusEffect type="Always" target="This" interval="0.3" disabledeltatime="true">
+          <Explosion range="320.0" itemdamage="4" force="0" disablefireeffects="false" sparks="false" shockwave="false" camerashake="0.0" playtinnitus="false" flash="false">
+            <Affliction identifier="onfireerc" strength="30" />
+            <Affliction identifier="burn" strength="3" />
+          </Explosion>
+        </StatusEffect>
+        <StatusEffect type="Always" target="This" soundselectionmode="All">
+          <ParticleEmitter particle="flame" anglemax="360" velocitymin="20" velocitymax="200" particlespersecond="16" />
+          <Sound file="Content/Sounds/FireMedium.ogg" type="Always" volume="0.8" range="1000" forceplaysounds="true" loop="true" />
+        </StatusEffect>
+        <StatusEffect type="Always" target="This" interval="1" condition="-10" disabledeltatime="true" />
+        <StatusEffect type="OnBroken" target="This">
+          <RemoveItem />
+        </StatusEffect>
+      </ItemComponent>
+      <AiTarget sightrange="1000" soundrange="1000" static="true" />
+    </Item>
+    <Item name="ГМ_Эмиттер пламени 40сек" identifier="firepvpemitterlongerc" category="Misc" subcategory="MedievalGamemaster" Scale="1" tags="gas,fireemitter" sonarsize="0" hideinmenus="false" depth="0.1" isdangerous="true" noninteractable="true">
+      <!--Use this for debugging: sourcerect="185,159,41,17"-->
+      <InventoryIcon texture="Content/UI/MainIconsAtlas.png" sourcerect="768,640,128,128" origin="0.5,0.5" />
+      <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+      <!--Needs a body or doesn't stay inside the sub.-->
+      <Body width="38" height="15" density="10" />
+      <LightComponent LightColor="255,100,50,245" Flicker="0.5" range="800" powerconsumption="0" IsOn="True" VulnerableToEMP="false" canbeselected="false" allowingameediting="false">
+        <StatusEffect type="OnActive" targettype="NearbyItems" targettags="flammable" tags="firesource_nearby" range="150" duration="0.5" stackable="false" setvalue="true" interval="1" />
+      </LightComponent>
+      <ItemComponent>
+        <StatusEffect type="InWater" target="This">
+          <Remove />
+        </StatusEffect>
+        <StatusEffect type="Always" target="This" interval="0.4" disabledeltatime="true">
+          <Explosion range="300.0" itemdamage="3" force="0" disablefireeffects="false" sparks="false" shockwave="false" camerashake="0.0" playtinnitus="false" flash="false">
+            <Affliction identifier="onfireerc" strength="30" />
+            <Affliction identifier="burn" strength="3" />
+          </Explosion>
+        </StatusEffect>
+        <StatusEffect type="Always" target="This" soundselectionmode="All">
+          <ParticleEmitter particle="flame" anglemax="360" velocitymin="20" velocitymax="200" particlespersecond="16" />
+          <ParticleEmitter particle="raskumar_cloud" particlespersecond="3" anglemin="85" anglemax="95" distancemin="10" distancemax="40" velocitymin="150" velocitymax="250" scalemin="0.7" scalemax="1.3" colormultiplier="0,0,0,165" />
+          <Sound file="Content/Sounds/FireLarge.ogg" type="Always" volume="0.9" range="1800" forceplaysounds="true" loop="true" />
+        </StatusEffect>
+        <StatusEffect type="Always" target="This" interval="1" condition="-2.5" disabledeltatime="true" />
+        <StatusEffect type="OnBroken" target="This">
+          <SpawnItem identifier="firepvpemitter_littlelong_erc" spawnposition="SameInventory" count="1" SpawnRotationType="None" spread="50" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+          <RemoveItem />
+        </StatusEffect>
+      </ItemComponent>
+      <AiTarget sightrange="1000" soundrange="1000" static="true" />
+    </Item>
+    <Item name="ГМ_Эмиттер пламени 5сек" identifier="firepvpemitter_little_erc" category="Misc" subcategory="MedievalGamemaster" Scale="1" tags="gas,fireemitter" sonarsize="0" hideinmenus="false" depth="0.1" isdangerous="true" noninteractable="true">
+      <!--Use this for debugging: sourcerect="185,159,41,17"-->
+      <InventoryIcon texture="Content/UI/MainIconsAtlas.png" sourcerect="768,640,128,128" origin="0.5,0.5" />
+      <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+      <!--Needs a body or doesn't stay inside the sub.-->
+      <Body width="38" height="15" density="10" />
+      <LightComponent LightColor="255,100,50,225" Flicker="0.4" range="500" powerconsumption="0" IsOn="True" VulnerableToEMP="false" canbeselected="false" allowingameediting="false">
+        <StatusEffect type="OnActive" targettype="NearbyItems" targettags="flammable" tags="firesource_nearby" range="100" duration="0.5" stackable="false" setvalue="true" interval="1" />
+      </LightComponent>
+      <ItemComponent>
+        <StatusEffect type="InWater" target="This">
+          <Remove />
+        </StatusEffect>
+        <StatusEffect target="Hull,This" disabledeltatime="true" interval="1" setvalue="true">
+          <Conditional OxygenPercentage="lte 10" />
+          <ParticleEmitter particle="MistSmoke" copyentityangle="true" velocitymin="00" velocitymax="80" particleamount="15" scalemin="1" scalemax="2.5" />
+          <Remove />
+        </StatusEffect>
+        <StatusEffect type="Always" target="This" interval="0.3" disabledeltatime="true">
+          <Explosion range="150.0" itemdamage="2" force="0" disablefireeffects="false" sparks="false" shockwave="false" camerashake="0.0" playtinnitus="false" flash="false">
+            <Affliction identifier="onfireerc" strength="18" />
+            <Affliction identifier="burn" strength="2" />
+          </Explosion>
+        </StatusEffect>
+        <StatusEffect type="Always" target="This" soundselectionmode="All">
+          <ParticleEmitter particle="flame" anglemax="360" velocitymin="20" velocitymax="200" particlespersecond="16" scalemin="0.2" scalemax="0.45" />
+          <Sound file="Content/Sounds/FireMedium.ogg" type="Always" volume="0.6" range="1000" forceplaysounds="true" loop="true" />
+        </StatusEffect>
+        <StatusEffect type="Always" target="This" interval="1" condition="-20" disabledeltatime="true" />
+        <StatusEffect type="OnBroken" target="This">
+          <RemoveItem />
+        </StatusEffect>
+      </ItemComponent>
+      <AiTarget sightrange="1000" soundrange="1000" static="true" />
+    </Item>
+    <Item name="ГМ_Эмиттер пламени 20сек мелкий" identifier="firepvpemitter_littlelong_erc" category="Misc" subcategory="MedievalGamemaster" Scale="1" tags="gas,fireemitter" sonarsize="0" hideinmenus="false" depth="0.1" isdangerous="true" noninteractable="true">
+      <!--Use this for debugging: sourcerect="185,159,41,17"-->
+      <InventoryIcon texture="Content/UI/MainIconsAtlas.png" sourcerect="768,640,128,128" origin="0.5,0.5" />
+      <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+      <!--Needs a body or doesn't stay inside the sub.-->
+      <Body width="38" height="15" density="10" />
+      <LightComponent LightColor="255,100,50,225" Flicker="0.4" range="500" powerconsumption="0" IsOn="True" VulnerableToEMP="false" canbeselected="false" allowingameediting="false">
+        <StatusEffect type="OnActive" targettype="NearbyItems" targettags="flammable" tags="firesource_nearby" range="100" duration="0.5" stackable="false" setvalue="true" interval="1" />
+      </LightComponent>
+      <ItemComponent>
+        <StatusEffect type="InWater" target="This">
+          <Remove />
+        </StatusEffect>
+        <StatusEffect target="Hull,This" disabledeltatime="true" interval="1" setvalue="true">
+          <Conditional OxygenPercentage="lte 10" />
+          <ParticleEmitter particle="MistSmoke" copyentityangle="true" velocitymin="00" velocitymax="80" particleamount="15" scalemin="1" scalemax="2.5" />
+          <Remove />
+        </StatusEffect>
+        <StatusEffect type="Always" target="This" interval="0.3" disabledeltatime="true">
+          <Explosion range="150.0" itemdamage="2" force="0" disablefireeffects="false" sparks="false" shockwave="false" camerashake="0.0" playtinnitus="false" flash="false">
+            <Affliction identifier="onfireerc" strength="18" />
+            <Affliction identifier="burn" strength="2" />
+          </Explosion>
+        </StatusEffect>
+        <StatusEffect type="Always" target="This" soundselectionmode="All">
+          <ParticleEmitter particle="flame" anglemax="360" velocitymin="20" velocitymax="100" particlespersecond="16" scalemin="0.2" scalemax="0.45" />
+          <Sound file="Content/Sounds/FireMedium.ogg" type="Always" volume="0.6" range="1000" forceplaysounds="true" loop="true" />
+        </StatusEffect>
+        <StatusEffect type="Always" target="This" interval="1" condition="-5" disabledeltatime="true" />
+        <StatusEffect type="OnBroken" target="This">
+          <RemoveItem />
+        </StatusEffect>
+      </ItemComponent>
+      <AiTarget sightrange="1000" soundrange="1000" static="true" />
+    </Item>
+    <Item name="ГМ_Эмиттер дыма" identifier="smokeemitter_erc" category="Misc" subcategory="MedievalGamemaster" Scale="1" tags="gas,fireemitter" sonarsize="0" hideinmenus="false" depth="0.1" noninteractable="true">
+      <!--Use this for debugging: sourcerect="185,159,41,17"-->
+      <InventoryIcon texture="Content/UI/MainIconsAtlas.png" sourcerect="768,640,128,128" origin="0.5,0.5" />
+      <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+      <!--Needs a body or doesn't stay inside the sub.-->
+      <Body width="38" height="15" density="10" />
+      <TriggerComponent triggeredby="Human" width="300" height="300" sensor="true">
+        <StatusEffect type="OnUse" target="This" disabledeltatime="true" interval="0.25" invisibletimer="0.35"/>
+        <StatusEffect type="OnUse" target="This" comparison="and">
+          <Affliction identifier="blackscreen" strength="1.5" MultiplyByMaxVitality="true" />
+        </StatusEffect>
+      </TriggerComponent>
+      <ItemComponent>
+        <StatusEffect type="InWater" target="This">
+          <Remove />
+        </StatusEffect>
+        <StatusEffect type="Always" target="This" soundselectionmode="All">
+          <ParticleEmitter particle="raskumar_cloud" particlespersecond="3" scalemin="2" scalemax="2.5" anglemin="0" anglemax="360" velocitymin="0" velocitymax="20" colormultiplier="70,70,70,255"/>
+        </StatusEffect>
+        <StatusEffect type="Always" target="This" interval="1" condition="-5" disabledeltatime="true" />
+        <StatusEffect type="OnBroken" target="This">
+          <RemoveItem />
+        </StatusEffect>
+      </ItemComponent>
+      <AiTarget sightrange="1000" soundrange="1000" static="true" />
+    </Item>
+    <Item name="ГМ_Начать пожар (8 минут)" description="Расбрысгивает пожар в небольшом радиусе, который будет долго горет и сжигать вещи, если его не потушить." identifier="fireemitter_verylong" category="Misc" subcategory="MedievalGamemaster" Scale="1" tags="gas,fireemitter" sonarsize="0" hideinmenus="false" depth="0.1" isdangerous="true" noninteractable="true">
+      <InventoryIcon texture="Content/UI/MainIconsAtlas.png" sourcerect="768,640,128,128" origin="0.5,0.5" />
+      <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="0,0,2,2" depth="0.55" origin="0.5,0.5" />
+      <Holdable slots="Any,RightHand,LeftHand" selectkey="Action" pickkey="Use" msg="Поднять руками" PickingTime="1" holdpos="35,-30" holdangle="0" handle1="-5,18" aimable="false" attachable="false">
+        <StatusEffect type="Always" target="this" offset="0,20" disabledeltatime="true" Condition="-25" interval="0.25">
+          <SpawnItem identifier="fireemitter_verylong_projectile" count="1" aimspread="120" rotationtype="Collider" rotation="0" />
+        </StatusEffect>
+        <StatusEffect type="OnBroken" target="This" disabledeltatime="true">
+          <RemoveItem />
+        </StatusEffect>
+      </Holdable>
+    </Item>
+    <Item name="Fire Emitter" identifier="fireemitter_verylong_projectile" Scale="0.5" hideinmenus="true" isdangerous="true" noninteractable="true" tags="gas,fireemitter" sonarsize="0" depth="0.1">
+      <InventoryIcon texture="Content/UI/MainIconsAtlas.png" sourcerect="768,640,128,128" origin="0.5,0.5" />
+      <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="1,1,1,1" depth="0.55" origin="0.5,0.5" />
+      <Body width="15" height="15" density="30" />
+      <!-- Sticks to characters for additional damage over time.-->
+      <Projectile characterusable="false" launchimpulse="5" sticktocharacters="true" tags="firemitter" sticktostructures="false" sticktoitems="true" sticktodeflective="true">
+        <StatusEffect type="OnImpact" target="This" delay="0.1" IsOn="true" />
+        <LightComponent LightColor="220,100,45,150" target="this" Flicker="0.8" range="110" IsOn="false">
+          <StatusEffect type="OnActive" targettype="This">
+            <ParticleEmitter particle="flamethrower" particlespersecond="6" scalemin="1" scalemax="1.5" anglemin="0" anglemax="360" distancemin="0" distancemax="30" />
+            <ParticleEmitter particle="smoke" particlespersecond="2" scalemin="5" scalemax="8" />
+          </StatusEffect>
+          <StatusEffect type="OnActive" target="NearbyCharacters" range="120" delay="0.1" stackable="false" disabledeltatime="true">
+            <Affliction identifier="slow" strength="20" />
+            <Affliction identifier="onfireerc" strength="1" />
+          </StatusEffect>
+          <StatusEffect type="Always" interval="1" condition="-0.2" target="This" disabledeltatime="true">
+            <Explosion range="200.0" itemdamage="4" force="0" disablefireeffects="false" sparks="false" shockwave="false" camerashake="0.0" playtinnitus="false" flash="false" />
+          </StatusEffect>
+          <StatusEffect type="OnBroken" target="This" disabledeltatime="true">
+            <Remove />
+          </StatusEffect>
+          <sound file="Content/Sounds/FireSmall.ogg" type="OnActive" range="500.0" loop="true" />
+        </LightComponent>
+        <!-- Extinguished by water-->
+        <StatusEffect type="Always" target="This">
+          <Remove />
+          <Conditional InWater="true" />
+        </StatusEffect>
+      </Projectile>
+      <AiTarget sightrange="1000" soundrange="1000" static="true" />
+    </Item>
+    <Item name="ГМ_атака холодом (через препятствия, 15 метров)" identifier="gm_frostbite_emitter" category="Misc" subcategory="MedievalGamemaster" cargocontaineridentifier="explosivecrate" tags="" scale="0.5" impactsoundtag="" hideinmenus="true">
+      <Sprite texture="%ModDir%/Medical/TEAffliction.png" sourcerect="0,806,128,128" depth="0.6" origin="0.5,0.5" />
+      <Body width="35" height="70" density="20" />
+      <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" MsgWhenDropped="ItemMsgPickupSelect" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+        <RequiredItem items="wrench,deattachtool" excludeditems="multitool" type="Equipped" />
+      </Holdable>
+      <LightComponent canbeselected="false" lightcolor="255,0,0,100" alphablend="true" castshadows="false" blinkfrequency="2.6" range="20">
+        <StatusEffect type="OnActive" target="NearbyCharacters" range="1500" interval="3" stackable="false" disabledeltatime="true">
+          <Affliction identifier="frostbite" strength="0.4" />
+        </StatusEffect>
+      </LightComponent>
+      <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+        <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+        <RequiredItem items="screwdriver" type="Equipped" />
+        <input name="toggle" displayname="connection.togglestate" />
+        <input name="set_state" displayname="connection.setstate" />
+      </ConnectionPanel>
+    </Item>
+    <Item name="ГМ_атака холодом (через препятствия, 50 метров)" identifier="gm_frostbite_emitter_big" category="Misc" subcategory="MedievalGamemaster" cargocontaineridentifier="explosivecrate" tags="" scale="0.5" impactsoundtag="" hideinmenus="true">
+      <Sprite texture="%ModDir%/Medical/TEAffliction.png" sourcerect="0,806,128,128" depth="0.6" origin="0.5,0.5" />
+      <Body width="35" height="70" density="20" />
+      <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" MsgWhenDropped="ItemMsgPickupSelect" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+        <RequiredItem items="wrench,deattachtool" excludeditems="multitool" type="Equipped" />
+      </Holdable>
+      <LightComponent canbeselected="false" lightcolor="255,0,0,100" alphablend="true" castshadows="false" blinkfrequency="2.6" range="20">
+        <StatusEffect type="OnActive" target="NearbyCharacters" range="5000" interval="5" stackable="false" disabledeltatime="true">
+          <Affliction identifier="frostbite" strength="0.6" />
+        </StatusEffect>
+      </LightComponent>
+      <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+        <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+        <RequiredItem items="screwdriver" type="Equipped" />
+        <input name="toggle" displayname="connection.togglestate" />
+        <input name="set_state" displayname="connection.setstate" />
+      </ConnectionPanel>
+    </Item>
+    <Item name="ГМ_атака холодом (через препятствия, 50 метров, сильное)" identifier="gm_frostbite_emitter_big_strong" category="Misc" subcategory="MedievalGamemaster" cargocontaineridentifier="explosivecrate" tags="" scale="0.5" impactsoundtag="" hideinmenus="true">
+      <Sprite texture="%ModDir%/Medical/TEAffliction.png" sourcerect="0,806,128,128" depth="0.6" origin="0.5,0.5" />
+      <Body width="35" height="70" density="20" />
+      <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" MsgWhenDropped="ItemMsgPickupSelect" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+        <RequiredItem items="wrench,deattachtool" excludeditems="multitool" type="Equipped" />
+      </Holdable>
+      <LightComponent canbeselected="false" lightcolor="255,0,0,100" alphablend="true" castshadows="false" blinkfrequency="2.6" range="20">
+        <StatusEffect type="OnActive" target="NearbyCharacters" range="5000" interval="5" stackable="false" disabledeltatime="true">
+          <Affliction identifier="frostbite" strength="1" />
+        </StatusEffect>
+      </LightComponent>
+      <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+        <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+        <RequiredItem items="screwdriver" type="Equipped" />
+        <input name="toggle" displayname="connection.togglestate" />
+        <input name="set_state" displayname="connection.setstate" />
+      </ConnectionPanel>
+    </Item>
+    <Item name="ГМ_атака холодом (через препятствия, 5 метров)" identifier="gm_frostbite_emitter_mini" category="Misc" subcategory="MedievalGamemaster" cargocontaineridentifier="explosivecrate" tags="" scale="0.5" impactsoundtag="" hideinmenus="true">
+      <Sprite texture="%ModDir%/Medical/TEAffliction.png" sourcerect="0,806,128,128" depth="0.6" origin="0.5,0.5" />
+      <Body width="35" height="70" density="20" />
+      <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" MsgWhenDropped="ItemMsgPickupSelect" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+        <RequiredItem items="wrench,deattachtool" excludeditems="multitool" type="Equipped" />
+      </Holdable>
+      <LightComponent canbeselected="false" lightcolor="255,0,0,100" alphablend="true" castshadows="false" blinkfrequency="2.6" range="20">
+        <StatusEffect type="OnActive" target="NearbyCharacters" range="500" interval="3" stackable="false" disabledeltatime="true">
+          <Affliction identifier="frostbite" strength="0.4" />
+        </StatusEffect>
+      </LightComponent>
+      <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+        <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+        <RequiredItem items="screwdriver" type="Equipped" />
+        <input name="toggle" displayname="connection.togglestate" />
+        <input name="set_state" displayname="connection.setstate" />
+      </ConnectionPanel>
+    </Item>
+  </Override>
+</Items>

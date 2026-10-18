@@ -1,0 +1,234 @@
+<?xml version='1.0' encoding='utf-8'?>
+<infotexts language="Russian" nowhitespace="false" translatedname="Русский">
+  <submarine.name.donjon1>AA_Донжон "Темнолесье и Горы"</submarine.name.donjon1>
+  <submarine.description.donjon1>На этой карте установлено автоматическое освещение.</submarine.description.donjon1>
+  <submarine.name.donjon2>AA_Донжон "Темнолесье и Горы" Хардкор</submarine.name.donjon2>
+  <submarine.description.donjon2>На этой карте установлено автоматическое освещение. Тут нет предустановленных заранее ящиков, рабочих мест, а монстров больше.</submarine.description.donjon2>
+  <submarine.name.donjon3>AA_Донжон "Темнолесье"</submarine.name.donjon3>
+  <submarine.description.donjon3>На этой карте установлено полуавтоматическое освещение. Тут нет монстров.</submarine.description.donjon3>
+  <submarine.name.donjon4>AA_Донжон "Горы"</submarine.name.donjon4>
+  <submarine.description.donjon4>На этой карте установлено полуавтоматическое освещение. Тут нет монстров.</submarine.description.donjon4>
+  <submarine.name.donjon6>AA_Донжон "Далекие Земли"</submarine.name.donjon6>
+  <submarine.description.donjon6>На этой карте установлено полуавтоматическое освещение. Тут различные монстры, верстаки и даже подземелья. Это такой Донжон, который и подразумевался.</submarine.description.donjon6>
+  <submarine.name.assets>Строительные ассеты</submarine.name.assets>
+  <submarine.description.assets>Набор построек и иного декора для строителей карт Донжона. Автор: Ней Густав</submarine.description.assets>
+
+  <entityname.Wall_Medieval_Dungeon1_ERC>Мясная стена 1</entityname.Wall_Medieval_Dungeon1_ERC>
+  <entityname.Wall_Medieval_Dungeon2_ERC>Мясная стена 2</entityname.Wall_Medieval_Dungeon2_ERC>
+  <entityname.Wall_Medieval_Dungeon3_ERC>Мясная стена 3</entityname.Wall_Medieval_Dungeon3_ERC>
+  <entityname.Wall_Medieval_Dungeon4_ERC>Мясная стена 4</entityname.Wall_Medieval_Dungeon4_ERC>
+  <entityname.Wall_Medieval_Dungeon5_ERC>Мясная стена 5</entityname.Wall_Medieval_Dungeon5_ERC>
+  <entityname.Wall_Medieval_Dungeon6_ERC>Мясная стена 6</entityname.Wall_Medieval_Dungeon6_ERC>
+  <entityname.Wall_Medieval_Dungeon7_ERC>Мясная стена 7</entityname.Wall_Medieval_Dungeon7_ERC>
+  <entityname.Wall_Medieval_Dungeon8_ERC>Мясная стена 8</entityname.Wall_Medieval_Dungeon8_ERC>
+  <entityname.Wall_Medieval_Dungeon9_ERC>Мясная стена 9</entityname.Wall_Medieval_Dungeon9_ERC>
+  <entityname.Deco1_Dungeon_Medieval_ERC>Сосуды на стене 1</entityname.Deco1_Dungeon_Medieval_ERC>
+  <entityname.Deco2_Dungeon_Medieval_ERC>Сосуды на стене 2</entityname.Deco2_Dungeon_Medieval_ERC>
+  <entityname.Deco3_Dungeon_Medieval_ERC>Сосуды на стене 3</entityname.Deco3_Dungeon_Medieval_ERC>
+  <entityname.Deco4_Dungeon_Medieval_ERC>Сосуды на стене 4</entityname.Deco4_Dungeon_Medieval_ERC>
+  <entityname.Deco5_Dungeon_Medieval_ERC>Сосуды на стене длинные</entityname.Deco5_Dungeon_Medieval_ERC>
+  <entityname.Back_Nature_Skybox>Небеса</entityname.Back_Nature_Skybox>
+  <entityname.Back_Nature_Skybox_Animated>Небеса (Анимированное)</entityname.Back_Nature_Skybox_Animated>
+  <entityname.Back_Nature_Hills1>Холмы 1</entityname.Back_Nature_Hills1>
+  <entityname.Back_Nature_Hills2>Холмы 2</entityname.Back_Nature_Hills2>
+  <entityname.Back_Nature_Forest1>Лес 1</entityname.Back_Nature_Forest1>
+  <entityname.Back_Nature_Forest2>Лес 2</entityname.Back_Nature_Forest2>
+  <entityname.Back_Nature_Mountains1>Горы 1</entityname.Back_Nature_Mountains1>
+  <entityname.Back_Nature_Mountains2>Горы 2</entityname.Back_Nature_Mountains2>
+  <entityname.Back_Nature_Stone1>Булыжники и камни 1</entityname.Back_Nature_Stone1>
+  <entityname.Back_Nature_Bushes1>Заросли 1</entityname.Back_Nature_Bushes1>
+  <entityname.Back_Nature_Bush_Single1>Кустарник 1</entityname.Back_Nature_Bush_Single1>
+  <entityname.Back_Nature_Bush_Single2>Кустарник 2</entityname.Back_Nature_Bush_Single2>
+  <entityname.Back_Nature_Bush_Single3>Кустарник 3</entityname.Back_Nature_Bush_Single3>
+  <entityname.Back_Nature_Bush_Single4>Кустарник 4</entityname.Back_Nature_Bush_Single4>
+  <entityname.Wall_Medieval_Wood2_ERC>Деревянная стена 2</entityname.Wall_Medieval_Wood2_ERC>
+  <entityname.Wall_Medieval_Wood3_ERC>Деревянная стена 3</entityname.Wall_Medieval_Wood3_ERC>
+  <entityname.Wall_Medieval_Wood4_ERC>Деревянная стена 4</entityname.Wall_Medieval_Wood4_ERC>
+  <entityname.Wall_Medieval_Wood5_ERC>Деревянная стена 5</entityname.Wall_Medieval_Wood5_ERC>
+  <entityname.Wall_Medieval_Wood6_ERC>Деревянная стена 6</entityname.Wall_Medieval_Wood6_ERC>
+  <entityname.Wall_Medieval_Wood7_ERC>Деревянная стена 7</entityname.Wall_Medieval_Wood7_ERC>
+  <entityname.Wall_Medieval_Wood8_ERC>Деревянная стена 8</entityname.Wall_Medieval_Wood8_ERC>
+  <entityname.Wall_Medieval_Wood9_ERC>Деревянная стена 9</entityname.Wall_Medieval_Wood9_ERC>
+  <entityname.Wall_Medieval_Wood10_ERC>Деревянная стена 10</entityname.Wall_Medieval_Wood10_ERC>
+  <entityname.Wall_Medieval_Wood11_ERC>Деревянная стена 11</entityname.Wall_Medieval_Wood11_ERC>
+  <entityname.Wall_Medieval_Wood12_ERC>Деревянная стена 12</entityname.Wall_Medieval_Wood12_ERC>
+  <entityname.Deco_Medieval_Wood1_ERC>Деревянный элемент стены 1</entityname.Deco_Medieval_Wood1_ERC>
+  <entityname.Deco_Medieval_Wood2_ERC>Деревянный элемент стены 2</entityname.Deco_Medieval_Wood2_ERC>
+  <entityname.Deco_Medieval_Wood3_ERC>Деревянный элемент стены 3</entityname.Deco_Medieval_Wood3_ERC>
+  <entityname.Deco_Medieval_Wood4_ERC>Деревянный элемент стены 4</entityname.Deco_Medieval_Wood4_ERC>
+  <entityname.Deco_Medieval_Wood5_ERC>Деревянный элемент стены 5</entityname.Deco_Medieval_Wood5_ERC>
+  <entityname.Deco_Medieval_Wood6_ERC>Деревянный элемент стены 6</entityname.Deco_Medieval_Wood6_ERC>
+  <entityname.Deco_Medieval_Wood7_ERC>Деревянный элемент стены 7</entityname.Deco_Medieval_Wood7_ERC>
+  <entityname.Deco_Medieval_Wood8_ERC>Деревянное окно 1</entityname.Deco_Medieval_Wood8_ERC>
+  <entityname.Deco_Medieval_Wood9_ERC>Деревянное окно 2</entityname.Deco_Medieval_Wood9_ERC>
+  <entityname.Deco_Medieval_Wood10_ERC>Деревянное окно 3</entityname.Deco_Medieval_Wood10_ERC>
+  <entityname.Deco_Medieval_Wood11_ERC>Стекло деревянного окна</entityname.Deco_Medieval_Wood11_ERC>
+  <entityname.Deco_Medieval_Wood12_ERC></entityname.Deco_Medieval_Wood12_ERC>
+  <entityname.Deco_Medieval_Wood13_ERC>Деревянная арка</entityname.Deco_Medieval_Wood13_ERC>
+  <entityname.Deco_Medieval_Wood14_ERC>Бревно (Декоративное)</entityname.Deco_Medieval_Wood14_ERC>
+  <entityname.Deco_Medieval_Wood15_ERC>Деревянная балка (Декоративное)</entityname.Deco_Medieval_Wood15_ERC>
+  <entityname.Deco_Medieval_Wood16_ERC>Деревянная вывеска</entityname.Deco_Medieval_Wood16_ERC>
+  <entityname.Deco_Medieval_Wood17_ERC>Бочки</entityname.Deco_Medieval_Wood17_ERC>
+  <entityname.Deco_Medieval_Wood18_ERC>Мешок 1</entityname.Deco_Medieval_Wood18_ERC>
+  <entityname.Deco_Medieval_Wood19_ERC>Мешок 2</entityname.Deco_Medieval_Wood19_ERC>
+  <entityname.Deco_Medieval_Wood20_ERC>Мешок 3</entityname.Deco_Medieval_Wood20_ERC>
+  <entityname.Deco_Medieval_Wood21_ERC>Мешок 4</entityname.Deco_Medieval_Wood21_ERC>
+  <entityname.Deco_Medieval_Wood22_ERC>Мешок 5</entityname.Deco_Medieval_Wood22_ERC>
+  <entityname.Deco_Medieval_Wood23_ERC>Воз 1</entityname.Deco_Medieval_Wood23_ERC>
+  <entityname.Deco_Medieval_Wood24_ERC>Воз 2</entityname.Deco_Medieval_Wood24_ERC>
+  <entityname.Deco_Medieval_Wood25_ERC>Кормушка</entityname.Deco_Medieval_Wood25_ERC>
+  <entityname.Deco_Medieval_Wood26_ERC>Свисающая одежда</entityname.Deco_Medieval_Wood26_ERC>
+  <entityname.Deco_Medieval_Wood27_ERC>Заготовленные бревна</entityname.Deco_Medieval_Wood27_ERC>
+  <entityname.Deco_Medieval_Wood28_ERC>Мешок 6</entityname.Deco_Medieval_Wood28_ERC>
+  <entityname.Deco_Medieval_Wood29_ERC>Бочка (Декор)</entityname.Deco_Medieval_Wood29_ERC>
+  <entityname.Deco_Medieval_Wood30_ERC>Деревянный мусор 1</entityname.Deco_Medieval_Wood30_ERC>
+  <entityname.Deco_Medieval_Wood31_ERC>Деревянный мусор 2</entityname.Deco_Medieval_Wood31_ERC>
+  <entityname.Deco_Medieval_Wood32_ERC>Какая - то коробка 1</entityname.Deco_Medieval_Wood32_ERC>
+  <entityname.Deco_Medieval_Wood33_ERC>Какая - то коробка 2</entityname.Deco_Medieval_Wood33_ERC>
+  <entityname.Deco_Medieval_Wood34_ERC>Какая - то коробка 3</entityname.Deco_Medieval_Wood34_ERC>
+  <entityname.Deco_Medieval_Wood35_ERC>Кафедра 1</entityname.Deco_Medieval_Wood35_ERC>
+  <entityname.Deco_Medieval_Wood36_ERC>Кафедра 2</entityname.Deco_Medieval_Wood36_ERC>
+  <entityname.Deco_Medieval_Wood37_ERC>Ограда</entityname.Deco_Medieval_Wood37_ERC>
+  <entityname.Deco_Medieval_Wood38_ERC>Соломенная крыша</entityname.Deco_Medieval_Wood38_ERC>
+  <entityname.Deco_Medieval_Wood39_ERC>Черепичная крыша</entityname.Deco_Medieval_Wood39_ERC>
+  <entityname.Deco_Medieval_Wood40_ERC>Створка деревянного окна</entityname.Deco_Medieval_Wood40_ERC>
+  <entityname.Deco_Medieval_Various2_1_ERC>Свисающие тряпки</entityname.Deco_Medieval_Various2_1_ERC>
+  <entityname.Deco_Medieval_Various2_2_ERC>Ограда из каменного кирпича</entityname.Deco_Medieval_Various2_2_ERC>
+  <entityname.Deco_Medieval_Various2_3_ERC>Гобелен 1</entityname.Deco_Medieval_Various2_3_ERC>
+  <entityname.Deco_Medieval_Various2_4_ERC>Гобелен 2</entityname.Deco_Medieval_Various2_4_ERC>
+  <entityname.Deco_Medieval_Various2_5_ERC>Гобелен 3</entityname.Deco_Medieval_Various2_5_ERC>
+  <entityname.Deco_Medieval_Various2_6_ERC>Гобелен 4</entityname.Deco_Medieval_Various2_6_ERC>
+  <entityname.Deco_Medieval_Various2_7_ERC>Каменный бюст кабана 1</entityname.Deco_Medieval_Various2_7_ERC>
+  <entityname.Deco_Medieval_Various2_8_ERC>Каменный бюст кабана 2</entityname.Deco_Medieval_Various2_8_ERC>
+  <entityname.Deco_Medieval_Various2_9_ERC>Каменный лев</entityname.Deco_Medieval_Various2_9_ERC>
+  <entityname.Deco_Medieval_Various2_10_ERC>Мешочек 1</entityname.Deco_Medieval_Various2_10_ERC>
+  <entityname.Deco_Medieval_Various2_11_ERC>Мешочек 2</entityname.Deco_Medieval_Various2_11_ERC>
+  <entityname.Deco_Medieval_Various2_12_ERC>Колодки</entityname.Deco_Medieval_Various2_12_ERC>
+  <entityname.Deco_Medieval_Various2_13_ERC>Белая ваза</entityname.Deco_Medieval_Various2_13_ERC>
+  <entityname.Deco_Medieval_Various2_14_ERC>Плетенная корзинка</entityname.Deco_Medieval_Various2_14_ERC>
+  <entityname.Deco_Medieval_Various2_15_ERC>Весы</entityname.Deco_Medieval_Various2_15_ERC>
+  <entityname.Deco_Medieval_Various2_16_ERC>Чеснок</entityname.Deco_Medieval_Various2_16_ERC>
+  <entityname.Deco_Medieval_Various2_17_ERC>Флаг 1</entityname.Deco_Medieval_Various2_17_ERC>
+  <entityname.Deco_Medieval_Various2_18_ERC>Клетка</entityname.Deco_Medieval_Various2_18_ERC>
+  <entityname.Deco_Medieval_Various2_19_ERC>Моток каната</entityname.Deco_Medieval_Various2_19_ERC>
+  <entityname.Deco_Medieval_Various2_20_ERC>Булыжники и камни 2</entityname.Deco_Medieval_Various2_20_ERC>
+  <entityname.Deco_Medieval_Various2_21_ERC>Фрагмент каменной стены</entityname.Deco_Medieval_Various2_21_ERC>
+  <entityname.Deco_Medieval_Various2_22_ERC>Каменные обломки</entityname.Deco_Medieval_Various2_22_ERC>
+  <entityname.Deco_Medieval_Various2_23_ERC>Стол каменщика</entityname.Deco_Medieval_Various2_23_ERC>
+  <entityname.Deco_Medieval_Various2_24_ERC>Каменные кирпичи (Мало)</entityname.Deco_Medieval_Various2_24_ERC>
+  <entityname.Deco_Medieval_Various2_25_ERC>Каменные кирпичи (Несколько)</entityname.Deco_Medieval_Various2_25_ERC>
+  <entityname.Deco_Medieval_Various2_26_ERC>Поддон каменных кирпичей</entityname.Deco_Medieval_Various2_26_ERC>
+  <entityname.Deco_Medieval_Various2_27_ERC>Железная дева</entityname.Deco_Medieval_Various2_27_ERC>
+  <entityname.Deco_Medieval_Various2_28_ERC>Гобелен 5</entityname.Deco_Medieval_Various2_28_ERC>
+  <entityname.Deco_Medieval_Various2_29_ERC>Кафедра с книгой</entityname.Deco_Medieval_Various2_29_ERC>
+  <entityname.Deco_Medieval_Flag_1_ERC>Флаг (Красно - Черный)</entityname.Deco_Medieval_Flag_1_ERC>
+  <entityname.Deco_Medieval_Flag_2_ERC>Флаг (Сине - Белый)</entityname.Deco_Medieval_Flag_2_ERC>
+  <entityname.Deco_Medieval_Flag_3_ERC>Флаг (Красный)</entityname.Deco_Medieval_Flag_3_ERC>
+  <entityname.Deco_Medieval_Flag_4_ERC>Флаг (Синий)</entityname.Deco_Medieval_Flag_4_ERC>
+  <entityname.Deco_Medieval_Flag_5_ERC>Флаг (Желтый)</entityname.Deco_Medieval_Flag_5_ERC>
+  <entityname.Deco_Medieval_Flag_6_ERC>Флаг (Зеленый)</entityname.Deco_Medieval_Flag_6_ERC>
+  <entityname.Deco_Medieval_Flag_7_ERC>Флаг (Черный)</entityname.Deco_Medieval_Flag_7_ERC>
+  <entityname.Deco_Medieval_Flag_8_ERC>Флаг (Белый)</entityname.Deco_Medieval_Flag_8_ERC>
+  <entityname.Wall_Medieval_Stone1_ERC>Каменная стена 1</entityname.Wall_Medieval_Stone1_ERC>
+  <entityname.Wall_Medieval_Stone2_ERC>Каменная стена 2</entityname.Wall_Medieval_Stone2_ERC>
+  <entityname.Wall_Medieval_Stone3_ERC>Каменная стена 3</entityname.Wall_Medieval_Stone3_ERC>
+  <entityname.Wall_Medieval_Stone4_ERC>Каменная стена 4</entityname.Wall_Medieval_Stone4_ERC>
+  <entityname.Wall_Medieval_Stone5_ERC>Каменная стена 5</entityname.Wall_Medieval_Stone5_ERC>
+  <entityname.Wall_Medieval_Stone6_ERC>Каменная стена 6</entityname.Wall_Medieval_Stone6_ERC>
+  <entityname.Wall_Medieval_Stone7_ERC>Каменная стена 7</entityname.Wall_Medieval_Stone7_ERC>
+  <entityname.Wall_Medieval_Stone8_ERC>Каменная стена 8</entityname.Wall_Medieval_Stone8_ERC>
+  <entityname.Wall_Medieval_Stone9_ERC>Каменная стена 9</entityname.Wall_Medieval_Stone9_ERC>
+  <entityname.Wall_Medieval_Stone10_ERC>Каменная стена 1</entityname.Wall_Medieval_Stone10_ERC>
+  <entityname.Wall_Medieval_StoneWindow_ERC>Каменная стена с окном</entityname.Wall_Medieval_StoneWindow_ERC>
+  <entityname.Wall_Medieval_StoneTop1_ERC>Каменная амбразура 1</entityname.Wall_Medieval_StoneTop1_ERC>
+  <entityname.Wall_Medieval_StoneTop2_ERC>Каменная амбразура 2</entityname.Wall_Medieval_StoneTop2_ERC>
+  <entityname.Wall_Medieval_StoneTop3_ERC>Каменная амбразура 3</entityname.Wall_Medieval_StoneTop3_ERC>
+  <entityname.Column_Medieval_Stone1_ERC>Каменная колонна 1</entityname.Column_Medieval_Stone1_ERC>
+  <entityname.Column_Medieval_Stone2_ERC>Каменная колонна 2</entityname.Column_Medieval_Stone2_ERC>
+  <entityname.Column_Medieval_Stone3_ERC>Каменная колонна 3</entityname.Column_Medieval_Stone3_ERC>
+  <entityname.Bars_Medieval_Iron1_ERC>Железная решётка 1</entityname.Bars_Medieval_Iron1_ERC>
+  <entityname.Block_Medieval_Stone1_ERC>Каменный блок 1</entityname.Block_Medieval_Stone1_ERC>
+  <entityname.Block_Medieval_Stone2_ERC>Каменный угол 1</entityname.Block_Medieval_Stone2_ERC>
+  <entityname.Blocks_Medieval_Stone1_ERC>Каменные кирпичи 1</entityname.Blocks_Medieval_Stone1_ERC>
+  <entityname.Blocks_Medieval_Stone2_ERC>Каменные кирпичи 2</entityname.Blocks_Medieval_Stone2_ERC>
+  <entityname.Wall_Medieval_Carpet1_ERC>Ковер на стене (Синий)</entityname.Wall_Medieval_Carpet1_ERC>
+  <entityname.Wall_Medieval_Carpet2_ERC>Ковер на стене (Красный)</entityname.Wall_Medieval_Carpet2_ERC>
+  <entityname.Wall_Medieval_Tiles_ERC>Черепица на крыше</entityname.Wall_Medieval_Tiles_ERC>
+  <entityname.Window1_Medieval_ERC>Окно 1</entityname.Window1_Medieval_ERC>
+  <entityname.Window2_Medieval_ERC>Окно 2</entityname.Window2_Medieval_ERC>
+  <entityname.Window3_Medieval_ERC>Окно 3</entityname.Window3_Medieval_ERC>
+  <entityname.Window4_Medieval_ERC>Окно 4</entityname.Window4_Medieval_ERC>
+  <entityname.Window5_Medieval_ERC>Бойница 1</entityname.Window5_Medieval_ERC>
+  <entityname.Window6_Medieval_ERC>Бойница 2</entityname.Window6_Medieval_ERC>
+  <entityname.Window7_Medieval_ERC>Решетка на окно 1</entityname.Window7_Medieval_ERC>
+  <entityname.Door1_Decorative_Medieval_ERC>Деревянная дверь 1 (Декоративная, задний фон)</entityname.Door1_Decorative_Medieval_ERC>
+  <entityname.Door2_Decorative_Medieval_ERC>Деревянная дверь 2 (Декоративная, задний фон)</entityname.Door2_Decorative_Medieval_ERC>
+  <entityname.Door2Wreck_Decorative_Medieval_ERC>Деревянная дверь 2 Обломки (Декоративная, задний фон)</entityname.Door2Wreck_Decorative_Medieval_ERC>
+  <entityname.Door3_Decorative_Medieval_ERC>Железная дверь 1 (Декоративная, задний фон)</entityname.Door3_Decorative_Medieval_ERC>
+  <entityname.Door3Wreck_Decorative_Medieval_ERC>Железная дверь 1 Обломки (Декоративная, задний фон)</entityname.Door3Wreck_Decorative_Medieval_ERC>
+  <entityname.Deco_Medieval_Chain1_ERC>Цепи, прямые</entityname.Deco_Medieval_Chain1_ERC>
+  <entityname.Deco_Medieval_Statue1_ERC>Монумент 1</entityname.Deco_Medieval_Statue1_ERC>
+  <entityname.Deco_Medieval_Statue2_ERC>Монумент 2</entityname.Deco_Medieval_Statue2_ERC>
+  <entityname.Deco_Medieval_Statue3_ERC>Монумент 3</entityname.Deco_Medieval_Statue3_ERC>
+  <entityname.Deco_Medieval_Statue4_ERC>Монумент 4</entityname.Deco_Medieval_Statue4_ERC>
+  <entityname.Deco_Medieval_Statue5_ERC>Монумент Бога 1</entityname.Deco_Medieval_Statue5_ERC>
+  <entityname.Deco_Medieval_Statue6_ERC>Монумент Бога 2</entityname.Deco_Medieval_Statue6_ERC>
+  <entityname.Deco_Medieval_Statue7_ERC>Монумент Бога 3</entityname.Deco_Medieval_Statue7_ERC>
+  <entityname.Deco_Medieval_Various1_ERC>Каменные плиты</entityname.Deco_Medieval_Various1_ERC>
+  <entityname.Deco_Medieval_Various2_ERC>Цепи с замком</entityname.Deco_Medieval_Various2_ERC>
+  <entityname.Deco_Medieval_Various3_ERC>Колокол (Неинтерактивный)</entityname.Deco_Medieval_Various3_ERC>
+  <entityname.Deco_Medieval_Vase1_ERC>Горшок 1</entityname.Deco_Medieval_Vase1_ERC>
+  <entityname.Deco_Medieval_Vase2_ERC>Горшок 2</entityname.Deco_Medieval_Vase2_ERC>
+  <entityname.Deco_Medieval_Tree1_ERC>Фоновое дерево 1</entityname.Deco_Medieval_Tree1_ERC>
+  <entityname.Deco_Medieval_Tree2_ERC>Фоновое дерево 2</entityname.Deco_Medieval_Tree2_ERC>
+  <entityname.Deco_Medieval_Tree3_ERC>Фоновое дерево 3</entityname.Deco_Medieval_Tree3_ERC>
+  <entityname.Deco_Medieval_Tree4_ERC>Фоновое дерево 4</entityname.Deco_Medieval_Tree4_ERC>
+  <entityname.Deco_Medieval_Tree5_ERC>Фоновое дерево 5</entityname.Deco_Medieval_Tree5_ERC>
+  <entityname.Deco_Medieval_Tree6_ERC>Фоновое дерево 6</entityname.Deco_Medieval_Tree6_ERC>
+  <entityname.Deco_Medieval_Tree7_ERC>Фоновое дерево 7</entityname.Deco_Medieval_Tree7_ERC>
+  <entityname.Wall_Medieval_Tiles_Collision_ERC>Черепица на крыше (Физичная)</entityname.Wall_Medieval_Tiles_Collision_ERC>
+  <entityname.Wall_Medieval_Stone1_Collision_ERC>Каменный пол (Пол,Физичный)</entityname.Wall_Medieval_Stone1_Collision_ERC>
+  <entityname.Wall_Medieval_Stone2_Collision_ERC>Каменная стена 1 (Стена,Физичная)</entityname.Wall_Medieval_Stone2_Collision_ERC>
+  <entityname.Wall_Medieval_Stone3_Collision_ERC>Каменная стена 2 (Стена,Физичная)</entityname.Wall_Medieval_Stone3_Collision_ERC>
+  <entityname.Wall_Medieval_Wood1_Collision_ERC>Деревянный пол (Пол,Физичный)</entityname.Wall_Medieval_Wood1_Collision_ERC>
+  <entityname.Wall_Medieval_Wood2_Collision_ERC>Деревянная стена (Стена,Физичная)</entityname.Wall_Medieval_Wood2_Collision_ERC>
+  <entityname.Wall_Medieval_Grass1_Collision_ERC>Дёрн (Пол,Физичный)</entityname.Wall_Medieval_Grass1_Collision_ERC>
+  <entityname.Wall_Medieval_Grass2_Collision_ERC>Каменистый дёрн (Пол,Физичный)</entityname.Wall_Medieval_Grass2_Collision_ERC>
+  <entityname.Platform1_Medieval_ERC>Каменная платформа</entityname.Platform1_Medieval_ERC>
+  <entityname.Platform2_Medieval_ERC>Деревянная платформа</entityname.Platform2_Medieval_ERC>
+  <entityname.Wall_Snow_Medieval_Stone1_Collision_ERC>Каменный пол (Пол,Физичный, Снег)</entityname.Wall_Snow_Medieval_Stone1_Collision_ERC>
+  <entityname.Wall_Snow_Medieval_Stone2_Collision_ERC>Каменная стена 1 (Стена,Физичная, Снег)</entityname.Wall_Snow_Medieval_Stone2_Collision_ERC>
+  <entityname.Wall_Snow_Medieval_Stone3_Collision_ERC>Каменная стена 2 (Стена,Физичная, Снег)</entityname.Wall_Snow_Medieval_Stone3_Collision_ERC>
+  <entityname.Wall_Snow_Medieval_Wood1_Collision_ERC>Деревянный пол (Пол,Физичный, Снег)</entityname.Wall_Snow_Medieval_Wood1_Collision_ERC>
+  <entityname.Wall_Snow_Medieval_Wood2_Collision_ERC>Деревянная стена (Стена,Физичная, Снег)</entityname.Wall_Snow_Medieval_Wood2_Collision_ERC>
+  <entityname.Wall_Snow_Medieval_Grass1_Collision_ERC>Дёрн (Пол,Физичный, Снег)</entityname.Wall_Snow_Medieval_Grass1_Collision_ERC>
+  <entityname.Wall_Snow_Medieval_Grass2_Collision_ERC>Каменистый дёрн (Пол,Физичный, Снег)</entityname.Wall_Snow_Medieval_Grass2_Collision_ERC>
+  <entityname.Platform1_Snow_Medieval_ERC>Каменная платформа (Снег)</entityname.Platform1_Snow_Medieval_ERC>
+  <entityname.Platform2_Snow_Medieval_ERC>Деревянная платформа (Снег)</entityname.Platform2_Snow_Medieval_ERC>
+  <entityname.Back_Nature_Snow_Forest1>Лес 1 (Снег)</entityname.Back_Nature_Snow_Forest1>
+  <entityname.Back_Nature_Snow_Mountains1>Горы 1 (Снег)</entityname.Back_Nature_Snow_Mountains1>
+  <entityname.stairs_medieval_ERC>Лестница 1</entityname.stairs_medieval_ERC>
+  <entityname.stairs2_medieval_ERC>Лестница 2</entityname.stairs2_medieval_ERC>
+  <entityname.stairs3_medieval_ERC>Лестница 3</entityname.stairs3_medieval_ERC>
+  <entityname.stairs4_medieval_ERC>Лестница 4</entityname.stairs4_medieval_ERC>
+  <entityname.Wall_Cave_Collision_ERC>Пещерная стена</entityname.Wall_Cave_Collision_ERC>
+  <entityname.Wall_Cave2_Collision_ERC>Зловещая пещерная стена</entityname.Wall_Cave2_Collision_ERC>
+  <entityname.Wall_Snow_Cave_Collision_ERC>Пещерная стена (Снег)</entityname.Wall_Snow_Cave_Collision_ERC>
+  <entityname.Wall_Snow_Cave2_Collision_ERC>Зловещая пещерная стена (Снег)</entityname.Wall_Snow_Cave2_Collision_ERC>
+  <entityname.Deco_CaveWall1_ERC>Пещерный фон</entityname.Deco_CaveWall1_ERC>
+  <entityname.Deco_Cave1_ERC>Выемка в пещере</entityname.Deco_Cave1_ERC>
+  <entityname.Deco_Cave2_ERC>Странная выемка в пещере</entityname.Deco_Cave2_ERC>
+  <entityname.Deco_Cave3_ERC>Пещерные сталактиты</entityname.Deco_Cave3_ERC>
+  <entityname.Deco_Cave4_ERC>Пещерные сталагмиты</entityname.Deco_Cave4_ERC>
+  <entityname.Deco_Cave5_ERC>Пещерные сталагмиты 2</entityname.Deco_Cave5_ERC>
+  <entityname.Deco_Cave6_ERC>Пещерные сталагмиты 3</entityname.Deco_Cave6_ERC>
+  <entityname.Deco_Cave7_ERC>Пещерные сталагмиты 4</entityname.Deco_Cave7_ERC>
+  <entityname.Deco_Cave8_ERC>Пещерный камень</entityname.Deco_Cave8_ERC>
+  <entityname.Deco_Cave9_ERC>Пещерный камень 2</entityname.Deco_Cave9_ERC>
+  <entityname.Deco_Cave10_ERC>Пещерный камень 3</entityname.Deco_Cave10_ERC>
+  <entityname.Deco_Cave11_ERC>Пещерный камень 4</entityname.Deco_Cave11_ERC>
+  <entityname.Deco_Cave12_ERC>Пещерный камень 5</entityname.Deco_Cave12_ERC>
+  <entityname.Deco_Cave13_ERC>Пещерные заросли</entityname.Deco_Cave13_ERC>
+  <entityname.Deco_Cave14_ERC>Пещерные заросли 2</entityname.Deco_Cave14_ERC>
+  <entityname.Deco_Cave15_ERC>Пещерные заросли 3</entityname.Deco_Cave15_ERC>
+</infotexts>

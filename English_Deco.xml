@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<infotexts language="English" nowhitespace="false" translatedname="English">
+  <submarine.name.donjon1>AA_Donjon "Darkwood and Ridge"</submarine.name.donjon1>
+  <submarine.description.donjon1>This map has automatic lighting.</submarine.description.donjon1>
+  <submarine.name.donjon2>AA_Donjon "Darkwood and Ridge" Hardcore</submarine.name.donjon2>
+  <submarine.description.donjon2>This map has automatic lighting. There are no pre-installed boxes or workstations, and there are more monsters.</submarine.description.donjon2>
+  <submarine.name.donjon3>AA_Donjon "Darkwood"</submarine.name.donjon3>
+  <submarine.description.donjon3>This map has semi-automatic lighting. There are no monsters here.</submarine.description.donjon3>
+  <submarine.name.donjon4>AA_Donjon "Ridge"</submarine.name.donjon4>
+  <submarine.description.donjon4>This map has semi-automatic lighting. There are no monsters here.</submarine.description.donjon4>
+  <submarine.name.donjon6>AA_Donjon "Farlands"</submarine.name.donjon6>
+  <submarine.description.donjon6>This map features semi-automatic lighting. It features various monsters, workbenches, and even dungeons. This is how Donjon meant to be played.</submarine.description.donjon6>
+  <submarine.name.assets>Donjon Building Assets</submarine.name.assets>
+  <submarine.description.assets>A set of buildings and other decor for Donjon map builders. Author: Ней Густав (hank).</submarine.description.assets>
+
+  <entityname.Wall_Medieval_Dungeon1_ERC>Meat Wall 1</entityname.Wall_Medieval_Dungeon1_ERC>
+  <entityname.Wall_Medieval_Dungeon2_ERC>Meat Wall 2</entityname.Wall_Medieval_Dungeon2_ERC>
+  <entityname.Wall_Medieval_Dungeon3_ERC>Meat Wall 3</entityname.Wall_Medieval_Dungeon3_ERC>
+  <entityname.Wall_Medieval_Dungeon4_ERC>Meat Wall 4</entityname.Wall_Medieval_Dungeon4_ERC>
+  <entityname.Wall_Medieval_Dungeon5_ERC>Meat Wall 5</entityname.Wall_Medieval_Dungeon5_ERC>
+  <entityname.Wall_Medieval_Dungeon6_ERC>Meat Wall 6</entityname.Wall_Medieval_Dungeon6_ERC>
+  <entityname.Wall_Medieval_Dungeon7_ERC>Meat Wall 7</entityname.Wall_Medieval_Dungeon7_ERC>
+  <entityname.Wall_Medieval_Dungeon8_ERC>Meat Wall 8</entityname.Wall_Medieval_Dungeon8_ERC>
+  <entityname.Wall_Medieval_Dungeon9_ERC>Meat Wall 9</entityname.Wall_Medieval_Dungeon9_ERC>
+  <entityname.Deco1_Dungeon_Medieval_ERC>Vessels on the Wall 1</entityname.Deco1_Dungeon_Medieval_ERC>
+  <entityname.Deco2_Dungeon_Medieval_ERC>Vessels on the wall 2</entityname.Deco2_Dungeon_Medieval_ERC>
+  <entityname.Deco3_Dungeon_Medieval_ERC>Vessels on the wall 3</entityname.Deco3_Dungeon_Medieval_ERC>
+  <entityname.Deco4_Dungeon_Medieval_ERC>Vessels on the wall 4</entityname.Deco4_Dungeon_Medieval_ERC>
+  <entityname.Deco5_Dungeon_Medieval_ERC>Vessels on the wall long</entityname.Deco5_Dungeon_Medieval_ERC>
+  <entityname.Back_Nature_Skybox>Skybox</entityname.Back_Nature_Skybox>
+  <entityname.Back_Nature_Skybox_Animated>Skybox (Animated)</entityname.Back_Nature_Skybox_Animated>
+  <entityname.Back_Nature_Hills1>Hills 1</entityname.Back_Nature_Hills1>
+  <entityname.Back_Nature_Hills2>The Hills 2</entityname.Back_Nature_Hills2>
+  <entityname.Back_Nature_Forest1>Forest 1</entityname.Back_Nature_Forest1>
+  <entityname.Back_Nature_Forest2>Forest 2</entityname.Back_Nature_Forest2>
+  <entityname.Back_Nature_Mountains1>Mountains 1</entityname.Back_Nature_Mountains1>
+  <entityname.Back_Nature_Mountains2>Mountains 2</entityname.Back_Nature_Mountains2>
+  <entityname.Back_Nature_Stone1>Cobblestones and stones 1</entityname.Back_Nature_Stone1>
+  <entityname.Back_Nature_Bushes1>Thickets 1</entityname.Back_Nature_Bushes1>
+  <entityname.Back_Nature_Bush_Single1>Bush 1</entityname.Back_Nature_Bush_Single1>
+  <entityname.Back_Nature_Bush_Single2>Bush 2</entityname.Back_Nature_Bush_Single2>
+  <entityname.Back_Nature_Bush_Single3>Bush 3</entityname.Back_Nature_Bush_Single3>
+  <entityname.Back_Nature_Bush_Single4>Bush 4</entityname.Back_Nature_Bush_Single4>
+  <entityname.Wall_Medieval_Wood2_ERC>Wooden Wall 2</entityname.Wall_Medieval_Wood2_ERC>
+  <entityname.Wall_Medieval_Wood3_ERC>Wooden Wall 3</entityname.Wall_Medieval_Wood3_ERC>
+  <entityname.Wall_Medieval_Wood4_ERC>Wooden Wall 4</entityname.Wall_Medieval_Wood4_ERC>
+  <entityname.Wall_Medieval_Wood5_ERC>Wooden Wall 5</entityname.Wall_Medieval_Wood5_ERC>
+  <entityname.Wall_Medieval_Wood6_ERC>Wooden Wall 6</entityname.Wall_Medieval_Wood6_ERC>
+  <entityname.Wall_Medieval_Wood7_ERC>Wooden Wall 7</entityname.Wall_Medieval_Wood7_ERC>
+  <entityname.Wall_Medieval_Wood8_ERC>Wooden Wall 8</entityname.Wall_Medieval_Wood8_ERC>
+  <entityname.Wall_Medieval_Wood9_ERC>Wooden Wall 9</entityname.Wall_Medieval_Wood9_ERC>
+  <entityname.Wall_Medieval_Wood10_ERC>Wooden Wall 10</entityname.Wall_Medieval_Wood10_ERC>
+  <entityname.Wall_Medieval_Wood11_ERC>Wooden Wall 11</entityname.Wall_Medieval_Wood11_ERC>
+  <entityname.Wall_Medieval_Wood12_ERC>Wooden Wall 12</entityname.Wall_Medieval_Wood12_ERC>
+  <entityname.Deco_Medieval_Wood1_ERC>Wooden Wall Element 1</entityname.Deco_Medieval_Wood1_ERC>
+  <entityname.Deco_Medieval_Wood2_ERC>Wooden Wall Element 2</entityname.Deco_Medieval_Wood2_ERC>
+  <entityname.Deco_Medieval_Wood3_ERC>Wooden Wall Element 3</entityname.Deco_Medieval_Wood3_ERC>
+  <entityname.Deco_Medieval_Wood4_ERC>Wooden Wall Element 4</entityname.Deco_Medieval_Wood4_ERC>
+  <entityname.Deco_Medieval_Wood5_ERC>Wooden Wall Element 5</entityname.Deco_Medieval_Wood5_ERC>
+  <entityname.Deco_Medieval_Wood6_ERC>Wooden Wall Element 6</entityname.Deco_Medieval_Wood6_ERC>
+  <entityname.Deco_Medieval_Wood7_ERC>Wooden Wall Element 7</entityname.Deco_Medieval_Wood7_ERC>
+  <entityname.Deco_Medieval_Wood8_ERC>Wooden Window 1</entityname.Deco_Medieval_Wood8_ERC>
+  <entityname.Deco_Medieval_Wood9_ERC>Wooden Window 2</entityname.Deco_Medieval_Wood9_ERC>
+  <entityname.Deco_Medieval_Wood10_ERC>Wooden Window 3</entityname.Deco_Medieval_Wood10_ERC>
+  <entityname.Deco_Medieval_Wood11_ERC>Wooden Window Glass</entityname.Deco_Medieval_Wood11_ERC>
+  <entityname.Deco_Medieval_Wood12_ERC></entityname.Deco_Medieval_Wood12_ERC>
+  <entityname.Deco_Medieval_Wood13_ERC>Wooden Arch</entityname.Deco_Medieval_Wood13_ERC>
+  <entityname.Deco_Medieval_Wood14_ERC>Log (Decorative)</entityname.Deco_Medieval_Wood14_ERC>
+  <entityname.Deco_Medieval_Wood15_ERC>Wooden Beam (Decorative)</entityname.Deco_Medieval_Wood15_ERC>
+  <entityname.Deco_Medieval_Wood16_ERC>Wooden Sign</entityname.Deco_Medieval_Wood16_ERC>
+  <entityname.Deco_Medieval_Wood17_ERC>Barrels</entityname.Deco_Medieval_Wood17_ERC>
+  <entityname.Deco_Medieval_Wood18_ERC>Bag 1</entityname.Deco_Medieval_Wood18_ERC>
+  <entityname.Deco_Medieval_Wood19_ERC>Bag 2</entityname.Deco_Medieval_Wood19_ERC>
+  <entityname.Deco_Medieval_Wood20_ERC>Bag 3</entityname.Deco_Medieval_Wood20_ERC>
+  <entityname.Deco_Medieval_Wood21_ERC>Bag 4</entityname.Deco_Medieval_Wood21_ERC>
+  <entityname.Deco_Medieval_Wood22_ERC>Bag 5</entityname.Deco_Medieval_Wood22_ERC>
+  <entityname.Deco_Medieval_Wood23_ERC>Cart 1</entityname.Deco_Medieval_Wood23_ERC>
+  <entityname.Deco_Medieval_Wood24_ERC>Cart 2</entityname.Deco_Medieval_Wood24_ERC>
+  <entityname.Deco_Medieval_Wood25_ERC>Feeder</entityname.Deco_Medieval_Wood25_ERC>
+  <entityname.Deco_Medieval_Wood26_ERC>Danging clothes</entityname.Deco_Medieval_Wood26_ERC>
+  <entityname.Deco_Medieval_Wood27_ERC>Prepared Logs</entityname.Deco_Medieval_Wood27_ERC>
+  <entityname.Deco_Medieval_Wood28_ERC>Bag 6</entityname.Deco_Medieval_Wood28_ERC>
+  <entityname.Deco_Medieval_Wood29_ERC>Barrel (Decor)</entityname.Deco_Medieval_Wood29_ERC>
+  <entityname.Deco_Medieval_Wood30_ERC>Wood Scrap 1</entityname.Deco_Medieval_Wood30_ERC>
+  <entityname.Deco_Medieval_Wood31_ERC>Wood Scrap 2</entityname.Deco_Medieval_Wood31_ERC>
+  <entityname.Deco_Medieval_Wood32_ERC>Some Box 1</entityname.Deco_Medieval_Wood32_ERC>
+  <entityname.Deco_Medieval_Wood33_ERC>Some Box 2</entityname.Deco_Medieval_Wood33_ERC>
+  <entityname.Deco_Medieval_Wood34_ERC>Some Box 3</entityname.Deco_Medieval_Wood34_ERC>
+  <entityname.Deco_Medieval_Wood35_ERC>Department 1</entityname.Deco_Medieval_Wood35_ERC>
+  <entityname.Deco_Medieval_Wood36_ERC>Department 2</entityname.Deco_Medieval_Wood36_ERC>
+  <entityname.Deco_Medieval_Wood37_ERC>Fence</entityname.Deco_Medieval_Wood37_ERC>
+  <entityname.Deco_Medieval_Wood38_ERC>Thatched Roof</entityname.Deco_Medieval_Wood38_ERC>
+  <entityname.Deco_Medieval_Wood39_ERC>Tiled Roof</entityname.Deco_Medieval_Wood39_ERC>
+  <entityname.Deco_Medieval_Wood40_ERC>Wooden Window Sash</entityname.Deco_Medieval_Wood40_ERC>
+  <entityname.Deco_Medieval_Various2_1_ERC>Dangling Rags</entityname.Deco_Medieval_Various2_1_ERC>
+  <entityname.Deco_Medieval_Various2_2_ERC>Stone brick fence</entityname.Deco_Medieval_Various2_2_ERC>
+  <entityname.Deco_Medieval_Various2_3_ERC>Tapestry 1</entityname.Deco_Medieval_Various2_3_ERC>
+  <entityname.Deco_Medieval_Various2_4_ERC>Tapestry 2</entityname.Deco_Medieval_Various2_4_ERC>
+  <entityname.Deco_Medieval_Various2_5_ERC>Tapestry 3</entityname.Deco_Medieval_Various2_5_ERC>
+  <entityname.Deco_Medieval_Various2_6_ERC>Tapestry 4</entityname.Deco_Medieval_Various2_6_ERC>
+  <entityname.Deco_Medieval_Various2_7_ERC>Stone Boar Bust 1</entityname.Deco_Medieval_Various2_7_ERC>
+  <entityname.Deco_Medieval_Various2_8_ERC>Stone Boar Bust 2</entityname.Deco_Medieval_Various2_8_ERC>
+  <entityname.Deco_Medieval_Various2_9_ERC>Stone Lion</entityname.Deco_Medieval_Various2_9_ERC>
+  <entityname.Deco_Medieval_Various2_10_ERC>Pouch 1</entityname.Deco_Medieval_Various2_10_ERC>
+  <entityname.Deco_Medieval_Various2_11_ERC>Pouch 2</entityname.Deco_Medieval_Various2_11_ERC>
+  <entityname.Deco_Medieval_Various2_12_ERC>Shoes</entityname.Deco_Medieval_Various2_12_ERC>
+  <entityname.Deco_Medieval_Various2_13_ERC>White Vase</entityname.Deco_Medieval_Various2_13_ERC>
+  <entityname.Deco_Medieval_Various2_14_ERC>Wicker basket</entityname.Deco_Medieval_Various2_14_ERC>
+  <entityname.Deco_Medieval_Various2_15_ERC>Libra</entityname.Deco_Medieval_Various2_15_ERC>
+  <entityname.Deco_Medieval_Various2_16_ERC>Garlic</entityname.Deco_Medieval_Various2_16_ERC>
+  <entityname.Deco_Medieval_Various2_17_ERC>Flag 1</entityname.Deco_Medieval_Various2_17_ERC>
+  <entityname.Deco_Medieval_Various2_18_ERC>Cage</entityname.Deco_Medieval_Various2_18_ERC>
+  <entityname.Deco_Medieval_Various2_19_ERC>Ball of Rope</entityname.Deco_Medieval_Various2_19_ERC>
+  <entityname.Deco_Medieval_Various2_20_ERC>Cobblestones and Stones 2</entityname.Deco_Medieval_Various2_20_ERC>
+  <entityname.Deco_Medieval_Various2_21_ERC>Stone Fragment Walls</entityname.Deco_Medieval_Various2_21_ERC>
+  <entityname.Deco_Medieval_Various2_22_ERC>Stone Debris</entityname.Deco_Medieval_Various2_22_ERC>
+  <entityname.Deco_Medieval_Various2_23_ERC>Cobbler's Table</entityname.Deco_Medieval_Various2_23_ERC>
+  <entityname.Deco_Medieval_Various2_24_ERC>Stone Bricks (Little)</entityname.Deco_Medieval_Various2_24_ERC>
+  <entityname.Deco_Medieval_Various2_25_ERC>Stone Bricks (Multiple)</entityname.Deco_Medieval_Various2_25_ERC>
+  <entityname.Deco_Medieval_Various2_26_ERC>Pallet of Stone Bricks</entityname.Deco_Medieval_Various2_26_ERC>
+  <entityname.Deco_Medieval_Various2_27_ERC>Iron Maiden</entityname.Deco_Medieval_Various2_27_ERC>
+  <entityname.Deco_Medieval_Various2_28_ERC>Tapestry 5</entityname.Deco_Medieval_Various2_28_ERC>
+  <entityname.Deco_Medieval_Various2_29_ERC>Department with a Book</entityname.Deco_Medieval_Various2_29_ERC>
+  <entityname.Deco_Medieval_Flag_1_ERC>Flag (Red - Black)</entityname.Deco_Medieval_Flag_1_ERC>
+  <entityname.Deco_Medieval_Flag_2_ERC>Flag (Blue - White)</entityname.Deco_Medieval_Flag_2_ERC>
+  <entityname.Deco_Medieval_Flag_3_ERC>Flag (Red)</entityname.Deco_Medieval_Flag_3_ERC>
+  <entityname.Deco_Medieval_Flag_4_ERC>Flag (Blue)</entityname.Deco_Medieval_Flag_4_ERC>
+  <entityname.Deco_Medieval_Flag_5_ERC>Flag (Yellow)</entityname.Deco_Medieval_Flag_5_ERC>
+  <entityname.Deco_Medieval_Flag_6_ERC>Flag (Green)</entityname.Deco_Medieval_Flag_6_ERC>
+  <entityname.Deco_Medieval_Flag_7_ERC>Flag (Black)</entityname.Deco_Medieval_Flag_7_ERC>
+  <entityname.Deco_Medieval_Flag_8_ERC>Flag (White)</entityname.Deco_Medieval_Flag_8_ERC>
+  <entityname.Wall_Medieval_Stone1_ERC>Stone Wall 1</entityname.Wall_Medieval_Stone1_ERC>
+  <entityname.Wall_Medieval_Stone2_ERC>Stone Wall 2</entityname.Wall_Medieval_Stone2_ERC>
+  <entityname.Wall_Medieval_Stone3_ERC>Stone Wall 3</entityname.Wall_Medieval_Stone3_ERC>
+  <entityname.Wall_Medieval_Stone4_ERC>Stone Wall 4</entityname.Wall_Medieval_Stone4_ERC>
+  <entityname.Wall_Medieval_Stone5_ERC>Stone Wall 5</entityname.Wall_Medieval_Stone5_ERC>
+  <entityname.Wall_Medieval_Stone6_ERC>Stone Wall 6</entityname.Wall_Medieval_Stone6_ERC>
+  <entityname.Wall_Medieval_Stone7_ERC>Stone Wall 7</entityname.Wall_Medieval_Stone7_ERC>
+  <entityname.Wall_Medieval_Stone8_ERC>Stone Wall 8</entityname.Wall_Medieval_Stone8_ERC>
+  <entityname.Wall_Medieval_Stone9_ERC>Stone Wall 9</entityname.Wall_Medieval_Stone9_ERC>
+  <entityname.Wall_Medieval_Stone10_ERC>Stone Wall 1</entityname.Wall_Medieval_Stone10_ERC>
+  <entityname.Wall_Medieval_StoneWindow_ERC>Stone Wall with window</entityname.Wall_Medieval_StoneWindow_ERC>
+  <entityname.Wall_Medieval_StoneTop1_ERC>Stone Embrasure 1</entityname.Wall_Medieval_StoneTop1_ERC>
+  <entityname.Wall_Medieval_StoneTop2_ERC>Stone Embrasure 2</entityname.Wall_Medieval_StoneTop2_ERC>
+  <entityname.Wall_Medieval_StoneTop3_ERC>Stone Embrasure 3</entityname.Wall_Medieval_StoneTop3_ERC>
+  <entityname.Column_Medieval_Stone1_ERC>Stone Column 1</entityname.Column_Medieval_Stone1_ERC>
+  <entityname.Column_Medieval_Stone2_ERC>Stone Column 2</entityname.Column_Medieval_Stone2_ERC>
+  <entityname.Column_Medieval_Stone3_ERC>Stone Column 3</entityname.Column_Medieval_Stone3_ERC>
+  <entityname.Bars_Medieval_Iron1_ERC>Iron Bar 1</entityname.Bars_Medieval_Iron1_ERC>
+  <entityname.Block_Medieval_Stone1_ERC>Stone Block 1</entityname.Block_Medieval_Stone1_ERC>
+  <entityname.Block_Medieval_Stone2_ERC>Stone Corner 1</entityname.Block_Medieval_Stone2_ERC>
+  <entityname.Blocks_Medieval_Stone1_ERC>Stone Bricks 1</entityname.Blocks_Medieval_Stone1_ERC>
+  <entityname.Blocks_Medieval_Stone2_ERC>Stone Bricks 2</entityname.Blocks_Medieval_Stone2_ERC>
+  <entityname.Wall_Medieval_Carpet1_ERC>Wall Carpet (Blue)</entityname.Wall_Medieval_Carpet1_ERC>
+  <entityname.Wall_Medieval_Carpet2_ERC>Wall Carpet (Red)</entityname.Wall_Medieval_Carpet2_ERC>
+  <entityname.Wall_Medieval_Tiles_ERC>Roof Tiles</entityname.Wall_Medieval_Tiles_ERC>
+  <entityname.Window1_Medieval_ERC>Window 1</entityname.Window1_Medieval_ERC>
+  <entityname.Window2_Medieval_ERC>Window 2</entityname.Window2_Medieval_ERC>
+  <entityname.Window3_Medieval_ERC>Window 3</entityname.Window3_Medieval_ERC>
+  <entityname.Window4_Medieval_ERC>Window 4</entityname.Window4_Medieval_ERC>
+  <entityname.Window5_Medieval_ERC>Embrane 1</entityname.Window5_Medieval_ERC>
+  <entityname.Window6_Medieval_ERC>Embrane 2</entityname.Window6_Medieval_ERC>
+  <entityname.Window7_Medieval_ERC>Window Bar 1</entityname.Window7_Medieval_ERC>
+  <entityname.Door1_Decorative_Medieval_ERC>Wooden Door 1 (Decorative, Background)</entityname.Door1_Decorative_Medieval_ERC>
+  <entityname.Door2_Decorative_Medieval_ERC>Wooden Door 2 (Decorative, Background)</entityname.Door2_Decorative_Medieval_ERC>
+  <entityname.Door2Wreck_Decorative_Medieval_ERC>Wooden Door 2 Wreck (Decorative, Background)</entityname.Door2Wreck_Decorative_Medieval_ERC>
+  <entityname.Door3_Decorative_Medieval_ERC>Iron Door 1 (Decorative, Background)</entityname.Door3_Decorative_Medieval_ERC>
+  <entityname.Door3Wreck_Decorative_Medieval_ERC>Iron Door 1 Wreck (Decorative, Background)</entityname.Door3Wreck_Decorative_Medieval_ERC>
+  <entityname.Deco_Medieval_Chain1_ERC>Chains, Straight</entityname.Deco_Medieval_Chain1_ERC>
+  <entityname.Deco_Medieval_Statue1_ERC>Monument 1</entityname.Deco_Medieval_Statue1_ERC>
+  <entityname.Deco_Medieval_Statue2_ERC>Monument 2</entityname.Deco_Medieval_Statue2_ERC>
+  <entityname.Deco_Medieval_Statue3_ERC>Monument 3</entityname.Deco_Medieval_Statue3_ERC>
+  <entityname.Deco_Medieval_Statue4_ERC>Monument 4</entityname.Deco_Medieval_Statue4_ERC>
+  <entityname.Deco_Medieval_Statue5_ERC>Monument of God 1</entityname.Deco_Medieval_Statue5_ERC>
+  <entityname.Deco_Medieval_Statue6_ERC>Monument of God 2</entityname.Deco_Medieval_Statue6_ERC>
+  <entityname.Deco_Medieval_Statue7_ERC>Monument of God 3</entityname.Deco_Medieval_Statue7_ERC>
+  <entityname.Deco_Medieval_Various1_ERC>Stone slabs</entityname.Deco_Medieval_Various1_ERC>
+  <entityname.Deco_Medieval_Various2_ERC>Chains with Lock</entityname.Deco_Medieval_Various2_ERC>
+  <entityname.Deco_Medieval_Various3_ERC>Bell (Non-Interactive)</entityname.Deco_Medieval_Various3_ERC>
+  <entityname.Deco_Medieval_Vase1_ERC>Flower Pot 1</entityname.Deco_Medieval_Vase1_ERC>
+  <entityname.Deco_Medieval_Vase2_ERC>Flower Pot 2</entityname.Deco_Medieval_Vase2_ERC>
+  <entityname.Deco_Medieval_Tree1_ERC>Background Tree 1</entityname.Deco_Medieval_Tree1_ERC>
+  <entityname.Deco_Medieval_Tree2_ERC>Background Tree 2</entityname.Deco_Medieval_Tree2_ERC>
+  <entityname.Deco_Medieval_Tree3_ERC>Background Tree 3</entityname.Deco_Medieval_Tree3_ERC>
+  <entityname.Deco_Medieval_Tree4_ERC>Background Tree 4</entityname.Deco_Medieval_Tree4_ERC>
+  <entityname.Deco_Medieval_Tree5_ERC>Background Tree 5</entityname.Deco_Medieval_Tree5_ERC>
+  <entityname.Deco_Medieval_Tree6_ERC>Background Tree 6</entityname.Deco_Medieval_Tree6_ERC>
+  <entityname.Deco_Medieval_Tree7_ERC>Background Tree 7</entityname.Deco_Medieval_Tree7_ERC>
+  <entityname.Wall_Medieval_Tiles_Collision_ERC>Roof Tiles (Physical)</entityname.Wall_Medieval_Tiles_Collision_ERC>
+  <entityname.Wall_Medieval_Stone1_Collision_ERC>Stone Floor (Floor, Physical)</entityname.Wall_Medieval_Stone1_Collision_ERC>
+  <entityname.Wall_Medieval_Stone2_Collision_ERC>Stone Wall 1 (Wall, Physical)</entityname.Wall_Medieval_Stone2_Collision_ERC>
+  <entityname.Wall_Medieval_Stone3_Collision_ERC>Stone Wall 2 (Wall, Physical)</entityname.Wall_Medieval_Stone3_Collision_ERC>
+  <entityname.Wall_Medieval_Wood1_Collision_ERC>Wooden Floor (Floor, Physical)</entityname.Wall_Medieval_Wood1_Collision_ERC>
+  <entityname.Wall_Medieval_Wood2_Collision_ERC>Wooden Wall (Wall, Physical)</entityname.Wall_Medieval_Wood2_Collision_ERC>
+  <entityname.Wall_Medieval_Grass1_Collision_ERC>Turf (Floor, Physical)</entityname.Wall_Medieval_Grass1_Collision_ERC>
+  <entityname.Wall_Medieval_Grass2_Collision_ERC>Rocky Turf (Floor, Physical)</entityname.Wall_Medieval_Grass2_Collision_ERC>
+  <entityname.Platform1_Medieval_ERC>Stone Platform</entityname.Platform1_Medieval_ERC>
+  <entityname.Platform2_Medieval_ERC>Wooden Platform</entityname.Platform2_Medieval_ERC>
+  <entityname.Wall_Snow_Medieval_Stone1_Collision_ERC>Stone Floor (Floor, Physical, Snow)</entityname.Wall_Snow_Medieval_Stone1_Collision_ERC>
+  <entityname.Wall_Snow_Medieval_Stone2_Collision_ERC>Stone Wall 1 (Wall, Physical, Snow)</entityname.Wall_Snow_Medieval_Stone2_Collision_ERC>
+  <entityname.Wall_Snow_Medieval_Stone3_Collision_ERC>Stone Wall 2 (Wall, Physical, Snow)</entityname.Wall_Snow_Medieval_Stone3_Collision_ERC>
+  <entityname.Wall_Snow_Medieval_Wood1_Collision_ERC>Wooden Floor (Floor, Physical, Snow)</entityname.Wall_Snow_Medieval_Wood1_Collision_ERC>
+  <entityname.Wall_Snow_Medieval_Wood2_Collision_ERC>Wooden Wall (Wall, Physical, Snow)</entityname.Wall_Snow_Medieval_Wood2_Collision_ERC>
+  <entityname.Wall_Snow_Medieval_Grass1_Collision_ERC>Turf (Floor, Physical, Snow)</entityname.Wall_Snow_Medieval_Grass1_Collision_ERC>
+  <entityname.Wall_Snow_Medieval_Grass2_Collision_ERC>Rocky Turf (Floor, Physical, Snow)</entityname.Wall_Snow_Medieval_Grass2_Collision_ERC>
+  <entityname.Platform1_Snow_Medieval_ERC>Stone Platform (Snow)</entityname.Platform1_Snow_Medieval_ERC>
+  <entityname.Platform2_Snow_Medieval_ERC>Wooden Platform (Snow)</entityname.Platform2_Snow_Medieval_ERC>
+  <entityname.Back_Nature_Snow_Forest1>Forest 1 (Snow)</entityname.Back_Nature_Snow_Forest1>
+  <entityname.Back_Nature_Snow_Mountains1>Mountains 1 (Snow)</entityname.Back_Nature_Snow_Mountains1>
+  <entityname.stairs_medieval_ERC>Staircase 1</entityname.stairs_medieval_ERC>
+  <entityname.stairs2_medieval_ERC>Staircase 2</entityname.stairs2_medieval_ERC>
+  <entityname.stairs3_medieval_ERC>Staircase 3</entityname.stairs3_medieval_ERC>
+  <entityname.stairs4_medieval_ERC>Staircase 4</entityname.stairs4_medieval_ERC>
+  <entityname.Wall_Cave_Collision_ERC>Cave Wall</entityname.Wall_Cave_Collision_ERC>
+  <entityname.Wall_Cave2_Collision_ERC>Ominous Cave Wall</entityname.Wall_Cave2_Collision_ERC>
+  <entityname.Wall_Snow_Cave_Collision_ERC>Cave Wall (Snow)</entityname.Wall_Snow_Cave_Collision_ERC>
+  <entityname.Wall_Snow_Cave2_Collision_ERC>Ominous Cave Wall (Snow)</entityname.Wall_Snow_Cave2_Collision_ERC>
+  <entityname.Deco_CaveWall1_ERC>Cave Background</entityname.Deco_CaveWall1_ERC>
+  <entityname.Deco_Cave1_ERC>Cave Notch</entityname.Deco_Cave1_ERC>
+  <entityname.Deco_Cave2_ERC>Strange Cave Notch</entityname.Deco_Cave2_ERC>
+  <entityname.Deco_Cave3_ERC>Cave Stalactites</entityname.Deco_Cave3_ERC>
+  <entityname.Deco_Cave4_ERC>Cave Stalagmites</entityname.Deco_Cave4_ERC>
+  <entityname.Deco_Cave5_ERC>Cave Stalagmites 2</entityname.Deco_Cave5_ERC>
+  <entityname.Deco_Cave6_ERC>Cave Stalagmites 3</entityname.Deco_Cave6_ERC>
+  <entityname.Deco_Cave7_ERC>Cave Stalagmites 4</entityname.Deco_Cave7_ERC>
+  <entityname.Deco_Cave8_ERC>Cave Rock</entityname.Deco_Cave8_ERC>
+  <entityname.Deco_Cave9_ERC>Cave Rock 2</entityname.Deco_Cave9_ERC>
+  <entityname.Deco_Cave10_ERC>Cave Rock 3</entityname.Deco_Cave10_ERC>
+  <entityname.Deco_Cave11_ERC>Cave Stone 4</entityname.Deco_Cave11_ERC>
+  <entityname.Deco_Cave12_ERC>Cave Stone 5</entityname.Deco_Cave12_ERC>
+  <entityname.Deco_Cave13_ERC>Cave Overgrowth</entityname.Deco_Cave13_ERC>
+  <entityname.Deco_Cave14_ERC>Cave Overgrowth 2</entityname.Deco_Cave14_ERC>
+  <entityname.Deco_Cave15_ERC>Cave Overgrowth 3</entityname.Deco_Cave15_ERC>
+</infotexts> 

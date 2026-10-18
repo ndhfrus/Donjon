@@ -1,0 +1,666 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<prefabs>
+  <!-- ЗАДНИЙ ФОН, ДАНЖ -->
+  <Opbg name="Мясная стена 1" identifier="Wall_Medieval_Dungeon1_ERC" allowattachitems="true" width="16" height="16" scale="0.5" resizehorizontal="true" resizevertical="true" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Dungeon_structures.png" sourcerect="0,0,512,512" depth="0.985" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Мясная стена 2" identifier="Wall_Medieval_Dungeon2_ERC" allowattachitems="true" width="16" height="16" scale="0.5" resizehorizontal="true" resizevertical="true" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Dungeon_structures.png" sourcerect="0,513,511,511" depth="0.985" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Мясная стена 3" identifier="Wall_Medieval_Dungeon3_ERC" allowattachitems="true" width="16" height="16" scale="0.5" resizehorizontal="true" resizevertical="true" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Dungeon_structures.png" sourcerect="513,0,511,512" depth="0.985" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Мясная стена 4" identifier="Wall_Medieval_Dungeon4_ERC" allowattachitems="true" width="16" height="16" scale="0.5" resizehorizontal="true" resizevertical="true" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Dungeon_structures.png" sourcerect="515,515,508,508" depth="0.985" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Мясная стена 5" identifier="Wall_Medieval_Dungeon5_ERC" allowattachitems="true" width="16" height="16" scale="0.5" resizehorizontal="true" resizevertical="true" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Dungeon_structures.png" sourcerect="1026,0,512,512" depth="0.985" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Мясная стена 6" identifier="Wall_Medieval_Dungeon6_ERC" allowattachitems="true" width="16" height="16" scale="0.5" resizehorizontal="true" resizevertical="true" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Dungeon_structures.png" sourcerect="1028,515,506,507" depth="0.985" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Мясная стена 7" identifier="Wall_Medieval_Dungeon7_ERC" allowattachitems="true" width="16" height="16" scale="0.5" resizehorizontal="true" resizevertical="true" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Dungeon_structures.png" sourcerect="1541,1,254,254" depth="0.985" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Мясная стена 8" identifier="Wall_Medieval_Dungeon8_ERC" allowattachitems="true" width="16" height="16" scale="0.5" resizehorizontal="true" resizevertical="true" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Dungeon_structures.png" sourcerect="1541,259,399,399" depth="0.985" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Мясная стена 9" identifier="Wall_Medieval_Dungeon9_ERC" allowattachitems="true" width="16" height="16" scale="0.5" resizehorizontal="true" resizevertical="true" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Dungeon_structures.png" sourcerect="1540,660,400,400" depth="0.985" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Сосуды на стене 1" identifier="Deco1_Dungeon_Medieval_ERC" allowattachitems="false" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Dungeon_structures.png" sourcerect="-1,1025,270,279" depth="0.975" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Сосуды на стене 2" identifier="Deco2_Dungeon_Medieval_ERC" allowattachitems="false" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Dungeon_structures.png" sourcerect="269,1025,255,267" depth="0.975" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Сосуды на стене 3" identifier="Deco3_Dungeon_Medieval_ERC" allowattachitems="false" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Dungeon_structures.png" sourcerect="1,1320,868,565" depth="0.975" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Сосуды на стене 4" identifier="Deco4_Dungeon_Medieval_ERC" allowattachitems="false" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Dungeon_structures.png" sourcerect="880,1325,843,720" depth="0.975" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Сосуды на стене длинные" identifier="Deco5_Dungeon_Medieval_ERC" allowattachitems="false" scale="0.5" category="Decorative" resizehorizontal="true" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Dungeon_structures.png" sourcerect="525,1061,1509,244" depth="0.975" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <!-- ЗАДНИЙ ФОН, ПРИРОДА -->
+  <Opbg name="Небеса" identifier="Back_Nature_Skybox" allowattachitems="false" width="1024" height="256" resizehorizontal="true" resizevertical="true" texturescale="1,1" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Skybox.png" sourcerect="0,0,1920,600" depth="0.99" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Item name="Подвижное небо" identifier="Back_Nature_Skybox_Animated" category="Decorative" scale="1.0">
+    <Sprite texture="%ModDir%/Structure/doors.png" sourcerect="61,451,499,281" depth="0.0" origin="0.5,0.5" />
+    <DecorativeSprite texture="%ModDir%/Structure/Skybox.png" sourcerect="0,0,1920,600" depth="0.990" origin="0.5,0.5" offset="0,25" offsetanim="Sine" offsetanimspeed="0.2" />
+  </Item>
+  <Opbg name="Холмы 1" identifier="Back_Nature_Hills1" allowattachitems="false" width="1024" height="128" resizehorizontal="true" resizevertical="false" texturescale="1,1" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/hills1.png" sourcerect="1,0,1024,513" depth="0.991" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Холмы 2" identifier="Back_Nature_Hills2" allowattachitems="false" width="1024" height="128" resizehorizontal="true" resizevertical="false" texturescale="1,1" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/hills2.png" sourcerect="1,0,1076,173" depth="0.991" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Лес 1" identifier="Back_Nature_Forest1" allowattachitems="false" width="1024" height="512" resizehorizontal="true" resizevertical="false" texturescale="1,1" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/forest1.png" sourcerect="0,0,3999,600" depth="0.99" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Лес 2" identifier="Back_Nature_Forest2" allowattachitems="false" width="1024" height="458" resizehorizontal="true" resizevertical="false" texturescale="1,1" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/forest2.png" sourcerect="0,0,1024,458" depth="0.99" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Горы 1" identifier="Back_Nature_Mountains1" allowattachitems="false" width="1024" height="512" resizehorizontal="true" resizevertical="false" texturescale="1,1" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/mountains1.png" sourcerect="0,0,1024,512" depth="0.99" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Горы 2" identifier="Back_Nature_Mountains2" allowattachitems="false" width="1024" height="256" resizehorizontal="true" resizevertical="false" texturescale="1,1" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/mountains2.png" sourcerect="0,0,1024,256" depth="0.99" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Булыжники и камни 1" identifier="Back_Nature_Stone1" allowattachitems="false" width="1024" height="256" resizehorizontal="true" resizevertical="false" texturescale="1,1" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/rockandstone1.png" sourcerect="1,0,1023,256" depth="0.99" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Заросли 1" identifier="Back_Nature_Bushes1" allowattachitems="false" width="1024" height="256" resizehorizontal="true" resizevertical="false" texturescale="1,1" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/bushes1.png" sourcerect="1,0,4095,512" depth="0.99" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Кустарник 1" identifier="Back_Nature_Bush_Single1" allowattachitems="false" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/bushes1.png" sourcerect="0,0,985,512" depth="0.975" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Кустарник 2" identifier="Back_Nature_Bush_Single2" allowattachitems="false" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/bushes1.png" sourcerect="1236,278,264,235" depth="0.975" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Кустарник 3" identifier="Back_Nature_Bush_Single3" allowattachitems="false" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/bushes1.png" sourcerect="1586,0,539,512" depth="0.975" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Кустарник 4" identifier="Back_Nature_Bush_Single4" allowattachitems="false" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/bushes1.png" sourcerect="2255,1,1712,511" depth="0.975" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <!-- ЗАДНИЙ ФОН, СТЕНЫ ДЕРЕВО -->
+  <Opbg name="Деревянная стена 2" identifier="Wall_Medieval_Wood2_ERC" allowattachitems="true" width="16" height="16" scale="0.5" resizehorizontal="true" resizevertical="true" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Wood_structures.png" sourcerect="0,0,416,416" depth="0.98" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Деревянная стена 3" identifier="Wall_Medieval_Wood3_ERC" allowattachitems="true" width="16" height="16" scale="0.5" resizehorizontal="true" resizevertical="true" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Wood_structures.png" sourcerect="416,0,416,416" depth="0.98" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Деревянная стена 4" identifier="Wall_Medieval_Wood4_ERC" allowattachitems="true" width="16" height="16" scale="0.5" resizehorizontal="true" resizevertical="true" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Wood_structures.png" sourcerect="832,0,419,416" depth="0.98" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Деревянная стена 5" identifier="Wall_Medieval_Wood5_ERC" allowattachitems="true" width="16" height="16" scale="0.5" resizehorizontal="true" resizevertical="true" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Wood_structures.png" sourcerect="1251,0,592,415" depth="0.98" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Деревянная стена 6" identifier="Wall_Medieval_Wood6_ERC" allowattachitems="true" width="16" height="16" scale="0.5" resizehorizontal="true" resizevertical="true" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Wood_structures.png" sourcerect="0,417,392,413" depth="0.98" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Деревянная стена 7" identifier="Wall_Medieval_Wood7_ERC" allowattachitems="true" width="16" height="16" scale="0.5" resizehorizontal="true" resizevertical="true" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Wood_structures.png" sourcerect="392,417,442,413" depth="0.98" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Деревянная стена 8" identifier="Wall_Medieval_Wood8_ERC" allowattachitems="true" width="16" height="16" scale="0.5" resizehorizontal="true" resizevertical="true" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Wood_structures.png" sourcerect="834,417,762,412" depth="0.98" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Деревянная стена 9" identifier="Wall_Medieval_Wood9_ERC" allowattachitems="true" width="16" height="16" scale="0.5" resizehorizontal="true" resizevertical="true" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Wood_structures.png" sourcerect="1597,416,398,411" depth="0.98" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Деревянная стена 10" identifier="Wall_Medieval_Wood10_ERC" allowattachitems="true" width="16" height="16" scale="0.5" resizehorizontal="true" resizevertical="true" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Wood_structures.png" sourcerect="0,829,503,412" depth="0.98" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Деревянная стена 11" identifier="Wall_Medieval_Wood11_ERC" allowattachitems="true" width="16" height="16" scale="0.5" resizehorizontal="true" resizevertical="true" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Wood_structures.png" sourcerect="506,830,567,411" depth="0.98" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Деревянная стена 12" identifier="Wall_Medieval_Wood12_ERC" allowattachitems="true" width="16" height="16" scale="0.5" resizehorizontal="true" resizevertical="true" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Wood_structures.png" sourcerect="1074,829,460,411" depth="0.98" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Деревянный элемент стены 1" identifier="Deco_Medieval_Wood1_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Wood_structures.png" sourcerect="1457,1701,112,111" depth="0.975" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Деревянный элемент стены 2" identifier="Deco_Medieval_Wood2_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Wood_structures.png" sourcerect="1583,1701,114,110" depth="0.975" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Деревянный элемент стены 3" identifier="Deco_Medieval_Wood3_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Wood_structures.png" sourcerect="1710,1704,93,102" depth="0.975" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Деревянный элемент стены 4" identifier="Deco_Medieval_Wood4_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Wood_structures.png" sourcerect="1811,1705,96,104" depth="0.975" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Деревянный элемент стены 5" identifier="Deco_Medieval_Wood5_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Wood_structures.png" sourcerect="1421,1817,163,91" depth="0.975" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Деревянный элемент стены 6" identifier="Deco_Medieval_Wood6_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Wood_structures.png" sourcerect="1596,1812,102,102" depth="0.975" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Деревянный элемент стены 7" identifier="Deco_Medieval_Wood7_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Wood_structures.png" sourcerect="1710,1814,104,99" depth="0.975" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Деревянное окно 1" identifier="Deco_Medieval_Wood8_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Wood_structures.png" sourcerect="261,1716,395,258" depth="0.975" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Деревянное окно 2" identifier="Deco_Medieval_Wood9_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Wood_structures.png" sourcerect="667,1715,207,256" depth="0.975" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Деревянное окно 3" identifier="Deco_Medieval_Wood10_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Wood_structures.png" sourcerect="882,1696,255,288" depth="0.975" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Стекло деревянного окна" identifier="Deco_Medieval_Wood11_ERC" allowattachitems="false" resizehorizontal="true" resizevertical="true" width="200" height="180" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Wood_structures.png" sourcerect="1795,1461,127,201" depth="0.976" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Деревянная арка" identifier="Deco_Medieval_Wood13_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Wood_structures.png" sourcerect="1188,1696,222,210" depth="0.975" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Бревно (Декоративное)" identifier="Deco_Medieval_Wood14_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Wood_structures.png" sourcerect="1153,1924,752,109" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Деревянная балка (Декоративное)" identifier="Deco_Medieval_Wood15_ERC" allowattachitems="true" resizevertical="true" resisehorizontal="false" width="96" height="791" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Wood_structures.png" sourcerect="1940,1243,96,791" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Деревянная вывеска" identifier="Deco_Medieval_Wood16_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Decorative_structures.png" sourcerect="3,722,513,302" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Бочки" identifier="Deco_Medieval_Wood17_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Decorative_structures.png" sourcerect="615,719,350,305" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Мешок 1" identifier="Deco_Medieval_Wood18_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Decorative_structures.png" sourcerect="14,334,126,103" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Мешок 2" identifier="Deco_Medieval_Wood19_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Decorative_structures.png" sourcerect="150,331,118,114" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Мешок 3" identifier="Deco_Medieval_Wood20_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Decorative_structures.png" sourcerect="0,448,169,72" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Мешок 4" identifier="Deco_Medieval_Wood21_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Decorative_structures_2.png" sourcerect="824,7,147,211" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Мешок 5" identifier="Deco_Medieval_Wood22_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Decorative_structures_2.png" sourcerect="822,229,197,203" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Воз 1" identifier="Deco_Medieval_Wood23_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Decorative_structures_2.png" sourcerect="272,0,497,290" depth="0.9" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Воз 2" identifier="Deco_Medieval_Wood24_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Decorative_structures_2.png" sourcerect="22,404,647,209" depth="0.9" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Кормушка" identifier="Deco_Medieval_Wood25_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Decorative_structures_2.png" sourcerect="5,621,369,131" depth="0.96" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Свисающая одежда" identifier="Deco_Medieval_Wood26_ERC" allowattachitems="true" resizehorizontal="true" width="300" height="220" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Decorative_structures_2.png" sourcerect="0,764,667,219" depth="0.96" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Заготовленные бревна" identifier="Deco_Medieval_Wood27_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Decorative_structures_2.png" sourcerect="794,896,219,101" depth="0.96" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Мешок 6" identifier="Deco_Medieval_Wood28_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Decorative_structures_3.png" sourcerect="751,0,223,237" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Бочка (Декор)" identifier="Deco_Medieval_Wood29_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Decorative_structures_3.png" sourcerect="637,334,194,208" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Деревянный мусор 1" identifier="Deco_Medieval_Wood30_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Decorative_structures_3.png" sourcerect="502,871,487,42" depth="0.975" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Деревянный мусор 2" identifier="Deco_Medieval_Wood31_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Decorative_structures_3.png" sourcerect="462,922,550,99" depth="0.975" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Какая - то коробка 1" identifier="Deco_Medieval_Wood32_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Decorative_structures_3.png" sourcerect="2,1,156,155" depth="0.975" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Какая - то коробка 2" identifier="Deco_Medieval_Wood33_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Decorative_structures_3.png" sourcerect="159,3,197,150" depth="0.975" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Какая - то коробка 3" identifier="Deco_Medieval_Wood34_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Decorative_structures_3.png" sourcerect="363,0,162,174" depth="0.975" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Кафедра 1" identifier="Deco_Medieval_Wood35_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Decorative_structures_3.png" sourcerect="834,345,188,218" depth="0.975" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Кафедра 2" identifier="Deco_Medieval_Wood36_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Decorative_structures_3.png" sourcerect="518,539,104,234" depth="0.975" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Ограда" identifier="Deco_Medieval_Wood37_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Decorative_structures.png" sourcerect="5,521,558,187" depth="0.975" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Соломенная крыша" identifier="Deco_Medieval_Wood38_ERC" allowattachitems="true" resizehorizontal="true" width="300" height="410" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Wood_structures.png" sourcerect="0,1241,813,410" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Черепичная крыша" identifier="Deco_Medieval_Wood39_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Wood_structures.png" sourcerect="814,1242,866,414" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Створка деревянного окна" identifier="Deco_Medieval_Wood40_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Wood_structures.png" sourcerect="1577,916,207,260" depth="0.975" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <!-- ДОП ДЕКОР -->
+  <Opbg name="Свисающие тряпки" identifier="Deco_Medieval_Various2_1_ERC" allowattachitems="true" resizehorizontal="true" width="300" height="206" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Decorative_structures_4.png" sourcerect="0,543,581,206" depth="0.96" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Ограда из каменного кирпича" identifier="Deco_Medieval_Various2_2_ERC" allowattachitems="true" resizehorizontal="true" width="300" height="144" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Decorative_structures_5.png" sourcerect="210,434,258,144" depth="0.96" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Гобелен 1" identifier="Deco_Medieval_Various2_3_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Decorative_structures_4.png" sourcerect="0,0,296,264" depth="0.970" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Гобелен 2" identifier="Deco_Medieval_Various2_4_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Decorative_structures_4.png" sourcerect="296,0,296,264" depth="0.970" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Гобелен 3" identifier="Deco_Medieval_Various2_5_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Decorative_structures_4.png" sourcerect="592,0,291,256" depth="0.970" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Гобелен 4" identifier="Deco_Medieval_Various2_6_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Decorative_structures_4.png" sourcerect="0,271,602,270" depth="0.970" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Каменный бюст кабана 1" identifier="Deco_Medieval_Various2_7_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Decorative_structures_4.png" sourcerect="902,2,113,168" depth="0.970" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Каменный бюст кабана 2" identifier="Deco_Medieval_Various2_8_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Decorative_structures_4.png" sourcerect="900,170,121,167" depth="0.970" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Каменный лев" identifier="Deco_Medieval_Various2_9_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Decorative_structures_4.png" sourcerect="590,302,331,343" depth="0.970" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Мешочек 1" identifier="Deco_Medieval_Various2_10_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Decorative_structures_4.png" sourcerect="940,341,79,76" depth="0.970" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Мешочек 2" identifier="Deco_Medieval_Various2_11_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Decorative_structures_4.png" sourcerect="920,428,99,134" depth="0.970" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Колодки" identifier="Deco_Medieval_Various2_12_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Decorative_structures_4.png" sourcerect="0,815,236,209" depth="0.970" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Белая ваза" identifier="Deco_Medieval_Various2_13_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Decorative_structures_4.png" sourcerect="243,850,84,169" depth="0.970" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Плетенная корзинка" identifier="Deco_Medieval_Various2_14_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Decorative_structures_4.png" sourcerect="344,773,105,114" depth="0.970" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Весы" identifier="Deco_Medieval_Various2_15_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Decorative_structures_4.png" sourcerect="331,901,132,119" depth="0.970" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Чеснок" identifier="Deco_Medieval_Various2_16_ERC" allowattachitems="true" scale="0.5" resizevertical="true" width="41" height="255" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Decorative_structures_4.png" sourcerect="508,772,41,225" depth="0.960" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Флаг 1" identifier="Deco_Medieval_Various2_17_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Decorative_structures_4.png" sourcerect="576,749,109,270" depth="0.960" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Клетка" identifier="Deco_Medieval_Various2_18_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Decorative_structures_4.png" sourcerect="692,665,158,355" depth="0.970" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Моток каната" identifier="Deco_Medieval_Various2_19_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Decorative_structures_4.png" sourcerect="728,256,153,43" depth="0.970" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Булыжники и камни 2" identifier="Deco_Medieval_Various2_20_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Decorative_structures_5.png" sourcerect="0,0,528,351" depth="0.970" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Фрагмент каменной стены" identifier="Deco_Medieval_Various2_21_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Decorative_structures_5.png" sourcerect="579,1,381,344" depth="0.970" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Каменные обломки" identifier="Deco_Medieval_Various2_22_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Decorative_structures_5.png" sourcerect="204,364,223,51" depth="0.970" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Каменный стол" identifier="Deco_Medieval_Various2_23_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Decorative_structures_5.png" sourcerect="500,401,365,180" depth="0.970" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Каменные кирпичи (Мало)" identifier="Deco_Medieval_Various2_24_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Decorative_structures_5.png" sourcerect="270,849,267,54" depth="0.970" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Каменные кирпичи (Несколько)" identifier="Deco_Medieval_Various2_25_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Decorative_structures_5.png" sourcerect="263,767,116,44" depth="0.970" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Поддон каменных кирпичей" identifier="Deco_Medieval_Various2_26_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Decorative_structures_5.png" sourcerect="246,642,217,86" depth="0.970" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Железная дева" identifier="Deco_Medieval_Various2_27_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Decorative_structures_5.png" sourcerect="0,378,198,469" depth="0.970" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Гобелен 5" identifier="Deco_Medieval_Various2_28_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Decorative_structures_5.png" sourcerect="578,626,287,243" depth="0.970" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Кафедра с книгой" identifier="Deco_Medieval_Various2_29_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Containers.png" sourcerect="898,718,126,306" depth="0.950" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Флаг КЧ" identifier="Deco_Medieval_Flag_1_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Tools/flag_hanging.png" sourcerect="13,77,142,270" depth="0.960" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Флаг СБ" identifier="Deco_Medieval_Flag_2_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Tools/flag_hanging.png" sourcerect="159,77,142,270" depth="0.960" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Флаг К" identifier="Deco_Medieval_Flag_3_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Tools/flag_hanging.png" sourcerect="305,77,142,270" depth="0.960" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Флаг С" identifier="Deco_Medieval_Flag_4_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Tools/flag_hanging.png" sourcerect="451,77,142,270" depth="0.960" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Флаг Ж" identifier="Deco_Medieval_Flag_5_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Tools/flag_hanging.png" sourcerect="597,77,142,270" depth="0.960" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Флаг З" identifier="Deco_Medieval_Flag_6_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Tools/flag_hanging.png" sourcerect="743,77,142,270" depth="0.960" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Флаг Ч" identifier="Deco_Medieval_Flag_7_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Tools/flag_hanging.png" sourcerect="13,537,142,270" depth="0.960" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Флаг Б" identifier="Deco_Medieval_Flag_8_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Tools/flag_hanging.png" sourcerect="159,537,142,270" depth="0.960" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <!-- ЗАДНИЙ ФОН, СТЕНЫ КАМЕНЬ -->
+  <Opbg name="Каменная стена 1" identifier="Wall_Medieval_Stone1_ERC" allowattachitems="true" width="16" height="16" scale="0.5" resizehorizontal="true" resizevertical="true" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Stone_structures.png" sourcerect="0,0,438,565" depth="0.98" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Каменная стена 2" identifier="Wall_Medieval_Stone2_ERC" allowattachitems="true" width="16" height="16" scale="0.5" resizehorizontal="true" resizevertical="true" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Stone_structures.png" sourcerect="440,1,328,561" depth="0.98" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Каменная стена 3" identifier="Wall_Medieval_Stone3_ERC" allowattachitems="true" width="16" height="16" scale="0.5" resizehorizontal="true" resizevertical="true" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Various_structures.png" sourcerect="838,1,354,412" depth="0.98" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Каменная стена 4" identifier="Wall_Medieval_Stone4_ERC" allowattachitems="true" width="16" height="16" scale="0.5" resizehorizontal="true" resizevertical="true" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Various_structures.png" sourcerect="1194,0,449,414" depth="0.98" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Каменная стена 5" identifier="Wall_Medieval_Stone5_ERC" allowattachitems="true" width="16" height="16" scale="0.5" resizehorizontal="true" resizevertical="true" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Various_structures.png" sourcerect="388,415,438,565" depth="0.98" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Каменная стена 6" identifier="Wall_Medieval_Stone6_ERC" allowattachitems="true" width="16" height="16" scale="0.5" resizehorizontal="true" resizevertical="true" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Various_structures.png" sourcerect="1584,416,463,412" depth="0.98" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Каменная стена 7" identifier="Wall_Medieval_Stone7_ERC" allowattachitems="true" width="16" height="16" scale="0.5" resizehorizontal="true" resizevertical="true" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Various_structures.png" sourcerect="1144,415,438,414" depth="0.98" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Каменная стена 8" identifier="Wall_Medieval_Stone8_ERC" allowattachitems="true" width="16" height="16" scale="0.5" resizehorizontal="true" resizevertical="true" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Various_structures.png" sourcerect="1,415,385,534" depth="0.98" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Каменная стена 9" identifier="Wall_Medieval_Stone9_ERC" allowattachitems="true" width="16" height="16" scale="0.5" resizehorizontal="true" resizevertical="true" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Various_structures.png" sourcerect="0,981,559,414" depth="0.98" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Каменная стена 1" identifier="Wall_Medieval_Stone10_ERC" allowattachitems="true" width="16" height="16" scale="0.5" resizehorizontal="true" resizevertical="true" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Various_structures.png" sourcerect="0,0,834,414" depth="0.98" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Каменная стена с окном" identifier="Wall_Medieval_StoneWindow_ERC" allowattachitems="true" width="16" height="16" scale="0.5" resizehorizontal="true" resizevertical="true" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Various_structures.png" sourcerect="1644,0,363,414" depth="0.98" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Каменная амбразура 1" identifier="Wall_Medieval_StoneTop1_ERC" allowattachitems="true" width="16" height="16" scale="0.5" resizehorizontal="true" resizevertical="true" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Stone_structures.png" sourcerect="0,566,426,221" depth="0.98" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Каменная амбразура 2" identifier="Wall_Medieval_StoneTop2_ERC" allowattachitems="true" width="16" height="16" scale="0.5" resizehorizontal="true" resizevertical="true" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Various_structures.png" sourcerect="1117,1245,503,228" depth="0.98" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Каменная амбразура 3" identifier="Wall_Medieval_StoneTop3_ERC" allowattachitems="true" width="16" height="16" scale="0.5" resizehorizontal="true" resizevertical="true" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Various_structures.png" sourcerect="1621,1244,426,222" depth="0.98" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Каменная колонна 1" identifier="Column_Medieval_Stone1_ERC" allowattachitems="true" width="144" height="32" scale="0.5" resizehorizontal="false" resizevertical="true" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Stone_structures.png" sourcerect="770,0,187,427" depth="0.975" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Каменная колонна 2" identifier="Column_Medieval_Stone2_ERC" allowattachitems="true" width="148" height="32" scale="0.5" resizehorizontal="false" resizevertical="true" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Various_structures.png" sourcerect="995,415,148,782" depth="0.975" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Каменная колонна 3" identifier="Column_Medieval_Stone3_ERC" allowattachitems="true" width="144" height="32" scale="0.5" resizehorizontal="false" resizevertical="true" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Various_structures.png" sourcerect="849,416,145,554" depth="0.975" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Железная решётка 1" identifier="Bars_Medieval_Iron1_ERC" allowattachitems="true" width="16" height="16" scale="0.5" resizehorizontal="true" resizevertical="true" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Stone_structures.png" sourcerect="603,564,165,330" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Каменный блок 1" identifier="Block_Medieval_Stone1_ERC" allowattachitems="true" width="149" height="146" scale="0.5" resizehorizontal="true" resizevertical="true" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Stone_structures.png" sourcerect="199,789,149,146" depth="0.975" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Каменный угол 1" identifier="Block_Medieval_Stone2_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Stone_structures.png" sourcerect="0,788,198,204" depth="0.975" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Каменные кирпичи 1" identifier="Blocks_Medieval_Stone1_ERC" allowattachitems="true" width="80" height="200" scale="0.5" resizehorizontal="false" resizevertical="true" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Stone_structures.png" sourcerect="770,427,121,432" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Каменные кирпичи 2" identifier="Blocks_Medieval_Stone2_ERC" allowattachitems="true" width="80" height="200" scale="0.5" resizehorizontal="false" resizevertical="true" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Various_structures.png" sourcerect="2010,1467,37,427" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Ковер на стене (Синий)" identifier="Wall_Medieval_Carpet1_ERC" allowattachitems="true" width="16" height="16" scale="0.5" resizehorizontal="true" resizevertical="true" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Various_structures.png" sourcerect="560,981,409,414" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Ковер на стене (Красный)" identifier="Wall_Medieval_Carpet2_ERC" allowattachitems="true" width="16" height="16" scale="0.5" resizehorizontal="true" resizevertical="true" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Various_structures.png" sourcerect="0,1396,833,414" depth="0.97" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Черепица на крыше" identifier="Wall_Medieval_Tiles_ERC" allowattachitems="true" width="16" height="16" scale="0.5" resizehorizontal="true" resizevertical="true" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Various_structures.png" sourcerect="1144,830,834,414" depth="0.95" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Окно 1" identifier="Window1_Medieval_ERC" allowattachitems="false" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Various_structures.png" sourcerect="0,1810,201,229" depth="0.975" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Окно 2" identifier="Window2_Medieval_ERC" allowattachitems="false" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Various_structures.png" sourcerect="207,1812,162,217" depth="0.975" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Окно 3" identifier="Window3_Medieval_ERC" allowattachitems="false" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Various_structures.png" sourcerect="505,1821,110,209" depth="0.975" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Окно 4" identifier="Window4_Medieval_ERC" allowattachitems="false" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Various_structures.png" sourcerect="1727,1466,159,379" depth="0.975" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Бойница 1" identifier="Window5_Medieval_ERC" allowattachitems="true" width="16" height="16" scale="0.5" resizehorizontal="true" resizevertical="true" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Various_structures.png" sourcerect="1026,1904,38,128" depth="0.98" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Бойница 2" identifier="Window6_Medieval_ERC" allowattachitems="true" width="16" height="16" scale="0.5" resizehorizontal="true" resizevertical="true" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Various_structures.png" sourcerect="1066,1956,133,76" depth="0.98" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Решетка на окно 1" identifier="Window7_Medieval_ERC" allowattachitems="true" width="16" height="16" scale="0.5" resizehorizontal="true" resizevertical="true" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Various_structures.png" sourcerect="839,1397,213,379" depth="0.98" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Деревянная дверь 1 (Декоративная, задний фон)" identifier="Door1_Decorative_Medieval_ERC" allowattachitems="false" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Doors.png" sourcerect="70,5,186,401" depth="0.975" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Деревянная дверь 2 (Декоративная, задний фон)" identifier="Door2_Decorative_Medieval_ERC" allowattachitems="false" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Doors_2.png" sourcerect="59,1,263,421" depth="0.975" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Деревянная дверь 2 Обломки (Декоративная, задний фон)" identifier="Door2Wreck_Decorative_Medieval_ERC" allowattachitems="false" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Doors_2.png" sourcerect="328,8,264,421" depth="0.975" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Железная дверь 1 (Декоративная, задний фон)" identifier="Door3_Decorative_Medieval_ERC" allowattachitems="false" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Doors_2.png" sourcerect="60,443,257,422" depth="0.975" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Железная дверь 1 Обломки (Декоративная, задний фон)" identifier="Door3Wreck_Decorative_Medieval_ERC" allowattachitems="false" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Doors_2.png" sourcerect="331,448,261,431" depth="0.975" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Цепи, прямые" identifier="Deco_Medieval_Chain1_ERC" allowattachitems="false" resizehorizontal="false" resizevertical="true" width="30" height="180" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Decorative_structures.png" sourcerect="991,2,32,347" depth="0.976" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Монумент 1" identifier="Deco_Medieval_Statue1_ERC" allowattachitems="false" resizehorizontal="false" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Decorative_structures_3.png" sourcerect="202,168,167,369" depth="0.976" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Монумент 2" identifier="Deco_Medieval_Statue2_ERC" allowattachitems="false" resizehorizontal="false" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Decorative_structures_3.png" sourcerect="370,175,142,383" depth="0.976" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Монумент 3" identifier="Deco_Medieval_Statue3_ERC" allowattachitems="false" resizehorizontal="false" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Decorative_structures_3.png" sourcerect="1,572,254,452" depth="0.976" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Монумент 4" identifier="Deco_Medieval_Statue4_ERC" allowattachitems="false" resizehorizontal="false" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Decorative_structures_3.png" sourcerect="255,572,194,452" depth="0.976" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Монумент Бога 1" identifier="Deco_Medieval_Statue5_ERC" allowattachitems="false" resizehorizontal="false" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Decorative_structures_gods.png" sourcerect="0,44,194,452" depth="0.976" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Монумент Бога 2" identifier="Deco_Medieval_Statue6_ERC" allowattachitems="false" resizehorizontal="false" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Decorative_structures_gods.png" sourcerect="194,21,186,475" depth="0.976" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Монумент Бога 3" identifier="Deco_Medieval_Statue7_ERC" allowattachitems="false" resizehorizontal="false" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Decorative_structures_gods.png" sourcerect="380,0,197,496" depth="0.976" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Каменные плиты" identifier="Deco_Medieval_Various1_ERC" allowattachitems="false" resizehorizontal="false" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Decorative_structures_3.png" sourcerect="465,776,347,82" depth="0.976" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Цепи с замком" identifier="Deco_Medieval_Various2_ERC" allowattachitems="false" resizehorizontal="false" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Decorative_structures_3.png" sourcerect="636,565,93,203" depth="0.92" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Колокол (Неинтерактивный)" identifier="Deco_Medieval_Various3_ERC" allowattachitems="false" resizehorizontal="false" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Decorative_structures_3.png" sourcerect="813,621,205,234" depth="0.92" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Горшок 1" identifier="Deco_Medieval_Vase1_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Decorative_structures_3.png" sourcerect="535,310,86,94" depth="0.975" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Горшок 2" identifier="Deco_Medieval_Vase2_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/Decorative_structures_3.png" sourcerect="541,419,77,111" depth="0.975" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Фоновое дерево 1" identifier="Deco_Medieval_Tree1_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <Sprite texture="%ModDir%/Structure/derevo.png" depth="0.9" sourcerect="412,0,402,1014" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Фоновое дерево 2" identifier="Deco_Medieval_Tree2_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <Sprite texture="%ModDir%/Structure/derevo.png" depth="0.53" sourcerect="813,0,545,1014" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Фоновое дерево 3" identifier="Deco_Medieval_Tree3_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <Sprite texture="%ModDir%/Structure/derevo.png" depth="0.53" sourcerect="1358,0,408,1013" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Фоновое дерево 4" identifier="Deco_Medieval_Tree4_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <Sprite texture="%ModDir%/Structure/derevo.png" depth="0.53" sourcerect="1920,0,408,1013" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Фоновое дерево 5" identifier="Deco_Medieval_Tree5_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <Sprite texture="%ModDir%/Structure/derevo.png" depth="0.53" sourcerect="386,1058,408,1013" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Фоновое дерево 6" identifier="Deco_Medieval_Tree6_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <Sprite texture="%ModDir%/Structure/derevo.png" depth="0.53" sourcerect="839,1058,495,1013" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Фоновое дерево 7" identifier="Deco_Medieval_Tree7_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <Sprite texture="%ModDir%/Structure/derevo.png" depth="0.53" sourcerect="1391,1078,420,994" origin="0.5,0.5" />
+  </Opbg>
+  <!-- СТЕНЫ, ФИЗИЧНЫЕ -->
+  <stonewall name="Черепица на крыше (Физичная)" identifier="Wall_Medieval_Tiles_Collision_ERC" descriptionidentifier="exteriorshell" subcategory="medieval" body="true" scale="0.5" tags="stonewall" castshadow="true" health="100" width="1024" height="96" resizehorizontal="true" resizevertical="false">
+    <sprite texture="%ModDir%/Structure/Various_structures.png" sourcerect="1144,830,834,204" depth="0.1" origin="0.5,0.5" />
+  </stonewall>
+  <stonewall name="Каменный пол (Пол,Физичный)" identifier="Wall_Medieval_Stone1_Collision_ERC" descriptionidentifier="exteriorshell" subcategory="medieval" body="true" scale="0.5" tags="stonewall,ice" castshadow="true" health="200" width="1024" height="92" resizehorizontal="true" resizevertical="false">
+    <sprite texture="%ModDir%/Structure/Stone_structures.png" sourcerect="522,899,500,125" depth="0.1" origin="0.5,0.5" />
+  </stonewall>
+  <stonewall name="Каменная стена 1 (Стена,Физичная)" identifier="Wall_Medieval_Stone2_Collision_ERC" descriptionidentifier="exteriorshell" subcategory="medieval" body="true" scale="0.5" tags="stonewall" castshadow="true" health="200" width="122" height="100" resizehorizontal="false" resizevertical="true">
+    <sprite texture="%ModDir%/Structure/Stone_structures2.png" sourcerect="5,4,122,640" depth="0.1" premultiplyalpha="false" origin="0.5,0.5" />
+  </stonewall>
+  <stonewall name="Каменная стена 2 (Стена,Физичная)" identifier="Wall_Medieval_Stone3_Collision_ERC" descriptionidentifier="exteriorshell" subcategory="medieval" body="true" scale="0.5" tags="stonewall" castshadow="true" health="200" width="148" height="100" resizehorizontal="false" resizevertical="true">
+    <sprite texture="%ModDir%/Structure/Stone_structures2.png" sourcerect="132,2,148,428" depth="0.1" premultiplyalpha="false" origin="0.5,0.5" />
+  </stonewall>
+  <stonewall name="Деревянный пол (Пол,Физичный)" identifier="Wall_Medieval_Wood1_Collision_ERC" descriptionidentifier="exteriorshell" subcategory="medieval" body="true" scale="0.5" tags="stonewall,ice" castshadow="true" health="200" width="1024" height="92" resizehorizontal="true" resizevertical="false">
+    <sprite texture="%ModDir%/Structure/Stone_structures2.png" sourcerect="136,520,771,122" depth="0.1" origin="0.5,0.5" />
+  </stonewall>
+  <stonewall name="Деревянная стена (Стена,Физичная)" identifier="Wall_Medieval_Wood2_Collision_ERC" descriptionidentifier="exteriorshell" subcategory="medieval" body="true" scale="0.5" tags="stonewall,ice" castshadow="true" health="200" width="53" height="1024" resizehorizontal="false" resizevertical="true">
+    <sprite texture="%ModDir%/Structure/Stone_structures2.png" sourcerect="326,3,53,444" depth="0.1" origin="0.5,0.5" />
+  </stonewall>
+  <stonewall name="Дёрн (Пол,Физичный)" identifier="Wall_Medieval_Grass1_Collision_ERC" descriptionidentifier="exteriorshell" subcategory="medieval" body="true" scale="0.5" tags="stonewall,ice" castshadow="true" health="200" width="1024" height="132" bodyheight="74" bodyoffset="0,-12" resizehorizontal="true" resizevertical="false">
+    <sprite texture="%ModDir%/Structure/Stone_structures2.png" sourcerect="7,768,954,175" depth="0.1" origin="0.5,0.5" />
+  </stonewall>
+  <stonewall name="Каменистый дёрн (Пол,Физичный)" identifier="Wall_Medieval_Grass2_Collision_ERC" descriptionidentifier="exteriorshell" subcategory="medieval" body="true" scale="0.5" tags="stonewall,ice" castshadow="true" health="200" width="1024" height="96" resizehorizontal="true" resizevertical="false">
+    <sprite texture="%ModDir%/Structure/Stone_structures2.png" sourcerect="5,658,975,109" depth="0.1" origin="0.5,0.5" />
+  </stonewall>
+  <platform name="Каменная платформа" identifier="Platform1_Medieval_ERC" descriptionidentifier="platform" scale="0.5" category="Decorative" subcategory="medieval" allowattachitems="true" width="64" height="50" resizehorizontal="true" body="true" platform="true" AllowRotatingInEditor="false">
+    <sprite texture="%ModDir%/Structure/Stone_structures.png" sourcerect="209,963,173,61" depth="0.9" origin="0.5,0.5" />
+  </platform>
+  <platform name="Деревянная платформа" identifier="Platform2_Medieval_ERC" descriptionidentifier="platform" scale="0.5" category="Decorative" subcategory="medieval" allowattachitems="true" width="64" height="30" resizehorizontal="true" body="true" platform="true" AllowRotatingInEditor="false">
+    <sprite texture="%ModDir%/Structure/Stone_structures2.png" sourcerect="133,464,439,40" depth="0.9" origin="0.5,0.5" />
+  </platform>
+  <!-- СТЕНЫ, ФИЗИЧНЫЕ, СНЕГ -->
+  <stonewall name="Каменный пол (Пол,Физичный, Снег)" identifier="Wall_Snow_Medieval_Stone1_Collision_ERC" descriptionidentifier="exteriorshell" subcategory="medieval" body="true" scale="0.5" tags="stonewall,ice" castshadow="true" health="200" width="1024" height="92" bodyheight="74" bodyoffset="0,-12" resizehorizontal="true" resizevertical="false">
+    <sprite texture="%ModDir%/Structure/Stone_structures2_snow.png" sourcerect="388,279,497,149" depth="0.1" origin="0.5,0.5" />
+  </stonewall>
+  <stonewall name="Каменная стена 1 (Стена,Физичная, Снег)" identifier="Wall_Snow_Medieval_Stone2_Collision_ERC" descriptionidentifier="exteriorshell" subcategory="medieval" body="true" scale="0.5" tags="stonewall" castshadow="true" health="200" width="122" height="100" resizehorizontal="false" resizevertical="true">
+    <sprite texture="%ModDir%/Structure/Stone_structures2_snow.png" sourcerect="5,4,122,640" depth="0.1" premultiplyalpha="false" origin="0.5,0.5" />
+  </stonewall>
+  <stonewall name="Каменная стена 2 (Стена,Физичная, Снег)" identifier="Wall_Snow_Medieval_Stone3_Collision_ERC" descriptionidentifier="exteriorshell" subcategory="medieval" body="true" scale="0.5" tags="stonewall" castshadow="true" health="200" width="148" height="100" resizehorizontal="false" resizevertical="true">
+    <sprite texture="%ModDir%/Structure/Stone_structures2_snow.png" sourcerect="132,2,148,428" depth="0.1" premultiplyalpha="false" origin="0.5,0.5" />
+  </stonewall>
+  <stonewall name="Деревянный пол (Пол,Физичный, Снег)" identifier="Wall_Snow_Medieval_Wood1_Collision_ERC" descriptionidentifier="exteriorshell" subcategory="medieval" body="true" scale="0.5" tags="stonewall,ice" castshadow="true" health="200" width="1024" height="92" resizehorizontal="true" resizevertical="false">
+    <sprite texture="%ModDir%/Structure/Stone_structures2_snow.png" sourcerect="136,515,771,126" depth="0.1" origin="0.5,0.5" />
+  </stonewall>
+  <stonewall name="Деревянная стена (Стена,Физичная, Снег)" identifier="Wall_Snow_Medieval_Wood2_Collision_ERC" descriptionidentifier="exteriorshell" subcategory="medieval" body="true" scale="0.5" tags="stonewall,ice" castshadow="true" health="200" width="53" height="1024" resizehorizontal="false" resizevertical="true">
+    <sprite texture="%ModDir%/Structure/Stone_structures2_snow.png" sourcerect="326,3,53,444" depth="0.1" origin="0.5,0.5" />
+  </stonewall>
+  <stonewall name="Дёрн (Пол,Физичный, Снег)" identifier="Wall_Snow_Medieval_Grass1_Collision_ERC" descriptionidentifier="exteriorshell" subcategory="medieval" body="true" scale="0.5" tags="stonewall,ice" castshadow="true" health="200" width="1024" height="132" bodyheight="100" bodyoffset="0,-12" resizehorizontal="true" resizevertical="false">
+    <sprite texture="%ModDir%/Structure/Stone_structures2_snow.png" sourcerect="14,768,831,176" depth="0.1" origin="0.5,0.5" />
+  </stonewall>
+  <stonewall name="Каменистый дёрн (Пол,Физичный, Снег)" identifier="Wall_Snow_Medieval_Grass2_Collision_ERC" descriptionidentifier="exteriorshell" subcategory="medieval" body="true" scale="0.5" tags="stonewall,ice" castshadow="true" health="200" width="1024" height="96" bodyheight="74" bodyoffset="0,-12" resizehorizontal="true" resizevertical="false">
+    <sprite texture="%ModDir%/Structure/Stone_structures2_snow.png" sourcerect="0,653,976,114" depth="0.1" origin="0.5,0.5" />
+  </stonewall>
+  <platform name="Каменная платформа (Снег)" identifier="Platform1_Snow_Medieval_ERC" descriptionidentifier="platform" scale="0.5" category="Decorative" subcategory="medieval" allowattachitems="true" width="64" height="50" resizehorizontal="true" body="true" platform="true" AllowRotatingInEditor="false">
+    <sprite texture="%ModDir%/Structure/Stone_structures2_snow.png" sourcerect="588,440,177,64" depth="0.9" origin="0.5,0.5" />
+  </platform>
+  <platform name="Деревянная платформа (Снег)" identifier="Platform2_Snow_Medieval_ERC" descriptionidentifier="platform" scale="0.5" category="Decorative" subcategory="medieval" allowattachitems="true" width="64" height="30" resizehorizontal="true" body="true" platform="true" AllowRotatingInEditor="false">
+    <sprite texture="%ModDir%/Structure/Stone_structures2_snow.png" sourcerect="133,458,439,46" depth="0.9" origin="0.5,0.5" />
+  </platform>
+  <!-- ФОН, СНЕГ -->
+  <Opbg name="Лес 1 (Снег)" identifier="Back_Nature_Snow_Forest1" allowattachitems="false" width="1534" height="330" resizehorizontal="true" resizevertical="false" texturescale="1,1" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/snow_forest.png" sourcerect="2,162,1534,330" depth="0.99" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Горы 1 (Снег)" identifier="Back_Nature_Snow_Mountains1" allowattachitems="false" width="1535" height="477" resizehorizontal="true" resizevertical="false" texturescale="1,1" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/snow_forest.png" sourcerect="1,547,1535,477" depth="0.99" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <!-- Лестницы -->
+  <stairs name="Лестница 1" identifier="stairs_medieval_ERC" width="280" height="343" stairangle="45" stairdirection="Left" AllowRotatingInEditor="false">
+    <sprite texture="%ModDir%/Structure/Stairs.png" sourcerect="0,0,280,343" fliphorizontal="true" depth="0.1" origin="0.5,0.5" />
+  </stairs>
+  <stairs name="Лестница 2" identifier="stairs2_medieval_ERC" width="274" height="278" stairangle="45" stairdirection="Left" AllowRotatingInEditor="false">
+    <sprite texture="%ModDir%/Structure/Stairs.png" sourcerect="283,0,274,278" fliphorizontal="true" depth="0.1" origin="0.5,0.5" />
+  </stairs>
+  <stairs name="Лестница 3" identifier="stairs3_medieval_ERC" width="259" height="266" stairangle="45" stairdirection="Left" AllowRotatingInEditor="false">
+    <sprite texture="%ModDir%/Structure/Stairs.png" sourcerect="564,0,259,266" fliphorizontal="true" depth="0.1" origin="0.5,0.5" />
+  </stairs>
+  <stairs name="Лестница 4" identifier="stairs4_medieval_ERC" width="260" height="278" stairangle="45" stairdirection="Left" AllowRotatingInEditor="false">
+    <sprite texture="%ModDir%/Structure/Stairs.png" sourcerect="764,234,260,278" fliphorizontal="true" depth="0.1" origin="0.5,0.5" />
+  </stairs>
+  <!-- СТЕНЫ, ФИЗИЧНЫЕ, ПЕЩЕРЫ -->
+  <stonewall name="Пещерная стена 1" identifier="Wall_Cave_Collision_ERC" descriptionidentifier="exteriorshell" subcategory="medieval" body="true" scale="0.5" tags="stonewall,ice" castshadow="true" health="400" width="1024" height="89" resizehorizontal="true" resizevertical="false">
+    <sprite texture="%ModDir%/Structure/BackgroundChunks_2.png" sourcerect="0,2,1024,89" depth="0.1" origin="0.5,0.5" />
+  </stonewall>
+  <stonewall name="Пещерная стена 2" identifier="Wall_Cave2_Collision_ERC" descriptionidentifier="exteriorshell" subcategory="medieval" body="true" scale="0.5" tags="stonewall,ice" castshadow="true" health="400" width="1024" height="92" resizehorizontal="true" resizevertical="false">
+    <sprite texture="%ModDir%/Structure/BackgroundChunks_2.png" sourcerect="0,102,1024,92" depth="0.1" premultiplyalpha="false" origin="0.5,0.5" />
+  </stonewall>
+  <stonewall name="Пещерная стена 1 Снег" identifier="Wall_Snow_Cave_Collision_ERC" descriptionidentifier="exteriorshell" subcategory="medieval" body="true" scale="0.5" tags="stonewall,ice" castshadow="true" health="400" width="1024" height="89" resizehorizontal="true" resizevertical="false">
+    <sprite texture="%ModDir%/Structure/BackgroundChunks_2.png" sourcerect="0,209,1024,94" depth="0.1" origin="0.5,0.5" />
+  </stonewall>
+  <stonewall name="Пещерная стена 2 Снег" identifier="Wall_Snow_Cave2_Collision_ERC" descriptionidentifier="exteriorshell" subcategory="medieval" body="true" scale="0.5" tags="stonewall,ice" castshadow="true" health="400" width="1024" height="92" bodyheight="74" bodyoffset="0,-12" resizehorizontal="true" resizevertical="false">
+    <sprite texture="%ModDir%/Structure/BackgroundChunks_2.png" sourcerect="0,316,1024,96" depth="0.1" premultiplyalpha="false" origin="0.5,0.5" />
+  </stonewall>
+  <!-- ДЕКОР, ПЕЩЕРЫ -->
+  <Opbg name="Пещерный фон" identifier="Deco_CaveWall1_ERC" allowattachitems="false" width="1024" height="256" resizehorizontal="true" resizevertical="true" texturescale="1,1" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/cavewall.png" sourcerect="0,0,512,512" depth="0.98" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Пещерная выемка" identifier="Deco_Cave1_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/BackgroundChunks_2.png" sourcerect="0,498,276,265" depth="0.975" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Пещерная выемка 2" identifier="Deco_Cave2_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/BackgroundChunks_2.png" sourcerect="0,773,280,237" depth="0.975" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Пещерные сталактиты" identifier="Deco_Cave3_ERC" allowattachitems="true" resizehorizontal="true" width="739" height="451" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/BackgroundChunks_2.png" sourcerect="286,556,739,451" depth="0.976" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Пещерные сталагмиты 1" identifier="Deco_Cave4_ERC" allowattachitems="true" resizehorizontal="true" width="868" height="267" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/BackgroundChunks_2.png" sourcerect="0,1020,868,267" depth="0.976" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Пещерные сталагмиты 2" identifier="Deco_Cave5_ERC" allowattachitems="true" resizehorizontal="true" width="1008" height="305" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/BackgroundChunks_2.png" sourcerect="0,1289,1008,305" depth="0.976" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Пещерные сталагмиты 3" identifier="Deco_Cave6_ERC" allowattachitems="true" resizehorizontal="true" width="849" height="252" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/BackgroundChunks_2.png" sourcerect="0,1596,849,252" depth="0.976" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Пещерные сталагмиты 4" identifier="Deco_Cave7_ERC" allowattachitems="true" resizehorizontal="true" width="792" height="190" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="%ModDir%/Structure/BackgroundChunks_2.png" sourcerect="0,1852,792,190" depth="0.976" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Пещерный камень 1" identifier="Deco_Cave8_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="Content/Map/Biomes/RockCave/BackgroundChunks.png" sourcerect="0,2,337,504" depth="0.977" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Пещерный камень 2" identifier="Deco_Cave9_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="Content/Map/Biomes/RockCave/BackgroundChunks.png" sourcerect="349,1,328,505" depth="0.977" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Пещерный камень 3" identifier="Deco_Cave10_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="Content/Map/Biomes/RockCave/BackgroundChunks.png" sourcerect="690,1,329,468" depth="0.977" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Пещерный камень 4" identifier="Deco_Cave11_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="Content/Map/Biomes/RockCave/BackgroundChunks.png" sourcerect="3,517,501,476" depth="0.977" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Пещерный камень 5" identifier="Deco_Cave12_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="Content/Map/Biomes/RockCave/BackgroundChunks.png" sourcerect="525,527,480,418" depth="0.977" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Пещерные заросли 1" identifier="Deco_Cave13_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="Content/Map/Biomes/ForestCave/CaveHazards.png" sourcerect="1,0,466,822" depth="0.977" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Пещерные заросли 2" identifier="Deco_Cave14_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="Content/Map/Biomes/ForestCave/CaveHazards.png" sourcerect="471,2,456,867" depth="0.977" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+  <Opbg name="Пещерные заросли 3" identifier="Deco_Cave15_ERC" allowattachitems="true" scale="0.5" category="Decorative" subcategory="medieval">
+    <sprite texture="Content/Map/Biomes/ForestCave/CaveHazards.png" sourcerect="929,0,479,803" depth="0.977" premultiplyalpha="false" origin="0.5,0.5" />
+  </Opbg>
+</prefabs>

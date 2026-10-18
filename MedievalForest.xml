@@ -1,0 +1,891 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="" identifier="grain_shrub_adult" category="Material" subcategory="Medieval" Tags="bigitem,plant,krisatarget,bill_target" health="100" maxstacksize="1" maxstacksizecharacterinventory="1" GrabWhenSelected="true" damagedbymeleeweapons="false" damagedbyexplosions="true" canbepicked="true" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_soft">
+    <Deconstruct time="5"></Deconstruct>
+    <Sprite texture="%ModDir%/Structure/grain.png" depth="0.499" sourcerect="388,0,117,256" origin="0.5,0.5" />
+    <Body height="230" width="140" density="12" friction="100.0" restitution="0" angulardamping="20" />
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" pickingtime="5.0">
+      <!-- Прокачка при сборе урожая-->
+      <StatusEffect type="OnPicked" target="Character" comparison="and" disabledeltatime="true">
+        <Conditional skillrequirement="true" medical="lt 20" />
+        <GiveSkill skillidentifier="medical" amount="0.05" triggertalents="false" />
+      </StatusEffect>
+      <StatusEffect type="OnPicked" target="Character" comparison="and" disabledeltatime="true">
+        <Conditional skillrequirement="true" medical="gte 20" />
+        <Conditional skillrequirement="true" medical="lt 40" />
+        <GiveSkill skillidentifier="medical" amount="0.025" triggertalents="false" />
+      </StatusEffect>
+      <StatusEffect type="OnPicked" target="This" allowwhenbroken="true">
+        <Conditional hasstatustag="neq farmer" targetcontainer="true" />
+        <SpawnItem identifier="grainseed" spawnposition="SameInventory" count="1" SpawnRotationType="None" spread="100" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnPicked" target="This" allowwhenbroken="true" spawnitemrandomly="true">
+        <Conditional hasstatustag="eq farmer" targetcontainer="true" />
+        <SpawnItem identifier="grainseed" spawnposition="SameInventory" count="1" SpawnRotationType="None" spread="100" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+        <SpawnItem identifier="grainseed" spawnposition="SameInventory" count="1" SpawnRotationType="None" spread="100" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+        <SpawnItem identifier="grainseed" spawnposition="SameInventory" count="1" SpawnRotationType="None" spread="100" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+        <SpawnItem identifier="grainseed" spawnposition="SameInventory" count="1" SpawnRotationType="None" spread="100" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+        <SpawnItem identifier="grainseed" spawnposition="SameInventory" count="2" SpawnRotationType="None" spread="100" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnItem identifier="grainseed" spawnposition="SameInventory" count="1" SpawnRotationType="None" spread="100" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+        <Conditional hasstatustag="eq bill_used" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" delay="0.1">
+        <Conditional hasstatustag="neq onfire" />
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Conditional hasstatustag="eq onfire" />
+        <SpawnItem identifier="firepvpemitter_little_erc" spawnposition="SameInventory" count="1" SpawnRotationType="None" spread="50" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="InWater" target="This" Condition="-10.0" disabledeltatime="true" interval="0.5" />
+      <StatusEffect type="OnFire" target="This" Condition="-50.0" disabledeltatime="true" interval="0.5" />
+      <StatusEffect type="OnFire" target="This" interval="2.5" duration="4.5" stackable="false" tags="onfire">
+        <ParticleEmitter particle="flame" anglemin="70" anglemax="110" distancemin="-20" distancemax="50" velocitymin="20" velocitymax="80" particlespersecond="20" scalemin="0.25" scalemax="0.35" />
+        <ParticleEmitter particle="mistsmoke" particlespersecond="3" anglemin="90" anglemax="270" distancemin="0" distancemax="15" velocitymin="20" velocitymax="80" scalemin="1.1" scalemax="2.0" />
+        <Sound file="Content/Sounds/FireSmall.ogg" type="Always" volume="0.8" range="900" loop="true" />
+      </StatusEffect>
+    </Holdable>
+    <AiTarget sightrange="1500" />
+  </Item>
+  <Item name="" identifier="creepingorange_shrub_adult" category="Material" subcategory="Medieval" Tags="bigitem,plant,krisatarget" health="100" maxstacksize="1" maxstacksizecharacterinventory="1" GrabWhenSelected="true" damagedbymeleeweapons="false" damagedbyexplosions="true" canbepicked="true" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_soft">
+    <Deconstruct time="5"></Deconstruct>
+    <Sprite texture="%ModDir%/Structure/grain.png" depth="0.499" sourcerect="0,339,212,173" origin="0.5,0.5" />
+    <Body height="130" width="130" density="12" friction="100.0" restitution="0" angulardamping="20" />
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" pickingtime="4.0">
+      <!-- Прокачка при сборе урожая-->
+      <StatusEffect type="OnPicked" target="Character" comparison="and" disabledeltatime="true">
+        <Conditional skillrequirement="true" medical="lt 20" />
+        <GiveSkill skillidentifier="medical" amount="0.05" triggertalents="false" />
+      </StatusEffect>
+      <StatusEffect type="OnPicked" target="Character" comparison="and" disabledeltatime="true">
+        <Conditional skillrequirement="true" medical="gte 20" />
+        <Conditional skillrequirement="true" medical="lt 40" />
+        <GiveSkill skillidentifier="medical" amount="0.025" triggertalents="false" />
+      </StatusEffect>
+      <StatusEffect type="OnPicked" target="This" allowwhenbroken="true">
+        <Conditional hasstatustag="neq farmer" targetcontainer="true" />
+        <SpawnItem identifier="creepingorange" spawnposition="SameInventory" count="1" SpawnRotationType="None" spread="100" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnPicked" target="This" allowwhenbroken="true" spawnitemrandomly="true">
+        <Conditional hasstatustag="eq farmer" targetcontainer="true" />
+        <SpawnItem identifier="creepingorange" spawnposition="SameInventory" count="1" SpawnRotationType="None" spread="100" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+        <SpawnItem identifier="creepingorange" spawnposition="SameInventory" count="1" SpawnRotationType="None" spread="100" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+        <SpawnItem identifier="creepingorange" spawnposition="SameInventory" count="1" SpawnRotationType="None" spread="100" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+        <SpawnItem identifier="creepingorange" spawnposition="SameInventory" count="1" SpawnRotationType="None" spread="100" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+        <SpawnItem identifier="creepingorange" spawnposition="SameInventory" count="2" SpawnRotationType="None" spread="100" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Conditional hasstatustag="neq onfire" />
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Conditional hasstatustag="eq onfire" />
+        <SpawnItem identifier="firepvpemitter_little_erc" spawnposition="SameInventory" count="1" SpawnRotationType="None" spread="50" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="InWater" target="This" Condition="-10.0" disabledeltatime="true" interval="0.5" />
+      <StatusEffect type="OnFire" target="This" Condition="-50.0" disabledeltatime="true" interval="0.5" />
+      <StatusEffect type="OnFire" target="This" interval="2.5" duration="4.5" stackable="false" tags="onfire">
+        <ParticleEmitter particle="flame" anglemin="70" anglemax="110" distancemin="-20" distancemax="50" velocitymin="20" velocitymax="80" particlespersecond="20" scalemin="0.25" scalemax="0.35" />
+        <ParticleEmitter particle="mistsmoke" particlespersecond="3" anglemin="90" anglemax="270" distancemin="0" distancemax="15" velocitymin="20" velocitymax="80" scalemin="1.1" scalemax="2.0" />
+        <Sound file="Content/Sounds/FireSmall.ogg" type="Always" volume="0.8" range="900" loop="true" />
+      </StatusEffect>
+    </Holdable>
+    <AiTarget sightrange="1500" />
+  </Item>
+  <Item name="" identifier="potato_shrub_adult" category="Material" subcategory="Medieval" Tags="bigitem,plant,krisatarget" health="130" maxstacksize="1" maxstacksizecharacterinventory="1" GrabWhenSelected="true" damagedbymeleeweapons="false" damagedbyexplosions="true" canbepicked="true" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_soft">
+    <Deconstruct time="5"></Deconstruct>
+    <Sprite texture="%ModDir%/Structure/potato.png" depth="0.499" sourcerect="235,60,169,195" origin="0.5,0.5" />
+    <Body height="170" width="130" density="12" friction="100.0" restitution="0" angulardamping="20" />
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" pickingtime="12.0">
+      <!-- Прокачка при сборе урожая-->
+      <StatusEffect type="OnPicked" target="Character" comparison="and" disabledeltatime="true">
+        <Conditional skillrequirement="true" medical="lt 20" />
+        <GiveSkill skillidentifier="medical" amount="0.05" triggertalents="false" />
+      </StatusEffect>
+      <StatusEffect type="OnPicked" target="Character" comparison="and" disabledeltatime="true">
+        <Conditional skillrequirement="true" medical="gte 20" />
+        <Conditional skillrequirement="true" medical="lt 40" />
+        <GiveSkill skillidentifier="medical" amount="0.025" triggertalents="false" />
+      </StatusEffect>
+      <StatusEffect type="OnPicked" target="This" allowwhenbroken="true" spawnitemrandomly="true">
+        <Conditional hasstatustag="neq farmer" targetcontainer="true" />
+        <SpawnItem identifier="potato" spawnposition="SameInventory" count="2" SpawnRotationType="None" spread="100" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+        <SpawnItem identifier="potato" spawnposition="SameInventory" count="3" SpawnRotationType="None" spread="100" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+        <SpawnItem identifier="potato" spawnposition="SameInventory" count="3" SpawnRotationType="None" spread="100" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+        <SpawnItem identifier="potato" spawnposition="SameInventory" count="3" SpawnRotationType="None" spread="100" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+        <SpawnItem identifier="potato" spawnposition="SameInventory" count="4" SpawnRotationType="None" spread="100" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnPicked" target="This" allowwhenbroken="true" spawnitemrandomly="true">
+        <Conditional hasstatustag="eq farmer" targetcontainer="true" />
+        <SpawnItem identifier="potato" spawnposition="SameInventory" count="3" SpawnRotationType="None" spread="100" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+        <SpawnItem identifier="potato" spawnposition="SameInventory" count="3" SpawnRotationType="None" spread="100" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+        <SpawnItem identifier="potato" spawnposition="SameInventory" count="3" SpawnRotationType="None" spread="100" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+        <SpawnItem identifier="potato" spawnposition="SameInventory" count="4" SpawnRotationType="None" spread="100" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Conditional hasstatustag="neq onfire" />
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Conditional hasstatustag="eq onfire" />
+        <SpawnItem identifier="firepvpemitter_little_erc" spawnposition="SameInventory" count="1" SpawnRotationType="None" spread="50" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="InWater" target="This" Condition="-10.0" disabledeltatime="true" interval="0.5" />
+      <StatusEffect type="OnFire" target="This" Condition="-30.0" disabledeltatime="true" interval="0.5" />
+      <StatusEffect type="OnFire" target="This" interval="2.5" duration="4.5" stackable="false" tags="onfire">
+        <ParticleEmitter particle="flame" anglemin="70" anglemax="110" distancemin="-20" distancemax="50" velocitymin="20" velocitymax="80" particlespersecond="20" scalemin="0.25" scalemax="0.35" />
+        <ParticleEmitter particle="mistsmoke" particlespersecond="3" anglemin="90" anglemax="270" distancemin="0" distancemax="15" velocitymin="20" velocitymax="80" scalemin="1.1" scalemax="2.0" />
+        <Sound file="Content/Sounds/FireSmall.ogg" type="Always" volume="0.8" range="900" loop="true" />
+      </StatusEffect>
+    </Holdable>
+    <AiTarget sightrange="1500" />
+  </Item>
+  <Item name="" identifier="potato_shrub_adult_2" variantof="potato_shrub_adult" nameidentifier="potato_shrub_adult" descriptionidentifier="potato_shrub_adult">
+    <Sprite texture="%ModDir%/Structure/potato.png" depth="0.499" sourcerect="409,12,184,242" origin="0.5,0.5" />
+    <Body height="215" width="130" density="12" friction="100.0" restitution="0" angulardamping="20" />
+  </Item>
+  <Item name="" identifier="berryshrub" Tags="ignorebyai,treeitem,log,berryshrub" health="70" GrabWhenSelected="true" damagedbymeleeweapons="true" damagedbyexplosions="true" category="Misc" subcategory="Medieval" scale="0.5" impactsoundtag="impact_wood_heavy">
+    <Sprite texture="%ModDir%/Structure/berryshrub.png" depth="0.74" sourcerect="0,228,293,232" origin="0.5,0.5" />
+    <DecorativeSprite name="shrub_with_berries" texture="%ModDir%/Structure/berryshrub.png" depth="0.73" sourcerect="0,0,293,226" origin="0.5,0.5">
+      <IsActiveConditional charge="gte 240" targetitemcomponent="PowerContainer" />
+    </DecorativeSprite>
+    <Deconstruct time="10">
+      <Item identifier="wood_branch" amount="2" />
+    </Deconstruct>
+    <Body width="120" height="210" friction="1.0" restitution="0.01" angulardamping="0.8" density="9" />
+    <PowerContainer rechargespeed="1.0" capacity="240.0" vulnerabletoemp="False" canbeselected="false" maxrechargespeed="3000.0" maxoutput="0.0" />
+    <Pickable slots="None">
+      <StatusEffect type="OnNotContained" target="This" interval="1" disabledeltatime="true" charge="+1"></StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <particleemitter particle="brownchunks" particleamount="10" emitinterval="1000" velocitymin="0" velocitymax="100" anglemin="0" anglemax="360" scalemin="0.1" scalemax="0.3" colormultiplier="168,90,50,255" />
+        <Sound file="%ModDir%/Sounds/impact_wood_heavy1.ogg" range="700" />
+        <SpawnItem identifier="wood_branch" spawnposition="This" count="2" SpawnRotationType="None" spread="50" />
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnDamaged" target="This" stackable="false">
+        <particleemitter particle="brownchunks" particleamount="4" velocitymin="0" velocitymax="400" anglemin="0" anglemax="360" scalemin="0.15" scalemax="0.3" colormultiplier="168,90,50,255" />
+        <Sound file="%ModDir%/Sounds/woodhit_01.ogg" selectionmode="random" range="600" />
+        <Sound file="%ModDir%/Sounds/woodhit_02.ogg" selectionmode="random" range="600" />
+        <Sound file="%ModDir%/Sounds/woodhit_03.ogg" selectionmode="random" range="600" />
+      </StatusEffect>
+      <StatusEffect type="OnFire" target="This" Condition="0.0" delay="0.75" setvalue="true" interval="1">
+        <SpawnItem identifier="firepvpemitter_littlelong_erc" spawnposition="SameInventory" count="1" SpawnRotationType="None" spread="50" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+      </StatusEffect>
+    </Pickable>
+    <CustomInterface canbeselected="true" drawhudwhenequipped="false" allowuioverlap="false">
+      <GuiFrame relativesize="0.2,0.15" anchor="Center" pivot="Center" relativeoffset="0.0,0.15" style="Parchment" />
+      <Button text="textreb.takeberries">
+        <StatusEffect type="OnUse" target="This" interval="1" charge="-1000" disabledeltatime="true" comparison="and">
+          <Conditional charge="gte 240" />
+          <SpawnItem identifier="berries_erc" spawnposition="SameInventory" count="1" SpawnRotationType="None" spread="100" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+          <Sound file="%ModDir%/Sounds/takeberries1.ogg" range="500" volume="1.0" selectionmode="Random" />
+          <Sound file="%ModDir%/Sounds/takeberries2.ogg" range="500" volume="1.0" selectionmode="Random" />
+          <Sound file="%ModDir%/Sounds/takeberries3.ogg" range="500" volume="1.0" selectionmode="Random" />
+        </StatusEffect>
+      </Button>
+    </CustomInterface>
+  </Item>
+  <Item name="" identifier="berryshrub2" Tags="ignorebyai,treeitem,log,berryshrub" health="70" GrabWhenSelected="true" damagedbymeleeweapons="true" damagedbyexplosions="true" category="Misc" subcategory="Medieval" scale="0.5" impactsoundtag="impact_wood_heavy">
+    <Sprite texture="%ModDir%/Structure/berryshrub2.png" depth="0.74" sourcerect="0,228,293,232" origin="0.5,0.5" />
+    <DecorativeSprite name="shrub_with_berries" texture="%ModDir%/Structure/berryshrub2.png" depth="0.73" sourcerect="0,0,293,226" origin="0.5,0.5">
+      <IsActiveConditional charge="gte 240" targetitemcomponent="PowerContainer" />
+    </DecorativeSprite>
+    <Deconstruct time="10">
+      <Item identifier="wood_branch" amount="2" />
+    </Deconstruct>
+    <Body width="120" height="210" friction="1.0" restitution="0.01" angulardamping="0.8" density="9" />
+    <PowerContainer rechargespeed="1.0" capacity="240.0" vulnerabletoemp="False" canbeselected="false" maxrechargespeed="3000.0" maxoutput="0.0" />
+    <Pickable slots="None">
+      <StatusEffect type="OnNotContained" target="This" interval="1" disabledeltatime="true" charge="+1"></StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <particleemitter particle="brownchunks" particleamount="10" emitinterval="1000" velocitymin="0" velocitymax="100" anglemin="0" anglemax="360" scalemin="0.1" scalemax="0.3" colormultiplier="168,90,50,255" />
+        <Sound file="%ModDir%/Sounds/impact_wood_heavy1.ogg" range="700" />
+        <SpawnItem identifier="wood_branch" spawnposition="This" count="2" SpawnRotationType="None" spread="50" />
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnDamaged" target="This" stackable="false">
+        <particleemitter particle="brownchunks" particleamount="4" velocitymin="0" velocitymax="400" anglemin="0" anglemax="360" scalemin="0.15" scalemax="0.3" colormultiplier="168,90,50,255" />
+        <Sound file="%ModDir%/Sounds/woodhit_01.ogg" selectionmode="random" range="600" />
+        <Sound file="%ModDir%/Sounds/woodhit_02.ogg" selectionmode="random" range="600" />
+        <Sound file="%ModDir%/Sounds/woodhit_03.ogg" selectionmode="random" range="600" />
+      </StatusEffect>
+      <StatusEffect type="OnFire" target="This" Condition="0.0" delay="0.75" setvalue="true" interval="1">
+        <SpawnItem identifier="firepvpemitter_littlelong_erc" spawnposition="SameInventory" count="1" SpawnRotationType="None" spread="50" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+      </StatusEffect>
+    </Pickable>
+    <CustomInterface canbeselected="true" drawhudwhenequipped="false" allowuioverlap="false">
+      <GuiFrame relativesize="0.2,0.15" anchor="Center" pivot="Center" relativeoffset="0.0,0.15" style="Parchment" />
+      <Button text="textreb.takeberries">
+        <StatusEffect type="OnUse" target="This" interval="1" charge="-1000" disabledeltatime="true" comparison="and">
+          <Conditional charge="gte 240" />
+          <SpawnItem identifier="berries2_erc" spawnposition="SameInventory" count="1" SpawnRotationType="None" spread="100" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+          <Sound file="%ModDir%/Sounds/takeberries1.ogg" range="500" volume="1.0" selectionmode="Random" />
+          <Sound file="%ModDir%/Sounds/takeberries2.ogg" range="500" volume="1.0" selectionmode="Random" />
+          <Sound file="%ModDir%/Sounds/takeberries3.ogg" range="500" volume="1.0" selectionmode="Random" />
+        </StatusEffect>
+      </Button>
+    </CustomInterface>
+  </Item>
+  <Item name="" identifier="bigshrub" Tags="ignorebyai,container" category="Misc" subcategory="Medieval" scale="0.5" impactsoundtag="impact_wood_heavy" noninteractable="true">
+    <Sprite texture="%ModDir%/Structure/stealthshrub.png" depth="0.74" sourcerect="126,33,1131,628" origin="0.5,0.5" />
+    <DecorativeSprite name="скрытный куст поверх" texture="%ModDir%/Structure/stealthshrub.png" depth="0.001" sourcerect="0,1001,1372,326" origin="0.5,-0.1" offset="6,6" offsetanim="Noise" offsetanimspeed="5.0">
+      <AnimationConditional hasstatustag="active" />
+    </DecorativeSprite>
+    <Pickable slots="None">
+      <StatusEffect type="OnBroken" target="This">
+        <particleemitter particle="brownchunks" particleamount="10" emitinterval="1000" velocitymin="0" velocitymax="100" anglemin="0" anglemax="360" scalemin="0.1" scalemax="0.3" colormultiplier="168,90,50,255" />
+        <Sound file="%ModDir%/Sounds/impact_wood_heavy1.ogg" range="700" />
+        <SpawnItem identifier="wood_branch" spawnposition="This" count="6" SpawnRotationType="None" spread="50" />
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnDamaged" target="This" stackable="false">
+        <particleemitter particle="brownchunks" particleamount="4" velocitymin="0" velocitymax="400" anglemin="0" anglemax="360" scalemin="0.15" scalemax="0.3" colormultiplier="168,90,50,255" />
+        <Sound file="%ModDir%/Sounds/woodhit_01.ogg" selectionmode="random" range="600" />
+        <Sound file="%ModDir%/Sounds/woodhit_02.ogg" selectionmode="random" range="600" />
+        <Sound file="%ModDir%/Sounds/woodhit_03.ogg" selectionmode="random" range="600" />
+      </StatusEffect>
+      <StatusEffect type="OnFire" target="This" Condition="0.0" delay="0.75" setvalue="true" interval="1">
+        <SpawnItem identifier="firepvpemitter_littlelong_erc" spawnposition="SameInventory" count="1" SpawnRotationType="None" spread="50" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+      </StatusEffect>
+    </Pickable>
+    <TriggerComponent triggeredby="Human" width="900" height="500" sensor="true" interval="2">
+      <StatusEffect type="OnUse" target="This" interval="0.25" disabledeltatime="true" comparison="and">
+        <Conditional hasstatustag="eq crouched" />
+        <Conditional canrun="eq false" />
+        <Conditional meleeattacked="lte 0" />
+        <Affliction identifier="bush_invisible" strength="2" />
+      </StatusEffect>
+    </TriggerComponent>
+    <TriggerComponent triggeredby="Creature" width="800" height="450" sensor="true" interval="2">
+      <StatusEffect type="OnUse" target="This" interval="0.25" disabledeltatime="true" comparison="and">
+        <Conditional canrun="eq false" />
+        <Conditional meleeattacked="lte 0" />
+        <Conditional isdead="eq false" />
+        <Affliction identifier="bush_invisible" strength="2" />
+      </StatusEffect>
+    </TriggerComponent>
+    <MotionSensor rangex="270" rangey="150" target="Human,Monster" TargetCharacters="Human,Kaban" minimumvelocity="1.5" detectownmotion="false" canbeselected="false" IgnoreDead="true" UpdateInterval="1">
+      <StatusEffect type="OnUse" target="This" interval="0.5">
+        <Sound file="%ModDir%/Sounds/takeberries1.ogg" range="800" volume="0.75" selectionmode="Random" />
+        <Sound file="%ModDir%/Sounds/takeberries2.ogg" range="800" volume="0.75" />
+        <Sound file="%ModDir%/Sounds/takeberries3.ogg" range="800" volume="0.75" />
+        <Sound file="%ModDir%/Sounds/bush_moving_1.ogg" range="800" volume="0.75" />
+        <Sound file="%ModDir%/Sounds/bush_moving_2.ogg" range="800" volume="0.75" />
+        <Sound file="%ModDir%/Sounds/bush_moving_3.ogg" range="800" volume="0.75" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This" tags="active" duration="0.5" interval="0.25"/>
+    </MotionSensor>
+  </Item>
+  <Item name="" identifier="bigshrub_2" variantof="bigshrub" nameidentifier="bigshrub" descriptionidentifier="bigshrub">
+    <Sprite texture="%ModDir%/Structure/stealthshrub.png" depth="0.74" sourcerect="1423,38,1265,624" origin="0.5,0.5" />
+    <DecorativeSprite name="скрытный куст 2 поверх" texture="%ModDir%/Structure/stealthshrub.png" depth="0.001" sourcerect="1383,887,1313,443" origin="0.5,0.1" offset="6,6" offsetanim="Noise" offsetanimspeed="5.0">
+      <AnimationConditional hasstatustag="active" />
+    </DecorativeSprite>
+  </Item>
+  <Item name="" identifier="fiberplant_shrub" category="Material" subcategory="Medieval" Tags="bigitem,plant" health="70" maxstacksize="1" maxstacksizecharacterinventory="1" GrabWhenSelected="true" damagedbymeleeweapons="true" damagedbyexplosions="true" canbepicked="true" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_soft">
+    <Deconstruct time="5">
+      <Item identifier="organicfiber" />
+      <Item identifier="organicfiber" />
+      <Item identifier="organicfiber" />
+    </Deconstruct>
+    <Sprite texture="%ModDir%/Structure/berryshrub2.png" depth="0.65" sourcerect="293,0,188,175" origin="0.5,0.5" />
+    <Body height="100" width="90" density="12" friction="1000.0" restitution="0" angulardamping="2" />
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" pickingtime="15.0">
+      <!-- Прокачка при сборе урожая-->
+      <StatusEffect type="OnPicked" target="Character" comparison="and" disabledeltatime="true">
+        <Conditional skillrequirement="true" medical="lt 20" />
+        <GiveSkill skillidentifier="medical" amount="0.05" triggertalents="false" />
+      </StatusEffect>
+      <StatusEffect type="OnPicked" target="Character" comparison="and" disabledeltatime="true">
+        <Conditional skillrequirement="true" medical="gte 20" />
+        <Conditional skillrequirement="true" medical="lt 40" />
+        <GiveSkill skillidentifier="medical" amount="0.025" triggertalents="false" />
+      </StatusEffect>
+      <!-- Remove the item when fully used -->
+      <StatusEffect type="OnPicked" target="This" allowwhenbroken="true">
+        <SpawnItem identifier="fiberplant" spawnposition="SameInventory" count="1" SpawnRotationType="None" spread="100" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="InWater" target="This">
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnFire" target="This" Condition="0.0" delay="0.75" setvalue="true" interval="1">
+        <SpawnItem identifier="firepvpemitter_little_erc" spawnposition="SameInventory" count="1" SpawnRotationType="None" spread="50" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item name="" identifier="aquaticpoppy_shrub" category="Material" subcategory="Medieval" Tags="bigitem,plant" health="70" maxstacksize="1" maxstacksizecharacterinventory="1" GrabWhenSelected="true" damagedbymeleeweapons="true" damagedbyexplosions="true" canbepicked="true" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_soft">
+    <Deconstruct time="5">
+      <Item identifier="opium" />
+      <Item identifier="opium" />
+    </Deconstruct>
+    <Sprite texture="%ModDir%/Structure/berryshrub2.png" depth="0.65" sourcerect="306,223,156,132" origin="0.5,0.5" />
+    <Body height="100" width="90" density="12" friction="1000.0" restitution="0" angulardamping="2" />
+    <ItemComponent LaunchImpulse="0" DeactivationTime="0.01">
+      <StatusEffect type="OnUse" target="NearbyItems" targettags="beehive" range="700" disabledeltatime="true" charge="+1.0" />
+    </ItemComponent>
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" pickingtime="15.0">
+      <!-- Прокачка при сборе урожая-->
+      <StatusEffect type="OnPicked" target="Character" comparison="and" disabledeltatime="true">
+        <Conditional skillrequirement="true" medical="lt 20" />
+        <GiveSkill skillidentifier="medical" amount="0.05" triggertalents="false" />
+      </StatusEffect>
+      <StatusEffect type="OnPicked" target="Character" comparison="and" disabledeltatime="true">
+        <Conditional skillrequirement="true" medical="gte 20" />
+        <Conditional skillrequirement="true" medical="lt 40" />
+        <GiveSkill skillidentifier="medical" amount="0.025" triggertalents="false" />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This" interval="10">
+        <Use />
+      </StatusEffect>
+      <!-- Remove the item when fully used -->
+      <StatusEffect type="OnPicked" target="This" allowwhenbroken="true">
+        <SpawnItem identifier="aquaticpoppy" spawnposition="SameInventory" count="1" SpawnRotationType="None" spread="100" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="InWater" target="This">
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnFire" target="This" Condition="0.0" delay="0.75" setvalue="true" interval="1">
+        <SpawnItem identifier="firepvpemitter_little_erc" spawnposition="SameInventory" count="1" SpawnRotationType="None" spread="50" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item name="" identifier="mushroom_stationary_erc" category="Material" subcategory="Medieval" maxstacksize="1" Tags="bigitem,plant,boarfood" canbepicked="true" cargocontaineridentifier="metalcrate" scale="0.4" impactsoundtag="impact_soft">
+    <Sprite texture="%ModDir%/Structure/mushroom.png" depth="0.64" sourcerect="286,27,70,81" origin="0.5,0.5" />
+    <Body height="40" width="80" density="12" friction="1000.0" restitution="0" angulardamping="2" />
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" pickingtime="5.0">
+      <!-- Remove the item when fully used -->
+      <StatusEffect type="OnPicked" target="This" allowwhenbroken="true">
+        <SpawnItem identifier="mushroom_erc" spawnposition="SameInventory" count="1" SpawnRotationType="None" spread="100" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnDamaged" target="This">
+        <SpawnItem identifier="mushroom_erc" spawnposition="SameInventory" count="1" SpawnRotationType="None" spread="100" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="InWater" target="This">
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnFire" target="This" Condition="0.0" setvalue="true" />
+    </Holdable>
+    <AiTarget sightrange="1000" static="true" />
+  </Item>
+  <Item name="" identifier="mushroom2_stationary_erc" category="Material" subcategory="Medieval" maxstacksize="1" Tags="bigitem,plant" canbepicked="true" cargocontaineridentifier="metalcrate" scale="0.4" impactsoundtag="impact_soft">
+    <Sprite texture="%ModDir%/Structure/mushroom.png" sourcerect="143,7,72,101" depth="0.641" origin="0.5,0.5" />
+    <Body height="40" width="80" density="12" friction="1000.0" restitution="0" angulardamping="2" />
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" pickingtime="5.0">
+      <!-- Remove the item when fully used -->
+      <StatusEffect type="OnPicked" target="This" allowwhenbroken="true">
+        <SpawnItem identifier="mushroom2_erc" spawnposition="SameInventory" count="1" SpawnRotationType="None" spread="100" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="InWater" target="This">
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnFire" target="This" Condition="0.0" setvalue="true" />
+    </Holdable>
+  </Item>
+  <Item name="" identifier="nettle_shrub" category="Material" subcategory="Medieval" Tags="bigitem,plant" health="40" maxstacksize="1" maxstacksizecharacterinventory="1" GrabWhenSelected="true" damagedbymeleeweapons="true" damagedbyexplosions="true" canbepicked="true" cargocontaineridentifier="metalcrate" scale="0.6" impactsoundtag="impact_soft">
+    <Deconstruct time="5"></Deconstruct>
+    <Sprite texture="%ModDir%/Structure/nettle.png" depth="0.65" sourcerect="71,8,137,141" origin="0.5,0.5" />
+    <Body height="100" width="90" density="12" friction="1000.0" restitution="0" angulardamping="2" />
+    <!-- Жжется когда через него бегают -->
+    <MotionSensor range="30" target="Human,Monster" TargetCharacters="Human,Kaban" minimumvelocity="2.5" detectownmotion="false" canbeselected="false" IgnoreDead="true" UpdateInterval="0.5">
+      <StatusEffect type="OnUse" target="This" interval="0.5">
+        <Sound file="%ModDir%/Sounds/takeberries1.ogg" range="800" volume="0.75" selectionmode="Random" />
+        <Sound file="%ModDir%/Sounds/takeberries2.ogg" range="800" volume="0.75" />
+        <Sound file="%ModDir%/Sounds/takeberries3.ogg" range="800" volume="0.75" />
+        <Explosion range="50.0" force="0.5" severlimbsprobability="0" showeffects="false" damagefalloff="false">
+          <Affliction identifier="acidburn" strength="1.5" />
+          <Affliction identifier="incrementalstun" strength="15" />
+          <Affliction identifier="slow" strength="10" />
+        </Explosion>
+      </StatusEffect>
+    </MotionSensor>
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" pickingtime="15.0">
+      <!-- Remove the item when fully used -->
+      <StatusEffect type="OnDamaged" target="This" stackable="false">
+        <particleemitter particle="brownchunks" particleamount="4" velocitymin="0" velocitymax="400" anglemin="0" anglemax="360" scalemin="0.15" scalemax="0.3" colormultiplier="130,200,130,255" />
+        <Sound file="%ModDir%/Sounds/takeberries1.ogg" range="800" volume="1" selectionmode="Random" />
+        <Sound file="%ModDir%/Sounds/takeberries2.ogg" range="800" volume="1" />
+        <Sound file="%ModDir%/Sounds/takeberries3.ogg" range="800" volume="1" />
+      </StatusEffect>
+      <StatusEffect type="OnPicked" target="This" allowwhenbroken="true">
+        <SpawnItem identifier="nettle" spawnposition="SameInventory" count="1" SpawnRotationType="None" spread="100" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="InWater" target="This">
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnFire" target="This" Condition="0.0" setvalue="true" interval="1">
+        <SpawnItem identifier="firepvpemitter_little_erc" spawnposition="SameInventory" count="1" SpawnRotationType="None" spread="50" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item name="" identifier="yeastshroom_shrub" category="Material" subcategory="Medieval" Tags="bigitem,plant" health="70" maxstacksize="1" maxstacksizecharacterinventory="1" GrabWhenSelected="true" damagedbymeleeweapons="true" damagedbyexplosions="true" canbepicked="true" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_soft">
+    <Deconstruct time="5">
+      <Item identifier="ethanol" />
+      <Item identifier="ethanol" />
+    </Deconstruct>
+    <Sprite texture="%ModDir%/Structure/berryshrub2.png" depth="0.65" sourcerect="309,386,152,110" origin="0.5,0.5" />
+    <Body height="70" width="110" density="20" friction="1000.0" restitution="0" angulardamping="2" />
+    <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" pickingtime="8.0">
+      <!-- Remove the item when fully used -->
+      <StatusEffect type="OnPicked" target="This" allowwhenbroken="true">
+        <SpawnItem identifier="yeastshroom" spawnposition="SameInventory" count="1" SpawnRotationType="None" spread="100" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="NotInWater" target="This">
+        <Remove />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item name="" identifier="smalltree" Tags="smallitem,ignorebyai,smalltreeitem" health="20" damagedbyexplosions="true" damagedbymeleeweapons="true" damagedbyRepairTools="true" category="Misc" subcategory="Medieval" scale="0.5" impactsoundtag="impact_wood_light">
+    <Sprite texture="%ModDir%/Structure/derevo.png" depth="0.51" sourcerect="172,255,88,166" origin="0.5,0.5" />
+    <Deconstruct time="10">
+      <Item identifier="wood_branch" amount="2" />
+    </Deconstruct>
+    <Body width="120" height="120" friction="1.0" restitution="0.01" angulardamping="0.8" density="9" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-70" handle1="0,10" handle2="0,-10" pickingtime="5.0">
+      <StatusEffect type="OnPicked" target="This" allowwhenbroken="true" condition="0" setvalue="true"/>
+      <StatusEffect type="OnBroken" target="This">
+        <particleemitter particle="brownchunks" particleamount="10" emitinterval="1000" velocitymin="0" velocitymax="100" anglemin="0" anglemax="360" scalemin="0.1" scalemax="0.3" colormultiplier="168,90,50,255" />
+        <Sound file="%ModDir%/Sounds/impact_wood_heavy1.ogg" range="700" />
+        <SpawnItem identifier="wood_branch" spawnposition="SameInventory" count="1" SpawnRotationType="None" spread="100" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnDamaged" target="This" stackable="false">
+        <particleemitter particle="brownchunks" particleamount="4" velocitymin="0" velocitymax="400" anglemin="0" anglemax="360" scalemin="0.15" scalemax="0.3" colormultiplier="168,90,50,255" />
+        <Sound file="%ModDir%/Sounds/woodhit_01.ogg" selectionmode="random" range="600" />
+        <Sound file="%ModDir%/Sounds/woodhit_02.ogg" selectionmode="random" range="600" />
+        <Sound file="%ModDir%/Sounds/woodhit_03.ogg" selectionmode="random" range="600" />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This" Scale="0.006" interval="6" disabledeltatime="true">
+        <Conditional hasstatustag="neq cantgrow1" />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This" interval="3" disabledeltatime="true">
+        <particleemitter particle="brownchunks" particleamount="10" emitinterval="1000" velocitymin="0" velocitymax="100" anglemin="0" anglemax="360" scalemin="0.1" scalemax="0.3" colormultiplier="168,90,50,255" />
+        <Conditional Scale="gte 0.85" />
+        <SpawnItem identifier="mediumtree" spawnposition="SameInventory" inheriteventtags="true" SpawnIfInventoryFull="true" SpawnIfNotInInventory="true" />
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnFire" target="This" Condition="-5.0" disabledeltatime="true" interval="1" />
+      <StatusEffect type="OnFire" target="This" interval="2.5" duration="4.5" stackable="false" tags="onfire">
+        <ParticleEmitter particle="flame" anglemin="0" anglemax="180" distancemin="0" distancemax="40" velocitymin="20" velocitymax="80" particlespersecond="15" scalemin="0.35" scalemax="0.5" />
+        <ParticleEmitter particle="mistsmoke" particlespersecond="6" anglemin="90" anglemax="270" distancemin="0" distancemax="15" velocitymin="20" velocitymax="80" scalemin="1.2" scalemax="2.0" />
+        <Sound file="Content/Sounds/FireSmall.ogg" type="Always" volume="1" range="1200" forceplaysounds="true" loop="true" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item name="" identifier="mediumtree" Tags="ignorebyai,treeitem,log,mediumtree" health="150" damagedbymeleeweapons="true" damagedbyexplosions="true" category="Misc" subcategory="Medieval" scale="0.5" impactsoundtag="impact_wood_heavy">
+    <Sprite texture="%ModDir%/Structure/derevo.png" depth="0.75" sourcerect="96,723,242,284" origin="0.5,0.5" />
+    <Deconstruct time="10">
+      <Item identifier="wood_branch" amount="2" />
+    </Deconstruct>
+    <Body width="120" height="260" friction="1.0" restitution="0.01" angulardamping="0.8" density="9" />
+    <ItemComponent LaunchImpulse="0" DeactivationTime="0.01">
+      <StatusEffect type="OnUse" target="NearbyItems" targettags="smalltreeitem" range="90" duration="12" stackable="false" disabledeltatime="true" tags="cantgrow1" />
+    </ItemComponent>
+    <Pickable slots="None">
+      <StatusEffect type="OnBroken" target="This">
+        <particleemitter particle="brownchunks" particleamount="10" emitinterval="1000" velocitymin="0" velocitymax="100" anglemin="0" anglemax="360" scalemin="0.1" scalemax="0.3" colormultiplier="168,90,50,255" />
+        <Sound file="%ModDir%/Sounds/impact_wood_heavy1.ogg" range="700" />
+        <SpawnItem identifier="wood_branch" spawnposition="This" count="2" SpawnRotationType="None" spread="50" />
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" delay="0.1">
+        <Conditional hasstatustag="onfire" />
+        <particleemitter particle="brownchunks" particleamount="10" emitinterval="1000" velocitymin="0" velocitymax="100" anglemin="0" anglemax="360" scalemin="0.1" scalemax="0.3" colormultiplier="168,90,50,255" />
+        <Sound file="%ModDir%/Sounds/impact_wood_heavy1.ogg" range="700" />
+        <SpawnItem identifier="firepvpemitter_littlelong_erc" spawnposition="SameInventory" count="1" SpawnRotationType="None" spread="50" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" delay="0.1">
+        <Conditional hasstatustag="neq onfire" />
+        <particleemitter particle="brownchunks" particleamount="10" emitinterval="1000" velocitymin="0" velocitymax="100" anglemin="0" anglemax="360" scalemin="0.1" scalemax="0.3" colormultiplier="168,90,50,255" />
+        <Sound file="%ModDir%/Sounds/impact_wood_heavy1.ogg" range="700" />
+        <SpawnItem identifier="wood_branch" spawnposition="This" count="2" SpawnRotationType="None" spread="100" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This" interval="10">
+        <Use />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This" Scale="0.006" interval="10" disabledeltatime="true">
+        <Conditional hasstatustag="neq cantgrow2" />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This" spawnItemRandomly="true" interval="10" disabledeltatime="true">
+        <particleemitter particle="brownchunks" particleamount="10" emitinterval="1000" velocitymin="0" velocitymax="100" anglemin="0" anglemax="360" scalemin="0.1" scalemax="0.3" colormultiplier="168,90,50,255" />
+        <Conditional Scale="gte 0.85" />
+        <SpawnItem identifier="tree1" spawnposition="SameInventory" inheriteventtags="true" SpawnIfInventoryFull="true" SpawnIfNotInInventory="true" />
+        <SpawnItem identifier="tree2" spawnposition="SameInventory" inheriteventtags="true" SpawnIfInventoryFull="true" SpawnIfNotInInventory="true" />
+        <SpawnItem identifier="tree3" spawnposition="SameInventory" inheriteventtags="true" SpawnIfInventoryFull="true" SpawnIfNotInInventory="true" />
+        <SpawnItem identifier="tree1" spawnposition="SameInventory" inheriteventtags="true" SpawnIfInventoryFull="true" SpawnIfNotInInventory="true" />
+        <SpawnItem identifier="tree2" spawnposition="SameInventory" inheriteventtags="true" SpawnIfInventoryFull="true" SpawnIfNotInInventory="true" />
+        <SpawnItem identifier="tree3" spawnposition="SameInventory" inheriteventtags="true" SpawnIfInventoryFull="true" SpawnIfNotInInventory="true" />
+        <SpawnItem identifier="tree1" spawnposition="SameInventory" inheriteventtags="true" SpawnIfInventoryFull="true" SpawnIfNotInInventory="true" />
+        <SpawnItem identifier="tree2" spawnposition="SameInventory" inheriteventtags="true" SpawnIfInventoryFull="true" SpawnIfNotInInventory="true" />
+        <SpawnItem identifier="tree3" spawnposition="SameInventory" inheriteventtags="true" SpawnIfInventoryFull="true" SpawnIfNotInInventory="true" />
+        <SpawnItem identifier="tree1" spawnposition="SameInventory" inheriteventtags="true" SpawnIfInventoryFull="true" SpawnIfNotInInventory="true" />
+        <SpawnItem identifier="tree2" spawnposition="SameInventory" inheriteventtags="true" SpawnIfInventoryFull="true" SpawnIfNotInInventory="true" />
+        <SpawnItem identifier="tree3" spawnposition="SameInventory" inheriteventtags="true" SpawnIfInventoryFull="true" SpawnIfNotInInventory="true" />
+        <SpawnItem identifier="tree1" spawnposition="SameInventory" inheriteventtags="true" SpawnIfInventoryFull="true" SpawnIfNotInInventory="true" />
+        <SpawnItem identifier="tree2" spawnposition="SameInventory" inheriteventtags="true" SpawnIfInventoryFull="true" SpawnIfNotInInventory="true" />
+        <SpawnItem identifier="tree3" spawnposition="SameInventory" inheriteventtags="true" SpawnIfInventoryFull="true" SpawnIfNotInInventory="true" />
+        <SpawnItem identifier="tree1" spawnposition="SameInventory" inheriteventtags="true" SpawnIfInventoryFull="true" SpawnIfNotInInventory="true" />
+        <SpawnItem identifier="tree2" spawnposition="SameInventory" inheriteventtags="true" SpawnIfInventoryFull="true" SpawnIfNotInInventory="true" />
+        <SpawnItem identifier="tree3" spawnposition="SameInventory" inheriteventtags="true" SpawnIfInventoryFull="true" SpawnIfNotInInventory="true" />
+        <SpawnItem identifier="tree4_beehive" spawnposition="SameInventory" inheriteventtags="true" SpawnIfInventoryFull="true" SpawnIfNotInInventory="true" />
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnDamaged" target="This" stackable="false">
+        <particleemitter particle="brownchunks" particleamount="4" velocitymin="0" velocitymax="400" anglemin="0" anglemax="360" scalemin="0.15" scalemax="0.3" colormultiplier="168,90,50,255" />
+        <Sound file="%ModDir%/Sounds/woodhit_01.ogg" selectionmode="random" range="600" />
+        <Sound file="%ModDir%/Sounds/woodhit_02.ogg" selectionmode="random" range="600" />
+        <Sound file="%ModDir%/Sounds/woodhit_03.ogg" selectionmode="random" range="600" />
+      </StatusEffect>
+      <StatusEffect type="OnFire" target="This" Condition="-25.0" disabledeltatime="true" interval="1" />
+      <StatusEffect type="OnFire" target="This" interval="2.5" duration="4.5" stackable="false" tags="onfire">
+        <ParticleEmitter particle="flame" anglemin="0" anglemax="180" distancemin="0" distancemax="50" velocitymin="20" velocitymax="80" particlespersecond="15" scalemin="0.45" scalemax="0.6" />
+        <ParticleEmitter particle="mistsmoke" particlespersecond="8" anglemin="90" anglemax="270" distancemin="0" distancemax="15" velocitymin="20" velocitymax="80" scalemin="1.2" scalemax="2.0" />
+        <Sound file="Content/Sounds/FireSmall.ogg" type="Always" volume="1" range="1200" forceplaysounds="true" loop="true" />
+      </StatusEffect>
+    </Pickable>
+  </Item>
+  <Item name="" identifier="tree1" Tags="ignorebyai,treeitem,log" NoAITarget="True" health="1000" damagedbyexplosions="true" damagedbymeleeweapons="true" explosiondamagemodifier="2.5" category="Misc" subcategory="Medieval" scale="0.5" impactsoundtag="impact_wood_veryheavy" impacttolerance="3">
+    <Sprite texture="%ModDir%/Structure/derevo.png" depth="0.9" sourcerect="412,0,402,1014" origin="0.5,0.5" />
+    <Deconstruct time="10">
+      <Item identifier="wood_branch" amount="2" />
+    </Deconstruct>
+    <Body width="100" height="850" friction="1000.0" restitution="0" angulardamping="2" density="100" />
+    <ItemComponent LaunchImpulse="0" DeactivationTime="0.01">
+      <StatusEffect type="OnUse" target="NearbyItems" targettags="treeitem" range="200" duration="12" disabledeltatime="true" tags="cantgrow2" />
+    </ItemComponent>
+    <Pickable slots="None">
+      <StatusEffect type="OnDamaged" target="This" stackable="false">
+        <particleemitter particle="brownchunks" particleamount="10" velocitymin="0" velocitymax="400" anglemin="0" anglemax="360" scalemin="0.15" scalemax="0.3" colormultiplier="168,90,50,255" />
+        <Sound file="%ModDir%/Sounds/woodhit_01.ogg" selectionmode="random" range="1400" />
+        <Sound file="%ModDir%/Sounds/woodhit_02.ogg" selectionmode="random" range="1400" />
+        <Sound file="%ModDir%/Sounds/woodhit_03.ogg" selectionmode="random" range="1400" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="This" condition="0" setvalue="true">
+        <Explosion range="300.0" camerashake="15" stun="0" force="5.0" smoke="false" flames="false" shockwave="true" sparks="false" underwaterbubble="false" playtinnitus="false" damagefalloff="false">
+          <Affliction identifier="blunttrauma" strength="300" />
+          <Affliction identifier="stun" strength="10" />
+        </Explosion>
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" delay="0.1">
+        <Conditional hasstatustag="onfire" />
+        <particleemitter particle="brownchunks" particleamount="40" emitinterval="1000" velocitymin="0" velocitymax="400" anglemin="0" anglemax="360" scalemin="0.4" scalemax="0.7" colormultiplier="168,90,50,255" />
+        <SpawnItem identifier="firepvpemitterlongerc" spawnposition="SameInventory" count="1" SpawnRotationType="None" spread="50" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+        <SpawnItem identifier="tree_barren" spawnposition="This" count="1" SpawnRotationType="None" spread="0" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" delay="0.1">
+        <Conditional hasstatustag="neq onfire" />
+        <particleemitter particle="brownchunks" particleamount="40" emitinterval="1000" velocitymin="0" velocitymax="400" anglemin="0" anglemax="360" scalemin="0.4" scalemax="0.7" colormultiplier="168,90,50,255" />
+        <Sound file="%ModDir%/Sounds/bigtreefall1.ogg" range="3000" selectionmode="random" volume="2" />
+        <Sound file="%ModDir%/Sounds/bigtreefall2.ogg" range="3000" selectionmode="random" volume="2" />
+        <SpawnItem identifier="wood_branch" spawnposition="This" count="1" SpawnRotationType="None" spread="100" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+        <SpawnItem identifier="wood_log" spawnposition="This" count="2" SpawnRotationType="None" spread="100" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+        <SpawnItem identifier="wood_bark" spawnposition="SameInventory" count="1" SpawnRotationType="None" spread="100" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+        <SpawnItem identifier="organicfiber" spawnposition="SameInventory" count="1" SpawnRotationType="None" spread="100" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This" interval="10">
+        <Use />
+      </StatusEffect>
+      <StatusEffect type="OnFire" target="This" Condition="-50.0" disabledeltatime="true" interval="1" />
+      <StatusEffect type="OnFire" target="This" interval="2.5" duration="4.5" stackable="false" tags="onfire">
+        <ParticleEmitter particle="flame" anglemin="90" anglemax="270" distancemin="0" distancemax="20" velocitymin="20" velocitymax="80" particlespersecond="7" scalemin="0.6" scalemax="0.9" />
+        <ParticleEmitter particle="flame" anglemin="70" anglemax="110" distancemin="70" distancemax="160" velocitymin="20" velocitymax="80" particlespersecond="20" scalemin="0.5" scalemax="0.7" />
+        <ParticleEmitter particle="mistsmoke" particlespersecond="10" anglemin="90" anglemax="270" distancemin="0" distancemax="15" velocitymin="20" velocitymax="80" scalemin="1.6" scalemax="2.5" />
+        <ParticleEmitter particle="raskumar_cloud" particlespersecond="3" anglemin="85" anglemax="95" distancemin="10" distancemax="40" velocitymin="150" velocitymax="250" scalemin="0.7" scalemax="1" colormultiplier="0,0,0,165" />
+        <Sound file="Content/Sounds/FireMedium.ogg" type="Always" volume="1" range="1200" forceplaysounds="true" loop="true" />
+      </StatusEffect>
+    </Pickable>
+  </Item>
+  <Item name="" identifier="tree2" variantof="tree1">
+    <Sprite texture="%ModDir%/Structure/derevo.png" depth="0.53" sourcerect="813,0,545,1014" origin="0.5,0.5" />
+  </Item>
+  <Item name="" identifier="tree3" variantof="tree1">
+    <Sprite texture="%ModDir%/Structure/derevo.png" depth="0.53" sourcerect="1358,0,408,1013" origin="0.5,0.5" />
+  </Item>
+  <Item name="" identifier="tree4_beehive" Tags="ignorebyai,treeitem,log" NoAITarget="True" health="1000" damagedbyexplosions="true" damagedbymeleeweapons="true" explosiondamagemodifier="2.5" category="Misc" subcategory="Medieval" scale="0.5" impactsoundtag="impact_wood_veryheavy" impacttolerance="4">
+    <Sprite texture="%ModDir%/Structure/derevo.png" depth="0.53" sourcerect="1920,0,408,1013" origin="0.5,0.5" />
+    <Deconstruct time="10">
+      <Item identifier="wood_branch" amount="2" />
+    </Deconstruct>
+    <ItemComponent LaunchImpulse="0" DeactivationTime="0.01">
+      <StatusEffect type="OnUse" target="NearbyItems" targettags="treeitem" range="200" duration="12" disabledeltatime="true" tags="cantgrow2" />
+    </ItemComponent>
+    <Body width="100" height="850" friction="1000.0" restitution="0" angulardamping="2" density="100" />
+    <Pickable slots="None">
+      <StatusEffect type="OnDamaged" target="This" charge="10" setvalue="true" stackable="false">
+        <particleemitter particle="brownchunks" particleamount="10" velocitymin="0" velocitymax="400" anglemin="0" anglemax="360" scalemin="0.15" scalemax="0.3" colormultiplier="168,90,50,255" />
+        <Sound file="%ModDir%/Sounds/woodhit_01.ogg" selectionmode="random" range="1400" />
+        <Sound file="%ModDir%/Sounds/woodhit_02.ogg" selectionmode="random" range="1400" />
+        <Sound file="%ModDir%/Sounds/woodhit_03.ogg" selectionmode="random" range="1400" />
+      </StatusEffect>
+      <PowerContainer rechargespeed="1.0" capacity="10.0" vulnerabletoemp="False" canbeselected="false" maxrechargespeed="3000.0" maxoutput="0.0" />
+      <StatusEffect type="Always" target="This" disabledeltatime="true" charge="-0.5" interval="0.5">
+        <Conditional charge="gt 0" />
+        <Explosion range="250.0" camerashake="0" stun="0" force="1.0" flash="false" smoke="false" flames="false" shockwave="false" sparks="false" underwaterbubble="false" playtinnitus="false" damagefalloff="false">
+          <Affliction identifier="acidburn" strength="2.5" />
+          <Affliction identifier="stun" strength="0.1" />
+          <Affliction identifier="incrementalstun" strength="8" />
+        </Explosion>
+        <ParticleEmitter particle="swirlysmoke" particleamount="20" scalemin="0.1" scalemax="0.1" velocitymin="200" velocitymax="350" anglemin="-30" anglemax="210" distancemin="0" distancemax="0" lifetimemultiplier="0.25" colormultiplier="0,0,0,255" copyentityangle="false" />
+      </StatusEffect>
+      <StatusEffect type="Always" target="This" duration="1.2" interval="1">
+        <Conditional charge="gt 0" />
+        <Sound file="%ModDir%/Sounds/hive_nedovolen.ogg" range="1000" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="This" condition="0" setvalue="true">
+        <Explosion range="300.0" camerashake="15" stun="0" force="5.0" smoke="false" flames="false" shockwave="true" sparks="false" underwaterbubble="false" playtinnitus="false" damagefalloff="false">
+          <Affliction identifier="blunttrauma" strength="300" />
+          <Affliction identifier="stun" strength="10" />
+        </Explosion>
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" delay="0.1">
+        <particleemitter particle="brownchunks" particleamount="40" emitinterval="1000" velocitymin="0" velocitymax="400" anglemin="0" anglemax="360" scalemin="0.4" scalemax="0.7" colormultiplier="168,90,50,255" />
+        <Sound file="%ModDir%/Sounds/bigtreefall1.ogg" range="3000" selectionmode="random" volume="2" />
+        <Sound file="%ModDir%/Sounds/bigtreefall2.ogg" range="3000" selectionmode="random" volume="2" />
+        <SpawnItem identifier="wood_branch" spawnposition="This" count="2" SpawnRotationType="None" spread="100" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+        <SpawnItem identifier="wood_log" spawnposition="SameInventory" count="2" SpawnRotationType="None" spread="100" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+        <SpawnItem identifier="wood_bark" spawnposition="SameInventory" count="1" SpawnRotationType="None" spread="100" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+        <SpawnItem identifier="bee_queen" spawnposition="SameInventory" count="1" SpawnRotationType="None" spread="100" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+        <SpawnItem identifier="mead_erc" spawnposition="SameInventory" count="2" SpawnRotationType="None" spread="100" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This" interval="10">
+        <Use />
+      </StatusEffect>
+      <StatusEffect type="OnFire" target="This" Condition="-50.0" disabledeltatime="true" interval="1" />
+      <StatusEffect type="OnFire" target="This" interval="2.5" duration="4.5" stackable="false" tag="onfire">
+        <ParticleEmitter particle="flame" anglemin="90" anglemax="270" distancemin="0" distancemax="20" velocitymin="20" velocitymax="80" particlespersecond="7" scalemin="0.5" scalemax="0.7" />
+        <ParticleEmitter particle="flame" anglemin="80" anglemax="100" distancemin="100" distancemax="150" velocitymin="20" velocitymax="80" particlespersecond="15" scalemin="0.5" scalemax="0.7" />
+        <ParticleEmitter particle="mistsmoke" particlespersecond="10" anglemin="90" anglemax="270" distancemin="0" distancemax="15" velocitymin="20" velocitymax="80" scalemin="1.6" scalemax="2.5" />
+        <Sound file="Content/Sounds/FireMedium.ogg" type="Always" volume="1" range="1200" forceplaysounds="true" loop="true" />
+      </StatusEffect>
+    </Pickable>
+  </Item>
+  <Item name="" identifier="tree_barren" Tags="ignorebyai,treeitem,log" NoAITarget="True" health="1000" damagedbyexplosions="true" damagedbymeleeweapons="true" explosiondamagemodifier="1.0" category="Misc" subcategory="Medieval" scale="0.5" impactsoundtag="impact_wood_veryheavy" impacttolerance="3">
+    <Sprite texture="%ModDir%/Structure/derevo.png" depth="0.53" sourcerect="386,1058,408,1013" origin="0.5,0.5" />
+    <Deconstruct time="10">
+      <Item identifier="wood_branch" amount="2" />
+    </Deconstruct>
+    <Body width="100" height="850" friction="1000.0" restitution="0" angulardamping="2" density="100" />
+    <ItemComponent LaunchImpulse="0" DeactivationTime="0.01">
+      <StatusEffect type="OnUse" target="NearbyItems" targettags="treeitem" range="200" duration="12" disabledeltatime="true" tags="cantgrow2" />
+    </ItemComponent>
+    <Pickable slots="None">
+      <StatusEffect type="OnDamaged" target="This" stackable="false">
+        <particleemitter particle="brownchunks" particleamount="10" velocitymin="0" velocitymax="400" anglemin="0" anglemax="360" scalemin="0.15" scalemax="0.3" colormultiplier="168,90,50,255" />
+        <Sound file="%ModDir%/Sounds/woodhit_01.ogg" selectionmode="random" range="1400" />
+        <Sound file="%ModDir%/Sounds/woodhit_02.ogg" selectionmode="random" range="1400" />
+        <Sound file="%ModDir%/Sounds/woodhit_03.ogg" selectionmode="random" range="1400" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="This" condition="0" setvalue="true">
+        <Explosion range="300.0" camerashake="15" stun="0" force="5.0" smoke="false" flames="false" shockwave="true" sparks="false" underwaterbubble="false" playtinnitus="false" damagefalloff="false">
+          <Affliction identifier="blunttrauma" strength="300" />
+          <Affliction identifier="stun" strength="10" />
+        </Explosion>
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" delay="0.1">
+        <particleemitter particle="brownchunks" particleamount="40" emitinterval="1000" velocitymin="0" velocitymax="400" anglemin="0" anglemax="360" scalemin="0.4" scalemax="0.7" colormultiplier="168,90,50,255" />
+        <Sound file="%ModDir%/Sounds/bigtreefall1.ogg" range="3000" selectionmode="random" volume="2" />
+        <Sound file="%ModDir%/Sounds/bigtreefall2.ogg" range="3000" selectionmode="random" volume="2" />
+        <SpawnItem identifier="wood_branch" spawnposition="This" count="2" SpawnRotationType="None" spread="100" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+        <SpawnItem identifier="wood_bark" spawnposition="SameInventory" count="1" SpawnRotationType="None" spread="100" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+        <SpawnItem identifier="wood_log" spawnposition="SameInventory" count="1" SpawnRotationType="None" spread="100" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This" interval="10">
+        <Use />
+      </StatusEffect>
+    </Pickable>
+  </Item>
+  <Item name="" identifier="smalltree_winter" Tags="smallitem,ignorebyai,smalltreeitem" health="20" damagedbyexplosions="true" damagedbymeleeweapons="true" damagedbyRepairTools="true" category="Misc" subcategory="Medieval" scale="0.5" impactsoundtag="impact_wood_light">
+    <Sprite texture="%ModDir%/Structure/derevo_zima.png" depth="0.51" sourcerect="166,249,105,186" origin="0.5,0.5" />
+    <Deconstruct time="10">
+      <Item identifier="wood_branch" amount="2" />
+    </Deconstruct>
+    <Body width="120" height="120" friction="1.0" restitution="0.01" angulardamping="0.8" density="9" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-70" handle1="0,10" handle2="0,-10" pickingtime="5.0">
+      <StatusEffect type="OnPicked" target="This" allowwhenbroken="true" condition="0" setvalue="true"/>
+      <StatusEffect type="OnBroken" target="This">
+        <particleemitter particle="brownchunks" particleamount="10" emitinterval="1000" velocitymin="0" velocitymax="100" anglemin="0" anglemax="360" scalemin="0.1" scalemax="0.3" colormultiplier="168,90,50,255" />
+        <Sound file="%ModDir%/Sounds/impact_wood_heavy1.ogg" range="700" />
+        <SpawnItem identifier="wood_branch" spawnposition="SameInventory" count="1" SpawnRotationType="None" spread="100" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnDamaged" target="This" stackable="false">
+        <particleemitter particle="brownchunks" particleamount="4" velocitymin="0" velocitymax="400" anglemin="0" anglemax="360" scalemin="0.15" scalemax="0.3" colormultiplier="168,90,50,255" />
+        <Sound file="%ModDir%/Sounds/woodhit_01.ogg" selectionmode="random" range="600" />
+        <Sound file="%ModDir%/Sounds/woodhit_02.ogg" selectionmode="random" range="600" />
+        <Sound file="%ModDir%/Sounds/woodhit_03.ogg" selectionmode="random" range="600" />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This" Scale="0.006" interval="6" disabledeltatime="true">
+        <Conditional hasstatustag="neq cantgrow1" />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This" interval="3" disabledeltatime="true">
+        <particleemitter particle="brownchunks" particleamount="10" emitinterval="1000" velocitymin="0" velocitymax="100" anglemin="0" anglemax="360" scalemin="0.1" scalemax="0.3" colormultiplier="168,90,50,255" />
+        <Conditional Scale="gte 0.85" />
+        <SpawnItem identifier="mediumtree_winter" spawnposition="SameInventory" inheriteventtags="true" SpawnIfInventoryFull="true" SpawnIfNotInInventory="true" />
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnFire" target="This" Condition="-5.0" disabledeltatime="true" interval="1" />
+      <StatusEffect type="OnFire" target="This" interval="2.5" duration="4.5" stackable="false" tags="onfire">
+        <ParticleEmitter particle="flame" anglemin="0" anglemax="180" distancemin="0" distancemax="40" velocitymin="20" velocitymax="80" particlespersecond="15" scalemin="0.35" scalemax="0.5" />
+        <ParticleEmitter particle="mistsmoke" particlespersecond="6" anglemin="90" anglemax="270" distancemin="0" distancemax="15" velocitymin="20" velocitymax="80" scalemin="1.2" scalemax="2.0" />
+        <Sound file="Content/Sounds/FireSmall.ogg" type="Always" volume="1" range="1200" forceplaysounds="true" loop="true" />
+      </StatusEffect>
+    </Holdable>
+  </Item>
+  <Item name="" identifier="mediumtree_winter" Tags="ignorebyai,treeitem,log,mediumtree" health="150" damagedbymeleeweapons="true" damagedbyexplosions="true" category="Misc" subcategory="Medieval" scale="0.5" impactsoundtag="impact_wood_heavy">
+    <Sprite texture="%ModDir%/Structure/derevo_zima.png" depth="0.75" sourcerect="116,570,237,427" origin="0.45978904,0.75868803" />
+    <Deconstruct time="10">
+      <Item identifier="wood_branch" amount="2" />
+    </Deconstruct>
+    <Body width="120" height="150" friction="1.0" restitution="0.01" angulardamping="0.8" density="9" />
+    <ItemComponent LaunchImpulse="0" DeactivationTime="0.01">
+      <StatusEffect type="OnUse" target="NearbyItems" targettags="smalltreeitem" range="90" duration="12" stackable="false" disabledeltatime="true" tags="cantgrow1" />
+    </ItemComponent>
+    <Pickable slots="None">
+      <StatusEffect type="OnBroken" target="This">
+        <particleemitter particle="brownchunks" particleamount="10" emitinterval="1000" velocitymin="0" velocitymax="100" anglemin="0" anglemax="360" scalemin="0.1" scalemax="0.3" colormultiplier="168,90,50,255" />
+        <Sound file="%ModDir%/Sounds/impact_wood_heavy1.ogg" range="700" />
+        <SpawnItem identifier="wood_branch" spawnposition="This" count="2" SpawnRotationType="None" spread="50" />
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" delay="0.1">
+        <Conditional hasstatustag="onfire" />
+        <particleemitter particle="brownchunks" particleamount="10" emitinterval="1000" velocitymin="0" velocitymax="100" anglemin="0" anglemax="360" scalemin="0.1" scalemax="0.3" colormultiplier="168,90,50,255" />
+        <Sound file="%ModDir%/Sounds/impact_wood_heavy1.ogg" range="700" />
+        <SpawnItem identifier="firepvpemitter_littlelong_erc" spawnposition="SameInventory" count="1" SpawnRotationType="None" spread="50" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" delay="0.1">
+        <Conditional hasstatustag="neq onfire" />
+        <particleemitter particle="brownchunks" particleamount="10" emitinterval="1000" velocitymin="0" velocitymax="100" anglemin="0" anglemax="360" scalemin="0.1" scalemax="0.3" colormultiplier="168,90,50,255" />
+        <Sound file="%ModDir%/Sounds/impact_wood_heavy1.ogg" range="700" />
+        <SpawnItem identifier="wood_branch" spawnposition="This" count="2" SpawnRotationType="None" spread="100" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This" interval="10">
+        <Use />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This" Scale="0.006" interval="10" disabledeltatime="true">
+        <Conditional hasstatustag="neq cantgrow2" />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This" spawnItemRandomly="true" interval="10" disabledeltatime="true">
+        <particleemitter particle="brownchunks" particleamount="10" emitinterval="1000" velocitymin="0" velocitymax="100" anglemin="0" anglemax="360" scalemin="0.1" scalemax="0.3" colormultiplier="168,90,50,255" />
+        <Conditional Scale="gte 0.85" />
+        <SpawnItem identifier="tree1_winter" spawnposition="SameInventory" inheriteventtags="true" SpawnIfInventoryFull="true" SpawnIfNotInInventory="true" />
+        <SpawnItem identifier="tree2_winter" spawnposition="SameInventory" inheriteventtags="true" SpawnIfInventoryFull="true" SpawnIfNotInInventory="true" />
+        <SpawnItem identifier="tree3_winter" spawnposition="SameInventory" inheriteventtags="true" SpawnIfInventoryFull="true" SpawnIfNotInInventory="true" />
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnDamaged" target="This" stackable="false">
+        <particleemitter particle="brownchunks" particleamount="4" velocitymin="0" velocitymax="400" anglemin="0" anglemax="360" scalemin="0.15" scalemax="0.3" colormultiplier="168,90,50,255" />
+        <Sound file="%ModDir%/Sounds/woodhit_01.ogg" selectionmode="random" range="600" />
+        <Sound file="%ModDir%/Sounds/woodhit_02.ogg" selectionmode="random" range="600" />
+        <Sound file="%ModDir%/Sounds/woodhit_03.ogg" selectionmode="random" range="600" />
+      </StatusEffect>
+      <StatusEffect type="OnFire" target="This" Condition="-25.0" disabledeltatime="true" interval="1" />
+      <StatusEffect type="OnFire" target="This" interval="2.5" duration="4.5" stackable="false" tags="onfire">
+        <ParticleEmitter particle="flame" anglemin="0" anglemax="180" distancemin="0" distancemax="50" velocitymin="20" velocitymax="80" particlespersecond="15" scalemin="0.45" scalemax="0.6" />
+        <ParticleEmitter particle="mistsmoke" particlespersecond="8" anglemin="90" anglemax="270" distancemin="0" distancemax="15" velocitymin="20" velocitymax="80" scalemin="1.2" scalemax="2.0" />
+        <Sound file="Content/Sounds/FireSmall.ogg" type="Always" volume="1" range="1200" forceplaysounds="true" loop="true" />
+      </StatusEffect>
+    </Pickable>
+  </Item>
+  <Item name="" identifier="tree1_winter" Tags="ignorebyai,treeitem,log" NoAITarget="True" health="1000" damagedbyexplosions="true" damagedbymeleeweapons="true" explosiondamagemodifier="2.5" category="Misc" subcategory="Medieval" scale="0.5" impactsoundtag="impact_wood_veryheavy" impacttolerance="3">
+    <Sprite texture="%ModDir%/Structure/derevo_zima.png" depth="0.9" sourcerect="391,0,335,998" origin="0.5,0.5" />
+    <Deconstruct time="10">
+      <Item identifier="wood_branch" amount="2" />
+    </Deconstruct>
+    <Body width="100" height="850" friction="1000.0" restitution="0" angulardamping="2" density="100" />
+    <ItemComponent LaunchImpulse="0" DeactivationTime="0.01">
+      <StatusEffect type="OnUse" target="NearbyItems" targettags="treeitem" range="200" duration="12" disabledeltatime="true" tags="cantgrow2" />
+    </ItemComponent>
+    <Pickable slots="None">
+      <StatusEffect type="OnDamaged" target="This" stackable="false">
+        <particleemitter particle="brownchunks" particleamount="10" velocitymin="0" velocitymax="400" anglemin="0" anglemax="360" scalemin="0.15" scalemax="0.3" colormultiplier="168,90,50,255" />
+        <Sound file="%ModDir%/Sounds/woodhit_01.ogg" selectionmode="random" range="1400" />
+        <Sound file="%ModDir%/Sounds/woodhit_02.ogg" selectionmode="random" range="1400" />
+        <Sound file="%ModDir%/Sounds/woodhit_03.ogg" selectionmode="random" range="1400" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="This" condition="0" setvalue="true">
+        <Explosion range="300.0" camerashake="15" stun="0" force="5.0" smoke="false" flames="false" shockwave="true" sparks="false" underwaterbubble="false" playtinnitus="false" damagefalloff="false">
+          <Affliction identifier="blunttrauma" strength="300" />
+          <Affliction identifier="stun" strength="10" />
+        </Explosion>
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" delay="0.1">
+        <Conditional hasstatustag="onfire" />
+        <particleemitter particle="brownchunks" particleamount="40" emitinterval="1000" velocitymin="0" velocitymax="400" anglemin="0" anglemax="360" scalemin="0.4" scalemax="0.7" colormultiplier="168,90,50,255" />
+        <SpawnItem identifier="firepvpemitterlongerc" spawnposition="SameInventory" count="1" SpawnRotationType="None" spread="50" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+        <SpawnItem identifier="tree_barren" spawnposition="This" count="1" SpawnRotationType="None" spread="0" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" delay="0.1">
+        <Conditional hasstatustag="neq onfire" />
+        <particleemitter particle="brownchunks" particleamount="40" emitinterval="1000" velocitymin="0" velocitymax="400" anglemin="0" anglemax="360" scalemin="0.4" scalemax="0.7" colormultiplier="168,90,50,255" />
+        <Sound file="%ModDir%/Sounds/bigtreefall1.ogg" range="3000" selectionmode="random" volume="2" />
+        <Sound file="%ModDir%/Sounds/bigtreefall2.ogg" range="3000" selectionmode="random" volume="2" />
+        <SpawnItem identifier="wood_branch" spawnposition="This" count="1" SpawnRotationType="None" spread="100" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+        <SpawnItem identifier="wood_log" spawnposition="This" count="2" SpawnRotationType="None" spread="100" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+        <SpawnItem identifier="wood_bark" spawnposition="SameInventory" count="2" SpawnRotationType="None" spread="100" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This" interval="10">
+        <Use />
+      </StatusEffect>
+      <StatusEffect type="OnFire" target="This" Condition="-50.0" disabledeltatime="true" interval="1" />
+      <StatusEffect type="OnFire" target="This" interval="2.5" duration="4.5" stackable="false" tags="onfire">
+        <ParticleEmitter particle="flame" anglemin="90" anglemax="270" distancemin="0" distancemax="20" velocitymin="20" velocitymax="80" particlespersecond="7" scalemin="0.6" scalemax="0.9" />
+        <ParticleEmitter particle="flame" anglemin="70" anglemax="110" distancemin="70" distancemax="160" velocitymin="20" velocitymax="80" particlespersecond="20" scalemin="0.5" scalemax="0.7" />
+        <ParticleEmitter particle="mistsmoke" particlespersecond="10" anglemin="90" anglemax="270" distancemin="0" distancemax="15" velocitymin="20" velocitymax="80" scalemin="1.6" scalemax="2.5" />
+        <ParticleEmitter particle="raskumar_cloud" particlespersecond="3" anglemin="85" anglemax="95" distancemin="10" distancemax="40" velocitymin="150" velocitymax="250" scalemin="0.7" scalemax="1" colormultiplier="0,0,0,165" />
+        <Sound file="Content/Sounds/FireMedium.ogg" type="Always" volume="1" range="1200" forceplaysounds="true" loop="true" />
+      </StatusEffect>
+    </Pickable>
+  </Item>
+  <Item name="" identifier="tree2_winter" variantof="tree1_winter">
+    <Sprite texture="%ModDir%/Structure/derevo_zima.png" depth="0.53" sourcerect="749,0,381,1001" origin="0.5,0.5" />
+  </Item>
+  <Item name="" identifier="tree3_winter" variantof="tree1_winter">
+    <Sprite texture="%ModDir%/Structure/derevo_zima.png" depth="0.53" sourcerect="1209,0,417,1000" origin="0.5,0.5" />
+  </Item>
+</Items>

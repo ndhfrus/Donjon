@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Override>
+  <OutpostGenerationParameters>
+    <!-- fallback config for level types that aren't included here (for example, modded location types) -->
+    <OutpostConfig identifier="fallback" totalmodulecount="6" minhallwaylength="0">
+      <modulecount flag="Airlock" count="1" />
+      <modulecount flag="EngineeringModule" count="1" />
+      <modulecount flag="AdminModule" count="1" />
+    </OutpostConfig>
+    <OutpostConfig identifier="outpost" replaceinradiation="abandonedoutpost" totalmodulecount="1" appendtoreachtotalmodulecount="false" minhallwaylength="0" spawncrewinsideoutpost="false" allowedlocationtypes="Outpost,AliveStronghold">
+      <modulecount flag="AliveStrongholdAirlock" count="1"/>
+      <npcs>
+        <npc from="outpostnpcs1" identifier="merchantstronghold"/>
+        <npc from="outpostnpcs1" identifier="merchantblacksmith"/>
+      </npcs>
+    </OutpostConfig>
+    <OutpostConfig identifier="miningoutpost" replaceinradiation="abandonedoutpost" totalmodulecount="1" appendtoreachtotalmodulecount="false" minhallwaylength="0" spawncrewinsideoutpost="false" allowedlocationtypes="Mine">
+      <modulecount flag="Airlock" count="1" />
+      <npcs/>
+    </OutpostConfig>
+    <OutpostConfig identifier="researchoutpost" replaceinradiation="abandonedoutpost" totalmodulecount="1" appendtoreachtotalmodulecount="false" minhallwaylength="0" spawncrewinsideoutpost="false" allowedlocationtypes="Research">
+      <modulecount flag="Airlock" count="1" />
+      <npcs/>
+    </OutpostConfig>
+    <OutpostConfig identifier="militaryoutpost" replaceinradiation="abandonedoutpost" totalmodulecount="1" appendtoreachtotalmodulecount="false" minhallwaylength="0" spawncrewinsideoutpost="false" allowedlocationtypes="Military">
+      <modulecount flag="Airlock" count="1" />
+      <npcs/>
+    </OutpostConfig>
+    <OutpostConfig identifier="city" replaceinradiation="abandonedoutpost" totalmodulecount="1" appendtoreachtotalmodulecount="false" minhallwaylength="0" spawncrewinsideoutpost="false" allowedlocationtypes="City">
+      <modulecount flag="Airlock" count="1" />
+      <npcs/>
+    </OutpostConfig>
+    <OutpostConfig identifier="abandonedoutpost" totalmodulecount="1" minhallwaylength="0" allowedlocationtypes="Abandoned" spawncrewinsideoutpost="false" alwaysdestructible="true" alwaysrewireable="true" allowstealing="true">
+      <modulecount flag="Airlock" count="1" />
+      <npcs/>
+    </OutpostConfig>
+    <OutpostConfig identifier="stronghold" totalmodulecount="4" minhallwaylength="0" allowedlocationtypes="stronghold" spawncrewinsideoutpost="false" alwaysdestructible="false" alwaysrewireable="true" allowstealing="true">
+      <modulecount flag="StrongholdAirlock" count="1" />
+      <modulecount flag="StrongholdRegular" count="3" />
+    </OutpostConfig>
+    <OutpostConfig identifier="AliveStronghold" replaceinradiation="Stronghold" totalmodulecount="1" appendtoreachtotalmodulecount="false" minhallwaylength="0" spawncrewinsideoutpost="false" allowedlocationtypes="Outpost,AliveStronghold">
+      <modulecount flag="AliveStrongholdAirlock" count="1"/>
+      <npcs>
+        <npc from="outpostnpcs1" identifier="merchantstronghold"/>
+        <npc from="outpostnpcs1" identifier="merchantblacksmith"/>
+      </npcs>
+    </OutpostConfig>
+  </OutpostGenerationParameters>
+</Override>

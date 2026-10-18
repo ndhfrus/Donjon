@@ -1,0 +1,1996 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Override>
+<Afflictions>
+  <!-- Аффликшены визоров -->
+  <AfflictionHusk name="Забрало хундсгугель закрыто" identifier="Visor1_Closed" limbspecific="false" indicatorlimb="Head" type="visor_closed_any" huskedspeciesname="husk" targets="human,skeleton,goblin,skeleton_skilled,skeleton_robust,skeleton_hero,ghoul" activethreshold="1" dormantthreshold="1" transitionthreshold="1000" transformthresholdondeath="1000" sendmessages="false" needsair="true" causespeechimpediment="false" hideiconafterdelay="true" showiconthreshold="1000" showicontoothersthreshold="100" showinhealthscannerthreshold="0" treatmentthreshold="100" HealableInMedicalClinic="false" maxstrength="2" iconcolors="120,120,220">
+    <Effect minstrength="0" maxstrength="2" strengthchange="-2"></Effect>
+    <icon texture="%ModDir%/Medical/TEAffliction.png" sourcerect="263,271,133,130" color="120,120,220,255" origin="0,0" />
+  </AfflictionHusk>
+  <AfflictionHusk name="Забрало хундсгугель открыто" identifier="Visor1_Opened" limbspecific="false" indicatorlimb="Head" type="visor_opened_any" huskedspeciesname="husk" targets="human,skeleton,goblin,skeleton_skilled,skeleton_robust,skeleton_hero,ghoul" activethreshold="1" dormantthreshold="1" transitionthreshold="1000" transformthresholdondeath="1000" sendmessages="false" needsair="true" causespeechimpediment="false" hideiconafterdelay="true" showiconthreshold="1000" showicontoothersthreshold="100" showinhealthscannerthreshold="0" treatmentthreshold="100" HealableInMedicalClinic="false" maxstrength="2" iconcolors="120,120,220">
+    <Effect minstrength="0" maxstrength="2" strengthchange="-2"></Effect>
+    <icon texture="%ModDir%/Medical/TEAffliction.png" sourcerect="263,271,133,130" color="120,120,220,255" origin="0,0" />
+  </AfflictionHusk>
+  <AfflictionHusk name="Забрало армет закрыто" identifier="Visor2_Closed" limbspecific="false" indicatorlimb="Head" type="visor_closed_any" huskedspeciesname="husk" targets="human,skeleton,goblin,skeleton_skilled,skeleton_robust,skeleton_hero,ghoul" activethreshold="1" dormantthreshold="1" transitionthreshold="1000" transformthresholdondeath="1000" sendmessages="false" needsair="true" causespeechimpediment="false" hideiconafterdelay="true" showiconthreshold="1000" showicontoothersthreshold="100" showinhealthscannerthreshold="0" treatmentthreshold="100" HealableInMedicalClinic="false" maxstrength="2" iconcolors="120,120,220">
+    <Effect minstrength="0" maxstrength="2" strengthchange="-2"></Effect>
+    <icon texture="%ModDir%/Medical/TEAffliction.png" sourcerect="263,271,133,130" color="120,120,220,255" origin="0,0" />
+  </AfflictionHusk>
+  <AfflictionHusk name="Забрало армет открыто" identifier="Visor2_Opened" limbspecific="false" indicatorlimb="Head" type="visor_opened_any" huskedspeciesname="husk" targets="human,skeleton,goblin,skeleton_skilled,skeleton_robust,skeleton_hero,ghoul" activethreshold="1" dormantthreshold="1" transitionthreshold="1000" transformthresholdondeath="1000" sendmessages="false" needsair="true" causespeechimpediment="false" hideiconafterdelay="true" showiconthreshold="1000" showicontoothersthreshold="100" showinhealthscannerthreshold="0" treatmentthreshold="100" HealableInMedicalClinic="false" maxstrength="2" iconcolors="120,120,220">
+    <Effect minstrength="0" maxstrength="2" strengthchange="-2"></Effect>
+    <icon texture="%ModDir%/Medical/TEAffliction.png" sourcerect="263,271,133,130" color="120,120,220,255" origin="0,0" />
+  </AfflictionHusk>
+  <AfflictionHusk name="Забрало хундсгугель закрыто" identifier="Visor3_Closed" limbspecific="false" indicatorlimb="Head" type="visor_closed_any" huskedspeciesname="husk" targets="human,skeleton,goblin,skeleton_skilled,skeleton_robust,skeleton_hero,ghoul" activethreshold="1" dormantthreshold="1" transitionthreshold="1000" transformthresholdondeath="1000" sendmessages="false" needsair="true" causespeechimpediment="false" hideiconafterdelay="true" showiconthreshold="1000" showicontoothersthreshold="100" showinhealthscannerthreshold="0" treatmentthreshold="100" HealableInMedicalClinic="false" maxstrength="2" iconcolors="120,120,220">
+    <Effect minstrength="0" maxstrength="2" strengthchange="-2"></Effect>
+    <icon texture="%ModDir%/Medical/TEAffliction.png" sourcerect="263,271,133,130" color="120,120,220,255" origin="0,0" />
+  </AfflictionHusk>
+  <AfflictionHusk name="Забрало хундсгугель открыто" identifier="Visor3_Opened" limbspecific="false" indicatorlimb="Head" type="visor_opened_any" huskedspeciesname="husk" targets="human,skeleton,goblin,skeleton_skilled,skeleton_robust,skeleton_hero,ghoul" activethreshold="1" dormantthreshold="1" transitionthreshold="1000" transformthresholdondeath="1000" sendmessages="false" needsair="true" causespeechimpediment="false" hideiconafterdelay="true" showiconthreshold="1000" showicontoothersthreshold="100" showinhealthscannerthreshold="0" treatmentthreshold="100" HealableInMedicalClinic="false" maxstrength="2" iconcolors="120,120,220">
+    <Effect minstrength="0" maxstrength="2" strengthchange="-2"></Effect>
+    <icon texture="%ModDir%/Medical/TEAffliction.png" sourcerect="263,271,133,130" color="120,120,220,255" origin="0,0" />
+  </AfflictionHusk>
+  <AfflictionHusk name="Забрало клаппвизор закрыто" identifier="Visor4_Closed" limbspecific="false" indicatorlimb="Head" type="visor_closed_any" huskedspeciesname="husk" targets="human,skeleton,goblin,skeleton_skilled,skeleton_robust,skeleton_hero,ghoul" activethreshold="1" dormantthreshold="1" transitionthreshold="1000" transformthresholdondeath="1000" sendmessages="false" needsair="true" causespeechimpediment="false" hideiconafterdelay="true" showiconthreshold="1000" showicontoothersthreshold="100" showinhealthscannerthreshold="0" treatmentthreshold="100" HealableInMedicalClinic="false" maxstrength="2" iconcolors="120,120,220">
+    <Effect minstrength="0" maxstrength="2" strengthchange="-2"></Effect>
+    <icon texture="%ModDir%/Medical/TEAffliction.png" sourcerect="263,271,133,130" color="120,120,220,255" origin="0,0" />
+  </AfflictionHusk>
+  <AfflictionHusk name="Забрало клаппвизор открыто" identifier="Visor4_Opened" limbspecific="false" indicatorlimb="Head" type="visor_opened_any" huskedspeciesname="husk" targets="human,skeleton,goblin,skeleton_skilled,skeleton_robust,skeleton_hero,ghoul" activethreshold="1" dormantthreshold="1" transitionthreshold="1000" transformthresholdondeath="1000" sendmessages="false" needsair="true" causespeechimpediment="false" hideiconafterdelay="true" showiconthreshold="1000" showicontoothersthreshold="100" showinhealthscannerthreshold="0" treatmentthreshold="100" HealableInMedicalClinic="false" maxstrength="2" iconcolors="120,120,220">
+    <Effect minstrength="0" maxstrength="2" strengthchange="-2"></Effect>
+    <icon texture="%ModDir%/Medical/TEAffliction.png" sourcerect="263,271,133,130" color="120,120,220,255" origin="0,0" />
+  </AfflictionHusk>
+  <AfflictionHusk name="Забрало турнирный 1 закрыто" identifier="Visor5_Closed" limbspecific="false" indicatorlimb="Head" type="visor_closed_any" huskedspeciesname="husk" targets="human,skeleton,goblin,skeleton_skilled,skeleton_robust,skeleton_hero,ghoul" activethreshold="1" dormantthreshold="1" transitionthreshold="1000" transformthresholdondeath="1000" sendmessages="false" needsair="true" causespeechimpediment="false" hideiconafterdelay="true" showiconthreshold="1000" showicontoothersthreshold="100" showinhealthscannerthreshold="0" treatmentthreshold="100" HealableInMedicalClinic="false" maxstrength="2" iconcolors="120,120,220">
+    <Effect minstrength="0" maxstrength="2" strengthchange="-2"></Effect>
+    <icon texture="%ModDir%/Medical/TEAffliction.png" sourcerect="263,271,133,130" color="120,120,220,255" origin="0,0" />
+  </AfflictionHusk>
+  <AfflictionHusk name="Забрало турнирный 1 открыто" identifier="Visor5_Opened" limbspecific="false" indicatorlimb="Head" type="visor_opened_any" huskedspeciesname="husk" targets="human,skeleton,goblin,skeleton_skilled,skeleton_robust,skeleton_hero,ghoul" activethreshold="1" dormantthreshold="1" transitionthreshold="1000" transformthresholdondeath="1000" sendmessages="false" needsair="true" causespeechimpediment="false" hideiconafterdelay="true" showiconthreshold="1000" showicontoothersthreshold="100" showinhealthscannerthreshold="0" treatmentthreshold="100" HealableInMedicalClinic="false" maxstrength="2" iconcolors="120,120,220">
+    <Effect minstrength="0" maxstrength="2" strengthchange="-2"></Effect>
+    <icon texture="%ModDir%/Medical/TEAffliction.png" sourcerect="263,271,133,130" color="120,120,220,255" origin="0,0" />
+  </AfflictionHusk>
+  <AfflictionHusk name="Забрало турнирный 2 закрыто" identifier="Visor6_Closed" limbspecific="false" indicatorlimb="Head" type="visor_closed_any" huskedspeciesname="husk" targets="human,skeleton,goblin,skeleton_skilled,skeleton_robust,skeleton_hero,ghoul" activethreshold="1" dormantthreshold="1" transitionthreshold="1000" transformthresholdondeath="1000" sendmessages="false" needsair="true" causespeechimpediment="false" hideiconafterdelay="true" showiconthreshold="1000" showicontoothersthreshold="100" showinhealthscannerthreshold="0" treatmentthreshold="100" HealableInMedicalClinic="false" maxstrength="2" iconcolors="120,120,220">
+    <Effect minstrength="0" maxstrength="2" strengthchange="-2"></Effect>
+    <icon texture="%ModDir%/Medical/TEAffliction.png" sourcerect="263,271,133,130" color="120,120,220,255" origin="0,0" />
+  </AfflictionHusk>
+  <AfflictionHusk name="Забрало турнирный 2 открыто" identifier="Visor6_Opened" limbspecific="false" indicatorlimb="Head" type="visor_opened_any" huskedspeciesname="husk" targets="human,skeleton,goblin,skeleton_skilled,skeleton_robust,skeleton_hero,ghoul" activethreshold="1" dormantthreshold="1" transitionthreshold="1000" transformthresholdondeath="1000" sendmessages="false" needsair="true" causespeechimpediment="false" hideiconafterdelay="true" showiconthreshold="1000" showicontoothersthreshold="100" showinhealthscannerthreshold="0" treatmentthreshold="100" HealableInMedicalClinic="false" maxstrength="2" iconcolors="120,120,220">
+    <Effect minstrength="0" maxstrength="2" strengthchange="-2"></Effect>
+    <icon texture="%ModDir%/Medical/TEAffliction.png" sourcerect="263,271,133,130" color="120,120,220,255" origin="0,0" />
+  </AfflictionHusk>
+  <AfflictionHusk name="Забрало номад закрыто" identifier="Visor7_Closed" limbspecific="false" indicatorlimb="Head" type="visor_closed_any" huskedspeciesname="husk" targets="human,skeleton,goblin,skeleton_skilled,skeleton_robust,skeleton_hero,ghoul" activethreshold="1" dormantthreshold="1" transitionthreshold="1000" transformthresholdondeath="1000" sendmessages="false" needsair="true" causespeechimpediment="false" hideiconafterdelay="true" showiconthreshold="1000" showicontoothersthreshold="100" showinhealthscannerthreshold="0" treatmentthreshold="100" HealableInMedicalClinic="false" maxstrength="2" iconcolors="120,120,220">
+    <Effect minstrength="0" maxstrength="2" strengthchange="-2"></Effect>
+    <icon texture="%ModDir%/Medical/TEAffliction.png" sourcerect="263,271,133,130" color="120,120,220,255" origin="0,0" />
+  </AfflictionHusk>
+  <AfflictionHusk name="Забрало номад открыто" identifier="Visor7_Opened" limbspecific="false" indicatorlimb="Head" type="visor_opened_any" huskedspeciesname="husk" targets="human,skeleton,goblin,skeleton_skilled,skeleton_robust,skeleton_hero,ghoul" activethreshold="1" dormantthreshold="1" transitionthreshold="1000" transformthresholdondeath="1000" sendmessages="false" needsair="true" causespeechimpediment="false" hideiconafterdelay="true" showiconthreshold="1000" showicontoothersthreshold="100" showinhealthscannerthreshold="0" treatmentthreshold="100" HealableInMedicalClinic="false" maxstrength="2" iconcolors="120,120,220">
+    <Effect minstrength="0" maxstrength="2" strengthchange="-2"></Effect>
+    <icon texture="%ModDir%/Medical/TEAffliction.png" sourcerect="263,271,133,130" color="120,120,220,255" origin="0,0" />
+  </AfflictionHusk>
+  
+  <!-- Аффликшены утилити -->
+  <AfflictionHusk name="Лампа 1 висит на поясе" identifier="Lamp1_Hanging" limbspecific="false" indicatorlimb="Torso" type="utility" huskedspeciesname="husk" targets="human,skeleton,goblin,skeleton_skilled,skeleton_robust,skeleton_hero,ghoul" activethreshold="1" dormantthreshold="1" transitionthreshold="1000" transformthresholdondeath="1000" sendmessages="false" needsair="true" causespeechimpediment="false" hideiconafterdelay="true" showiconthreshold="1000" showicontoothersthreshold="100" showinhealthscannerthreshold="0" treatmentthreshold="100" HealableInMedicalClinic="false" maxstrength="2" iconcolors="120,120,220">
+    <Effect minstrength="0" maxstrength="2" strengthchange="-2"></Effect>
+    <icon texture="%ModDir%/Medical/TEAffliction.png" sourcerect="263,271,133,130" color="120,120,220,255" origin="0,0" />
+  </AfflictionHusk>
+  <AfflictionHusk name="Лампа 3 висит на поясе" identifier="Lamp3_Hanging" limbspecific="false" indicatorlimb="Torso" type="utility" huskedspeciesname="husk" targets="human,skeleton,goblin,skeleton_skilled,skeleton_robust,skeleton_hero,ghoul" activethreshold="1" dormantthreshold="1" transitionthreshold="1000" transformthresholdondeath="1000" sendmessages="false" needsair="true" causespeechimpediment="false" hideiconafterdelay="true" showiconthreshold="1000" showicontoothersthreshold="100" showinhealthscannerthreshold="0" treatmentthreshold="100" HealableInMedicalClinic="false" maxstrength="2" iconcolors="120,120,220">
+    <Effect minstrength="0" maxstrength="2" strengthchange="-2"></Effect>
+    <icon texture="%ModDir%/Medical/TEAffliction.png" sourcerect="263,271,133,130" color="120,120,220,255" origin="0,0" />
+  </AfflictionHusk>
+  
+  <!--Накопил 3 очка навыков и может написать исследование-->
+  <Affliction name="Готов описать опыт (Оружие)" identifier="skill_gained_weapons" targets="human" description="" type="technical_skills" limbspecific="false" maxstrength="3" iconcolors="0,255,555,255" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" hideiconafterdelay="true">
+    <Description textidentifier="afflictiondescription.skill_gained" />
+    <Effect minstrength="0" maxstrength="3" strengthchange="0" />
+    <icon texture="%ModDir%/Medical/TEAffliction.png" sourcerect="0,400,129,132" color="235,235,235,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="Готов описать опыт (Механика)" identifier="skill_gained_mechanical" targets="human" description="" type="technical_skills" limbspecific="false" maxstrength="3" iconcolors="0,255,555,255" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" hideiconafterdelay="true">
+    <Description textidentifier="afflictiondescription.skill_gained" />
+    <Effect minstrength="0" maxstrength="3" strengthchange="0" />
+    <icon texture="%ModDir%/Medical/TEAffliction.png" sourcerect="0,400,129,132" color="235,235,235,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="Готов описать опыт (Кузнечество)" identifier="skill_gained_electrical" targets="human" description="" type="technical_skills" limbspecific="false" maxstrength="3" iconcolors="0,255,555,255" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" hideiconafterdelay="true">
+    <Description textidentifier="afflictiondescription.skill_gained" />
+    <Effect minstrength="0" maxstrength="3" strengthchange="0" />
+    <icon texture="%ModDir%/Medical/TEAffliction.png" sourcerect="0,400,129,132" color="235,235,235,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="Готов описать опыт (Знахарство)" identifier="skill_gained_medical" targets="human" description="" type="technical_skills" limbspecific="false" maxstrength="3" iconcolors="0,255,555,255" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" hideiconafterdelay="true">
+    <Description textidentifier="afflictiondescription.skill_gained" />
+    <Effect minstrength="0" maxstrength="3" strengthchange="0" />
+    <icon texture="%ModDir%/Medical/TEAffliction.png" sourcerect="0,400,129,132" color="235,235,235,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="Готов описать опыт (Шахтное дело)" identifier="skill_gained_mining" targets="human" description="" type="technical_skills" limbspecific="false" maxstrength="3" iconcolors="0,255,555,255" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" hideiconafterdelay="true">
+    <Description textidentifier="afflictiondescription.skill_gained" />
+    <Effect minstrength="0" maxstrength="3" strengthchange="0" />
+    <icon texture="%ModDir%/Medical/TEAffliction.png" sourcerect="0,400,129,132" color="235,235,235,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="Готов описать опыт (Шитье)" identifier="skill_gained_helm" targets="human" description="" type="technical_skills" limbspecific="false" maxstrength="3" iconcolors="0,255,555,255" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" hideiconafterdelay="true">
+    <Description textidentifier="afflictiondescription.skill_gained" />
+    <Effect minstrength="0" maxstrength="3" strengthchange="0" />
+    <icon texture="%ModDir%/Medical/TEAffliction.png" sourcerect="0,400,129,132" color="235,235,235,255" origin="0,0" />
+  </Affliction>
+  
+  <!--Аффликшен для бугурта - никогда не падаешь в крит-->
+  <Affliction name="Бугурт" identifier="bugurt_alwaysconscious" targets="human" description="" type="technical" limbspecific="false" maxstrength="1" iconcolors="0,255,555,255" showiconthreshold="0" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" hideiconafterdelay="true">
+    <Description textidentifier="afflictiondescription.bugurt_alwaysconscious" />
+    <Effect minstrength="0" maxstrength="1" strengthchange="0" resistancefor="critical_defence" minresistance="1" maxresistance="1">
+      <AbilityFlag flagtype="AlwaysStayConscious" />
+    </Effect>
+    <icon texture="Content/UI/CommandUIAtlas.png" sourcerect="0,256,128,128" color="10,193,114,255" origin="0,0" />
+  </Affliction>
+  <!--Аффликшен для КБ - регенерация тяжелых травм-->
+  <Affliction name="Бугурт 2" identifier="bugurt_notrauma" targets="human" description="" type="technical" limbspecific="false" maxstrength="1" iconcolors="0,155,255,255" showiconthreshold="0" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" hideiconafterdelay="true">
+    <Description textidentifier="afflictiondescription.bugurt_notrauma" />
+    <Effect minstrength="0" maxstrength="1" strengthchange="0">
+      <StatusEffect target="Character" interval="1" disabledeltatime="true">
+        <ReduceAffliction type="damage_debuff" strength="1" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="Content/UI/CommandUIAtlas.png" sourcerect="0,256,128,128" color="10,193,114,255" origin="0,0" />
+  </Affliction>
+  
+  <!--Усталость от рюкзаков-->
+  <Affliction name="Надет рюкзак" identifier="backpack_equipped" description="" type="technical" causeofdeathdescription="" selfcauseofdeathdescription="" limbspecific="false" maxstrength="2" ShowBarInHealthMenu="false" showiconthreshold="0" showicontoothersthreshold="100" iconcolors="235,164,52,255">
+    <Description textidentifier="afflictiondescription.backpack_equipped" />
+    <Effect minstrength="0" maxstrength="1" multiplybymaxvitality="true" strengthchange="-1"></Effect>
+    <Effect minstrength="1" maxstrength="2" multiplybymaxvitality="true" resistancefor="incrementalstun" minresistance="-0.5" maxresistance="-0.5" strengthchange="-0.5">
+      <StatusEffect target="Character" interval="15" disabledeltatime="true">
+        <Conditional IsPlayer="true" />
+        <Affliction identifier="hunger" strength="0.2" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="%ModDir%/Medical/TEAffliction.png" sourcerect="131,806,128,128" color="195,136,60,255" origin="0,0" />
+  </Affliction>
+  <!--Усталость от снаряжения не по уровню-->
+  <Affliction name="Надета тяжелая броня" identifier="heavy_equipped" description="" type="technical" causeofdeathdescription="" selfcauseofdeathdescription="" limbspecific="false" maxstrength="2" ShowBarInHealthMenu="false" showiconthreshold="0" showicontoothersthreshold="100" iconcolors="235,164,52,255">
+    <Description textidentifier="afflictiondescription.heavy_equipped" />
+    <Effect minstrength="0" maxstrength="1" multiplybymaxvitality="true" strengthchange="-1"></Effect>
+    <Effect minstrength="1" maxstrength="2" multiplybymaxvitality="true" resistancefor="incrementalstun" minresistance="-0.5" maxresistance="-0.5" strengthchange="-0.5">
+      <StatusEffect target="Character" interval="15" disabledeltatime="true">
+        <Conditional IsPlayer="true" />
+        <Affliction identifier="hunger" strength="0.2" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="%ModDir%/Medical/TEAffliction.png" sourcerect="131,806,128,128" color="195,136,60,255" origin="0,0" />
+  </Affliction>
+
+  <!-- Холод -->
+  <Frost_general name="Холодный климат" identifier="frost_general" description="Тут очень холодно" ShowBarInHealthMenu="false" type="technical" targets="human,krisa,goblin" limbspecific="false" maxstrength="3" showiconthreshold="0" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" iconcolors="130,130,175,255;110,110,195,255;90,90,225,255">
+    <Description textidentifier="afflictiondescription.frost_general" minstrength="0" maxstrength="1" />
+    <Description textidentifier="afflictiondescription.frost_general.medium" minstrength="1" maxstrength="2" dialogflag="Freeze" />
+    <Description textidentifier="afflictiondescription.frost_general.high" minstrength="2" maxstrength="3" dialogflag="Freeze" />
+    <Effect minstrength="0" maxstrength="1" multiplybymaxvitality="true" strengthchange="0.0">
+      <StatusEffect target="Character" interval="3" disabledeltatime="true">
+        <Conditional IsPlayer="true" />
+        <Affliction identifier="Frostbite" strength="0.45" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="1" maxstrength="2" multiplybymaxvitality="true" strengthchange="0.0">
+      <StatusEffect target="Character" interval="3" disabledeltatime="true">
+        <Conditional IsPlayer="true" />
+        <Affliction identifier="Frostbite" strength="0.65" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="2" maxstrength="3" multiplybymaxvitality="true" strengthchange="0.0">
+      <StatusEffect target="Character" interval="3" disabledeltatime="true">
+        <Conditional IsPlayer="true" />
+        <Affliction identifier="Frostbite" strength="0.9" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="%ModDir%/Medical/TEAffliction.png" sourcerect="805,413,128,128" color="50,50,200,255" origin="0,0" />
+  </Frost_general>
+  <Affliction name="Frostbite" identifier="frostbite" description="The area is beginning to become black and lifeless." type="frost" indicatorlimb="Torso" targets="human,evilhuman_warrior,rat,goblin" causeofdeathdescription="Freezed to death" selfcauseofdeathdescription="You have freezed to death." limbspecific="false" maxstrength="200" burnoverlayalpha="0.35" healcostmultiplier="2.25" WeaponsSkillGain="1.0" iconcolors="130,130,175,255;110,110,195,255;90,90,225,255">
+    <Description textidentifier="afflictiondescription.frostbite.verylow" minstrength="0" maxstrength="5" />
+    <Description textidentifier="afflictiondescription.frostbite.low" minstrength="5" maxstrength="20" dialogflag="Freeze" />
+    <Description textidentifier="afflictiondescription.frostbite.medium" minstrength="20" maxstrength="60" dialogflag="Freeze" />
+    <Description textidentifier="afflictiondescription.frostbite" minstrength="60" maxstrength="200" dialogflag="Freeze" />
+    <Effect minstrength="0" maxstrength="20" multiplybymaxvitality="true" strengthchange="-0.05" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.0" />
+    <Effect minstrength="20" maxstrength="200" multiplybymaxvitality="true" minvitalitydecrease="0.0" maxvitalitydecrease="2.0" strengthchange="-0.1" minspeedmultiplier="1.0" maxspeedmultiplier="0.5" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="1" minfacetint="70,100,180,30" maxfacetint="0,60,180,60" minbodytint="70,100,180,30" maxbodytint="0,60,180,60"></Effect>
+    <AfflictionOverlay texture="%ModDir%/Medical/damageOverlayIce.png" />
+    <icon texture="%ModDir%/Medical/TEAffliction.png" sourcerect="0,806,128,128" color="50,50,200,255" origin="0,0" />
+  </Affliction>
+  
+  <!-- Тотемы -->
+  <Affliction name="Тотем - Бонус лечения" identifier="totem_healing" type="technical" limbspecific="false" maxstrength="8" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" iconcolors="155,105,50;155,200,50;50,255,50">
+    <Effect minstrength="0" maxstrength="10" strengthchange="-1" resistancefor="damage,stun" minresistance="0.1" maxresistance="0.1" multiplybymaxvitality="true">
+      <StatusEffect target="Character">
+        <ParticleEmitter particle="skyholderfx2" AngleMax="360" ScaleMultiplier="1,1.4" Particlespersecond="10" colormultiplier="255,0,0,255" Distancemin="35" Distancemax="65" lifetimemultiplier="1.1" />
+      </StatusEffect>
+      <StatusEffect target="Character" interval="0.5" disabledeltatime="true">
+        <ReduceAffliction type="damage" amount="0.4" />
+        <ReduceAffliction type="damageunique" amount="0.4" />
+        <ReduceAffliction type="stun" amount="0.5" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="%ModDir%/Medical/TEAffliction.png" sourcerect="132,537,128,128" color="193,193,174,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="Тотем - Восстановление маны" identifier="totem_mana" type="technical" limbspecific="false" maxstrength="8" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" iconcolors="155,105,50;155,200,50;50,255,50">
+    <Effect minstrength="0" maxstrength="8" strengthchange="-1" multiplybymaxvitality="true">
+      <StatusEffect target="Character">
+        <Conditional mana_drain="gt 1"/>
+        <ParticleEmitter particle="skyholderfx2" AngleMax="360" ScaleMultiplier="1,1.4" Particlespersecond="10" colormultiplier="255,0,255,255" Distancemin="45" Distancemax="65" lifetimemultiplier="1.1" />
+      </StatusEffect>
+      <StatusEffect target="Character" interval="0.5" disabledeltatime="true">
+        <Conditional mana_drain="gt 1"/>
+        <ReduceAffliction identifier="mana_drain" amount="0.25" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="%ModDir%/Medical/TEAffliction.png" sourcerect="132,537,128,128" color="193,193,174,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="Тотем - Опыт" identifier="totem_experience" type="technical" limbspecific="false" maxstrength="8" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" iconcolors="155,105,50;155,200,50;50,255,50">
+    <Effect minstrength="0" maxstrength="8" strengthchange="-1" multiplybymaxvitality="true">
+      <StatusEffect target="Character" interval="30" delay="1" disabledeltatime="true">
+        <GiveExperience amount="5" />
+        <ReduceAffliction identifier="writing_timer" amount="10" />
+        <ParticleEmitter particle="enchantment" AngleMax="360" ScaleMultiplier="0.45,0.5" Particleamount="10" colormultiplier="255,255,0,255" Distancemin="45" Distancemax="65" lifetimemultiplier="1.05" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="%ModDir%/Medical/TEAffliction.png" sourcerect="132,537,128,128" color="193,193,174,255" origin="0,0" />
+  </Affliction>
+
+  <!-- Технические аффликшены существ -->
+  <Affliction name="Бешеная крыса" identifier="krisa_affliction" type="technical" targets="krisa" limbspecific="false" maxstrength="30" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" iconcolors="155,105,50;155,200,50;50,255,50">
+    <Effect minstrength="0" maxstrength="30" strengthchange="-1" multiplybymaxvitality="true" resistancefor="burn,damage,stun" minresistance="0.5" maxresistance="0.5" minspeedmultiplier="1.0" maxspeedmultiplier="1.6">
+      <StatusEffect target="Character" interval="1" disabledeltatime="true" comparison="and" MaxPerceptionDistance="-1">
+        <AiTrigger state="Aggressive" duration="5" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="%ModDir%/Medical/TEAffliction.png" sourcerect="132,537,128,128" color="193,193,174,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="Волк встает в афк" identifier="wolf_affliction" type="technical" targets="Wolf" limbspecific="false" maxstrength="10" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" iconcolors="155,105,50;155,200,50;50,255,50">
+    <Effect minstrength="0" maxstrength="9" strengthchange="0.5" multiplybymaxvitality="true">
+      <StatusEffect target="Character">
+        <TriggerAnimation Type="Walk" filename="WolfHowl_Walk" priority="30" ExpectedSpecies="Wolf" />
+        <TriggerAnimation Type="Run" filename="WolfHowl_Run" priority="30" ExpectedSpecies="Wolf" />
+      </StatusEffect>
+       <StatusEffect target="Character" type="OnDamaged" disabledeltatime="true">
+        <Affliction identifier="wolf_affliction" amount="20" probability="1" />
+      </StatusEffect>
+      <StatusEffect target="Character" interval="0.5" disabledeltatime="true">
+        <Conditional AIState="! Idle" />
+        <Conditional isplayer="eq true" />
+        <Affliction identifier="wolf_affliction" amount="20" probability="1" />
+      </StatusEffect>
+      <StatusEffect target="Character" interval="6">
+        <Sound file="%ModDir%/Characters/Wolf/randwolf-01.ogg" range="30000" selectionmode="Random" volume="0.8" />
+        <Sound file="%ModDir%/Characters/Wolf/randwolf-02.ogg" range="30000" selectionmode="Random" volume="0.8" />
+        <Sound file="%ModDir%/Characters/Wolf/Wolf_howl-03.ogg" range="30000" selectionmode="Random" volume="0.8" />
+        <Sound file="%ModDir%/Sounds/Ambient/ambient_1.ogg" range="30000" selectionmode="Random" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="9" maxstrength="10" strengthchange="0" multiplybymaxvitality="true"/>
+    <PeriodicEffect mininterval="30" maxinterval="60" minstrength="9" maxstrength="10">
+      <StatusEffect target="Character" disabledeltatime="true">
+        <ReduceAffliction identifier="wolf_affliction" amount="-20" probability="0.3" />
+      </StatusEffect>
+    </PeriodicEffect>
+    <PeriodicEffect mininterval="2" maxinterval="5" minstrength="2" maxstrength="9">
+      <StatusEffect target="NearbyCharacters" disabledeltatime="true" range="5000" targets="wolf">
+        <Affliction identifier="wolf_affliction" amount="0.25" probability="0.65" />
+      </StatusEffect>
+    </PeriodicEffect>
+    <icon texture="%ModDir%/Medical/TEAffliction.png" sourcerect="132,537,128,128" color="193,193,174,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="Паук встает в афк" identifier="spider_affliction" type="technical" targets="spider" limbspecific="false" maxstrength="20" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" iconcolors="155,105,50;155,200,50;50,255,50">
+    <Effect minstrength="0" maxstrength="19" strengthchange="0" multiplybymaxvitality="true"></Effect>
+    <Effect minstrength="19" maxstrength="20" strengthchange="0" multiplybymaxvitality="true" minspeedmultiplier="0.0" maxspeedmultiplier="0.0">
+      <StatusEffect target="Character" disabledeltatime="true" setvalue="true" comparison="or">
+        <Conditional AIState="! Idle" />
+        <Conditional isplayer="eq true" />
+        <ReduceAffliction identifier="spider_affliction" amount="20" probability="1" />
+      </StatusEffect>
+    </Effect>
+    <PeriodicEffect mininterval="30" maxinterval="60">
+      <StatusEffect target="Character" disabledeltatime="true">
+        <ReduceAffliction identifier="spider_affliction" amount="20" probability="0.15" />
+      </StatusEffect>
+    </PeriodicEffect>
+    <icon texture="%ModDir%/Medical/TEAffliction.png" sourcerect="132,537,128,128" color="193,193,174,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="Решил отступить" identifier="evilhuman_backingup" type="technical" limbspecific="false" maxstrength="10" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" iconcolors="155,105,50;155,200,50;50,255,50">
+    <Effect minstrength="0" maxstrength="10" strengthchange="-1" multiplybymaxvitality="true">
+      <StatusEffect target="Character" interval="1" disabledeltatime="true" setvalue="true" comparison="and">
+        <AiTrigger state="PassiveAggressive" duration="2" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="%ModDir%/Medical/TEAffliction.png" sourcerect="132,537,128,128" color="193,193,174,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="Регенерация" identifier="regenerationdeathmatch" description="Вы не получали урон 15 секунд, идет быстрая регенерация" type="buff" treatmentthreshold="100" isbuff="true" limbspecific="false" indicatorlimb="Torso" maxstrength="15" showiconthreshold="15">
+    <Effect minstrength="14" maxstrength="15" strengthchange="0">
+      <StatusEffect target="Character" disabledeltatime="true" interval="0.3">
+        <ReduceAffliction identifier="bleeding" strength="0.5" />
+        <ReduceAffliction identifier="bloodloss" strength="0.2" />
+        <ReduceAffliction type="burn" strength="0.2" />
+        <ReduceAffliction type="damageunique" strength="0.1" />
+        <ReduceAffliction type="damage_debuff" strength="1" />
+      </StatusEffect>
+      <AbilityFlag flagtype="ImmuneToPressure" />
+    </Effect>
+    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="256,896,128,128" color="193,193,10,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="Кусан вампиром" identifier="vamp_bite" description="Челика кусал вампир и он превратится в ебаку после смерти" type="technical" treatmentthreshold="100" limbspecific="false" indicatorlimb="Torso" maxstrength="30" showiconthreshold="1000">
+    <Effect minstrength="0" maxstrength="30" strengthchange="-1" />
+    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="256,896,128,128" color="193,193,10,255" origin="0,0" />
+  </Affliction>
+
+  <!-- Технические аффликшены талисманов и прочее -->
+  <Affliction name="Бонус защиты от огня" identifier="talisman_antifire" type="technical" limbspecific="false" maxstrength="3" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" iconcolors="155,105,50;155,200,50;50,255,50">
+    <Effect minstrength="0" maxstrength="3" strengthchange="-1" resistancefor="burn" minresistance="0.5" maxresistance="0.5" multiplybymaxvitality="true">
+      <StatusEffect target="Character">
+        <ParticleEmitter particle="enchantment" AngleMax="360" ScaleMultiplier="0.25,0.3" Particlespersecond="3" ColorMultiplier="255,150,0,205" Distancemin="35" Distancemax="80" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="%ModDir%/Medical/TEAffliction.png" sourcerect="132,537,128,128" color="193,193,174,255" origin="0,0" />
+  </Affliction>
+  <!--Защита от болезни-->
+  <Affliction name="Защищен от болезни" identifier="disease_resistance" description="" type="technical" causeofdeathdescription="" selfcauseofdeathdescription="" limbspecific="false" maxstrength="1" ShowBarInHealthMenu="false" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" hideiconafterdelay="true" iconcolors="235,164,52,255">
+    <Effect minstrength="0" maxstrength="1" multiplybymaxvitality="true" resistancefor="unknowndiseaseerc" minresistance="1" maxresistance="1" strengthchange="-0.5" />
+    <icon texture="%ModDir%/Medical/TEAffliction.png" sourcerect="131,806,128,128" color="195,136,60,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="Провокация" identifier="provocation" description="" type="buff" treatmentthreshold="1000" limbspecific="false" indicatorlimb="Torso" maxstrength="15" showiconthreshold="0" showicontoothersthreshold="1000">
+    <Effect target="Character" minstrength="0.0" maxstrength="15" strengthchange="-1" tag="provocative" resistancefor="feardebuff" minresistance="0.5" maxresistance="0.75">
+      <StatValue stattype="SightRangeMultiplier" value="1" />
+      <StatValue stattype="SoundRangeMultiplier" value="3" />
+    </Effect>
+    <icon texture="%ModDir%/Medical/TEAffliction.png" sourcerect="786,138,128,128" color="200,50,100,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="Туманность разума" identifier="talisman_amnesia" type="technical" limbspecific="false" maxstrength="20" indicatorlimb="Head" showiconthreshold="0" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" iconcolors="155,105,155;175,100,175;200,100,200">
+    <Effect minstrength="0" maxstrength="19" strengthchange="-1"></Effect>
+    <Effect minstrength="19" maxstrength="20" strengthchange="-10">
+      <!--Отнимает навык -10 если он выше или равен 20-->
+      <StatusEffect target="Character" comparison="and" interval="1">
+        <Conditional skillrequirement="true" electrical="gte 20" />
+        <GiveSkill skillidentifier="electrical" amount="-10" triggertalents="false" />
+      </StatusEffect>
+      <StatusEffect target="Character" comparison="and" interval="1">
+        <Conditional skillrequirement="true" weapons="gte 20" />
+        <GiveSkill skillidentifier="weapons" amount="-10" triggertalents="false" />
+      </StatusEffect>
+      <StatusEffect target="Character" comparison="and" interval="1">
+        <Conditional skillrequirement="true" helm="gte 20" />
+        <GiveSkill skillidentifier="helm" amount="-10" triggertalents="false" />
+      </StatusEffect>
+      <StatusEffect target="Character" comparison="and" interval="1">
+        <Conditional skillrequirement="true" medical="gte 20" />
+        <GiveSkill skillidentifier="medical" amount="-10" triggertalents="false" />
+      </StatusEffect>
+      <StatusEffect target="Character" comparison="and" interval="1">
+        <Conditional skillrequirement="true" mechanical="gte 20" />
+        <GiveSkill skillidentifier="mechanical" amount="-10" triggertalents="false" />
+      </StatusEffect>
+      <StatusEffect target="Character" comparison="and" interval="1">
+        <Conditional skillrequirement="true" mining="gte 20" />
+        <GiveSkill skillidentifier="mining" amount="-10" triggertalents="false" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="%ModDir%/Medical/TEAffliction.png" sourcerect="0,400,129,132" color="235,235,235,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="Щит" identifier="talisman_shield" type="technical" limbspecific="false" maxstrength="30" showiconthreshold="0" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" iconcolors="155,105,50;155,200,50;50,255,50">
+    <Effect minstrength="0" maxstrength="30" strengthchange="-0.5" resistancefor="internaldamage,blunttrauma,lacerations,punctures,gunshotwound,bitewounds,explosiondamage,bleeding,incrementalstun,stun,electricshock" minresistance="1" maxresistance="1" multiplybymaxvitality="true">
+      <StatusEffect target="Character" type="OnDamaged" disabledeltatime="true" delay="0.2">
+        <requiredaffliction identifier="damage,bleeding" minstrength="0.1" />
+        <SpawnItem identifier="shieldeffectancient" spawnposition="This" count="1" spread="0" />
+        <Affliction identifier="talisman_shield" amount="-1000" probability="1" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="%ModDir%/Medical/TEAffliction.png" sourcerect="132,537,128,128" color="193,193,174,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="Писал книгу" identifier="writing_timer" description="" type="other" treatmentthreshold="1000" limbspecific="false" indicatorlimb="Torso" maxstrength="300" showiconthreshold="250" showicontoothersthreshold="1000">
+    <Effect minstrength="0.0" maxstrength="300" strengthchange="-0.5" />
+    <icon texture="%ModDir%/Medical/TEAffliction.png" sourcerect="786,7,128,128" color="100,50,200,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="Убийца гоблинов" identifier="goblin_slayer" type="technical" targets="Human" limbspecific="false" maxstrength="10" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" iconcolors="155,105,50;155,200,50;50,255,50">
+    <Effect minstrength="0" maxstrength="2" strengthchange="-0.5" multiplybymaxvitality="true"/>
+    <Effect minstrength="2" maxstrength="10" strengthchange="-0.5" multiplybymaxvitality="true"/>
+    <PeriodicEffect mininterval="3" maxinterval="5" minstrength="0" maxstrength="10">
+      <StatusEffect target="NearbyCharacters" disabledeltatime="true" range="600" targets="goblin">
+        <Affliction identifier="feardebuff" amount="5" probability="0.5" />
+      </StatusEffect>
+    </PeriodicEffect>
+    <icon texture="%ModDir%/Medical/TEAffliction.png" sourcerect="132,537,128,128" color="193,193,174,255" origin="0,0" />
+  </Affliction>
+
+  <!-- Скрытность! -->
+  <Affliction name="Невидимость (Талисман)" identifier="talisman_invisible" type="invisible" limbspecific="false" maxstrength="30" showiconthreshold="0" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" iconcolors="155,105,50;155,200,50;50,255,50">
+    <Effect minstrength="0" maxstrength="30" strengthchange="-0.5">
+      <StatValue stattype="SightRangeMultiplier" value="-1" />
+      <StatValue stattype="SoundRangeMultiplier" value="-0.85" />
+      <StatusEffect target="Character" disabledeltatime="true" interval="0.25" invisibletimer="0.5" comparison="and">
+        <Conditional meleeattacked="lte 0"/>
+        <Conditional hasstatustag="neq no_inviz"/>
+        <Conditional isdead="false"/>
+      </StatusEffect>
+      <StatusEffect target="Character" disabledeltatime="true" interval="0.75">
+        <ParticleEmitter particle="nasonovsparkles" AngleMax="360" DistanceMin="0" DistanceMax="305" ScaleMultiplier="0.3,0.3" Particleamount="1" ColorMultiplier="70,70,255,255" lifetimemultiplier="0.9" />
+      </StatusEffect>
+      <StatusEffect target="Character" disabledeltatime="true" interval="0.5">
+        <Conditional speed="gt 2"/>
+        <ReduceAffliction identifier="talisman_invisible" strength="0.5" probability="1" />
+      </StatusEffect>
+      <StatusEffect target="Character" interval="0.25" comparison="and" disabledeltatime="true">
+        <Conditional IsMovingFast="true" />
+        <ParticleEmitter particle="nasonovsparkles" AngleMax="360" DistanceMin="0" DistanceMax="105" ScaleMultiplier="0.35,0.45" Particleamount="2" ColorMultiplier="70,70,255,255" lifetimemultiplier="1.3" />
+      </StatusEffect>
+      <StatusEffect target="Character" type="OnDamaged" disabledeltatime="true" tags="no_inviz" duration="3" setvalue="true">
+        <requiredaffliction identifier="damage,burn" minstrength="2" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="%ModDir%/Medical/TEAffliction.png" sourcerect="0,400,129,132" color="235,235,235,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="Невидимость (Куст)" identifier="bush_invisible" type="invisible" limbspecific="false" maxstrength="2" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" iconcolors="155,105,50;155,200,50;50,255,50">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-2">
+      <StatusEffect target="Character" type="OnDamaged" disabledeltatime="true" tags="no_inviz" duration="4" setvalue="true">
+        <requiredaffliction identifier="damage" minstrength="2" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="1" maxstrength="2" strengthchange="-2" minradialdistort="0.3" maxradialdistort="0.3">
+      <StatValue stattype="SightRangeMultiplier" value="-0.7" />
+      <StatusEffect target="Character" disabledeltatime="true" interval="0.1" invisibletimer="0.15" comparison="and">
+        <Conditional meleeattacked="lte 0"/>
+        <Conditional hasstatustag="neq has_bigitem"/>
+        <Conditional hasstatustag="neq no_inviz"/>
+        <Conditional isdead="false"/>
+      </StatusEffect>
+      <StatusEffect target="Character" disabledeltatime="true" interval="0.25">
+        <Conditional ishuman="eq false"/>
+        <Conditional meleeattacked="gt 0"/>
+        <Conditional isdead="eq true"/>
+        <ReduceAffliction identifier="bush_invisible" strength="100" probability="1" />
+      </StatusEffect>
+      <StatusEffect target="Character" disabledeltatime="true" interval="0.25">
+        <Conditional ishuman="eq true"/>
+        <Conditional hasstatustag="neq crouched"/>
+        <Conditional meleeattacked="gt 0"/>
+        <Conditional canrun="eq true"/>
+        <Conditional isdead="eq true"/>
+        <ReduceAffliction identifier="bush_invisible" strength="100" probability="1" />
+      </StatusEffect>
+      <StatusEffect target="Character" type="OnDamaged" disabledeltatime="true" tags="no_inviz" duration="4" setvalue="true">
+        <requiredaffliction identifier="damage,burn" minstrength="2" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="%ModDir%/Medical/TEAffliction.png" sourcerect="0,400,129,132" color="235,235,235,255" origin="0,0" />
+  </Affliction>
+
+  <!-- Особые зоны -->
+  <Affliction name="Люди против монстров зона" identifier="pvezone_affliction" type="technical" limbspecific="false" maxstrength="5" showiconthreshold="0" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" iconcolors="100,200,200">
+    <Effect minstrength="0" maxstrength="5" strengthchange="-2" multiplybymaxvitality="true">
+      <StatValue stattype="TeamAttackMultiplier" value="-1" />
+      <StatValue stattype="PoisonMultiplier" value="-1" />
+    </Effect>
+    <icon texture="%ModDir%/Medical/TEAffliction.png" sourcerect="132,537,128,128" color="193,193,174,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="Безопасная зона" identifier="safezone_affliction" type="technical" limbspecific="false" maxstrength="5" showiconthreshold="0" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" iconcolors="100,200,200">
+    <Effect minstrength="0" maxstrength="5" strengthchange="-2" multiplybymaxvitality="true">
+      <StatusEffect target="Character" disabledeltatime="true" interval="1" duration="3" tags="safezone">
+      </StatusEffect>
+      <StatValue stattype="TeamAttackMultiplier" value="-1" />
+      <StatValue stattype="PoisonMultiplier" value="-1" />
+    </Effect>
+    <icon texture="%ModDir%/Medical/TEAffliction.png" sourcerect="132,537,128,128" color="193,193,174,255" origin="0,0" />
+  </Affliction>
+  
+  <!-- Хорошее геймерское кресло -->
+  <Affliction name="Очень удобное кресло" identifier="chair_t3" type="technical" targets="Human" limbspecific="false" maxstrength="2" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" iconcolors="155,105,50;155,200,50;50,255,50">
+    <Effect minstrength="0" maxstrength="2" strengthchange="-2" multiplybymaxvitality="true">
+      <StatValue stattype="MechanicalSkillBonus" value="3" />
+      <StatValue stattype="MedicalSkillBonus" value="3" />
+      <StatValue stattype="HelmSkillBonus" value="3" />
+      <StatValue stattype="MechanicalSkillGainSpeed" value="0.15" />
+      <StatValue stattype="MedicalSkillGainSpeed" value="0.15" />
+      <StatValue stattype="HelmSkillGainSpeed" value="0.15" />
+      <StatValue stattype="MedicalItemEffectivenessMultiplier" value="0.25" />
+    </Effect>
+    <icon texture="%ModDir%/Medical/TEAffliction.png" sourcerect="132,537,128,128" color="193,193,174,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="Неплохое кресло" identifier="chair_t2" type="technical" targets="Human" limbspecific="false" maxstrength="2" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" iconcolors="155,105,50;155,200,50;50,255,50">
+    <Effect minstrength="0" maxstrength="2" strengthchange="-2" multiplybymaxvitality="true">
+      <StatValue stattype="MechanicalSkillBonus" value="2" />
+      <StatValue stattype="MedicalSkillBonus" value="2" />
+      <StatValue stattype="HelmSkillBonus" value="2" />
+      <StatValue stattype="MechanicalSkillGainSpeed" value="0.1" />
+      <StatValue stattype="MedicalSkillGainSpeed" value="0.1" />
+      <StatValue stattype="HelmSkillGainSpeed" value="0.1" />
+      <StatValue stattype="MedicalItemEffectivenessMultiplier" value="0.15" />
+    </Effect>
+    <icon texture="%ModDir%/Medical/TEAffliction.png" sourcerect="132,537,128,128" color="193,193,174,255" origin="0,0" />
+  </Affliction>
+  
+  <!-- Дождик -->
+  <Affliction name="Дождь" identifier="rainaffliction" description="" type="other" treatmentthreshold="1000" limbspecific="false" indicatorlimb="Torso" maxstrength="120" showiconthreshold="121">
+    <Effect minstrength="0.0" maxstrength="120" strengthchange="-1">
+      <StatusEffect target="Character" comparison="and">
+        <Conditional islocalplayer="true" />
+        <Conditional hasstatustag="neq indoors" />
+        <Conditional hasstatustag="neq cold_biome" />
+        <ParticleEmitter particle="raindrop" particlespersecond="150" scalemin="1" scalemax="1.35" anglemin="30" anglemax="160" distancemin="1100" distancemax="1400" HighQualityCollisionDetection="True" />
+        <Sound file="%ModDir%/Sounds/Ambient_Environment/rain.ogg" loop="true" volume="0.35"/>
+      </StatusEffect>
+      <StatusEffect target="Character" comparison="and">
+        <Conditional islocalplayer="true" />
+        <Conditional hasstatustag="eq indoors" />
+        <Conditional hasstatustag="neq cold_biome" />
+        <ParticleEmitter particle="raindrop" particlespersecond="50" scalemin="1" scalemax="1.35" anglemin="30" anglemax="160" distancemin="1190" distancemax="1400" HighQualityCollisionDetection="True" />
+        <Sound file="%ModDir%/Sounds/Ambient_Environment/rain_indoors.ogg" loop="true" volume="0.6"/>
+      </StatusEffect>
+      <StatusEffect target="Character" comparison="and">
+        <Conditional islocalplayer="true" />
+        <Conditional hasstatustag="eq cold_biome" />
+        <ParticleEmitter particle="snowdrop" particlespersecond="150" scalemin="0.7" scalemax="0.85" anglemin="20" anglemax="160" distancemin="1200" distancemax="1300" HighQualityCollisionDetection="True" />
+        <Sound file="%ModDir%/Sounds/Ambient_Environment/strongwind.ogg" loop="true" volume="0.7"/>
+      </StatusEffect>
+    </Effect>
+    <PeriodicEffect mininterval="10" maxinterval="30" minstrength="0" maxstrength="120">
+      <StatusEffect target="Character" disabledeltatime="true" RandomOffset="2000" comparison="and">
+        <Conditional islocalplayer="true" />
+        <Conditional hasstatustag="neq cold_biome" />
+        <sound file="Content/Sounds/Ambient/Thunder1.ogg" range="4000" volume="1" selectionmode="random" />
+        <sound file="%ModDir%/Sounds/Thunder2.ogg" range="4000" volume="1" selectionmode="random" />
+        <sound file="%ModDir%/Sounds/Thunder3.ogg" range="4000" volume="1" selectionmode="random" />
+      </StatusEffect>
+    </PeriodicEffect>
+    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="256,896,128,128" color="193,193,10,255" origin="0,0" />
+  </Affliction>
+  
+  <Affliction name="Хорошо отдохнул" identifier="wellrested" description="" type="buff" treatmentthreshold="1000" isbuff="true" limbspecific="false" indicatorlimb="Torso" maxstrength="300" showiconthreshold="0">
+    <Effect minstrength="0" maxstrength="120" strengthchange="-1">
+      <StatusEffect target="Character" disabledeltatime="true" interval="0.5">
+        <ReduceAffliction type="stun" strength="0.2" />
+        <ReduceAffliction type="damage_debuff" strength="0.05" />
+        <ReduceAffliction type="damage" strength="0.05" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="120" maxstrength="290" strengthchange="-1">
+      <StatusEffect target="Character" disabledeltatime="true" interval="0.5">
+        <ReduceAffliction type="stun" strength="0.25" />
+        <ReduceAffliction type="damage_debuff" strength="0.05" />
+        <ReduceAffliction type="damage" strength="0.05" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="290" maxstrength="300" strengthchange="-1">
+      <StatusEffect target="Character" disabledeltatime="true" interval="0.5">
+        <ReduceAffliction type="stun" strength="0.25" />
+        <ReduceAffliction type="damage_debuff" strength="0.05" />
+        <ReduceAffliction type="damage" strength="0.1" />
+      </StatusEffect>
+      <StatusEffect target="Character" disabledeltatime="true" interval="0.5">
+        <Conditional organdamage="gt 35" />
+        <ReduceAffliction type="damageunique" strength="0.1" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="%ModDir%/Medical/TEAffliction.png" sourcerect="399,672,128,128" color="70,195,70,255" origin="0,0" />
+  </Affliction>
+
+  <!-- Яды Донжон -->
+  <Affliction name="Отравление красными ягодами" identifier="poison_berry" type="poison" limbspecific="false" showiconthreshold="20" showicontoothersthreshold="0" showinhealthscannerthreshold="0" treatmentthreshold="10" maxstrength="100" healcostmultiplier="2.5" burnoverlayalpha="0">
+    <Description textidentifier="afflictiondescription.poison_berry.low" minstrength="0" maxstrength="10" />
+    <Description textidentifier="afflictiondescription.poison_berry" minstrength="10" maxstrength="50" />
+    <Description textidentifier="afflictiondescription.poison_berry.high" minstrength="50" maxstrength="100" />
+    <Effect minstrength="0" maxstrength="10" multiplybymaxvitality="false" strengthchange="-0.1">
+      <StatusEffect target="Limb" interval="3" disabledeltatime="true" multiplyafflictionsbymaxvitality="false">
+        <Affliction identifier="poison_berry" amount="10" probability="0.05" penetration="1.0" />
+        <Affliction identifier="poison_berry" amount="-10" probability="0.05" />
+      </StatusEffect>
+      <StatusEffect target="Character" multiplyafflictionsbymaxvitality="true" interval="1" disabledeltatime="true">
+        <Affliction identifier="stomachpainerc" amount="10" probability="0.03" />
+      </StatusEffect>
+      <StatusEffect target="Character" interval="1" disabledeltatime="true">
+        <Conditional mana_drain="gt 1"/>
+        <ReduceAffliction identifier="mana_drain" amount="0.35" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="10" maxstrength="20" multiplybymaxvitality="false" strengthchange="0.6">
+      <StatusEffect target="Character" interval="1" disabledeltatime="true">
+        <Conditional mana_drain="gt 1"/>
+        <ReduceAffliction identifier="mana_drain" amount="0.4" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="20" maxstrength="40" multiplybymaxvitality="false" strengthchange="0.6">
+      <StatusEffect target="Character">
+        <Affliction identifier="nausea" amount="1.25" />
+        <Affliction identifier="organdamage" amount="0.3" />
+      </StatusEffect>
+      <StatusEffect target="Character" multiplyafflictionsbymaxvitality="true" interval="1" disabledeltatime="true">
+        <Affliction identifier="stomachpainerc" amount="10" probability="0.04" />
+      </StatusEffect>
+      <StatusEffect target="Character" interval="1" disabledeltatime="true">
+        <Conditional mana_drain="gt 1"/>
+        <ReduceAffliction identifier="mana_drain" amount="0.4" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="40" maxstrength="99" multiplybymaxvitality="false" strengthchange="0.7">
+      <StatusEffect target="Character">
+        <Affliction identifier="incrementalstun" amount="3.5" penetration="1.0" />
+        <Affliction identifier="nausea" amount="1.4" />
+        <Affliction identifier="organdamage" amount="0.5" />
+      </StatusEffect>
+      <StatusEffect target="Character" multiplyafflictionsbymaxvitality="true" interval="1" disabledeltatime="true">
+        <Affliction identifier="stomachpainerc" amount="10" probability="0.05" />
+      </StatusEffect>
+      <StatusEffect target="Character" interval="3" disabledeltatime="true" multiplyafflictionsbymaxvitality="false">
+        <Affliction identifier="poison_berry" amount="-1000" probability="0.02" />
+      </StatusEffect>
+      <StatusEffect target="Character" interval="1" disabledeltatime="true">
+        <Conditional mana_drain="gt 1"/>
+        <ReduceAffliction identifier="mana_drain" amount="0.45" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="99" maxstrength="100" multiplybymaxvitality="false" strengthchange="0.7">
+      <StatusEffect target="Character">
+        <Affliction identifier="incrementalstun" amount="3.5" penetration="1.0" />
+        <Affliction identifier="nausea" amount="2.5" />
+        <Affliction identifier="organdamage" amount="0.75" />
+      </StatusEffect>
+      <StatusEffect target="Character" multiplyafflictionsbymaxvitality="true" interval="1" disabledeltatime="true">
+        <Affliction identifier="stomachpainerc" amount="10" probability="0.05" />
+      </StatusEffect>
+      <StatusEffect target="Character" interval="2" disabledeltatime="true" multiplyafflictionsbymaxvitality="false">
+        <Affliction identifier="poison_berry" amount="-1000" probability="0.05" />
+      </StatusEffect>
+      <StatusEffect target="Character" interval="1" disabledeltatime="true">
+        <Conditional mana_drain="gt 1"/>
+        <ReduceAffliction identifier="mana_drain" amount="0.50" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="640,640,128,128" color="210,100,100,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="Отравление ядом мухомора" identifier="poison_mushroom" type="poison" limbspecific="false" showiconthreshold="1" showicontoothersthreshold="0" showinhealthscannerthreshold="0" treatmentthreshold="10" maxstrength="100" healcostmultiplier="2.5" burnoverlayalpha="0">
+    <Description textidentifier="afflictiondescription.poison_mushroom.low" minstrength="0" maxstrength="10" />
+    <Description textidentifier="afflictiondescription.poison_mushroom" minstrength="10" maxstrength="50" />
+    <Description textidentifier="afflictiondescription.poison_mushroom.high" minstrength="50" maxstrength="100" />
+    <Effect minstrength="0" maxstrength="10" multiplybymaxvitality="false" strengthchange="-0.1">
+      <StatusEffect target="Limb" interval="2" disabledeltatime="true" multiplyafflictionsbymaxvitality="false">
+        <Affliction identifier="poison_mushroom" amount="10" probability="0.05" penetration="1.0" />
+        <Affliction identifier="poison_mushroom" amount="-10" probability="0.05" />
+      </StatusEffect>
+      <StatusEffect target="Character" interval="0.5" disabledeltatime="true">
+        <Affliction identifier="incrementalstun" amount="-0.5" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="10" maxstrength="40" multiplybymaxvitality="false" strengthchange="0.6">
+      <StatusEffect target="Character">
+        <Affliction identifier="nausea" amount="1.1" />
+        <Affliction identifier="organdamage" amount="0.3" />
+        <Affliction identifier="hallucinating" amount="1.5" />
+      </StatusEffect>
+      <StatusEffect target="Character" multiplyafflictionsbymaxvitality="true" interval="1" disabledeltatime="true">
+        <Affliction identifier="stomachpainerc" amount="10" probability="0.04" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="40" maxstrength="99" multiplybymaxvitality="false" strengthchange="0.6">
+      <StatusEffect target="Character">
+        <Affliction identifier="nausea" amount="1.2" />
+        <Affliction identifier="organdamage" amount="0.2" />
+        <Affliction identifier="hallucinating" amount="2" />
+      </StatusEffect>
+      <StatusEffect target="Character" multiplyafflictionsbymaxvitality="true" interval="1" disabledeltatime="true">
+        <Affliction identifier="stomachpainerc" amount="10" probability="0.05" />
+      </StatusEffect>
+      <StatusEffect target="Character" interval="3" disabledeltatime="true" multiplyafflictionsbymaxvitality="false">
+        <Affliction identifier="poison_mushroom" amount="-1000" probability="0.02" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="99" maxstrength="100" multiplybymaxvitality="false" strengthchange="0.6">
+      <StatusEffect target="Character">
+        <Affliction identifier="incrementalstun" amount="2.5" penetration="1.0" />
+        <Affliction identifier="nausea" amount="2.5" />
+        <Affliction identifier="organdamage" amount="0.4" />
+        <Affliction identifier="hallucinating" amount="2.5" />
+      </StatusEffect>
+      <StatusEffect target="Character" multiplyafflictionsbymaxvitality="true" interval="1" disabledeltatime="true">
+        <Affliction identifier="stomachpainerc" amount="10" probability="0.05" />
+      </StatusEffect>
+      <StatusEffect target="Character" interval="2" disabledeltatime="true" multiplyafflictionsbymaxvitality="false">
+        <Affliction identifier="poison_mushroom" amount="-1000" probability="0.06" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="640,640,128,128" color="210,100,100,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="Отравление чёрным ядом" identifier="poison_black" type="poison" limbspecific="false" showiconthreshold="40" showicontoothersthreshold="25" showinhealthscannerthreshold="0" treatmentthreshold="15" maxstrength="100" healcostmultiplier="4.5" burnoverlayalpha="0">
+    <Description textidentifier="afflictiondescription.poison_black.low" minstrength="0" maxstrength="10" />
+    <Description textidentifier="afflictiondescription.poison_black" minstrength="10" maxstrength="50" />
+    <Description textidentifier="afflictiondescription.poison_black.high" minstrength="50" maxstrength="100" />
+    <Effect minstrength="0" maxstrength="10" multiplybymaxvitality="false" strengthchange="-0.1">
+      <StatusEffect target="Limb" interval="3" disabledeltatime="true" multiplyafflictionsbymaxvitality="false">
+        <Affliction identifier="poison_black" amount="10" probability="0.05" penetration="1.0" />
+        <Affliction identifier="poison_black" amount="-10" probability="0.05" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="10" maxstrength="20" multiplybymaxvitality="false" strengthchange="1">
+    </Effect>
+    <Effect minstrength="20" maxstrength="40" multiplybymaxvitality="false" strengthchange="1"
+      minfacetint="0,0,0,20"
+      maxfacetint="0,0,0,50"
+      minbodytint="0,0,0,20"
+      maxbodytint="0,0,0,50">
+      <StatusEffect target="Character">
+        <Affliction identifier="nausea" amount="2" />
+        <Affliction identifier="organdamage" amount="0.3" />
+      </StatusEffect>
+      <StatusEffect target="Character" multiplyafflictionsbymaxvitality="true" interval="6" disabledeltatime="true">
+        <Affliction identifier="stomachpainerc" amount="10" probability="0.25" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="40" maxstrength="99" multiplybymaxvitality="false" strengthchange="1"
+      minfacetint="0,0,0,50"
+      maxfacetint="0,0,0,200"
+      minbodytint="0,0,0,50"
+      maxbodytint="0,0,0,200">
+      <StatusEffect target="Character">
+        <Affliction identifier="incrementalstun" amount="5" penetration="1.0" />
+        <Affliction identifier="nausea" amount="4" />
+        <Affliction identifier="organdamage" amount="0.5" />
+      </StatusEffect>
+      <StatusEffect target="Character" multiplyafflictionsbymaxvitality="true" interval="4" disabledeltatime="true">
+        <Affliction identifier="stomachpainerc" amount="10" probability="0.25" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="99" maxstrength="100" multiplybymaxvitality="false" strengthchange="1"
+      minfacetint="0,0,0,200"
+      maxfacetint="0,0,0,200"
+      minbodytint="0,0,0,200"
+      maxbodytint="0,0,0,200">
+      <StatusEffect target="Character">
+        <Affliction identifier="incrementalstun" amount="8" penetration="1.0" />
+        <Affliction identifier="nausea" amount="6" />
+        <Affliction identifier="organdamage" amount="1.5" />
+      </StatusEffect>
+      <StatusEffect target="Character" multiplyafflictionsbymaxvitality="true" interval="4" disabledeltatime="true">
+        <Affliction identifier="stomachpainerc" amount="10" probability="0.5" />
+      </StatusEffect>
+    </Effect>
+    <PeriodicEffect mininterval="7" maxinterval="13" minstrength="20" maxstrength="100">
+      <StatusEffect target="Character" duration="1.5" setvalue="true" speedmultiplier="0">
+        <AbilityFlag flagtype="MustWalk" />
+        <TriggerAnimation Type="Walk" filename="Vomit" priority="20" ExpectedSpecies="Human" />
+      </StatusEffect>
+      <StatusEffect target="Character" comparison="and">
+        <Conditional ishuman="true" />
+        <Conditional hasspecifiertag="male" />
+        <Conditional IsKnockedDown="false"/>
+        <sound file="%ModDir%/Sounds/torture_male-01.ogg" type="OnActive" range="1700.0" selectionmode="random" />
+        <sound file="%ModDir%/Sounds/torture_male-02.ogg" type="OnActive" range="1700.0" selectionmode="random" />
+        <sound file="%ModDir%/Sounds/torture_male-03.ogg" type="OnActive" range="1700.0" selectionmode="random" />
+        <sound file="%ModDir%/Sounds/torture_male-04.ogg" type="OnActive" range="1700.0" selectionmode="random" />
+      </StatusEffect>
+      <StatusEffect target="Character" comparison="and">
+        <Conditional ishuman="true" />
+        <Conditional hasspecifiertag="female" />
+        <Conditional IsKnockedDown="false"/>
+        <sound file="%ModDir%/Sounds/torture-female-01.ogg" type="OnActive" range="1700.0" selectionmode="random" />
+        <sound file="%ModDir%/Sounds/torture-female-02.ogg" type="OnActive" range="1700.0" selectionmode="random" />
+        <sound file="%ModDir%/Sounds/torture-female-03.ogg" type="OnActive" range="1700.0" selectionmode="random" />
+        <sound file="%ModDir%/Sounds/torture-female-04.ogg" type="OnActive" range="1700.0" selectionmode="random" />
+      </StatusEffect>
+      <StatusEffect target="Character" disabledeltatime="true">
+        <Affliction identifier="stomachpainerc" strength="10" />
+        <Affliction identifier="feardebuff" strength="2" />
+      </StatusEffect>
+    </PeriodicEffect>
+    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="640,640,128,128" color="210,100,100,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="Отравление ядом Ванта" identifier="poison_vanta" type="poison" limbspecific="false" showiconthreshold="30" showicontoothersthreshold="20" showinhealthscannerthreshold="0" treatmentthreshold="15" maxstrength="100" healcostmultiplier="4.5" damageoverlayalpha="1.2">
+    <Description textidentifier="afflictiondescription.poison_vanta.low" minstrength="0" maxstrength="10" />
+    <Description textidentifier="afflictiondescription.poison_vanta" minstrength="10" maxstrength="50" />
+    <Description textidentifier="afflictiondescription.poison_vanta.high" minstrength="50" maxstrength="100" />
+    <Effect minstrength="0" maxstrength="10" multiplybymaxvitality="false" strengthchange="-0.1">
+      <StatusEffect target="Limb" interval="3" disabledeltatime="true" multiplyafflictionsbymaxvitality="false">
+        <Affliction identifier="poison_vanta" amount="10" probability="0.05" penetration="1.0" />
+        <Affliction identifier="poison_vanta" amount="-10" probability="0.05" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="10" maxstrength="20" multiplybymaxvitality="false" strengthchange="1">
+    </Effect>
+    <Effect minstrength="20" maxstrength="40" multiplybymaxvitality="false" strengthchange="1"
+      minfacetint="200,0,0,20"
+      maxfacetint="200,0,0,50"
+      minbodytint="200,0,0,20"
+      maxbodytint="200,0,0,30">
+      <StatusEffect target="Character">
+        <Affliction identifier="nausea" amount="2" />
+      </StatusEffect>
+      <StatusEffect target="Character" targetlimbs="head" interval="0.25" disabledeltatime="true">
+        <Affliction identifier="bleeding" amount="0.5" penetration="1.0" />
+      </StatusEffect>
+      <StatusEffect target="Character" targetlimbs="head">
+        <ParticleEmitter particle="bloodsplash" copyentityangle="true" anglemin="-90" anglemax="90" particlespersecond="3" velocitymin="0" velocitymax="300" scalemin="0.3" scalemax="0.5" />
+        <Affliction identifier="sensoryoverload" amount="1.1" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="40" maxstrength="99" multiplybymaxvitality="false" strengthchange="1"
+      minfacetint="200,0,0,30"
+      maxfacetint="200,0,0,130"
+      minbodytint="200,0,0,50"
+      maxbodytint="200,0,0,90">
+      <StatusEffect target="Character" targetlimbs="head" interval="0.25" disabledeltatime="true">
+        <Affliction identifier="bleeding" amount="1" penetration="1.0" />
+      </StatusEffect>
+      <StatusEffect target="Character" targetlimbs="head">
+        <ParticleEmitter particle="bloodsplash" copyentityangle="true" anglemin="-90" anglemax="90" particlespersecond="7" velocitymin="50" velocitymax="300" scalemin="0.3" scalemax="0.5" />
+        <Affliction identifier="sensoryoverload" amount="1.3" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="99" maxstrength="100" multiplybymaxvitality="false" strengthchange="1"
+      minfacetint="200,0,0,130"
+      maxfacetint="200,0,0,130"
+      minbodytint="200,0,0,90"
+      maxbodytint="200,0,0,90">
+      <StatusEffect target="Character" targetlimbs="head" interval="0.25" disabledeltatime="true">
+        <Affliction identifier="bleeding" amount="2" penetration="1.0" />
+      </StatusEffect>
+      <StatusEffect target="Character" targetlimbs="head">
+        <ParticleEmitter particle="bloodsplash" copyentityangle="true" anglemin="-90" anglemax="90" particlespersecond="10" velocitymin="100" velocitymax="300" scalemin="0.3" scalemax="0.5" />
+        <Affliction identifier="sensoryoverload" amount="1.5" />
+      </StatusEffect>
+    </Effect>
+    <PeriodicEffect mininterval="5" maxinterval="12" minstrength="15" maxstrength="100">
+      <StatusEffect target="Character" comparison="and">
+        <Conditional ishuman="true" />
+        <Conditional hasspecifiertag="male" />
+        <Conditional IsKnockedDown="false"/>
+        <Sound file="%ModDir%/Medical/coughing_1.ogg" range="900" selectionmode="Random" />
+        <Sound file="%ModDir%/Medical/coughing_2.ogg" range="900" selectionmode="Random" />
+        <Sound file="%ModDir%/Medical/coughing_3.ogg" range="900" selectionmode="Random" />
+      </StatusEffect>
+      <StatusEffect target="Character" comparison="and">
+        <Conditional ishuman="true" />
+        <Conditional hasspecifiertag="female" />
+        <Conditional IsKnockedDown="false"/>
+        <Sound file="%ModDir%/Medical/cough_female_1.ogg" range="900" selectionmode="Random" />
+        <Sound file="%ModDir%/Medical/cough_female_2.ogg" range="900" selectionmode="Random" />
+      </StatusEffect>
+      <StatusEffect target="Character" duration="2" setvalue="true" speedmultiplier="0">
+        <AbilityFlag flagtype="MustWalk" />
+        <TriggerAnimation Type="Walk" filename="Vomit" priority="10" ExpectedSpecies="Human" />
+      </StatusEffect>
+      <StatusEffect target="Character" disabledeltatime="true">
+        <Affliction identifier="stomachpainerc" strength="10" />
+        <Affliction identifier="bloodloss" strength="1.5" />
+        <Affliction identifier="hunger_elite" strength="10" />
+      </StatusEffect>
+      <StatusEffect target="Character" targetlimbs="Head" duration="2">
+        <ParticleEmitter particle="vomitsplash" copyentityangle="true" anglemin="-10" anglemax="10" particlespersecond="15" velocitymin="20" velocitymax="120" scalemin="0.08" scalemax="0.1" colormultiplier="255,50,160,255" />
+        <Conditional HideFace="eq True" />
+      </StatusEffect>
+      <StatusEffect target="Character" targetlimbs="Head" duration="2">
+        <ParticleEmitter particle="vomitsplash" copyentityangle="true" anglemin="-10" anglemax="10" particlespersecond="40" velocitymin="50" velocitymax="200" scalemin="0.1" scalemax="0.15" colormultiplier="255,50,160,255" />
+        <Conditional HideFace="eq False" />
+      </StatusEffect>
+    </PeriodicEffect>
+    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="640,640,128,128" color="210,100,100,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="Интоксикация" identifier="potionoverdose" description="" type="poison_2" causeofdeathdescription="Умер от интоксикации зельями." selfcauseofdeathdescription="Умер от интоксикации зельями." limbspecific="false" indicatorlimb="Head" showiconthreshold="50" showinhealthscannerthreshold="5" karmachangeonapplied="-1" maxstrength="100" healcostmultiplier="1.25">
+    <!-- Без эффекта -->
+    <Effect minstrength="0" maxstrength="40" strengthchange="-0.25" minchromaticaberration="0.0" maxchromaticaberration="0.25" minafflictionoverlayalphamultiplier="0" maxafflictionoverlayalphamultiplier="0.0"></Effect>
+    <!-- Хуевит покруче, но пока не особо опасно -->
+    <Effect minstrength="40" maxstrength="60" strengthchange="-0.25" minchromaticaberration="0.25" maxchromaticaberration="1.0" minafflictionoverlayalphamultiplier="0" maxafflictionoverlayalphamultiplier="0.25">
+      <StatusEffect target="Character" interval="1" targetlimbs="torso" disabledeltatime="true">
+        <Affliction identifier="organdamage" strength="0.05" />
+      </StatusEffect>
+    </Effect>
+    <!-- Опасно для здоровья если выше 60, может убить -->
+    <Effect minstrength="60" maxstrength="80" minvitalitydecrease="0" maxvitalitydecrease="35" minscreendistort="0.0" maxscreendistort="3.0" strengthchange="-0.25" minchromaticaberration="1.0" maxchromaticaberration="2.0" minafflictionoverlayalphamultiplier="0.25" maxafflictionoverlayalphamultiplier="0.75">
+      <StatusEffect target="Character" interval="1" targetlimbs="head" disabledeltatime="true">
+        <Affliction identifier="bleeding" strength="0.15" penetration="1.0" />
+      </StatusEffect>
+      <StatusEffect target="Character" interval="1" targetlimbs="torso" disabledeltatime="true">
+        <Affliction identifier="organdamage" strength="0.1" />
+        <Affliction identifier="nausea" strength="15" probability="0.1" />
+      </StatusEffect>
+      <StatusEffect target="Character" SpeedMultiplier="0.5" setvalue="true" />
+    </Effect>
+    <!-- Смертельно опасно -->
+    <Effect minstrength="80" maxstrength="100" minvitalitydecrease="35" maxvitalitydecrease="100" minscreendistort="3.0" maxscreendistort="4.0" strengthchange="-0.25" minchromaticaberration="2.0" maxchromaticaberration="3.0" minafflictionoverlayalphamultiplier="0.75" maxafflictionoverlayalphamultiplier="1">
+      <StatusEffect target="Character" interval="1" targetlimbs="head" disabledeltatime="true">
+        <Affliction identifier="bleeding" strength="0.15" penetration="1.0" />
+      </StatusEffect>
+      <StatusEffect target="Character" OxygenAvailable="-1500.0" UseHullOxygen="false" />
+      <StatusEffect target="Character" interval="1" targetlimbs="torso" disabledeltatime="true">
+        <Affliction identifier="organdamage" strength="0.4" />
+        <Affliction identifier="nausea" strength="15" />
+      </StatusEffect>
+      <StatusEffect target="Character" SpeedMultiplier="0.5" setvalue="true" />
+    </Effect>
+    <AfflictionOverlay texture="%ModDir%/Medical/frame_green.png" />
+    <icon texture="%ModDir%/Medical/TEAffliction.png" sourcerect="131,405,128,128" color="103,103,103,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="Отравление хлоральгидратом" identifier="sleeppoison" description="Пациент уснул." type="poison" causeofdeathdescription="Умер во сне." selfcauseofdeathdescription="Уснул навсегда." limbspecific="false" indicatorlimb="Head" showiconthreshold="75" showinhealthscannerthreshold="10" treatmentthreshold="10" karmachangeonapplied="-20" maxstrength="100" affectmachines="false" healcostmultiplier="0" basehealcost="100" MedicalSkillGain="1.5">
+    <Description textidentifier="afflictiondescription.sleeppoison.self" target="Self" minstrength="0" maxstrength="100" />
+    <Description textidentifier="afflictiondescription.sleeppoison" target="OtherCharacter" minstrength="0" maxstrength="100" />
+    <Effect minstrength="0" maxstrength="10" minscreenblur="0.0" maxscreenblur="0.1" strengthchange="-0.2"></Effect>
+    <Effect minstrength="10" maxstrength="50" minscreenblur="0.1" maxscreenblur="0.2" strengthchange="3"></Effect>
+    <Effect minstrength="50" maxstrength="75" minscreenblur="0.2" maxscreenblur="1.0" strengthchange="4" tag="poisoned" SpeedMultiplier="0.9">
+      <AbilityFlag flagtype="MustWalk" />
+    </Effect>
+    <Effect minstrength="75" maxstrength="100" minscreenblur="1.0" maxscreenblur="2.0" strengthchange="0.3" tag="spiderfood" resistancefor="feardebuff" minresistance="1" maxresistance="1">
+      <StatusEffect target="Character" disabledeltatime="true" interval="1">
+        <Conditional poisonresistance="gt 5" />
+        <Conditional stabilozineeffect="gt 5" />
+        <Affliction identifier="sleeppoison" amount="-1000" />
+      </StatusEffect>
+      <StatusEffect target="Character">
+        <Conditional mass="lt 50" />
+        <Affliction identifier="blackscreen" strength="1.55" MultiplyByMaxVitality="true" />
+      </StatusEffect>
+      <StatusEffect target="Character" setvalue="true">
+        <Conditional mass="lt 50" />
+        <Affliction identifier="stun" amount="1" />
+      </StatusEffect>
+      <StatusEffect target="Character" disabledeltatime="true" interval="1">
+        <Conditional talisman_shield="gt 0"/>
+        <Affliction identifier="talisman_shield" amount="-1000" />
+      </StatusEffect>
+      <StatusEffect target="Character" interval="1" disabledeltatime="true" multiplyafflictionsbymaxvitality="true" ConditionalComparison="And">
+        <Conditional sleeppoison="gte 100" />
+        <Affliction identifier="sleeppoison" amount="-9999" probability="0.07" />
+      </StatusEffect>
+      <StatusEffect target="Character" type="OnDamaged" disabledeltatime="true">
+        <Conditional sleeppoison="gt 77" />
+        <requiredaffliction identifier="damage,sensoryoverload,burn" minstrength="0.5" />
+        <Affliction identifier="sleeppoison" amount="-1000" probability="0.5"/>
+        <ReduceAffliction identifier="blackscreen" strength="1.15" probability="1" />
+      </StatusEffect>
+      <AbilityFlag flagtype="MustWalk" />
+      <StatValue stattype="SightRangeMultiplier" value="5.0" />
+    </Effect>
+    <PeriodicEffect mininterval="4" maxinterval="6" minstrength="77" maxstrength="100">
+      <StatusEffect target="Character" comparison="and">
+        <Conditional ishuman="true" />
+        <Conditional hasspecifiertag="male" />
+        <Conditional oxygenlow="lt 5" />
+        <Sound file="%ModDir%/Medical/snore1_male.ogg" range="700" volume="0.7" selectionmode="Random" />
+        <Sound file="%ModDir%/Medical/snore2_male.ogg" range="700" volume="0.7" selectionmode="Random" />
+        <Sound file="%ModDir%/Medical/snore3_male.ogg" range="700" volume="0.7" selectionmode="Random" />
+      </StatusEffect>
+      <StatusEffect target="Character" comparison="and">
+        <Conditional ishuman="true" />
+        <Conditional hasspecifiertag="female" />
+        <Conditional oxygenlow="lt 5" />
+        <Sound file="%ModDir%/Medical/snore1_female.ogg" range="700" volume="0.7" selectionmode="Random" />
+        <Sound file="%ModDir%/Medical/snore2_female.ogg" range="700" volume="0.7" selectionmode="Random" />
+        <Sound file="%ModDir%/Medical/snore3_female.ogg" range="700" volume="0.7" selectionmode="Random" />
+      </StatusEffect>
+    </PeriodicEffect>
+    <icon texture="%ModDir%/Medical/TEAffliction.png" sourcerect="654,268,133,130" color="210,100,100,255" origin="0,0" />
+  </Affliction>
+  
+  
+    <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+    <!-- Сегмент с сильными травмами, которые невозможно вылечить быстро -->
+    <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+    <!--Перелом ноги не дает бегать-->
+    <Affliction name="Перелом ноги" identifier="fracture_leg" description="" type="damage_debuff" causeofdeathdescription="" selfcauseofdeathdescription="" limbspecific="true" maxstrength="100" damageoverlayalpha="0.4" ShowBarInHealthMenu="false" showiconthreshold="0" showicontoothersthreshold="0">
+      <Description textidentifier="afflictiondescription.fracture_leg.low" minstrength="0" maxstrength="25" />
+      <Description textidentifier="afflictiondescription.fracture_leg.medium" minstrength="25" maxstrength="65" />
+      <Description textidentifier="afflictiondescription.fracture_leg" minstrength="65" maxstrength="100" />
+      <Effect minstrength="0" maxstrength="99" multiplybymaxvitality="true" minvitalitydecrease="0" maxvitalitydecrease="0.1">
+        <AbilityFlag flagtype="MustWalk" />
+        <StatValue stattype="SwimmingSpeed" value="-0.2" />
+        <StatusEffect target="Character">
+          <TriggerAnimation Type="Walk" filename="BrokenLegWalk" priority="30" ExpectedSpecies="Human" />
+        </StatusEffect>
+      </Effect>
+      <Effect minstrength="99" maxstrength="100" multiplybymaxvitality="true" minvitalitydecrease="0.1" maxvitalitydecrease="0.1" strengthchange="-2">
+        <StatusEffect target="Character" setvalue="true" interval="0.25">
+          <Conditional stun="lte 3" />
+          <Affliction identifier="stun" amount="2.0" />
+        </StatusEffect>
+        <StatusEffect target="Character" comparison="and" interval="1">
+          <Conditional ishuman="true" />
+          <Conditional hasspecifiertag="male" />
+          <Conditional oxygenlow="lt 5" />
+          <Sound file="%ModDir%/Medical/injury_1_male.ogg" range="1500" selectionmode="Random" volume="1.5" />
+          <Sound file="%ModDir%/Medical/injury_2_male.ogg" range="1500" selectionmode="Random" volume="1.5" />
+          <Sound file="%ModDir%/Medical/injury_3_male.ogg" range="1500" selectionmode="Random" volume="1.5" />
+          <Sound file="%ModDir%/Medical/injury_4_male.ogg" range="1500" selectionmode="Random" volume="1.5" />
+        </StatusEffect>
+        <StatusEffect target="Character" comparison="and" interval="1">
+          <Conditional ishuman="true" />
+          <Conditional hasspecifiertag="female" />
+          <Conditional oxygenlow="lt 5" />
+          <Sound file="%ModDir%/Medical/injury_1_female.ogg" range="1500" selectionmode="Random" volume="1.5" />
+          <Sound file="%ModDir%/Medical/injury_2_female.ogg" range="1500" selectionmode="Random" volume="1.5" />
+          <Sound file="%ModDir%/Medical/injury_3_female.ogg" range="1500" selectionmode="Random" volume="1.5" />
+        </StatusEffect>
+      </Effect>
+      <icon texture="%ModDir%/Medical/TEAffliction.png" sourcerect="663,540,128,128" color="195,136,60,255" origin="0,0" />
+    </Affliction>
+    <!--Перелом руки снижает скорость и силу боя -->
+    <Affliction name="Перелом руки" identifier="fracture_arm" description="" type="damage_debuff" causeofdeathdescription="" selfcauseofdeathdescription="" limbspecific="true" maxstrength="100" damageoverlayalpha="0.4" ShowBarInHealthMenu="false" showiconthreshold="0" showicontoothersthreshold="0">
+      <Description textidentifier="afflictiondescription.fracture_arm.low" minstrength="0" maxstrength="25" />
+      <Description textidentifier="afflictiondescription.fracture_arm.medium" minstrength="25" maxstrength="65" />
+      <Description textidentifier="afflictiondescription.fracture_arm" minstrength="65" maxstrength="100" />
+      <Effect minstrength="0" maxstrength="99" multiplybymaxvitality="true" minvitalitydecrease="0" maxvitalitydecrease="0.1">
+        <StatValue stattype="RangedSpreadReduction" value="-0.3" />
+        <StatValue stattype="MeleeAttackMultiplier" value="-0.15" />
+        <StatValue stattype="NaturalMeleeAttackMultiplier" value="-0.15" />
+        <StatValue stattype="SwimmingSpeed" value="-0.15" />
+      </Effect>
+      <Effect minstrength="99" maxstrength="100" multiplybymaxvitality="true" minvitalitydecrease="0.1" maxvitalitydecrease="0.1" strengthchange="-2">
+        <StatusEffect target="Character" comparison="and" interval="1">
+          <Conditional ishuman="true" />
+          <Conditional hasspecifiertag="male" />
+          <Conditional oxygenlow="lt 5" />
+          <Sound file="%ModDir%/Medical/injury_1_male.ogg" range="1500" selectionmode="Random" volume="1.5" />
+          <Sound file="%ModDir%/Medical/injury_2_male.ogg" range="1500" selectionmode="Random" volume="1.5" />
+          <Sound file="%ModDir%/Medical/injury_3_male.ogg" range="1500" selectionmode="Random" volume="1.5" />
+          <Sound file="%ModDir%/Medical/injury_4_male.ogg" range="1500" selectionmode="Random" volume="1.5" />
+        </StatusEffect>
+        <StatusEffect target="Character" comparison="and" interval="1">
+          <Conditional ishuman="true" />
+          <Conditional hasspecifiertag="female" />
+          <Conditional oxygenlow="lt 5" />
+          <Sound file="%ModDir%/Medical/injury_1_female.ogg" range="1500" selectionmode="Random" volume="1.5" />
+          <Sound file="%ModDir%/Medical/injury_2_female.ogg" range="1500" selectionmode="Random" volume="1.5" />
+          <Sound file="%ModDir%/Medical/injury_3_female.ogg" range="1500" selectionmode="Random" volume="1.5" />
+        </StatusEffect>
+      </Effect>
+      <icon texture="%ModDir%/Medical/TEAffliction.png" sourcerect="527,541,128,128" color="195,136,60,255" origin="0,0" />
+    </Affliction>
+    <!--Перерезанная конечность будет постоянно кровоточить -->
+    <Affliction name="Тяжелое кровотечение" identifier="bleeding_injury" description="" type="damage_debuff" causeofdeathdescription="" selfcauseofdeathdescription="" limbspecific="true" maxstrength="30" damageoverlayalpha="10" ShowBarInHealthMenu="false" showiconthreshold="0" showicontoothersthreshold="0">
+      <Description textidentifier="afflictiondescription.bleeding_injury.low" minstrength="0" maxstrength="10" />
+      <Description textidentifier="afflictiondescription.bleeding_injury.medium" minstrength="10" maxstrength="20" />
+      <Description textidentifier="afflictiondescription.bleeding_injury" minstrength="20" maxstrength="100" />
+      <Effect minstrength="0" maxstrength="10" multiplybymaxvitality="true" minvitalitydecrease="0" maxvitalitydecrease="0.1" strengthchange="-0.01">
+        <StatusEffect target="Limb" comparison="and" interval="0.25" disabledeltatime="true" penetration="1">
+          <Affliction identifier="bleeding" amount="0.1" penetration="1"/>
+          <ParticleEmitter particle="bloodsplash" anglemin="0" anglemax="180" particleamount="3" velocitymin="0" velocitymax="200" scalemin="0.25" scalemax="0.45" />
+        </StatusEffect>
+      </Effect>
+      <Effect minstrength="10" maxstrength="20" multiplybymaxvitality="true" minvitalitydecrease="0.1" maxvitalitydecrease="0.1" strengthchange="-0.1">
+        <StatusEffect target="Limb" comparison="and" interval="0.25" disabledeltatime="true" penetration="1">
+          <Affliction identifier="bleeding" amount="0.14" penetration="1"/>
+          <ParticleEmitter particle="bloodsplash" anglemin="0" anglemax="180" particleamount="4" velocitymin="0" velocitymax="200" scalemin="0.25" scalemax="0.45" />
+        </StatusEffect>
+      </Effect>
+      <Effect minstrength="20" maxstrength="29" multiplybymaxvitality="true" minvitalitydecrease="0.1" maxvitalitydecrease="0.1" strengthchange="-0.15">
+        <StatusEffect target="Limb" comparison="and" interval="0.25" disabledeltatime="true" penetration="1">
+          <Affliction identifier="bleeding" amount="0.2" penetration="1"/>
+          <ParticleEmitter particle="bloodsplash" anglemin="0" anglemax="180" particleamount="5" velocitymin="0" velocitymax="400" scalemin="0.3" scalemax="0.5" />
+        </StatusEffect>
+      </Effect>
+      <Effect minstrength="29" maxstrength="30" multiplybymaxvitality="true" minvitalitydecrease="0.1" maxvitalitydecrease="0.1" strengthchange="-2">
+        <StatusEffect target="Character" comparison="and" interval="1">
+          <Conditional ishuman="true" />
+          <Conditional hasspecifiertag="male" />
+          <Conditional oxygenlow="lt 5" />
+          <ParticleEmitter particle="bloodsplash" anglemin="0" anglemax="180" particleamount="35" velocitymin="300" velocitymax="700" scalemin="0.4" scalemax="0.6" />
+          <Sound file="%ModDir%/Medical/injury_1_male.ogg" range="1500" selectionmode="Random" volume="1.5" />
+          <Sound file="%ModDir%/Medical/injury_2_male.ogg" range="1500" selectionmode="Random" volume="1.5" />
+          <Sound file="%ModDir%/Medical/injury_3_male.ogg" range="1500" selectionmode="Random" volume="1.5" />
+          <Sound file="%ModDir%/Medical/injury_4_male.ogg" range="1500" selectionmode="Random" volume="1.5" />
+        </StatusEffect>
+        <StatusEffect target="Character" comparison="and" interval="1">
+          <Conditional ishuman="true" />
+          <Conditional hasspecifiertag="female" />
+          <Conditional oxygenlow="lt 5" />
+          <ParticleEmitter particle="bloodsplash" anglemin="0" anglemax="180" particleamount="35" velocitymin="300" velocitymax="700" scalemin="0.4" scalemax="0.6" />
+          <Sound file="%ModDir%/Medical/injury_1_female.ogg" range="1500" selectionmode="Random" volume="1.5" />
+          <Sound file="%ModDir%/Medical/injury_2_female.ogg" range="1500" selectionmode="Random" volume="1.5" />
+          <Sound file="%ModDir%/Medical/injury_3_female.ogg" range="1500" selectionmode="Random" volume="1.5" />
+        </StatusEffect>
+      </Effect>
+      <icon texture="%ModDir%/Medical/TEAffliction.png" sourcerect="669,808,128,128" color="195,136,60,255" origin="0,0" />
+    </Affliction>
+    <!--Сломанные ребра мешают дышать и увеличивают урон по усталости-->
+    <Affliction name="Сломанные ребра" identifier="fracture_torso" description="" type="damage_debuff" causeofdeathdescription="" selfcauseofdeathdescription="" limbspecific="false" maxstrength="100" ShowBarInHealthMenu="false" showiconthreshold="0" showicontoothersthreshold="0">
+      <Description textidentifier="afflictiondescription.fracture_torso.low" minstrength="0" maxstrength="25" />
+      <Description textidentifier="afflictiondescription.fracture_torso.medium" minstrength="25" maxstrength="65" />
+      <Description textidentifier="afflictiondescription.fracture_torso" minstrength="65" maxstrength="100" />
+      <Effect minstrength="0" maxstrength="99" multiplybymaxvitality="true" minvitalitydecrease="0" maxvitalitydecrease="0.1" resistancefor="incrementalstun" minresistance="0" maxresistance="-0.5"></Effect>
+      <Effect minstrength="99" maxstrength="100" multiplybymaxvitality="true" minvitalitydecrease="0.1" maxvitalitydecrease="0.1" strengthchange="-2">
+        <StatusEffect target="Character" comparison="and" interval="1">
+          <Conditional ishuman="true" />
+          <Conditional hasspecifiertag="male" />
+          <Conditional oxygenlow="lt 5" />
+          <Sound file="%ModDir%/Medical/injury_1_male.ogg" range="1500" selectionmode="Random" volume="1.5" />
+          <Sound file="%ModDir%/Medical/injury_2_male.ogg" range="1500" selectionmode="Random" volume="1.5" />
+          <Sound file="%ModDir%/Medical/injury_3_male.ogg" range="1500" selectionmode="Random" volume="1.5" />
+          <Sound file="%ModDir%/Medical/injury_4_male.ogg" range="1500" selectionmode="Random" volume="1.5" />
+        </StatusEffect>
+        <StatusEffect target="Character" comparison="and" interval="1">
+          <Conditional ishuman="true" />
+          <Conditional hasspecifiertag="female" />
+          <Conditional oxygenlow="lt 5" />
+          <Sound file="%ModDir%/Medical/injury_1_female.ogg" range="1500" selectionmode="Random" volume="1.5" />
+          <Sound file="%ModDir%/Medical/injury_2_female.ogg" range="1500" selectionmode="Random" volume="1.5" />
+          <Sound file="%ModDir%/Medical/injury_3_female.ogg" range="1500" selectionmode="Random" volume="1.5" />
+        </StatusEffect>
+      </Effect>
+      <PeriodicEffect mininterval="35" maxinterval="60" minstrength="0" maxstrength="100">
+        <StatusEffect target="Character" multiplyafflictionsbymaxvitality="true" disabledeltatime="true">
+          <Affliction identifier="stomachpainerc" amount="10" probability="1" />
+          <Affliction identifier="incrementalstun" amount="15" probability="1" />
+          <Affliction identifier="stun" amount="0.2" probability="1" />
+        </StatusEffect>
+        <StatusEffect target="Character" comparison="and">
+          <Conditional ishuman="true" />
+          <Conditional hasspecifiertag="male" />
+          <Conditional oxygenlow="lt 5" />
+          <Sound file="%ModDir%/Medical/coughing_1.ogg" range="900" selectionmode="Random" />
+          <Sound file="%ModDir%/Medical/coughing_2.ogg" range="900" selectionmode="Random" />
+          <Sound file="%ModDir%/Medical/coughing_3.ogg" range="900" selectionmode="Random" />
+        </StatusEffect>
+        <StatusEffect target="Character" comparison="and">
+          <Conditional ishuman="true" />
+          <Conditional hasspecifiertag="female" />
+          <Conditional oxygenlow="lt 5" />
+          <Sound file="%ModDir%/Medical/cough_female_1.ogg" range="900" selectionmode="Random" />
+          <Sound file="%ModDir%/Medical/cough_female_2.ogg" range="900" selectionmode="Random" />
+        </StatusEffect>
+      </PeriodicEffect>
+      <icon texture="%ModDir%/Medical/TEAffliction.png" sourcerect="665,672,128,128" color="195,136,60,255" origin="0,0" />
+    </Affliction>
+    <!--Повреждение черепа это версия контузии, но страшнее-->
+    <Affliction name="Повреждение черепа" identifier="fracture_head" description="" type="damage_debuff" causeofdeathdescription="" selfcauseofdeathdescription="" indicatorlimb="Head" limbspecific="false" maxstrength="100" ShowBarInHealthMenu="false" showiconthreshold="0" showicontoothersthreshold="0">
+      <Description textidentifier="afflictiondescription.fracture_head.low" minstrength="0" maxstrength="25" />
+      <Description textidentifier="afflictiondescription.fracture_head.medium" minstrength="25" maxstrength="65" />
+      <Description textidentifier="afflictiondescription.fracture_head_self" target="Self" minstrength="65" maxstrength="100" />
+      <Description textidentifier="afflictiondescription.fracture_head" target="OtherCharacter" minstrength="65" maxstrength="100" />
+      <Effect minstrength="0" maxstrength="99" minscreendistort="0.02" maxscreendistort="0.15" minscreenblur="0.0" maxscreenblur="0.3" screeneffectfluctuationfrequency="0.04" minvitalitydecrease="0.0" maxvitalitydecrease="0.15" minskillmultiplier="1" maxskillmultiplier="0.9" multiplybymaxvitality="true">
+        <StatusEffect target="Character">
+          <TriggerAnimation Type="Walk" filename="DrunkenWalk" priority="6" ExpectedSpecies="Human" />
+          <TriggerAnimation Type="Run" filename="DrunkenRun" priority="6" ExpectedSpecies="Human" />
+        </StatusEffect>
+      </Effect>
+      <Effect minstrength="99" maxstrength="100" multiplybymaxvitality="true" minvitalitydecrease="0.15" maxvitalitydecrease="0.15" strengthchange="-2">
+        <StatusEffect target="Character" comparison="and" interval="1">
+          <Conditional ishuman="true" />
+          <Conditional hasspecifiertag="male" />
+          <Conditional oxygenlow="lt 5" />
+          <Sound file="%ModDir%/Medical/injury_1_male.ogg" range="1500" selectionmode="Random" volume="1.5" />
+          <Sound file="%ModDir%/Medical/injury_2_male.ogg" range="1500" selectionmode="Random" volume="1.5" />
+          <Sound file="%ModDir%/Medical/injury_3_male.ogg" range="1500" selectionmode="Random" volume="1.5" />
+          <Sound file="%ModDir%/Medical/injury_4_male.ogg" range="1500" selectionmode="Random" volume="1.5" />
+        </StatusEffect>
+        <StatusEffect target="Character" comparison="and" interval="1">
+          <Conditional ishuman="true" />
+          <Conditional hasspecifiertag="female" />
+          <Conditional oxygenlow="lt 5" />
+          <Sound file="%ModDir%/Medical/injury_1_female.ogg" range="1500" selectionmode="Random" volume="1.5" />
+          <Sound file="%ModDir%/Medical/injury_2_female.ogg" range="1500" selectionmode="Random" volume="1.5" />
+          <Sound file="%ModDir%/Medical/injury_3_female.ogg" range="1500" selectionmode="Random" volume="1.5" />
+        </StatusEffect>
+        <!--Отнимает навык -10 если он выше или равен 20-->
+        <StatusEffect target="Character" comparison="and" interval="1">
+          <Conditional skillrequirement="true" electrical="gte 20" />
+          <GiveSkill skillidentifier="electrical" amount="-10" triggertalents="false" />
+        </StatusEffect>
+        <StatusEffect target="Character" comparison="and" interval="1">
+          <Conditional skillrequirement="true" weapons="gte 20" />
+          <GiveSkill skillidentifier="weapons" amount="-10" triggertalents="false" />
+        </StatusEffect>
+        <StatusEffect target="Character" comparison="and" interval="1">
+          <Conditional skillrequirement="true" helm="gte 20" />
+          <GiveSkill skillidentifier="helm" amount="-10" triggertalents="false" />
+        </StatusEffect>
+        <StatusEffect target="Character" comparison="and" interval="1">
+          <Conditional skillrequirement="true" medical="gte 20" />
+          <GiveSkill skillidentifier="medical" amount="-10" triggertalents="false" />
+        </StatusEffect>
+        <StatusEffect target="Character" comparison="and" interval="1">
+          <Conditional skillrequirement="true" mechanical="gte 20" />
+          <GiveSkill skillidentifier="mechanical" amount="-10" triggertalents="false" />
+        </StatusEffect>
+        <StatusEffect target="Character" comparison="and" interval="1">
+          <Conditional skillrequirement="true" mining="gte 20" />
+          <GiveSkill skillidentifier="mining" amount="-10" triggertalents="false" />
+        </StatusEffect>
+      </Effect>
+      <PeriodicEffect mininterval="40" maxinterval="110">
+        <StatusEffect target="Character" comparison="and">
+          <Conditional ishuman="true" />
+          <Conditional hasspecifiertag="male" />
+          <Sound file="Content/Sounds/HUMAN_chokeMale1.ogg" selectionmode="Random" />
+          <Sound file="Content/Sounds/HUMAN_chokeMale2.ogg" />
+          <Sound file="Content/Sounds/HUMAN_chokeMale3.ogg" />
+        </StatusEffect>
+        <StatusEffect target="Character" comparison="and">
+          <Conditional ishuman="true" />
+          <Conditional hasspecifiertag="female" />
+          <Sound file="Content/Sounds/HUMAN_chokeFemale1.ogg" selectionmode="Random" />
+          <Sound file="Content/Sounds/HUMAN_chokeFemale2.ogg" />
+          <Sound file="Content/Sounds/HUMAN_chokeFemale3.ogg" />
+        </StatusEffect>
+        <StatusEffect target="Character" duration="2">
+          <TriggerAnimation Type="Walk" filename="Vomit" priority="10" ExpectedSpecies="Human" />
+        </StatusEffect>
+        <StatusEffect target="Character" targetlimbs="Head" delay="0.3" duration="1">
+          <ParticleEmitter particle="vomitsplash" copyentityangle="true" anglemin="-10" anglemax="10" particlespersecond="50" velocitymin="50" velocitymax="200" scalemin="0.1" scalemax="0.2" />
+          <Conditional HideFace="eq False" />
+        </StatusEffect>
+        <StatusEffect target="Character" targetlimbs="Head" delay="0.5" offset="0,-20" randomoffset="32">
+          <Explosion range="0.0" structuredamage="0" itemdamage="0" force="0.0" severlimbsprobability="0.0" decal="vomitsplatter" decalsize="1.25" shockwave="false" underwaterbubble="false" />
+          <Conditional HideFace="eq False" />
+        </StatusEffect>
+      </PeriodicEffect>
+      <icon texture="%ModDir%/Medical/TEAffliction.png" sourcerect="396,539,128,128" color="195,136,60,255" origin="0,0" />
+    </Affliction>
+    <!-- Раненный глаз мешает зрению и иногда полностью затуманивает зрение -->
+    <Affliction name="Повреждение глаза" identifier="eye_damaged" description="" type="damage_debuff" causeofdeathdescription="" selfcauseofdeathdescription="" indicatorlimb="Head" limbspecific="false" maxstrength="50" ShowBarInHealthMenu="false" showiconthreshold="0" showicontoothersthreshold="0">
+      <Description textidentifier="afflictiondescription.eye_damaged.low" minstrength="0" maxstrength="15" />
+      <Description textidentifier="afflictiondescription.eye_damaged.medium" minstrength="15" maxstrength="35" />
+      <Description textidentifier="afflictiondescription.eye_damaged" minstrength="35" maxstrength="50" />
+      <Effect minstrength="0" maxstrength="49" minscreenblur="0.1" maxscreenblur="0.3" minscreendistort="0.1" maxscreendistort="0.5" minvitalitydecrease="0.0" maxvitalitydecrease="0.1" multiplybymaxvitality="true">
+        <StatValue stattype="RangedSpreadReduction" value="-0.5" />
+      </Effect>
+      <Effect minstrength="49" maxstrength="50" multiplybymaxvitality="true" minvitalitydecrease="0.15" maxvitalitydecrease="0.15" strengthchange="-2">
+        <StatusEffect target="Character" comparison="and" interval="0.6" targetlimbs="head" setvalue="true">
+          <Conditional ishuman="true" />
+          <Conditional hasspecifiertag="male" />
+          <Conditional oxygenlow="lt 5" />
+          <Affliction identifier="blackscreen" strength="5" />
+          <ParticleEmitter particle="bloodsplash" anglemin="0" anglemax="180" particleamount="35" velocitymin="300" velocitymax="700" scalemin="0.4" scalemax="0.6" />
+          <Sound file="%ModDir%/Medical/injury_1_male.ogg" range="1500" selectionmode="Random" volume="1.5" />
+          <Sound file="%ModDir%/Medical/injury_2_male.ogg" range="1500" selectionmode="Random" volume="1.5" />
+          <Sound file="%ModDir%/Medical/injury_3_male.ogg" range="1500" selectionmode="Random" volume="1.5" />
+          <Sound file="%ModDir%/Medical/pierced_male-01.ogg" range="1500" selectionmode="Random" volume="1.5" />
+          <Sound file="%ModDir%/Medical/pierced_male-02.ogg" range="1500" selectionmode="Random" volume="1.5" />
+          <Sound file="%ModDir%/Medical/pierced_male-03.ogg" range="1500" selectionmode="Random" volume="1.5" />
+          <Sound file="%ModDir%/Medical/pierced_male-04.ogg" range="1500" selectionmode="Random" volume="1.5" />
+        </StatusEffect>
+        <StatusEffect target="Character" comparison="and" interval="0.6" targetlimbs="head" setvalue="true">
+          <Conditional ishuman="true" />
+          <Conditional hasspecifiertag="female" />
+          <Conditional oxygenlow="lt 5" />
+          <Affliction identifier="blackscreen" strength="5" />
+          <ParticleEmitter particle="bloodsplash" anglemin="0" anglemax="180" particleamount="35" velocitymin="300" velocitymax="700" scalemin="0.4" scalemax="0.6" />
+          <Sound file="%ModDir%/Medical/injury_1_female.ogg" range="1500" selectionmode="Random" volume="1.5" />
+          <Sound file="%ModDir%/Medical/injury_2_female.ogg" range="1500" selectionmode="Random" volume="1.5" />
+          <Sound file="%ModDir%/Medical/injury_3_female.ogg" range="1500" selectionmode="Random" volume="1.5" />
+        </StatusEffect>
+      </Effect>
+      <PeriodicEffect mininterval="45" maxinterval="110">
+        <StatusEffect target="Character" comparison="and" duration="10">
+          <Affliction identifier="blackscreen" strength="1.5" MultiplyByMaxVitality="true" />
+        </StatusEffect>
+      </PeriodicEffect>
+      <icon texture="%ModDir%/Medical/TEAffliction.png" sourcerect="529,671,128,128" color="195,136,60,255" origin="0,0" />
+    </Affliction>
+    <!--Перелом руки снижает скорость и силу боя -->
+    <Affliction name="Рассечение руки" identifier="trauma_arm" description="" type="damage_debuff" causeofdeathdescription="" selfcauseofdeathdescription="" limbspecific="true" maxstrength="100" damageoverlayalpha="0.4" ShowBarInHealthMenu="false" showiconthreshold="0" showicontoothersthreshold="0">
+      <Description textidentifier="afflictiondescription.trauma_arm.low" minstrength="0" maxstrength="25" />
+      <Description textidentifier="afflictiondescription.trauma_arm.medium" minstrength="25" maxstrength="65" />
+      <Description textidentifier="afflictiondescription.trauma_arm" minstrength="65" maxstrength="100" />
+      <Effect minstrength="0" maxstrength="99" multiplybymaxvitality="true" minvitalitydecrease="0" maxvitalitydecrease="0.1" minskillmultiplier="1" maxskillmultiplier="0.9">
+        <StatValue stattype="RangedSpreadReduction" value="-0.3" />
+        <StatValue stattype="MeleeAttackMultiplier" value="-0.1" />
+        <StatValue stattype="NaturalMeleeAttackMultiplier" value="-0.10" />
+      </Effect>
+      <Effect minstrength="99" maxstrength="100" multiplybymaxvitality="true" minvitalitydecrease="0.1" maxvitalitydecrease="0.1" strengthchange="-2">
+        <StatusEffect target="Character" comparison="and" interval="1" targetlimbs="RightHand,LeftHand">
+          <Conditional ishuman="true" />
+          <Conditional hasspecifiertag="male" />
+          <Conditional oxygenlow="lt 5" />
+          <ParticleEmitter particle="bloodsplash" anglemin="0" anglemax="180" particleamount="15" velocitymin="100" velocitymax="400" scalemin="0.3" scalemax="0.45" />
+          <Sound file="%ModDir%/Medical/injury_1_male.ogg" range="1500" selectionmode="Random" volume="1.5" />
+          <Sound file="%ModDir%/Medical/injury_2_male.ogg" range="1500" selectionmode="Random" volume="1.5" />
+          <Sound file="%ModDir%/Medical/injury_3_male.ogg" range="1500" selectionmode="Random" volume="1.5" />
+          <Sound file="%ModDir%/Medical/injury_4_male.ogg" range="1500" selectionmode="Random" volume="1.5" />
+        </StatusEffect>
+        <StatusEffect target="Character" comparison="and" interval="1" targetlimbs="RightHand,LeftHand">
+          <Conditional ishuman="true" />
+          <Conditional hasspecifiertag="female" />
+          <Conditional oxygenlow="lt 5" />
+          <ParticleEmitter particle="bloodsplash" anglemin="0" anglemax="180" particleamount="15" velocitymin="100" velocitymax="400" scalemin="0.3" scalemax="0.45" />
+          <Sound file="%ModDir%/Medical/injury_1_female.ogg" range="1500" selectionmode="Random" volume="1.5" />
+          <Sound file="%ModDir%/Medical/injury_2_female.ogg" range="1500" selectionmode="Random" volume="1.5" />
+          <Sound file="%ModDir%/Medical/injury_3_female.ogg" range="1500" selectionmode="Random" volume="1.5" />
+        </StatusEffect>
+      </Effect>
+      <PeriodicEffect minstrength="10" maxstrength="100" mininterval="45" maxinterval="120">
+        <StatusEffect target="Limb" disabledeltatime="true">
+          <Affliction identifier="bleeding" strength="6" MultiplyByMaxVitality="true" penetration="1" />
+          <ParticleEmitter particle="bloodsplash" anglemin="0" anglemax="360" particleamount="3" velocitymin="100" velocitymax="200" scalemin="0.2" scalemax="0.3" />
+        </StatusEffect>
+      </PeriodicEffect>
+      <icon texture="%ModDir%/Medical/TEAffliction.png" sourcerect="263,672,128,128" color="195,136,60,255" origin="0,0" />
+    </Affliction>
+    <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+    <!-- Конец травм -->
+    <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+
+  <!-- УРОН -->
+    <!--Колотые раны получаются от ножей, копий и стрел-->
+    <InternalDamage name="punctures" identifier="punctures" description="" type="damage" causeofdeathdescription="" selfcauseofdeathdescription="" limbspecific="true" maxstrength="200" damageoverlayalpha="1" WeaponsSkillGain="1.0">
+      <Description textidentifier="afflictiondescription.punctures.low" minstrength="0" maxstrength="30" />
+      <Description textidentifier="afflictiondescription.punctures" minstrength="25" maxstrength="200" />
+      <Effect minstrength="0" maxstrength="200" multiplybymaxvitality="true" minvitalitydecrease="0" maxvitalitydecrease="2" />
+      <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="896,896,128,128" color="195,136,60,255" origin="0,0" />
+    </InternalDamage>
+    <!--Lacerations are received from sharp damage sources-->
+    <InternalDamage name="Lacerations" identifier="lacerations" description="" type="damage" causeofdeathdescription="" selfcauseofdeathdescription="" limbspecific="true" maxstrength="200" damageoverlayalpha="2" WeaponsSkillGain="1.0">
+      <Description textidentifier="afflictiondescription.lacerations.low" minstrength="0" maxstrength="10" />
+      <Description textidentifier="afflictiondescription.lacerations" minstrength="10" maxstrength="50" />
+      <Description textidentifier="afflictiondescription.lacerations.high" minstrength="50" maxstrength="200" />
+      <Effect minstrength="0" maxstrength="200" multiplybymaxvitality="true" minvitalitydecrease="0" maxvitalitydecrease="2" />
+      <icon texture="%ModDir%/Medical/TEAffliction.png" sourcerect="264,537,128,128" color="195,136,60,255" origin="0,0" />
+    </InternalDamage>
+    <Affliction name="Вытягивание жизни" identifier="mana_drain" description="" type="poison_2" causeofdeathdescription="Умер от вытягивания жизни." selfcauseofdeathdescription="Умер от вытягивания жизни." limbspecific="false" indicatorlimb="Head" showiconthreshold="2" showinhealthscannerthreshold="5" karmachangeonapplied="-1" maxstrength="100" healcostmultiplier="1.25">
+      <Description textidentifier="afflictiondescription.mana_drain" minstrength="0" maxstrength="100" target="OtherCharacter" />
+      <Description textidentifier="afflictiondescription.mana_drain.self" minstrength="0" maxstrength="50" target="Self" />
+      <Description textidentifier="afflictiondescription.mana_drain.high.self" minstrength="50" maxstrength="100" target="Self" />
+      <!-- Постоянно и ровно отнимает здоровье -->
+      <Effect minstrength="0" maxstrength="1" minvitalitydecrease="0" maxvitalitydecrease="0" strengthchange="-0.0" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.0"></Effect>
+      <Effect minstrength="1" maxstrength="25" minvitalitydecrease="0" maxvitalitydecrease="25" strengthchange="-0.0" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.25"></Effect>
+      <Effect minstrength="25" maxstrength="50" minvitalitydecrease="25" maxvitalitydecrease="50" strengthchange="-0.0" minafflictionoverlayalphamultiplier="0.25" maxafflictionoverlayalphamultiplier="0.5">
+        <StatusEffect target="Character" interval="10" targetlimbs="head" disabledeltatime="true">
+          <Affliction identifier="bleeding" probability="0.05" strength="5" penetration="1.0" />
+        </StatusEffect>
+      </Effect>
+      <Effect minstrength="50" maxstrength="75" minvitalitydecrease="50" maxvitalitydecrease="75" strengthchange="-0.05" minafflictionoverlayalphamultiplier="0.5" maxafflictionoverlayalphamultiplier="0.75">
+        <StatusEffect target="Character" interval="10" targetlimbs="head" disabledeltatime="true">
+          <Affliction identifier="bleeding" probability="0.25" strength="5" penetration="1.0" />
+        </StatusEffect>
+      </Effect>
+      <Effect minstrength="75" maxstrength="99" minvitalitydecrease="75" maxvitalitydecrease="100" strengthchange="-0.05" minafflictionoverlayalphamultiplier="0.75" maxafflictionoverlayalphamultiplier="1">
+        <StatusEffect target="Character" interval="5" targetlimbs="head" disabledeltatime="true">
+          <Affliction identifier="bleeding" probability="0.25" strength="10" penetration="1.0" />
+        </StatusEffect>
+      </Effect>
+      <Effect minstrength="99" maxstrength="100" minvitalitydecrease="100" maxvitalitydecrease="10000" strengthchange="-0.05" minafflictionoverlayalphamultiplier="1" maxafflictionoverlayalphamultiplier="1" minbodytint="100,100,200,160" maxbodytint="100,100,200,160">
+        <StatusEffect target="Character" interval="5" disabledeltatime="true">
+          <Affliction identifier="critical_defence" probability="1" strength="1000" penetration="1.0" />
+        </StatusEffect>
+      </Effect>
+      <icon texture="%ModDir%/Medical/TEAffliction.png" sourcerect="132,537,128,128" color="103,103,103,255" origin="0,0" />
+    </Affliction>
+
+  <!-- Тех. Аффликшен блока щитом -->
+    <Affliction name="Блок щитом" identifier="shield_block" targets="human,skeleton,skeleton_skilled,skeleton_robust" description="" type="strengthbuff" limbspecific="true" maxstrength="1" iconcolors="60,140,195,255;60,107,195,255;60,0,195,255" showiconthreshold="10" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" hideiconafterdelay="true">
+      <Effect minstrength="0" maxstrength="1" strengthchange="-5" resistancefor="stun,damage,bleeding" minresistance="1" maxresistance="1" />
+      <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="256,896,128,128" color="10,193,114,255" origin="0,0" />
+    </Affliction>
+  
+    <Affliction name="Борьба за жизнь" identifier="critical_defence" targets="human" description="" type="strengthbuff" limbspecific="false" maxstrength="180" iconcolors="60,140,195,255;60,107,195,255;60,0,195,255" showiconthreshold="1" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" hideiconafterdelay="true">
+      <Description textidentifier="afflictiondescription.critical_defence.low" minstrength="0" maxstrength="179" />
+      <Description textidentifier="afflictiondescription.critical_defence" minstrength="179" maxstrength="180" />
+      <Effect minstrength="0" maxstrength="139" strengthchange="-1" minafflictionoverlayalphamultiplier="0" maxafflictionoverlayalphamultiplier="0">
+        <AbilityFlag flagtype="CanNotDieToAfflictions" />
+      </Effect>
+      <Effect minstrength="139" maxstrength="179" strengthchange="-1" minafflictionoverlayalphamultiplier="0" maxafflictionoverlayalphamultiplier="1">
+        <AbilityFlag flagtype="CanNotDieToAfflictions" />
+      </Effect>
+      <Effect minstrength="179" maxstrength="180" strengthchange="-0.25" minafflictionoverlayalphamultiplier="1" maxafflictionoverlayalphamultiplier="1"/>
+      <AfflictionOverlay texture="%ModDir%/Medical/uncon_view2.png" />
+      <icon texture="%ModDir%/Medical/TEAffliction.png" sourcerect="264,137,128,128" color="103,103,103,255" origin="0,0" />
+    </Affliction>
+  
+    <!-- НЕНАСТОЯЩЕЕ ЗАРАЖЕНИЕ ПАРАЗИТАМИ ОТ ПСИХОЗА -->
+    <Affliction name="Husk infection" identifier="huskinfectionfake" description="Something dark and unpleasant moves in the mouth. They are rendered completely mute, save for occasional clicking sounds apparently emanating from deep within the throat." type="alieninfection" targets="human" causeofdeathdescription="Taken over by a husk parasite" selfcauseofdeathdescription="You have been taken over by the husk parasite." limbspecific="false" indicatorlimb="Torso" activationthreshold="0" dormantthreshold="50" showiconthreshold="50" showicontoothersthreshold="10000" showinhealthscannerthreshold="10000" treatmentthreshold="50" karmachangeonapplied="-1" maxstrength="100" transferbuffs="true" healcostmultiplier="0" basehealcost="0" iconcolors="60,140,195,255;60,107,195,255;60,0,195,255">
+      <Description textidentifier="afflictiondescription.huskinfection.dormant.self" target="Self" minstrength="0" maxstrength="50" />
+      <Description textidentifier="afflictiondescription.huskinfection.transition.self" target="Self" minstrength="50" maxstrength="75" />
+      <Description textidentifier="afflictiondescription.huskinfection.active.self" target="Self" minstrength="75" maxstrength="99" />
+      <Description textidentifier="afflictiondescription.huskinfection.dormant.other" target="OtherCharacter" minstrength="0" maxstrength="50" />
+      <Description textidentifier="afflictiondescription.huskinfection.transition.other" target="OtherCharacter" minstrength="50" maxstrength="75" />
+      <Description textidentifier="afflictiondescription.huskinfection.active.other" target="OtherCharacter" minstrength="75" maxstrength="99" />
+      <Description textidentifier="afflictiondescription.huskinfection.final" minstrength="99" maxstrength="101" />
+      <Effect minstrength="0" maxstrength="50" maxvitalitydecrease="0" strengthchange="10" />
+      <Effect minstrength="50" maxstrength="75" maxvitalitydecrease="0" strengthchange="0.3">
+        <StatusEffect target="Character" interval="1" disabledeltatime="true" multiplyafflictionsbymaxvitality="false">
+          <Conditional psychosis="lte 0" />
+          <Conditional isplayer="eq false" />
+          <Affliction identifier="huskinfectionfake" amount="-1000" />
+        </StatusEffect>
+      </Effect>
+      <Effect minstrength="75" maxstrength="99" maxvitalitydecrease="0" strengthchange="0.3">
+        <StatusEffect target="Character" interval="1" disabledeltatime="true" multiplyafflictionsbymaxvitality="false">
+          <Conditional psychosis="lte 0" />
+          <Conditional isplayer="eq false" />
+          <Affliction identifier="huskinfectionfake" amount="-1000" />
+        </StatusEffect>
+      </Effect>
+      <Effect minstrength="99" maxstrength="100" maxvitalitydecrease="0" strengthchange="0.3">
+        <StatusEffect target="Character" disabledeltatime="true">
+          <ReduceAffliction identifier="huskinfectionfake" amount="1000" />
+        </StatusEffect>
+      </Effect>
+      <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="0,640,128,128" color="60,107,195,255" origin="0,0" />
+    </Affliction>
+    <!-- НЕНАСТОЯЩИЕ ЗАРАЖЕННЫЕ РАНЫ ОТ ПСИХОЗА -->
+    <Affliction name="Infected Wound" identifier="infectionfake" description="The damaged area is dark green, and skin excudes pus. The patient is in a great deal of pain." type="infection" causeofdeathdescription="Died of infecton" selfcauseofdeathdescription="Died of infecton." limbspecific="true" showiconthreshold="15" showicontoothersthreshold="10000" showinhealthscannerthreshold="10000" treatmentthreshold="10" maxstrength="100" healcostmultiplier="0" burnoverlayalpha="0">
+      <Description textidentifier="afflictiondescription.infection.low" minstrength="0" maxstrength="10" />
+      <Description textidentifier="afflictiondescription.infection" minstrength="10" maxstrength="50" />
+      <Description textidentifier="afflictiondescription.infection.high" minstrength="50" maxstrength="100" />
+      <Effect minstrength="0" maxstrength="70" multiplybymaxvitality="false" strengthchange="0.4">
+        <StatusEffect target="Limb" interval="1" disabledeltatime="true" multiplyafflictionsbymaxvitality="false">
+          <Conditional psychosis="lte 0" />
+          <Conditional infection="gt 10" />
+          <Conditional isplayer="eq false" />
+          <Affliction identifier="infectionfake" amount="-1000" />
+        </StatusEffect>
+      </Effect>
+      <Effect minstrength="70" maxstrength="99" multiplybymaxvitality="false" strengthchange="0.5">
+        <StatusEffect target="Character">
+          <Conditional incrementalstun="lt 85" />
+          <Affliction identifier="incrementalstun" amount="3.5" penetration="1.0" />
+          <Affliction identifier="nausea" amount="1.5" />
+        </StatusEffect>
+        <StatusEffect target="Limb" interval="1" disabledeltatime="true" multiplyafflictionsbymaxvitality="false">
+          <Conditional psychosis="lte 0" />
+          <Conditional infection="gt 10" />
+          <Conditional isplayer="eq false" />
+          <Affliction identifier="infectionfake" amount="-1000" />
+        </StatusEffect>
+      </Effect>
+      <Effect minstrength="99" maxstrength="100" multiplybymaxvitality="false" strengthchange="0.5">
+        <StatusEffect target="Limb" interval="3" disabledeltatime="true" multiplyafflictionsbymaxvitality="false">
+          <Affliction identifier="infectionfake" amount="-1000" />
+        </StatusEffect>
+      </Effect>
+      <icon texture="%ModDir%/Medical/TEAffliction.png" sourcerect="658,138,128,128" color="84,171,90,255" origin="0,0" />
+    </Affliction>
+    <!-- НЕНАСТОЯЩИЙ ПАРАЛИЧ ОТ ПСИХОЗА -->
+    <Affliction name="Paralysis" identifier="paralysisfake" type="paralysis" limbspecific="false" indicatorlimb="Torso" showiconthreshold="25" showicontoothersthreshold="10000" showinhealthscannerthreshold="10000" treatmentthreshold="10" maxstrength="100" affectmachines="false" healcostmultiplier="0">
+      <Description textidentifier="afflictiondescription.paralysis.low.self" target="Self" minstrength="0" maxstrength="99" />
+      <Description textidentifier="afflictiondescription.paralysis.high.self" target="Self" minstrength="99" maxstrength="100" />
+      <!-- Slow the character down and paralyze in the end-->
+      <Effect minstrength="0" maxstrength="10" strengthchange="4" minscreendistort="0.0" maxscreendistort="0.1" minscreenblur="0.0" maxscreenblur="0.1" minspeedmultiplier="1.0" maxspeedmultiplier="0.9">
+        <StatusEffect target="Limb" interval="1" disabledeltatime="true" multiplyafflictionsbymaxvitality="false">
+          <Conditional psychosis="lte 0" />
+          <Conditional paralysis="gt 0" />
+          <Conditional paralysisresistance="gt 0" />
+          <Conditional isplayer="eq false" />
+          <Affliction identifier="paralysisfake" amount="-1000" />
+        </StatusEffect>
+      </Effect>
+      <Effect minstrength="10" maxstrength="99" strengthchange="3" minscreendistort="0.1" maxscreendistort="0.8" minscreenblur="0.1" maxscreenblur="0.8" minspeedmultiplier="0.9" maxspeedmultiplier="0.1">
+        <StatusEffect target="Limb" interval="1" disabledeltatime="true" multiplyafflictionsbymaxvitality="false">
+          <Conditional psychosis="lte 0" />
+          <Conditional paralysis="gt 0" />
+          <Conditional paralysisresistance="gt 0" />
+          <Conditional isplayer="eq false" />
+          <Affliction identifier="paralysisfake" amount="-1000" />
+        </StatusEffect>
+      </Effect>
+      <Effect minstrength="99" maxstrength="100" strengthchange="1" minscreendistort="0.8" maxscreendistort="0.8" minscreenblur="0.8" maxscreenblur="0.8" minspeedmultiplier="0.1" maxspeedmultiplier="0.1">
+        <StatusEffect target="Character" disabledeltatime="true">
+          <Affliction identifier="stun" amount="1" />
+          <Affliction identifier="paralysisfake" amount="-1000" />
+        </StatusEffect>
+      </Effect>
+      <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="640,640,128,128" color="0,255,0,255" origin="0,0" />
+    </Affliction>
+
+  <!-- Голод -->
+    <Affliction name="Голодание" identifier="hunger" description="Подопытный испытывает потребность в пище." type="hunger" treatmentthreshold="5" limbspecific="false" indicatorlimb="Torso" maxstrength="100" showiconthreshold="25" showicontoothersthreshold="100" healcostmultiplier="2.5" iconcolors="50,255,50;155,200,50;155,155,50;205,120,50;255,00,50">
+      <Description textidentifier="afflictiondescription.hunger.low" minstrength="0" maxstrength="66" />
+      <Description textidentifier="afflictiondescription.hunger.medium" minstrength="66" maxstrength="90" />
+      <Description textidentifier="afflictiondescription.hunger" minstrength="90" maxstrength="100" />
+      <Effect minstrength="0" maxstrength="33" strengthchange="0" minvitalitydecrease="0" maxvitalitydecrease="0">
+        <StatusEffect target="Character" interval="3" comparison="and" disabledeltatime="true">
+          <Conditional bloodloss="gte 5" />
+          <Conditional isplayer="true" />
+          <Conditional vampirism="lte 5" />
+          <Affliction identifier="hunger" amount="0.3" />
+          <ReduceAffliction identifier="bloodloss" amount="0.15" />
+        </StatusEffect>
+        <AbilityFlag flagtype="ImmuneToPressure" />
+      </Effect>
+      <Effect minstrength="33" maxstrength="66" strengthchange="0" minvitalitydecrease="0" maxvitalitydecrease="0">
+        <StatusEffect target="Character" SpeedMultiplier="0.95" setvalue="true" />
+        <AbilityFlag flagtype="ImmuneToPressure" />
+      </Effect>
+      <Effect minstrength="66" maxstrength="83" strengthchange="0" minvitalitydecrease="0" maxvitalitydecrease="15" dialogflag="HungerHigh">
+        <StatusEffect target="Character" SpeedMultiplier="0.90" setvalue="true" />
+        <AbilityFlag flagtype="ImmuneToPressure" />
+      </Effect>
+      <Effect minstrength="83" maxstrength="95" strengthchange="0" minvitalitydecrease="15" maxvitalitydecrease="20" minchromaticaberration="0.0" maxchromaticaberration="0.1" dialogflag="HungerHigh">
+        <StatusEffect target="Character" SpeedMultiplier="0.85" setvalue="true" />
+        <AbilityFlag flagtype="ImmuneToPressure" />
+      </Effect>
+      <Effect minstrength="95" maxstrength="100" strengthchange="0" minvitalitydecrease="20" maxvitalitydecrease="20" minchromaticaberration="0.1" maxchromaticaberration="0.15" minscreenblur="0.0" maxscreenblur="0.1" dialogflag="HungerHigh">
+        <StatusEffect target="Character" SpeedMultiplier="0.80" setvalue="true" />
+        <StatusEffect target="Character" targetlimbs="torso" interval="5" disabledeltatime="true">
+          <Affliction identifier="hunger_elite" amount="1" />
+        </StatusEffect>
+        <StatusEffect target="Character" interval="0.25" comparison="and" disabledeltatime="true" penetration="1">
+          <Conditional IsMovingFast="true" />
+          <Conditional incrementalstun="lt 90"/>
+          <Affliction identifier="incrementalstun" amount="1.2" penetration="1"/>
+        </StatusEffect>
+        <StatusEffect target="Character" interval="15" disabledeltatime="true">
+          <Affliction identifier="stomachpainerc" amount="10" probability="0.5" />
+        </StatusEffect>
+        <AbilityFlag flagtype="ImmuneToPressure" />
+      </Effect>
+      <icon texture="%ModDir%/Medical/TEAffliction.png" sourcerect="128,0,128,128" color="10,193,114,255" origin="0,0" />
+    </Affliction>
+    <!--Дается при долгом голодании-->
+    <Affliction name="Хлюпик" identifier="hunger_elite" description="" type="hunger" causeofdeathdescription="" selfcauseofdeathdescription="" limbspecific="false" maxstrength="1000" ShowBarInHealthMenu="false" showiconthreshold="50" showicontoothersthreshold="0">
+      <Description textidentifier="afflictiondescription.hunger_elite.low" minstrength="0" maxstrength="250" />
+      <Description textidentifier="afflictiondescription.hunger_elite.medium" minstrength="250" maxstrength="500" />
+      <Description textidentifier="afflictiondescription.hunger_elite" minstrength="500" maxstrength="1000" />
+      <Effect minstrength="0" maxstrength="1000" multiplybymaxvitality="true" minvitalitydecrease="0" maxvitalitydecrease="1.5" minspeedmultiplier="1.0" maxspeedmultiplier="0.5" resistancefor="stun,damage" minresistance="0" maxresistance="-0.5">
+        <StatusEffect target="Character">
+          <Conditional hunger_elite="gt 100" />
+          <TriggerAnimation Type="Walk" filename="DrunkenWalk" priority="6" ExpectedSpecies="Human" />
+        </StatusEffect>
+        <StatValue stattype="MeleeAttackMultiplier" minvalue="-0.0" maxvalue="-0.15" />
+      </Effect>
+      <icon texture="%ModDir%/Medical/TEAffliction.png" sourcerect="787,268,128,128" color="195,136,60,255" origin="0,0" />
+    </Affliction>
+  
+  
+  <Affliction name="Замедлен" identifier="slowafflictionerc" description="Чем - то замедлен" type="debuff" limbspecific="false" showiconthreshold="10000" showinhealthscannerthreshold="10000" treatmentthreshold="1000" karmachangeonapplied="-10" maxstrength="1" affectmachines="false" healcostmultiplier="0">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-0.6" minspeedmultiplier="0.8" maxspeedmultiplier="0.2"></Effect>
+    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="768,640,128,128" color="195,104,60,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="Боль в животе" identifier="stomachpainerc" type="debuff" limbspecific="false" maxstrength="1" duration="1" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-1.5">
+      <StatusEffect target="Character" disabledeltatime="true" interval="1" targetlimbs="torso">
+        <Affliction identifier="organdamage" amount="0.1" />
+      </StatusEffect>
+      <StatusEffect target="Character" disabledeltatime="true" interval="1">
+        <Conditional incrementalstun="lt 70" />
+        <Affliction identifier="incrementalstun" amount="25" penetration="1.0" />
+      </StatusEffect>
+      <StatusEffect target="Character" disabledeltatime="true" interval="1">
+        <Conditional blackscreen="lte 0" />
+        <Affliction identifier="blackscreen" amount="0.9" />
+      </StatusEffect>
+      <StatusEffect target="Character">
+        <TriggerAnimation Type="Walk" filename="DrunkenWalk" priority="6" ExpectedSpecies="Human" />
+        <TriggerAnimation Type="Run" filename="DrunkenRun" priority="6" ExpectedSpecies="Human" />
+      </StatusEffect>
+    </Effect>
+    <Icon texture="%ModDir%/Medical/TEAffliction.png" sheetindex="7,0" sheetelementsize="128,128" color="10,193,114,255" origin="0,0" sourcerect="896,0,128,128" />
+  </Affliction>
+  <Affliction name="Атакован вблизи" identifier="meleeattacked" type="debuff" hideiconafterdelay="true" limbspecific="false" maxstrength="2" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-1">
+      <StatValue stattype="RangedSpreadReduction" value="3" />
+      <AbilityFlag flagtype="MustWalk" />
+    </Effect>
+    <Effect minstrength="1" maxstrength="2" strengthchange="-2">
+      <StatValue stattype="RangedSpreadReduction" value="3" />
+      <AbilityFlag flagtype="MustWalk" />
+    </Effect>
+    <Icon texture="%ModDir%/Medical/TEAffliction.png" sheetindex="7,0" sheetelementsize="128,128" color="10,193,114,255" origin="0,0" sourcerect="896,0,128,128" />
+  </Affliction>
+  <Affliction name="Контроль над разумом" identifier="mindcontrol" description="" type="psychosis" isbuff="false" limbspecific="false" indicatorlimb="Head" karmachangeonapplied="-0.15" maxstrength="100" showiconthreshold="50" showinhealthscannerthreshold="25" showiconthresholdtoothers="1000">
+    <Description textidentifier="afflictiondescription.mindcontrol.self" target="Self" minstrength="0" maxstrength="100" />
+    <Description textidentifier="afflictiondescription.mindcontrol" target="OtherCharacter" minstrength="0" maxstrength="100" />
+    <icon texture="Content/UI/CommandUIAtlas.png" sourcerect="897,0,128,128" color="150,26,26,255" origin="-6.92126E-07,0" />
+    <Effect minstrength="0" maxstrength="50" strengthchange="-0.75">
+      <StatusEffect target="Character" interval="3" disabledeltatime="true" multiplyafflictionsbymaxvitality="false">
+        <Conditional psychosis="gte 95" />
+        <Affliction identifier="mindcontrol" amount="30" probability="0.02" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="50" maxstrength="90" strengthchange="-0.75">
+      <StatusEffect target="Character" interval="3" disabledeltatime="true" multiplyafflictionsbymaxvitality="false">
+        <Conditional psychosis="gte 95" />
+        <Affliction identifier="mindcontrol" amount="30" probability="0.02" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="90" maxstrength="100" strengthchange="1">
+      <StatusEffect target="Character" interval="1" disabledeltatime="true" comparison="and">
+        <Conditional SpeciesName="eq human" />
+        <Affliction identifier="feardebuff" amount="2" />
+      </StatusEffect>
+    </Effect>
+    <PeriodicEffect mininterval="10" maxinterval="180" minstrength="90" maxstrength="100">
+      <StatusEffect target="Character" duration="3" comparison="and">
+        <Conditional SpeciesName="eq human" />
+        <Affliction identifier="hunger" amount="100" />
+        <Affliction identifier="hunger_elite" amount="500" />
+        <Affliction identifier="organdamage" amount="100" />
+        <Affliction identifier="critical_defence" amount="200" />
+      </StatusEffect>
+    </PeriodicEffect>
+  </Affliction>
+  <Affliction name="Подводное дыхание" identifier="underwaterbreathing" description="Устойчивость подопытного к нехватке кислорода всех мастей повышена." type="resistance" isbuff="true" limbspecific="false" maxstrength="300">
+    <Effect minstrength="0" maxstrength="300" strengthchange="-1">
+      <StatValue stattype="HoldBreathMultiplier" minvalue="0" maxvalue="20" />
+    </Effect>
+    <icon texture="%ModDir%/Medical/TEAffliction.png" sourcerect="265,807,128,128" color="10,193,114,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="Устойчивость к ядам" identifier="poisonresistance" description="Устойчивость подопытного к ядам всех мастей повышена." type="resistance" isbuff="true" limbspecific="false" maxstrength="300">
+    <Effect minstrength="0" maxstrength="300" strengthchange="-1" resistancefor="poison" minresistance="0" maxresistance="0.48"></Effect>
+    <icon texture="%ModDir%/Medical/TEAffliction.png" sourcerect="268,2,121,126" color="10,193,114,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="Быстрее отдышка" identifier="painresistance" description="" type="resistance" isbuff="true" limbspecific="false" maxstrength="180">
+    <Effect minstrength="0" maxstrength="180" strengthchange="-1">
+      <StatusEffect target="Character" interval="0.5" disabledeltatime="true">
+        <ReduceAffliction identifier="incrementalstun" amount="0.5" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="Content/UI/TalentsIcons4.png" sheetindex="7,0" sheetelementsize="128,128" color="10,193,114,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="Сильная атака" identifier="strongerattack" description="" type="resistance" isbuff="true" limbspecific="false" maxstrength="180">
+    <Effect minstrength="0" maxstrength="180" strengthchange="-1">
+      <StatValue stattype="MeleeAttackMultiplier" minvalue="0" maxvalue="0.35" />
+    </Effect>
+    <icon texture="%ModDir%/Medical/TEAffliction.png" sourcerect="527,408,128,128" color="10,193,114,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="Сильная атака дальняя" identifier="strongerattackranged" description="" type="resistance" isbuff="true" limbspecific="false" maxstrength="180">
+    <Effect minstrength="0" maxstrength="180" strengthchange="-1">
+      <StatValue stattype="RangedAttackMultiplier" minvalue="0" maxvalue="0.35" />
+    </Effect>
+    <icon texture="%ModDir%/Medical/TEAffliction.png" sourcerect="668,409,128,128" color="10,193,114,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="Ускорение" identifier="fastermoving" description="" type="resistance" isbuff="true" limbspecific="false" maxstrength="180">
+    <Effect minstrength="0" maxstrength="180" strengthchange="-1" minspeedmultiplier="1" maxspeedmultiplier="1.25" />
+    <icon texture="%ModDir%/Medical/TEAffliction.png" sourcerect="265,408,128,128" color="10,193,114,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="Умом" identifier="addskill" description="" type="resistance" isbuff="true" limbspecific="false" maxstrength="180">
+    <Effect minstrength="0" maxstrength="180" strengthchange="-0.5" minskillmultiplier="1" maxskillmultiplier="1.3">
+      <CharacterAbilityModifyStat stattype="SkillGainSpeed" value="0.3" />
+    </Effect>
+    <icon texture="%ModDir%/Medical/TEAffliction.png" sourcerect="395,408,128,128" color="10,193,114,255" origin="0,0" />
+  </Affliction>
+  <Blackscreen name="Blackscreen" identifier="blackscreen" description="Patient can't see anyshing." type="geneticmaterialdebuff2" limbspecific="false" indicatorlimb="Head" activationthreshold="0.0" showiconthreshold="1" showicontoothersthreshold="1000" showinhealthscannerthreshold="1" affectmachines="false" maxstrength="2">
+    <Effect minstrength="0" maxstrength="1" minafflictionoverlayalphamultiplier="0" maxafflictionoverlayalphamultiplier="1" minvitalitydecrease="0" maxvitalitydecrease="0" strengthchange="-1"></Effect>
+    <Effect minstrength="1" maxstrength="2" minafflictionoverlayalphamultiplier="1" maxafflictionoverlayalphamultiplier="1" minvitalitydecrease="0" maxvitalitydecrease="0" strengthchange="-1" minscreendistort="100" maxscreendistort="100" minscreenblur="100" maxscreenblur="100" minradialdistort="50" maxradialdistort="50">
+      <StatusEffect type="OnActive" target="Character" LowPassMultiplier="0.1" HighPassMultiplier="0.1" setvalue="true" disabledeltatime="true" />
+      <StatusEffect target="Character" comparison="and">
+        <Conditional IsLocalPlayer="True" />
+        <Sound file="%ModDir%/Sounds/danger_low.ogg" volume="1" dontmuffle="true" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="%ModDir%/Medical/TEAffliction.png" sourcerect="528,2,128,128" color="150,150,230,255" origin="0,-7.603064E-08" />
+    <AfflictionOverlay texture="%ModDir%/Medical/uncon_view2.png" />
+  </Blackscreen>
+  <Blackscreen name="Blackscreen_sleeping" identifier="blackscreen_sleep" description="Patient can't see anyshing." type="geneticmaterialdebuff2" limbspecific="false" indicatorlimb="Head" activationthreshold="0.0" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" affectmachines="false" maxstrength="2">
+    <Effect minstrength="0" maxstrength="1" minafflictionoverlayalphamultiplier="0" maxafflictionoverlayalphamultiplier="1" minvitalitydecrease="0" maxvitalitydecrease="0" strengthchange="-1"></Effect>
+    <Effect minstrength="1" maxstrength="2" minafflictionoverlayalphamultiplier="1" maxafflictionoverlayalphamultiplier="1" minvitalitydecrease="0" maxvitalitydecrease="0" strengthchange="-1" minscreendistort="100" maxscreendistort="100" minscreenblur="100" maxscreenblur="100" minradialdistort="50" maxradialdistort="50">
+      <StatusEffect type="OnActive" target="Character" LowPassMultiplier="0.1" HighPassMultiplier="0.1" setvalue="true" disabledeltatime="true" />
+      <StatValue stattype="SightRangeMultiplier" value="0.2" />
+      <StatValue stattype="SoundRangeMultiplier" value="0.5" />
+    </Effect>
+    <PeriodicEffect mininterval="4" maxinterval="6" minstrength="1" maxstrength="2">
+      <StatusEffect target="Character" comparison="and">
+        <Conditional ishuman="true" />
+        <Conditional hasspecifiertag="male" />
+        <Conditional oxygenlow="lt 5" />
+        <Sound file="%ModDir%/Medical/snore1_male.ogg" range="700" volume="0.7" selectionmode="Random" />
+        <Sound file="%ModDir%/Medical/snore2_male.ogg" range="700" volume="0.7" selectionmode="Random" />
+        <Sound file="%ModDir%/Medical/snore3_male.ogg" range="700" volume="0.7" selectionmode="Random" />
+      </StatusEffect>
+      <StatusEffect target="Character" comparison="and">
+        <Conditional ishuman="true" />
+        <Conditional hasspecifiertag="female" />
+        <Conditional oxygenlow="lt 5" />
+        <Sound file="%ModDir%/Medical/snore1_female.ogg" range="700" volume="0.7" selectionmode="Random" />
+        <Sound file="%ModDir%/Medical/snore2_female.ogg" range="700" volume="0.7" selectionmode="Random" />
+        <Sound file="%ModDir%/Medical/snore3_female.ogg" range="700" volume="0.7" selectionmode="Random" />
+      </StatusEffect>
+    </PeriodicEffect>
+    <icon texture="%ModDir%/Medical/TEAffliction.png" sourcerect="528,2,128,128" color="150,150,230,255" origin="0,-7.603064E-08" />
+    <AfflictionOverlay texture="%ModDir%/Medical/uncon_view2.png" />
+  </Blackscreen>
+  <Blackscreen2 name="Слепота" identifier="blackscreeninfinite" description="Пациент ничего не видит." type="geneticmaterialdebuff2" limbspecific="false" indicatorlimb="Head" activationthreshold="0.0" showiconthreshold="1000" showinhealthscannerthreshold="0" showiconthresholdtoothers="1000" affectmachines="false" maxstrength="1">
+    <Effect minstrength="0" maxstrength="1" minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="1" minvitalitydecrease="0" maxvitalitydecrease="0"></Effect>
+    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="128,640,128,128" color="195,177,60,255" origin="0,0" />
+    <AfflictionOverlay texture="%ModDir%/Medical/uncon_view2.png" />
+  </Blackscreen2>
+  <Notalk name="Немой" identifier="cant_talk" description="Ты не умеешь говорить" type="geneticmaterialdebuff2" iconcolors="60,140,195,255;60,107,195,255;60,0,195,255" limbspecific="false" indicatorlimb="Head" activationthreshold="0.0" showiconthreshold="0" showicontoothersthreshold="1000" showinhealthscannerthreshold="0" affectmachines="false" maxstrength="10" SpeechImpediment="100">
+    <Effect minstrength="0" maxstrength="10" minvitalitydecrease="0" maxvitalitydecrease="0" strengthchange="-1" SpeechImpediment="100">
+      <StatusEffect target="Character" SpeechImpediment="100" setvalue="true" />
+    </Effect>
+    <icon texture="%ModDir%/Medical/TEAffliction.png" sourcerect="397,269,127,129" color="150,150,230,255" origin="0,0" />
+  </Notalk>
+  <Notalk2 name="Немой Совсем" identifier="cant_talkinfinite" description="Ты не умеешь говорить насовсем" hideiconafterdelay="true" type="geneticmaterialdebuff2" iconcolors="60,140,195,255;60,107,195,255;60,0,195,255" limbspecific="false" indicatorlimb="Head" activationthreshold="0.0" showiconthreshold="0" showicontoothersthreshold="1000" showinhealthscannerthreshold="0" affectmachines="false" maxstrength="1" SpeechImpediment="100">
+    <Effect minstrength="0" maxstrength="1" minvitalitydecrease="0" maxvitalitydecrease="0" strengthchange="0" SpeechImpediment="100" resistancefor="cant_talk" minresistance="1" maxresistance="1">
+      <StatusEffect target="Character" SpeechImpediment="100" setvalue="true" />
+    </Effect>
+    <icon texture="%ModDir%/Medical/TEAffliction.png" sourcerect="397,269,127,129" color="210,100,100,255" origin="0,0" />
+  </Notalk2>
+  <AfflictionHusk name="Вампиризм" identifier="vampirism" description="Подопытный весьма бледен, его взгляд жадно следит за живыми существами." type="alieninfection" treatmentthreshold="0" limbspecific="false" indicatorlimb="Head" maxstrength="100" showiconthreshold="5" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" iconcolors="60,140,195,255;60,107,195,255;60,0,195,255" hideiconafterdelay="true" needsair="true" causespeechimpediment="false" dormantthreshold="0" activethreshold="0" transitionthreshold="1000" transformthresholdondeath="1000" targets="human" healableinmedicalclinic="false" huskedspeciesname="husk" sendmessages="false" healcostmultiplier="5.5" basehealcost="450">
+    <Description textidentifier="afflictiondescription.vampirism.self" target="Self" minstrength="5" maxstrength="100" />
+    <Description textidentifier="afflictiondescription.vampirism" target="OtherCharacter" minstrength="5" maxstrength="100" />
+    <Effect minstrength="0" maxstrength="5" strengthchange="0.1" />
+    <Effect minstrength="5" maxstrength="35" strengthchange="0.03" minbodytint="255,255,255,80" maxbodytint="255,255,255,100" tag="vampire">
+      <StatusEffect target="Character" setvalue="true" interval="1" multiplyafflictionsbymaxvitality="true">
+        <Affliction identifier="vampirestrengthen" amount="25" multiplyafflictionsbymaxvitality="true" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="35" maxstrength="70" strengthchange="0.015" minbodytint="255,255,255,100" maxbodytint="255,255,255,120" tag="vampire">
+      <StatusEffect target="Character" setvalue="true" interval="1" multiplyafflictionsbymaxvitality="true">
+        <Affliction identifier="vampirestrengthen" amount="50" multiplyafflictionsbymaxvitality="true" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="70" maxstrength="99" strengthchange="0.01" minbodytint="255,255,255,120" maxbodytint="205,205,205,150" tag="vampire">
+      <StatusEffect target="Character" setvalue="true" interval="1" multiplyafflictionsbymaxvitality="true">
+        <Affliction identifier="vampirestrengthen" amount="70" multiplyafflictionsbymaxvitality="true" />
+      </StatusEffect>
+      <StatValue stattype="MedicalItemEffectivenessMultiplier" value="-0.25" />
+      <StatValue stattype="HoldBreathMultiplier" value="1" />
+      <StatValue stattype="MaximumHealthMultiplier" value="0.15" />
+    </Effect>
+    <Effect minstrength="99" maxstrength="100" strengthchange="0.01" minbodytint="255,255,255,150" maxbodytint="205,205,205,190" tag="vampire">
+      <StatusEffect target="Character" setvalue="true" interval="1" multiplyafflictionsbymaxvitality="true">
+        <Affliction identifier="vampirestrengthen" amount="100" multiplyafflictionsbymaxvitality="true" />
+      </StatusEffect>
+      <StatValue stattype="MedicalItemEffectivenessMultiplier" value="-0.35" />
+      <StatValue stattype="HoldBreathMultiplier" value="3" />
+      <StatValue stattype="MaximumHealthMultiplier" value="0.5" />
+    </Effect>
+    <PeriodicEffect mininterval="15" maxinterval="15" minstrength="0" maxstrength="100">
+      <StatusEffect target="Character" disabledeltatime="true">
+        <Conditional isplayer="true" />
+        <Affliction identifier="vampirismneedblood" amount="0.3" />
+      </StatusEffect>
+    </PeriodicEffect>
+    <icon texture="%ModDir%/Medical/TEAffliction.png" sourcerect="132,138,133,130" color="210,100,100,255" origin="-2.2116606E-07,0" />
+  </AfflictionHusk>
+  <Affliction name="Сила вампира" identifier="vampirestrengthen" description="" type="strengthbuff" isbuff="true" limbspecific="false" maxstrength="100" iconcolors="60,140,195,255;60,107,195,255;60,0,195,255" showiconthreshold="5" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" hideiconafterdelay="true">
+    <Effect minstrength="0" maxstrength="100" strengthchange="-0.25" resistancefor="damage" minresistance="0" maxresistance="0.25">
+      <StatusEffect target="Character" interval="5" disabledeltatime="true">
+        <ReduceAffliction type="hunger" amount="100" />
+      </StatusEffect>
+      <StatValue stattype="MeleeAttackMultiplier" minvalue="0" maxvalue="0.4" />
+      <StatValue stattype="SwimmingSpeed" minvalue="0.0" maxvalue="0.4" />
+    </Effect>
+    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="256,896,128,128" color="10,193,114,255" origin="0,0" />
+  </Affliction>
+  <vampirismneedblood name="Потребность в крови" identifier="vampirismneedblood" description="Подопытный испытывает голод, однако обычной едой он не утоляется." type="vampirismneedblood" treatmentthreshold="35" showiconthreshold="10" showicontoothersthreshold="1000" showinhealthscannerthreshold="99" limbspecific="false" indicatorlimb="Torso" maxstrength="100" iconcolors="202,40,40,255;172,30,30,255;152,10,10,255">
+    <Description textidentifier="afflictiondescription.vampirismneedblood.low.self" target="Self" minstrength="0" maxstrength="35" />
+    <Description textidentifier="afflictiondescription.vampirismneedblood.medium.self" target="Self" minstrength="35" maxstrength="65" />
+    <Description textidentifier="afflictiondescription.vampirismneedblood.high.self" target="Self" minstrength="65" maxstrength="100" />
+    <Effect minstrength="0" maxstrength="30" strengthchange="0">
+      <StatusEffect target="Character" interval="1" disabledeltatime="true">
+        <ReduceAffliction type="damage" amount="0.17" />
+        <ReduceAffliction type="damageunique" amount="0.1" />
+        <ReduceAffliction type="damage_debuff" amount="0.1" />
+      </StatusEffect>
+      <AbilityFlag flagtype="ImmuneToPressure" />
+    </Effect>
+    <Effect minstrength="30" maxstrength="65" strengthchange="0">
+      <StatusEffect target="Character" interval="1" disabledeltatime="true">
+        <ReduceAffliction type="damage" amount="0.1" />
+      </StatusEffect>
+      <AbilityFlag flagtype="ImmuneToPressure" />
+    </Effect>
+    <Effect minstrength="65" maxstrength="95" strengthchange="0" minchromaticaberration="0.0" maxchromaticaberration="0.1">
+      <StatusEffect target="Character" interval="5" disabledeltatime="true">
+        <Affliction identifier="organdamage" amount="0.2" />
+      </StatusEffect>
+      <StatusEffect target="Character" interval="1" disabledeltatime="true">
+        <Affliction identifier="bloodloss" amount="0.1" />
+      </StatusEffect>
+      <StatusEffect target="Character" SpeedMultiplier="0.75" setvalue="true" />
+      <AbilityFlag flagtype="ImmuneToPressure" />
+    </Effect>
+    <Effect minstrength="95" maxstrength="100" strengthchange="0" minchromaticaberration="0.1" maxchromaticaberration="0.4">
+      <StatusEffect target="Character" interval="1" disabledeltatime="true">
+        <Affliction identifier="organdamage" amount="0.2" penetration="1.0" />
+        <Affliction identifier="stomachpainerc" amount="10" probability="0.05" />
+      </StatusEffect>
+      <StatusEffect target="Character" interval="1" disabledeltatime="true">
+        <Affliction identifier="bloodloss" amount="0.25" />
+      </StatusEffect>
+      <StatusEffect target="Character" SpeedMultiplier="0.6" setvalue="true" />
+      <AbilityFlag flagtype="ImmuneToPressure" />
+    </Effect>
+    <PeriodicEffect mininterval="5" maxinterval="10" minstrength="0" maxstrength="100">
+      <StatusEffect target="Character" comparison="and" setvalue="true">
+        <Conditional vampirism="lte 0" />
+        <Affliction identifier="vampirismneedblood" amount="0" />
+      </StatusEffect>
+    </PeriodicEffect>
+    <icon texture="%ModDir%/Medical/TEAffliction.png" sourcerect="126,0,133,130" color="210,100,100,255" origin="0,0" />
+  </vampirismneedblood>
+  <Affliction name="Подожжёный" identifier="onfireerc" description="Субъект горит!" type="burn" causeofdeathdescription="Сгорел." selfcauseofdeathdescription="Вы сгорели в жаре пламени." limbspecific="true" showiconthreshold="0" showinhealthscannerthreshold="0" treatmentthreshold="1000" karmachangeonapplied="-50" maxstrength="100" affectmachines="false" healcostmultiplier="0" basehealcost="20">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-0.35">
+      <StatusEffect target="Limb">
+        <ParticleEmitter particle="DarkSmoke" copyentityangle="true" velocitymin="00" velocitymax="50" particlespersecond="7" scalemin="0.5" scalemax="1.5" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="1" maxstrength="10" minscreenblur="0.0" maxscreenblur="0.1" strengthchange="-1" ConvulseAmount="0.3">
+      <StatusEffect target="Limb" interval="0.5" disabledeltatime="true">
+        <Explosion range="60.0" force="0" shockwave="false" smoke="false" flash="false" sparks="false" flames="false" camerashake="0.0" playtinnitus="false">
+          <Affliction identifier="burn" strength="0.2" />
+        </Explosion>
+        <Affliction identifier="burn" amount="0.15" />
+      </StatusEffect>
+      <StatusEffect target="Character" interval="0.5" disabledeltatime="true">
+        <ReduceAffliction type="frost" amount="0.10" />
+      </StatusEffect>
+      <StatusEffect target="Limb">
+        <ParticleEmitter particle="DarkSmoke" copyentityangle="true" velocitymin="00" velocitymax="50" particlespersecond="2" scalemin="0.5" scalemax="1.5" />
+        <ParticleEmitter particle="flame" copyentityangle="true" velocitymin="00" velocitymax="10" particlespersecond="1" scalemin="0.1" scalemax="0.3" />
+      </StatusEffect>
+      <StatusEffect target="Limb" disabledeltatime="true" interval="0.5" setvalue="true">
+        <Conditional InWater="true" />
+        <Affliction identifier="onfireerc" amount="0" />
+        <ParticleEmitter particle="MistSmoke" copyentityangle="true" velocitymin="00" velocitymax="50" particleamount="5" scalemin="0.5" scalemax="1.5" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="10" maxstrength="30" minscreenblur="0.1" maxscreenblur="0.1" minbodytint="0,0,0,0" maxbodytint="0,0,0,30" minspeedmultiplier="0.9" maxspeedmultiplier="0.7" strengthchange="-2" ConvulseAmount="0.45">
+      <StatusEffect target="Limb" interval="0.5" disabledeltatime="true">
+        <Explosion range="60.0" force="0" shockwave="false" smoke="false" flash="false" sparks="false" flames="false" camerashake="0.0" playtinnitus="false">
+          <Affliction identifier="burn" strength="0.25" />
+        </Explosion>
+        <Affliction identifier="burn" amount="0.25" />
+        <Affliction identifier="incrementalstun" amount="1.5" />
+      </StatusEffect>
+      <StatusEffect target="Character" interval="0.5" disabledeltatime="true">
+        <ReduceAffliction type="frost" amount="0.15" />
+      </StatusEffect>
+      <StatusEffect target="Limb">
+        <ParticleEmitter particle="flame" copyentityangle="true" velocitymin="0" velocitymax="20" particlespersecond="4" scalemin="0.25" scalemax="0.5" />
+      </StatusEffect>
+      <StatusEffect target="Limb" disabledeltatime="true" interval="0.5" setvalue="true">
+        <Conditional InWater="true" />
+        <Affliction identifier="onfireerc" amount="0" />
+        <ParticleEmitter particle="MistSmoke" copyentityangle="true" velocitymin="00" velocitymax="50" particleamount="10" scalemin="0.5" scalemax="1.5" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="30" maxstrength="100" minscreenblur="0.1" maxscreenblur="0.5" minbodytint="0,0,0,30" maxbodytint="0,0,0,100" minspeedmultiplier="0.7" maxspeedmultiplier="0.5" strengthchange="-4" ConvulseAmount="0.8">
+      <StatusEffect target="Limb" interval="0.5" disabledeltatime="true">
+        <Explosion range="60.0" force="0.0" shockwave="false" smoke="false" flash="false" sparks="false" flames="false" camerashake="0.0" playtinnitus="false">
+          <Affliction identifier="burn" strength="0.25" />
+        </Explosion>
+        <Affliction identifier="burn" amount="0.5" />
+        <Affliction identifier="incrementalstun" amount="2.5" />
+        <Affliction identifier="feardebuff" amount="1" />
+      </StatusEffect>
+      <StatusEffect target="Character" interval="0.5" disabledeltatime="true">
+        <ReduceAffliction type="frost" amount="0.20" />
+      </StatusEffect>
+      <StatusEffect target="Limb">
+        <ParticleEmitter particle="flame" copyentityangle="true" velocitymin="0" velocitymax="50" particlespersecond="5" scalemin="0.3" scalemax="0.7" />
+      </StatusEffect>
+      <StatusEffect target="Limb" disabledeltatime="true" interval="0.5" setvalue="true">
+        <Conditional InWater="true" />
+        <Affliction identifier="onfireerc" amount="0" />
+        <ParticleEmitter particle="MistSmoke" copyentityangle="true" velocitymin="00" velocitymax="50" particleamount="10" scalemin="0.5" scalemax="1.5" />
+      </StatusEffect>
+      <StatusEffect target="Hull,Limb" disabledeltatime="true" interval="1" setvalue="true">
+        <Conditional OxygenPercentage="lte 10" />
+        <Affliction identifier="onfireerc" amount="0" />
+        <ParticleEmitter particle="MistSmoke" copyentityangle="true" velocitymin="00" velocitymax="50" particleamount="10" scalemin="0.5" scalemax="1.5" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="Content/UI/MainIconsAtlas.png" sourcerect="768,640,128,128" color="195,0,0,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="Стойка с мечом" identifier="swordbuff" type="buff" nameidentifier="swordbuff" isbuff="true" hideiconafterdelay="true" limbspecific="false" maxstrength="5" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="1000" treatmentthreshold="1000" iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-1"></Effect>
+    <Effect minstrength="1" maxstrength="5" strengthchange="-1"></Effect>
+    <Icon texture="%ModDir%/Medical/TEAffliction.png" sheetindex="7,0" sheetelementsize="128,128" color="10,193,114,255" origin="0,0" sourcerect="896,0,128,128" />
+  </Affliction>
+  <Affliction name="Испуг" identifier="feardebuff" description="Ужасно чем - то напуган!" type="debuff" limbspecific="false" showiconthreshold="0" showicontoothersthreshold="1000" showinhealthscannerthreshold="10000" treatmentthreshold="1000" karmachangeonapplied="0" maxstrength="5" affectmachines="false" healcostmultiplier="0">
+    <Effect minstrength="0" maxstrength="1" strengthchange="-0.3" minchromaticaberration="0" maxchromaticaberration="10">
+      <StatusEffect target="Character" comparison="and" interval="1">
+        <Conditional IsLocalPlayer="True" />
+        <Sound file="Content/Sounds/HeartbeatDiastole1.ogg" loop="true" volume="0.7" dontmuffle="true" />
+      </StatusEffect>
+      <StatusEffect target="Character" comparison="and" interval="1" delay="0.3">
+        <Conditional IsLocalPlayer="True" />
+        <Sound file="Content/Sounds/HeartbeatSystole1.ogg" loop="true" volume="0.7" dontmuffle="true" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="1" maxstrength="3" ConvulseAmount="0.35" strengthchange="-0.4" minspeedmultiplier="0.75" maxspeedmultiplier="0.75" minchromaticaberration="10" maxchromaticaberration="15" minskillmultiplier="0.85" maxskillmultiplier="0.85">
+      <StatusEffect target="Character" comparison="and" interval="1">
+        <Conditional IsLocalPlayer="True" />
+        <Sound file="Content/Sounds/HeartbeatDiastole1.ogg" loop="true" volume="1" dontmuffle="true" />
+      </StatusEffect>
+      <StatusEffect target="Character" comparison="and" interval="1" delay="0.3">
+        <Conditional IsLocalPlayer="True" />
+        <Sound file="Content/Sounds/HeartbeatSystole1.ogg" loop="true" volume="1" dontmuffle="true" />
+      </StatusEffect>
+      <StatValue stattype="RangedSpreadReduction" value="-0.5" />
+      <StatValue stattype="MeleeAttackMultiplier" value="-0.1" />
+      <StatValue stattype="NaturalMeleeAttackMultiplier" value="-0.15" />
+    </Effect>
+    <Effect minstrength="3" maxstrength="5" ConvulseAmount="0.45" strengthchange="-0.5" minspeedmultiplier="0.75" maxspeedmultiplier="0.6" minchromaticaberration="15" maxchromaticaberration="25" minskillmultiplier="0.7" maxskillmultiplier="0.7">
+      <StatusEffect target="Character" comparison="and" interval="0.8">
+        <Conditional IsLocalPlayer="True" />
+        <Sound file="Content/Sounds/HeartbeatDiastole1.ogg" loop="true" volume="1" dontmuffle="true" />
+      </StatusEffect>
+      <StatusEffect target="Character" comparison="and" interval="0.8" delay="0.3">
+        <Conditional IsLocalPlayer="True" />
+        <Sound file="Content/Sounds/HeartbeatSystole1.ogg" loop="true" volume="1" dontmuffle="true" />
+      </StatusEffect>
+      <StatusEffect target="Character" comparison="and">
+        <Conditional IsLocalPlayer="True" />
+        <Sound file="%ModDir%/Sounds/danger_extreme.ogg" volume="1" dontmuffle="true" />
+      </StatusEffect>
+      <StatusEffect target="Character" interval="0.15">
+        <TriggerAnimation Type="Walk" filename="HumanFear" priority="4" ExpectedSpecies="Human" />
+      </StatusEffect>
+      <StatusEffect target="Character" interval="1" disabledeltatime="true" comparison="and">
+        <Conditional mass="lt 50" />
+        <Conditional ishusk="eq false" />
+        <AiTrigger state="Flee" duration="5" />
+      </StatusEffect>
+      <StatValue stattype="RangedSpreadReduction" value="-0.7" />
+      <StatValue stattype="MeleeAttackMultiplier" value="-0.2" />
+      <StatValue stattype="NaturalMeleeAttackMultiplier" value="-0.35" />
+    </Effect>
+    <icon texture="%ModDir%/Medical/TEAffliction.png" sourcerect="527,140,128,128" color="195,104,60,255" origin="2.8704605E-07,-7.176151E-08" />
+  </Affliction>
+  <Affliction name="Неизвестная болезнь" identifier="unknowndiseaseerc" description="Вы чем - то заболели." type="disease" causeofdeathdescription="Умер от не пойми чего." limbspecific="false" indicatorlimb="Head" showiconthreshold="75" showicontoothersthreshold="1000" showinhealthscannerthreshold="0" treatmentthreshold="0" karmachangeonapplied="-30" maxstrength="100" affectmachines="false" healcostmultiplier="1" basehealcost="100" MedicalSkillGain="1.5">
+    <Effect minstrength="0" maxstrength="50" strengthchange="0.1" minscreenblur="0.0" maxscreenblur="0.05">
+      <StatusEffect target="Character" multiplyafflictionsbymaxvitality="true" interval="1" disabledeltatime="true">
+        <Affliction identifier="stomachpainerc" amount="10" probability="0.01" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="50" maxstrength="75" strengthchange="0.1" minscreenblur="0.1" maxscreenblur="0.3" minfacetint="255,255,0,0" minspeedmultiplier="1.0" maxspeedmultiplier="0.9">
+      <StatusEffect target="Character" multiplyafflictionsbymaxvitality="true" interval="1" disabledeltatime="true">
+        <Affliction identifier="stomachpainerc" amount="10" probability="0.03" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="75" maxstrength="99" strengthchange="0.1" minscreenblur="0.3" maxscreenblur="0.7" minscreendistort="0.0" maxscreendistort="0.5" minspeedmultiplier="0.9" maxspeedmultiplier="0.8">
+      <StatusEffect target="Character" interval="1" disabledeltatime="true">
+        <Conditional isplayer="true" />
+        <Affliction identifier="hunger" amount="0.05" />
+      </StatusEffect>
+      <StatusEffect target="Character" multiplyafflictionsbymaxvitality="true" interval="1" disabledeltatime="true">
+        <Affliction identifier="stomachpainerc" amount="10" probability="0.04" />
+      </StatusEffect>
+      <StatusEffect target="Character" interval="5" setvalue="true" disabledeltatime="true">
+        <Conditional ishuman="true" />
+        <Affliction identifier="diseaseresistance1" amount="100" probability="0.03" />
+      </StatusEffect>
+      <StatusEffect target="Character">
+        <TriggerAnimation Type="Walk" filename="DrunkenWalk" priority="6" ExpectedSpecies="Human" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="99" maxstrength="100" strengthchange="0.1" minscreenblur="0.7" maxscreenblur="0.7" minscreendistort="0.5" maxscreendistort="0.5" minspeedmultiplier="0.8" maxspeedmultiplier="0.8">
+      <StatusEffect target="Character" interval="1" disabledeltatime="true">
+        <Conditional isplayer="true" />
+        <Affliction identifier="hunger" amount="0.1" />
+      </StatusEffect>
+      <StatusEffect target="Character" multiplyafflictionsbymaxvitality="true" interval="1" disabledeltatime="true">
+        <Affliction identifier="stomachpainerc" amount="10" probability="0.04" />
+      </StatusEffect>
+      <StatusEffect target="Character">
+        <TriggerAnimation Type="Walk" filename="DrunkenWalk" priority="6" ExpectedSpecies="Human" />
+      </StatusEffect>
+      <StatusEffect target="Character" interval="5" setvalue="true" disabledeltatime="true">
+        <Conditional ishuman="true" />
+        <Affliction identifier="diseaseresistance1" amount="100" probability="0.15" />
+      </StatusEffect>
+    </Effect>
+    <PeriodicEffect mininterval="7" maxinterval="23" minstrength="15" maxstrength="100">
+      <StatusEffect target="Character" comparison="and">
+        <Conditional ishuman="true" />
+        <Conditional hasspecifiertag="male" />
+        <Sound file="%ModDir%/Medical/coughing_1.ogg" range="900" selectionmode="Random" />
+        <Sound file="%ModDir%/Medical/coughing_2.ogg" range="900" selectionmode="Random" />
+        <Sound file="%ModDir%/Medical/coughing_3.ogg" range="900" selectionmode="Random" />
+      </StatusEffect>
+      <StatusEffect target="Character" comparison="and">
+        <Conditional speciesname="humancrazyruins" />
+        <Sound file="%ModDir%/Medical/coughing_1.ogg" range="900" selectionmode="Random" />
+        <Sound file="%ModDir%/Medical/coughing_2.ogg" range="900" selectionmode="Random" />
+        <Sound file="%ModDir%/Medical/coughing_3.ogg" range="900" selectionmode="Random" />
+      </StatusEffect>
+      <StatusEffect target="Character" comparison="and">
+        <Conditional ishuman="true" />
+        <Conditional hasspecifiertag="female" />
+        <Sound file="%ModDir%/Medical/cough_female_1.ogg" range="900" selectionmode="Random" />
+        <Sound file="%ModDir%/Medical/cough_female_2.ogg" range="900" selectionmode="Random" />
+      </StatusEffect>
+      <StatusEffect target="Character" duration="2">
+        <TriggerAnimation Type="Walk" filename="Vomit" priority="10" ExpectedSpecies="Human" />
+      </StatusEffect>
+      <StatusEffect target="Character" disabledeltatime="true">
+        <Affliction identifier="organdamage" strength="0.35" />
+        <Affliction identifier="bloodloss" strength="0.5" />
+        <Affliction identifier="hunger_elite" strength="2.5" />
+      </StatusEffect>
+      <StatusEffect target="Character" disabledeltatime="true">
+        <Conditional unknowndiseaseerc="gt 80" />
+        <Affliction identifier="bloodloss" strength="0.3" />
+        <Affliction identifier="hunger_elite" strength="2" />
+      </StatusEffect>
+      <StatusEffect target="NearbyCharacters" range="180" targetlimbs="Head" disabledeltatime="true" OnlyInside="true">
+        <Affliction identifier="unknowndiseaseerc" strength="0.05" probability="0.66" />
+      </StatusEffect>
+      <StatusEffect target="Character" targetlimbs="Head" duration="1">
+        <ParticleEmitter particle="vomitsplash" copyentityangle="true" anglemin="-10" anglemax="10" particlespersecond="15" velocitymin="20" velocitymax="120" scalemin="0.08" scalemax="0.1" colormultiplier="255,50,160,255" />
+        <Conditional HideFace="eq True" />
+      </StatusEffect>
+      <StatusEffect target="Character" targetlimbs="Head" duration="1">
+        <ParticleEmitter particle="vomitsplash" copyentityangle="true" anglemin="-10" anglemax="10" particlespersecond="40" velocitymin="50" velocitymax="200" scalemin="0.1" scalemax="0.15" colormultiplier="255,50,160,255" />
+        <Conditional HideFace="eq False" />
+      </StatusEffect>
+    </PeriodicEffect>
+    <icon texture="%ModDir%/Medical/TEAffliction.png" sourcerect="397,0,129,129" color="106,106,106,255" origin="0,0" />
+  </Affliction>
+  <Affliction name="Иммунитет к болезни" identifier="diseaseresistance1" description="Переболел и больше не болеешь" type="resistance" isbuff="true" limbspecific="false" maxstrength="100" showiconthreshold="1000" showicontoothersthreshold="1000" showinhealthscannerthreshold="0">
+    <Effect minstrength="0" maxstrength="100" strengthchange="-0.03" resistancefor="unknowndiseaseerc" minresistance="1" maxresistance="1">
+      <StatusEffect target="Character" interval="1" disabledeltatime="true">
+        <ReduceAffliction identifier="unknowndiseaseerc" amount="2" />
+      </StatusEffect>
+    </Effect>
+    <Icon texture="Content/UI/TalentsIcons4.png" sourcerect="896,256,128,128" color="10,193,114,255" origin="0,0" />
+  </Affliction>
+
+</Afflictions>
+</Override>

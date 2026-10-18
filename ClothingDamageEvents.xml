@@ -1,0 +1,808 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RandomEvents>
+  <!-- Ивент сет - поломать шапку на голове от ударов -->
+  <!-- 4 ивента, которые настакиваются друг на друга и повышают таким образом урон -->
+  <EventSet identifier="clothing_damage_head" commonness="0" chooserandom="false" triggereventcooldown="false">
+    <ScriptedEvent identifier="headdamaged_1" commonness="0" triggereventcooldown="false">
+      <CheckItemAction
+          targettag="damaged_character"
+          itemtags="armorhead"
+          amount="1"
+          requireworn="true"
+          recursive="true"
+          applytagtoitem="clothing_to_damage">
+        <Success>
+          <StatusEffectAction targettag="clothing_to_damage">
+            <StatusEffect type="Always" target="This" condition="-1" disabledeltatime="true" />
+          </StatusEffectAction>
+        </Success>
+      </CheckItemAction>
+    </ScriptedEvent>
+    <ScriptedEvent identifier="headdamaged_2" commonness="0" triggereventcooldown="false">
+      <CheckItemAction
+          targettag="damaged_character"
+          itemtags="armorhead"
+          amount="1"
+          requireworn="true"
+          recursive="true"
+          applytagtoitem="clothing_to_damage">
+        <Success>
+          <StatusEffectAction targettag="clothing_to_damage">
+            <StatusEffect type="Always" target="This" condition="-1.5" disabledeltatime="true" />
+            <StatusEffect type="Always" target="This" disabledeltatime="true">
+              <Conditional hastag="irongear"/>
+              <Conditional hastag="steelgear"/>
+              <Conditional hastag="coppergear"/>
+              <Conditional hastag="bronzegear"/>
+              <particleemitter particle="weldspark" drawontop="true" particleamount="4" velocitymin="100" velocitymax="500" anglemin="0" anglemax="360" distancemin="0" distancemax="20" scalemin="0.4" scalemax="1.0" />
+            </StatusEffect>
+          </StatusEffectAction>
+        </Success>
+      </CheckItemAction>
+    </ScriptedEvent>
+    <ScriptedEvent identifier="headdamaged_3" commonness="0" triggereventcooldown="false">
+      <CheckItemAction
+          targettag="damaged_character"
+          itemtags="armorhead"
+          amount="1"
+          requireworn="true"
+          recursive="true"
+          applytagtoitem="clothing_to_damage">
+        <Success>
+          <StatusEffectAction targettag="clothing_to_damage">
+            <StatusEffect type="Always" target="This" condition="-3" disabledeltatime="true" />
+            <StatusEffect type="Always" target="This" disabledeltatime="true">
+              <Conditional hastag="irongear"/>
+              <Conditional hastag="steelgear"/>
+              <Conditional hastag="coppergear"/>
+              <Conditional hastag="bronzegear"/>
+              <particleemitter particle="weldspark" drawontop="true" particleamount="4" velocitymin="100" velocitymax="500" anglemin="0" anglemax="360" distancemin="0" distancemax="20" scalemin="0.4" scalemax="1.0" />
+            </StatusEffect>
+            <StatusEffect type="Always" target="This" disabledeltatime="true">
+              <Conditional hastag="clothgear"/>
+              <particleemitter particle="brownchunks" particleamount="2" velocitymin="0" velocitymax="400" anglemin="0" anglemax="360" scalemin="0.15" scalemax="0.2" />
+            </StatusEffect>
+            <StatusEffect type="Always" target="This" disabledeltatime="true">
+              <Conditional hastag="leathergear"/>
+              <Conditional hastag="woodgear"/>
+              <particleemitter particle="brownchunks" particleamount="2" velocitymin="0" velocitymax="400" anglemin="0" anglemax="360" scalemin="0.15" scalemax="0.2" colormultiplier="168,90,50,255" />
+            </StatusEffect>
+          </StatusEffectAction>
+        </Success>
+      </CheckItemAction>
+    </ScriptedEvent>
+    <ScriptedEvent identifier="headdamaged_4" commonness="0" triggereventcooldown="false">
+      <CheckItemAction
+          targettag="damaged_character"
+          itemtags="armorhead"
+          amount="1"
+          requireworn="true"
+          recursive="true"
+          applytagtoitem="clothing_to_damage">
+        <Success>
+          <StatusEffectAction targettag="clothing_to_damage">
+            <StatusEffect type="Always" target="This" condition="-5" disabledeltatime="true" />
+            <StatusEffect type="Always" target="This" disabledeltatime="true">
+              <Conditional hastag="irongear"/>
+              <Conditional hastag="steelgear"/>
+              <particleemitter particle="weldspark" drawontop="true" particleamount="7" velocitymin="100" velocitymax="500" anglemin="0" anglemax="360" distancemin="0" distancemax="20" scalemin="0.7" scalemax="1.5" />
+            </StatusEffect>
+            <StatusEffect type="Always" target="This" disabledeltatime="true">
+              <Conditional hastag="clothgear"/>
+              <particleemitter particle="brownchunks" particleamount="2" velocitymin="0" velocitymax="400" anglemin="0" anglemax="360" scalemin="0.15" scalemax="0.2" />
+            </StatusEffect>
+            <StatusEffect type="Always" target="This" disabledeltatime="true">
+              <Conditional hastag="leathergear"/>
+              <Conditional hastag="woodgear"/>
+              <particleemitter particle="brownchunks" particleamount="2" velocitymin="0" velocitymax="400" anglemin="0" anglemax="360" scalemin="0.15" scalemax="0.2" colormultiplier="168,90,50,255" />
+            </StatusEffect>
+          </StatusEffectAction>
+        </Success>
+      </CheckItemAction>
+    </ScriptedEvent>
+  </EventSet>
+  <!-- Ивент сет - поломать нагрудники от ударов -->
+  <!-- 4 ивента, которые настакиваются друг на друга и повышают таким образом урон -->
+  <!-- Зачастую одежда на торс это и нагрудник, и наручи, и поножи, поэтому получает немало урона -->
+  <EventSet identifier="clothing_damage_torso" commonness="0" chooserandom="false" triggereventcooldown="false">
+    <ScriptedEvent identifier="torsodamaged_1" commonness="0" triggereventcooldown="false">
+      <CheckItemAction
+          targettag="damaged_character"
+          itemtags="armortorso"
+          amount="1"
+          requireworn="true"
+          recursive="true"
+          applytagtoitem="clothing_to_damage">
+        <Success>
+          <StatusEffectAction targettag="clothing_to_damage">
+            <StatusEffect type="Always" target="This" condition="-1" disabledeltatime="true" />
+          </StatusEffectAction>
+        </Success>
+      </CheckItemAction>
+    </ScriptedEvent>
+    <ScriptedEvent identifier="torsodamaged_2" commonness="0" triggereventcooldown="false">
+      <CheckItemAction
+          targettag="damaged_character"
+          itemtags="armortorso"
+          amount="1"
+          requireworn="true"
+          recursive="true"
+          applytagtoitem="clothing_to_damage">
+        <Success>
+          <StatusEffectAction targettag="clothing_to_damage">
+            <StatusEffect type="Always" target="This" condition="-1.5" disabledeltatime="true" />
+            <StatusEffect type="Always" target="This" disabledeltatime="true">
+              <Conditional hastag="irongear"/>
+              <Conditional hastag="steelgear"/>
+              <particleemitter particle="weldspark" drawontop="true" particleamount="4" velocitymin="100" velocitymax="500" anglemin="0" anglemax="360" distancemin="0" distancemax="20" scalemin="0.4" scalemax="1.0" />
+            </StatusEffect>
+          </StatusEffectAction>
+        </Success>
+      </CheckItemAction>
+    </ScriptedEvent>
+    <ScriptedEvent identifier="torsodamaged_3" commonness="0" triggereventcooldown="false">
+      <CheckItemAction
+          targettag="damaged_character"
+          itemtags="armortorso"
+          amount="1"
+          requireworn="true"
+          recursive="true"
+          applytagtoitem="clothing_to_damage">
+        <Success>
+          <StatusEffectAction targettag="clothing_to_damage">
+            <StatusEffect type="Always" target="This" condition="-3" disabledeltatime="true" />
+            <StatusEffect type="Always" target="This" disabledeltatime="true">
+              <Conditional hastag="irongear"/>
+              <Conditional hastag="steelgear"/>
+              <Conditional hastag="coppergear"/>
+              <Conditional hastag="bronzegear"/>
+              <particleemitter particle="weldspark" drawontop="true" particleamount="4" velocitymin="100" velocitymax="500" anglemin="0" anglemax="360" distancemin="0" distancemax="20" scalemin="0.4" scalemax="1.0" />
+            </StatusEffect>
+            <StatusEffect type="Always" target="This" disabledeltatime="true">
+              <Conditional hastag="clothgear"/>
+              <particleemitter particle="brownchunks" particleamount="2" velocitymin="0" velocitymax="400" anglemin="0" anglemax="360" scalemin="0.15" scalemax="0.2" />
+            </StatusEffect>
+            <StatusEffect type="Always" target="This" disabledeltatime="true">
+              <Conditional hastag="leathergear"/>
+              <Conditional hastag="woodgear"/>
+              <particleemitter particle="brownchunks" particleamount="2" velocitymin="0" velocitymax="400" anglemin="0" anglemax="360" scalemin="0.15" scalemax="0.2" colormultiplier="168,90,50,255" />
+            </StatusEffect>
+          </StatusEffectAction>
+        </Success>
+      </CheckItemAction>
+    </ScriptedEvent>
+    <ScriptedEvent identifier="torsodamaged_4" commonness="0" triggereventcooldown="false">
+      <CheckItemAction
+          targettag="damaged_character"
+          itemtags="armortorso"
+          amount="1"
+          requireworn="true"
+          recursive="true"
+          applytagtoitem="clothing_to_damage">
+        <Success>
+          <StatusEffectAction targettag="clothing_to_damage">
+            <StatusEffect type="Always" target="This" condition="-5" disabledeltatime="true" />
+            <StatusEffect type="Always" target="This" disabledeltatime="true">
+              <Conditional hastag="irongear"/>
+              <Conditional hastag="steelgear"/>
+              <Conditional hastag="coppergear"/>
+              <Conditional hastag="bronzegear"/>
+              <particleemitter particle="weldspark" drawontop="true" particleamount="7" velocitymin="100" velocitymax="500" anglemin="0" anglemax="360" distancemin="0" distancemax="20" scalemin="0.7" scalemax="1.5" />
+            </StatusEffect>
+            <StatusEffect type="Always" target="This" disabledeltatime="true">
+              <Conditional hastag="clothgear"/>
+              <particleemitter particle="brownchunks" particleamount="2" velocitymin="0" velocitymax="400" anglemin="0" anglemax="360" scalemin="0.15" scalemax="0.2" />
+            </StatusEffect>
+            <StatusEffect type="Always" target="This" disabledeltatime="true">
+              <Conditional hastag="leathergear"/>
+              <Conditional hastag="woodgear"/>
+              <particleemitter particle="brownchunks" particleamount="2" velocitymin="0" velocitymax="400" anglemin="0" anglemax="360" scalemin="0.15" scalemax="0.2" colormultiplier="168,90,50,255" />
+            </StatusEffect>
+          </StatusEffectAction>
+        </Success>
+      </CheckItemAction>
+    </ScriptedEvent>
+  </EventSet>
+  <!-- Ивент сет - поломать наручи и поножи от ударов -->
+  <!-- 4 ивента, которые настакиваются друг на друга и повышают таким образом урон -->
+  <EventSet identifier="clothing_damage_limbs" commonness="0" chooserandom="false" triggereventcooldown="false">
+    <ScriptedEvent identifier="limbsdamaged_1" commonness="0" triggereventcooldown="false">
+      <CheckItemAction
+          targettag="damaged_character"
+          itemtags="armorlimbs"
+          amount="1"
+          requireworn="true"
+          recursive="true"
+          applytagtoitem="clothing_to_damage">
+        <Success>
+          <StatusEffectAction targettag="clothing_to_damage">
+            <StatusEffect type="Always" target="This" condition="-1" disabledeltatime="true" />
+          </StatusEffectAction>
+        </Success>
+      </CheckItemAction>
+    </ScriptedEvent>
+    <ScriptedEvent identifier="limbsdamaged_2" commonness="0" triggereventcooldown="false">
+      <CheckItemAction
+          targettag="damaged_character"
+          itemtags="armorlimbs"
+          amount="1"
+          requireworn="true"
+          recursive="true"
+          applytagtoitem="clothing_to_damage">
+        <Success>
+          <StatusEffectAction targettag="clothing_to_damage">
+            <StatusEffect type="Always" target="This" condition="-2" disabledeltatime="true" />
+            <StatusEffect type="Always" target="This" disabledeltatime="true">
+              <Conditional hastag="irongear"/>
+              <Conditional hastag="steelgear"/>
+              <Conditional hastag="coppergear"/>
+              <Conditional hastag="bronzegear"/>
+              <particleemitter particle="weldspark" drawontop="true" particleamount="4" velocitymin="100" velocitymax="500" anglemin="0" anglemax="360" distancemin="0" distancemax="20" scalemin="0.4" scalemax="1.0" />
+            </StatusEffect>
+          </StatusEffectAction>
+        </Success>
+      </CheckItemAction>
+    </ScriptedEvent>
+    <ScriptedEvent identifier="limbsdamaged_3" commonness="0" triggereventcooldown="false">
+      <CheckItemAction
+          targettag="damaged_character"
+          itemtags="armorlimbs"
+          amount="1"
+          requireworn="true"
+          recursive="true"
+          applytagtoitem="clothing_to_damage">
+        <Success>
+          <StatusEffectAction targettag="clothing_to_damage">
+            <StatusEffect type="Always" target="This" condition="-3" disabledeltatime="true" />
+            <StatusEffect type="Always" target="This" disabledeltatime="true">
+              <Conditional hastag="irongear"/>
+              <Conditional hastag="steelgear"/>
+              <Conditional hastag="coppergear"/>
+              <Conditional hastag="bronzegear"/>
+              <particleemitter particle="weldspark" drawontop="true" particleamount="4" velocitymin="100" velocitymax="500" anglemin="0" anglemax="360" distancemin="0" distancemax="20" scalemin="0.4" scalemax="1.0" />
+            </StatusEffect>
+            <StatusEffect type="Always" target="This" disabledeltatime="true">
+              <Conditional hastag="clothgear"/>
+              <particleemitter particle="brownchunks" particleamount="2" velocitymin="0" velocitymax="400" anglemin="0" anglemax="360" scalemin="0.15" scalemax="0.2" />
+            </StatusEffect>
+            <StatusEffect type="Always" target="This" disabledeltatime="true">
+              <Conditional hastag="leathergear"/>
+              <Conditional hastag="woodgear"/>
+              <particleemitter particle="brownchunks" particleamount="2" velocitymin="0" velocitymax="400" anglemin="0" anglemax="360" scalemin="0.15" scalemax="0.2" colormultiplier="168,90,50,255" />
+            </StatusEffect>
+          </StatusEffectAction>
+        </Success>
+      </CheckItemAction>
+    </ScriptedEvent>
+    <ScriptedEvent identifier="limbsdamaged_4" commonness="0" triggereventcooldown="false">
+      <CheckItemAction
+          targettag="damaged_character"
+          itemtags="armorlimbs"
+          amount="1"
+          requireworn="true"
+          recursive="true"
+          applytagtoitem="clothing_to_damage">
+        <Success>
+          <StatusEffectAction targettag="clothing_to_damage">
+            <StatusEffect type="Always" target="This" condition="-5" disabledeltatime="true" />
+            <StatusEffect type="Always" target="This" disabledeltatime="true">
+              <Conditional hastag="irongear"/>
+              <Conditional hastag="steelgear"/>
+              <Conditional hastag="coppergear"/>
+              <Conditional hastag="bronzegear"/>
+              <particleemitter particle="weldspark" drawontop="true" particleamount="7" velocitymin="100" velocitymax="500" anglemin="0" anglemax="360" distancemin="0" distancemax="20" scalemin="0.7" scalemax="1.5" />
+            </StatusEffect>
+            <StatusEffect type="Always" target="This" disabledeltatime="true">
+              <Conditional hastag="clothgear"/>
+              <particleemitter particle="brownchunks" particleamount="2" velocitymin="0" velocitymax="400" anglemin="0" anglemax="360" scalemin="0.15" scalemax="0.2" />
+            </StatusEffect>
+            <StatusEffect type="Always" target="This" disabledeltatime="true">
+              <Conditional hastag="leathergear"/>
+              <Conditional hastag="woodgear"/>
+              <particleemitter particle="brownchunks" particleamount="2" velocitymin="0" velocitymax="400" anglemin="0" anglemax="360" scalemin="0.15" scalemax="0.2" colormultiplier="168,90,50,255" />
+            </StatusEffect>
+          </StatusEffectAction>
+        </Success>
+      </CheckItemAction>
+    </ScriptedEvent>
+  </EventSet>
+  <!-- Ивент сет - поломать перчатки от ударов -->
+  <!-- 3 ивента, которые настакиваются друг на друга и повышают таким образом урон -->
+  <!-- Перчатки терпят больше всех урона наравне со шлемами, и было бы нечестно наручам без них ломаться от ударов по кистям -->
+  <EventSet identifier="clothing_damage_hands" commonness="0" chooserandom="false" triggereventcooldown="false">
+    <ScriptedEvent identifier="handsdamaged_1" commonness="0" triggereventcooldown="false">
+      <CheckItemAction
+          targettag="damaged_character"
+          itemtags="armorhands"
+          amount="1"
+          requireworn="true"
+          recursive="true"
+          applytagtoitem="clothing_to_damage">
+        <Success>
+          <StatusEffectAction targettag="clothing_to_damage">
+            <StatusEffect type="Always" target="This" condition="-1" disabledeltatime="true" />
+          </StatusEffectAction>
+        </Success>
+      </CheckItemAction>
+    </ScriptedEvent>
+    <ScriptedEvent identifier="handsdamaged_2" commonness="0" triggereventcooldown="false">
+      <CheckItemAction
+          targettag="damaged_character"
+          itemtags="armorhands"
+          amount="1"
+          requireworn="true"
+          recursive="true"
+          applytagtoitem="clothing_to_damage">
+        <Success>
+          <StatusEffectAction targettag="clothing_to_damage">
+            <StatusEffect type="Always" target="This" condition="-1.5" disabledeltatime="true" />
+            <StatusEffect type="Always" target="This" disabledeltatime="true">
+              <Conditional hastag="irongear"/>
+              <Conditional hastag="steelgear"/>
+              <Conditional hastag="coppergear"/>
+              <Conditional hastag="bronzegear"/>
+              <particleemitter particle="weldspark" drawontop="true" particleamount="4" velocitymin="100" velocitymax="500" anglemin="0" anglemax="360" distancemin="0" distancemax="20" scalemin="0.4" scalemax="1.0" />
+            </StatusEffect>
+          </StatusEffectAction>
+        </Success>
+      </CheckItemAction>
+    </ScriptedEvent>
+    <ScriptedEvent identifier="handsdamaged_3" commonness="0" triggereventcooldown="false">
+      <CheckItemAction
+          targettag="damaged_character"
+          itemtags="armorhands"
+          amount="1"
+          requireworn="true"
+          recursive="true"
+          applytagtoitem="clothing_to_damage">
+        <Success>
+          <StatusEffectAction targettag="clothing_to_damage">
+            <StatusEffect type="Always" target="This" condition="-2" disabledeltatime="true" />
+            <StatusEffect type="Always" target="This" disabledeltatime="true">
+              <Conditional hastag="irongear"/>
+              <Conditional hastag="steelgear"/>
+              <Conditional hastag="coppergear"/>
+              <Conditional hastag="bronzegear"/>
+              <particleemitter particle="weldspark" drawontop="true" particleamount="4" velocitymin="100" velocitymax="500" anglemin="0" anglemax="360" distancemin="0" distancemax="20" scalemin="0.4" scalemax="1.0" />
+            </StatusEffect>
+            <StatusEffect type="Always" target="This" disabledeltatime="true">
+              <Conditional hastag="clothgear"/>
+              <particleemitter particle="brownchunks" particleamount="2" velocitymin="0" velocitymax="400" anglemin="0" anglemax="360" scalemin="0.15" scalemax="0.2" />
+            </StatusEffect>
+            <StatusEffect type="Always" target="This" disabledeltatime="true">
+              <Conditional hastag="leathergear"/>
+              <Conditional hastag="woodgear"/>
+              <particleemitter particle="brownchunks" particleamount="2" velocitymin="0" velocitymax="400" anglemin="0" anglemax="360" scalemin="0.15" scalemax="0.2" colormultiplier="168,90,50,255" />
+            </StatusEffect>
+          </StatusEffectAction>
+        </Success>
+      </CheckItemAction>
+    </ScriptedEvent>
+    <ScriptedEvent identifier="handsdamaged_4" commonness="0" triggereventcooldown="false">
+      <CheckItemAction
+          targettag="damaged_character"
+          itemtags="armorhands"
+          amount="1"
+          requireworn="true"
+          recursive="true"
+          applytagtoitem="clothing_to_damage">
+        <Success>
+          <StatusEffectAction targettag="clothing_to_damage">
+            <StatusEffect type="Always" target="This" condition="-3" disabledeltatime="true" />
+            <StatusEffect type="Always" target="This" disabledeltatime="true">
+              <Conditional hastag="irongear"/>
+              <Conditional hastag="steelgear"/>
+              <Conditional hastag="coppergear"/>
+              <Conditional hastag="bronzegear"/>
+              <particleemitter particle="weldspark" drawontop="true" particleamount="4" velocitymin="100" velocitymax="500" anglemin="0" anglemax="360" distancemin="0" distancemax="20" scalemin="0.4" scalemax="1.0" />
+            </StatusEffect>
+            <StatusEffect type="Always" target="This" disabledeltatime="true">
+              <Conditional hastag="clothgear"/>
+              <particleemitter particle="brownchunks" particleamount="2" velocitymin="0" velocitymax="400" anglemin="0" anglemax="360" scalemin="0.15" scalemax="0.2" />
+            </StatusEffect>
+            <StatusEffect type="Always" target="This" disabledeltatime="true">
+              <Conditional hastag="leathergear"/>
+              <Conditional hastag="woodgear"/>
+              <particleemitter particle="brownchunks" particleamount="2" velocitymin="0" velocitymax="400" anglemin="0" anglemax="360" scalemin="0.15" scalemax="0.2" colormultiplier="168,90,50,255" />
+            </StatusEffect>
+          </StatusEffectAction>
+        </Success>
+      </CheckItemAction>
+    </ScriptedEvent>
+  </EventSet>
+  <!-- Ивент сет - ОСОБЫЕ -->
+  <!-- Разнообразные ивенты, к примеру для тех игроков, которые обожают брать руками горячие слитки, либо уничтожение тканой одежды в огне -->
+  <!-- Будет по - своему реагировать в зависимости от ситуации -->
+  <EventSet identifier="clothing_damage_random" commonness="0" chooserandom="false" triggereventcooldown="false">
+    <!-- В огне! Сильно жечь тканую одежду -->
+    <ScriptedEvent identifier="clothing_onfire" commonness="0" triggereventcooldown="false">
+      <CheckItemAction
+          targettag="damaged_character"
+          itemtags="clothgear"
+          amount="1"
+          requireworn="true"
+          recursive="true"
+          applytagtoitem="clothing_to_damage">
+        <Success>
+          <StatusEffectAction targettag="clothing_to_damage">
+            <StatusEffect type="Always" target="This" condition="-6" disabledeltatime="true" />
+          </StatusEffectAction>
+        </Success>
+      </CheckItemAction>
+    </ScriptedEvent>
+    <!-- Горячая заготовка, слиток и тд уничтожает не кожаные перчатки -->
+    <ScriptedEvent identifier="clothing_hotinhands" commonness="0" triggereventcooldown="false">
+      <CheckItemAction
+          targettag="damaged_character"
+          itemtags="armorhands,armorlimbs"
+          amount="1"
+          requireworn="true"
+          recursive="true"
+          applytagtoitem="clothing_to_damage">
+        <Success>
+          <StatusEffectAction targettag="clothing_to_damage">
+            <StatusEffect type="Always" target="This" condition="-10" disabledeltatime="true">
+              <ParticleEmitter particle="MistSmoke" particleamount="3" anglemin="0" anglemax="360" distancemin="0" distancemax="0" velocitymin="0" velocitymax="20" scalemin="0.6" scalemax="0.7" />
+              <particleemitter particle="weldspark" drawontop="true" particleamount="7" velocitymin="100" velocitymax="500" anglemin="0" anglemax="360" distancemin="0" distancemax="20" scalemin="0.4" scalemax="1.0" />
+              <Conditional hastag="irongear"/>
+              <Conditional hastag="steelgear"/>
+              <Conditional hastag="coppergear"/>
+              <Conditional hastag="bronzegear"/>
+              <Conditional hastag="clothgear"/>
+            </StatusEffect>
+          </StatusEffectAction>
+        </Success>
+      </CheckItemAction>
+    </ScriptedEvent>
+    <!-- Работа в шахте повреждает металлические доспехи носимые чтобы не робастили -->
+    <ScriptedEvent identifier="clothing_notforwork" commonness="0" triggereventcooldown="false">
+      <CheckItemAction
+          targettag="working_character"
+          itemtags="armorlimbs,armortorso,armorhands"
+          amount="1"
+          requireworn="true"
+          recursive="true"
+          applytagtoitem="clothing_to_damage">
+        <Success>
+          <StatusEffectAction targettag="clothing_to_damage">
+            <StatusEffect type="Always" target="This" condition="-1" disabledeltatime="true" comparison="or">
+              <Conditional hastag="irongear"/>
+              <Conditional hastag="steelgear"/>
+              <Conditional hastag="coppergear"/>
+              <Conditional hastag="bronzegear"/>
+              <ParticleEmitter particle="MistSmoke" particleamount="1" anglemin="0" anglemax="360" distancemin="0" distancemax="0" velocitymin="0" velocitymax="20" scalemin="0.6" scalemax="0.8" />
+            </StatusEffect>
+          </StatusEffectAction>
+        </Success>
+      </CheckItemAction>
+    </ScriptedEvent>
+    <!-- Сбросить с орка неподходящие ему вещи (тканые игнорируются) -->
+    <ScriptedEvent identifier="clothing_notforork" commonness="0" triggereventcooldown="false">
+      <CheckItemAction
+          targettag="ork_event"
+          itemtags="clothing"
+          amount="1"
+          requireworn="true"
+          recursive="true"
+          applytagtoitem="want_to_drop">
+        <!-- Проверяем теги каждого найденного предмета -->
+        <Conditional hastag="neq clothgear"/>
+        <Conditional hastag="neq orksuitable"/>
+        <Success>
+          <StatusEffectAction targettag="want_to_drop">
+            <StatusEffect type="Always" target="This" disabledeltatime="true" comparison="and">
+              <DropItem/>
+            </StatusEffect>
+          </StatusEffectAction>
+        </Success>
+      </CheckItemAction>
+    </ScriptedEvent>
+  </EventSet>
+  <!-- Ивент сет - СПАВНЕРЫ -->
+  <!-- Вообще должен был быть отдельный файл, но мне впадлу. -->
+  <EventSet identifier="spawner" commonness="0" chooserandom="false" triggereventcooldown="false">
+    <!-- Спавнер КАБАНЫ -->
+    <!-- До 5 штук -->
+    <ScriptedEvent identifier="boar_spawner_cycle">
+      <Label name="cycle_start" />
+      <!-- Пауза в 2 минуты, в 10 минут, в 30 минут -->
+      <RNGAction chance="0.333333">
+        <Success>
+          <WaitAction time="120" />
+        </Success>
+        <Failure>
+          <RNGAction chance="0.5">
+            <Success>
+              <WaitAction time="600" />
+            </Success>
+            <Failure>
+              <WaitAction time="1800" />
+            </Failure>
+          </RNGAction>
+        </Failure>
+      </RNGAction>
+      <!-- Поиск игроков -->
+      <TagAction criteria="players" tag="boar_humans" continueifnotargetsfound="true" />
+      <TagAction criteria="humanprefabtag:human" tag="boar_humans" continueifnotargetsfound="true" />
+      <!-- В пределах 30 метров от игроков кабаны не захотят спавниться -->
+      <TriggerAction
+        target1tag="boar_spawner"
+        target2tag="boar_humans"
+        type="Outside"
+        radius="2000"
+        checkalltargets="true"
+        disableincombat="false"
+        disableiftargetincapacitated="true" />
+      <!-- Спавн до пяти кабанов на карту -->
+      <StatusEffectAction targettag="boar_spawner">
+        <StatusEffect type="Always" target="This">
+          <SpawnCharacter speciesname="kaban" count="1" totalmaxcount="5" spread="100" />
+        </StatusEffect>
+      </StatusEffectAction>
+      <GoTo name="cycle_start" />
+    </ScriptedEvent>
+    <!-- Спавнер СКЕЛЕТЫ -->
+    <!-- До 6 штук -->
+    <ScriptedEvent identifier="skeleton_spawner_cycle">
+      <Label name="cycle_start" />
+      <!-- Пауза в 2 минуты, в 5 минут, в 10 минут -->
+      <RNGAction chance="0.333333">
+        <Success>
+          <WaitAction time="120" />
+        </Success>
+        <Failure>
+          <RNGAction chance="0.5">
+            <Success>
+              <WaitAction time="300" />
+            </Success>
+            <Failure>
+              <WaitAction time="600" />
+            </Failure>
+          </RNGAction>
+        </Failure>
+      </RNGAction>
+      <!-- Поиск игроков -->
+      <TagAction criteria="players" tag="skeleton_humans" continueifnotargetsfound="true" />
+      <TagAction criteria="humanprefabtag:human" tag="skeleton_humans" continueifnotargetsfound="true" />
+      <!-- В пределах 20 метров от игроков скелеты не захотят спавниться -->
+      <TriggerAction
+        target1tag="skeletom_spawner"
+        target2tag="skeleton_humans"
+        type="Outside"
+        radius="2000"
+        checkalltargets="true"
+        disableincombat="false"
+        disableiftargetincapacitated="true" />
+      <!-- Спавн до пяти кабанов на карту -->
+      <StatusEffectAction targettag="skeleton_spawner">
+        <StatusEffect type="Always" target="This">
+          <SpawnCharacter speciesname="skeleton" count="1" totalmaxcount="6" spread="100" />
+        </StatusEffect>
+      </StatusEffectAction>
+      <GoTo name="cycle_start" />
+    </ScriptedEvent>
+    <!-- Спавнер ВОЛЧАРЫ -->
+    <!-- До 3 штук -->
+    <ScriptedEvent identifier="wolf_spawner_cycle">
+      <Label name="cycle_start" />
+      <!-- Пауза в 10 минут, в 30 минут, в 60 минут -->
+      <RNGAction chance="0.333333">
+        <Success>
+          <WaitAction time="1200" />
+        </Success>
+        <Failure>
+          <RNGAction chance="0.5">
+            <Success>
+              <WaitAction time="3600" />
+            </Success>
+            <Failure>
+              <WaitAction time="7200" />
+            </Failure>
+          </RNGAction>
+        </Failure>
+      </RNGAction>
+      <!-- Поиск игроков -->
+      <TagAction criteria="players" tag="wolf_humans" continueifnotargetsfound="true" />
+      <TagAction criteria="humanprefabtag:human" tag="wolf_humans" continueifnotargetsfound="true" />
+      <!-- В пределах 20 метров от игроков волки не захотят спавниться -->
+      <TriggerAction
+        target1tag="wolf_spawner"
+        target2tag="wolf_humans"
+        type="Outside"
+        radius="2000"
+        checkalltargets="true"
+        disableincombat="false"
+        disableiftargetincapacitated="true" />
+      <!-- Спавн до пяти кабанов на карту -->
+      <StatusEffectAction targettag="wolf_spawner">
+        <StatusEffect type="Always" target="This">
+          <SpawnCharacter speciesname="wolf" count="3" totalmaxcount="3" spread="100" />
+        </StatusEffect>
+      </StatusEffectAction>
+      <GoTo name="cycle_start" />
+    </ScriptedEvent>
+  </EventSet>
+
+  <!-- Ивент сет - ТЕЛЕПОРТ К ТОРГОВЦУ -->
+  <EventSet identifier="teleports" commonness="0" chooserandom="false" triggereventcooldown="false">
+    <ScriptedEvent identifier="mechantstation_teleport">
+      <ConversationAction
+          targettag="traveler"
+          text="textevent.gotostation">
+        <Option text="textevent.gotostationyes" endconversation="true">
+          <TeleportAction
+              TargetTag="traveler"
+              Position="Outpost"
+              SpawnType="Human" />
+        </Option>
+        <Option text="textevent.gotostationno" endconversation="true" />
+      </ConversationAction>
+    </ScriptedEvent>
+
+    <ScriptedEvent identifier="mechantstation_teleport_back">
+      <ConversationAction
+          targettag="traveler"
+          text="textevent.gotosub">
+        <Option text="textevent.gotostationyes" endconversation="true">
+          <TeleportAction
+              TargetTag="traveler"
+              Position="MainSub"
+              SpawnType="Human" />
+        </Option>
+        <Option text="textevent.gotostationno" endconversation="true" />
+      </ConversationAction>
+    </ScriptedEvent>
+
+    <!-- Тренировка на манекене -->
+    <ScriptedEvent identifier="manequin_training" commonness="0" triggereventcooldown="false">
+      <CheckItemAction
+          targettag="training"
+          itemtags="meleeweapon"
+          amount="1"
+          RequireEquipped="true"
+          recursive="false"
+          applytagtoitem="training_weapon">
+        <Success>
+          <CheckAfflictionAction
+            Identifier="incrementalstun"
+            targettag="training"
+            MinStrength="30">
+            <Failure>
+              <ConversationAction targettag="training" text="textevent.training">
+                <Option text="textevent.trainingyes">
+                  <RNGAction chance="0.66">
+                    <Success>
+                      <StatusEffectAction targettag="training_weapon">
+                        <StatusEffect type="Always" target="This" disabledeltatime="true" condition="-1" comparison="and">
+                          <Sound file="%ModDir%/Sounds/shield_hit_wood_01.ogg" selectionmode="random" range="600" />
+                          <Sound file="%ModDir%/Sounds/shield_hit_wood_02.ogg" selectionmode="random" range="600" />
+                          <Sound file="%ModDir%/Sounds/shield_hit_wood_03.ogg" selectionmode="random" range="600" />
+                        </StatusEffect>
+                        <StatusEffect type="Always" target="This" disabledeltatime="true" condition="-1" comparison="and" delay="1.2">
+                          <Sound file="%ModDir%/Sounds/shield_hit_wood_01.ogg" selectionmode="random" range="600" />
+                          <Sound file="%ModDir%/Sounds/shield_hit_wood_02.ogg" selectionmode="random" range="600" />
+                          <Sound file="%ModDir%/Sounds/shield_hit_wood_03.ogg" selectionmode="random" range="600" />
+                        </StatusEffect>
+                        <StatusEffect type="Always" target="This" disabledeltatime="true" condition="-1" comparison="and" delay="2.4">
+                          <Sound file="%ModDir%/Sounds/shield_hit_wood_01.ogg" selectionmode="random" range="600" />
+                          <Sound file="%ModDir%/Sounds/shield_hit_wood_02.ogg" selectionmode="random" range="600" />
+                          <Sound file="%ModDir%/Sounds/shield_hit_wood_03.ogg" selectionmode="random" range="600" />
+                        </StatusEffect>
+                      </StatusEffectAction>
+                      <StatusEffectAction targettag="training">
+                        <StatusEffect type="Always" target="This" disabledeltatime="true" comparison="and">
+                          <Affliction identifier="incrementalstun" strength="25" />
+                          <Affliction identifier="hunger" strength="0.5" />
+                        </StatusEffect>
+                        <StatusEffect type="Always" target="This" disabledeltatime="true" comparison="and" delay="1.2">
+                          <Affliction identifier="incrementalstun" strength="25" />
+                          <Affliction identifier="hunger" strength="0.5" />
+                        </StatusEffect>
+                        <StatusEffect type="Always" target="This" disabledeltatime="true" comparison="and" delay="2.4">
+                          <Affliction identifier="incrementalstun" strength="25" />
+                          <Affliction identifier="hunger" strength="0.5" />
+                        </StatusEffect>
+                      </StatusEffectAction>
+                      <WaitAction time="3" />
+                      <!-- Проверка навыка -->
+                      <StatusEffectAction targettag="training">
+                        <StatusEffect type="Always" target="This" disabledeltatime="true" comparison="and">
+                          <Conditional skillrequirement="true" weapons="lt 20" />
+                          <GiveSkill skillidentifier="weapons" amount="0.5" triggertalents="true" />
+                        </StatusEffect>
+                        <StatusEffect type="Always" target="This" disabledeltatime="true" comparison="and">
+                          <Conditional skillrequirement="true" weapons="gte 20" />
+                          <Conditional skillrequirement="true" weapons="lt 30" />
+                          <GiveSkill skillidentifier="weapons" amount="0.2" triggertalents="true" />
+                        </StatusEffect>
+                        <StatusEffect type="Always" target="This" disabledeltatime="true" comparison="and">
+                          <Conditional skillrequirement="true" weapons="gte 30" />
+                          <Conditional skillrequirement="true" weapons="lt 40" />
+                          <GiveSkill skillidentifier="weapons" amount="0.1" triggertalents="true" />
+                        </StatusEffect>
+                      </StatusEffectAction>
+                      <SkillCheckAction
+                        RequiredSkill="Weapons"
+                        RequiredLevel="40"
+                        ProbabilityBased="false"
+                        targettag="training">
+                        <Success>
+                          <SkillCheckAction
+                        RequiredSkill="Weapons"
+                        RequiredLevel="100"
+                        ProbabilityBased="true"
+                        targettag="training">
+                            <Success>
+                              <ConversationAction targettag="training" text="textevent.trainingcapfail">
+                                <Option text="textevent.trainingcapfailok" endconversation="true" />
+                              </ConversationAction>
+                            </Success>
+                            <Failure>
+                              <StatusEffectAction targettag="training">
+                                <StatusEffect type="Always" target="This" disabledeltatime="true" comparison="and">
+                                  <GiveSkill skillidentifier="weapons" amount="0.1" triggertalents="true" />
+                                </StatusEffect>
+                              </StatusEffectAction>
+                              <ConversationAction targettag="training" text="textevent.trainingcapsuccess">
+                                <Option text="textevent.traininggood" endconversation="true" />
+                              </ConversationAction>
+                            </Failure>
+                          </SkillCheckAction>
+                        </Success>
+                        <Failure>
+                          <ConversationAction targettag="training" text="textevent.trainingsuccess">
+                            <Option text="textevent.traininggood" endconversation="true" />
+                          </ConversationAction>
+                        </Failure>
+                      </SkillCheckAction>
+                    </Success>
+                    <Failure>
+                      <StatusEffectAction targettag="training_weapon">
+                        <StatusEffect type="Always" target="This" disabledeltatime="true" condition="-1" comparison="and">
+                          <Sound file="%ModDir%/Sounds/woodhit_01.ogg" selectionmode="random" range="600" />
+                          <Sound file="%ModDir%/Sounds/woodhit_02.ogg" selectionmode="random" range="600" />
+                          <Sound file="%ModDir%/Sounds/woodhit_03.ogg" selectionmode="random" range="600" />
+                        </StatusEffect>
+                        <StatusEffect type="Always" target="This" disabledeltatime="true" condition="-1" comparison="and" delay="1.2">
+                          <Sound file="%ModDir%/Sounds/woodhit_01.ogg" selectionmode="random" range="600" />
+                          <Sound file="%ModDir%/Sounds/woodhit_02.ogg" selectionmode="random" range="600" />
+                          <Sound file="%ModDir%/Sounds/woodhit_03.ogg" selectionmode="random" range="600" />
+                        </StatusEffect>
+                        <StatusEffect type="Always" target="This" disabledeltatime="true" condition="-1" comparison="and" delay="2.4">
+                          <Sound file="%ModDir%/Sounds/woodhit_01.ogg" selectionmode="random" range="600" />
+                          <Sound file="%ModDir%/Sounds/woodhit_02.ogg" selectionmode="random" range="600" />
+                          <Sound file="%ModDir%/Sounds/woodhit_03.ogg" selectionmode="random" range="600" />
+                        </StatusEffect>
+                      </StatusEffectAction>
+                      <StatusEffectAction targettag="training">
+                        <StatusEffect type="Always" target="This" disabledeltatime="true" comparison="and">
+                          <Affliction identifier="incrementalstun" strength="25" probability="0.66" />
+                        </StatusEffect>
+                        <StatusEffect type="Always" target="This" disabledeltatime="true" comparison="and" delay="1.2">
+                          <Affliction identifier="incrementalstun" strength="25" probability="0.66" />
+                        </StatusEffect>
+                        <StatusEffect type="Always" target="This" disabledeltatime="true" comparison="and" delay="2.4">
+                          <Affliction identifier="incrementalstun" strength="25" probability="0.66" />
+                        </StatusEffect>
+                      </StatusEffectAction>
+                      <WaitAction time="3" />
+                      <ConversationAction targettag="training" text="textevent.trainingfail">
+                        <Option text="textevent.trainingbad" endconversation="true" />
+                      </ConversationAction>
+                    </Failure>
+                  </RNGAction>
+                </Option>
+                <Option text="textevent.trainingno" endconversation="true" />
+              </ConversationAction>
+            </Failure>
+            <Success>
+              <ConversationAction targettag="training" text="textevent.trainingexehausted">
+                <Option text="textevent.traininglater" endconversation="true" />
+              </ConversationAction>
+            </Success>
+          </CheckAfflictionAction>
+        </Success>
+      </CheckItemAction>
+    </ScriptedEvent>
+  </EventSet>
+</RandomEvents>

@@ -1,0 +1,623 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <!-- Безделушки -->
+  <Item name="Сломанный талисман" identifier="talisman_broken_copper" category="Misc" maxstacksize="8" maxstacksizecharacterinventory="1" subcategory="Medieval" Tags="smallitem,talisman,coppergear" cargocontaineridentifier="metalcrate" scale="0.3" impactsoundtag="impact_gold" RequireAimToUse="True">
+    <Price baseprice="250" sold="false" />
+    <PreferredContainer secondary="ancientcrate_instruments_t2" amount="1" spawnprobability="0.03" />
+    <PreferredContainer secondary="ancientcrate_instruments_t3" amount="1" spawnprobability="0.03" />
+    <PreferredContainer secondary="talismancontainer_medieval" amount="1" spawnprobability="0.35" />
+    <Sprite texture="%ModDir%/Jobs/talisman.png" sourcerect="270,30,59,80" depth="0.55" origin="0.5,0.5" />
+    <Body radius="30" height="10" density="50" />
+    <Holdable slots="Any,RightHand,LeftHand" controlpose="true" holdpos="40,-25" aimpos="60,0" handle1="-25,-10" handle2="5,1" holdangle="10" aimangle="0" msg="ItemMsgPickUpSelect"></Holdable>
+  </Item>
+  <Item name="Златой талисман" identifier="talisman_golden" category="Misc" maxstacksize="8" maxstacksizecharacterinventory="1" subcategory="Medieval" Tags="smallitem,talisman,goldgear" cargocontaineridentifier="metalcrate" scale="0.3" impactsoundtag="impact_gold" RequireAimToUse="True">
+    <Price baseprice="450" sold="false" />
+    <PreferredContainer secondary="ancientcrate_instruments_t2" amount="1" spawnprobability="0.01" />
+    <PreferredContainer secondary="ancientcrate_instruments_t3" amount="1" spawnprobability="0.01" />
+    <PreferredContainer secondary="talismancontainer_medieval" amount="1" spawnprobability="0.35" />
+    <Fabricate suitablefabricators="anvil2" requiredtime="70">
+      <RequiredSkill identifier="electrical" level="50" />
+      <RequiredItem identifier="gold_ingot" amount="1" />
+      <RequiredItem identifier="lazulite" amount="1" mincondition="0.8" usecondition="false" />
+      <RequiredItem identifier="plier_iron" amount="1" mincondition="0.05" usecondition="true" />
+    </Fabricate>
+    <Sprite texture="%ModDir%/Jobs/talisman.png" sourcerect="304,145,71,72" depth="0.55" origin="0.5,0.5" />
+    <Body radius="30" density="50" />
+    <Holdable slots="Any,RightHand,LeftHand" controlpose="true" holdpos="40,-25" aimpos="60,0" handle1="-25,-20" handle2="5,1" holdangle="10" aimangle="0" msg="ItemMsgPickUpSelect"></Holdable>
+  </Item>
+  <Item name="Талисман 1" identifier="talisman_1" category="Misc" subcategory="Medieval" hideinmenus="true" Tags="smallitem,artefact,talisman" cargocontaineridentifier="metalcrate" scale="0.3" impactsoundtag="impact_gold" RequireAimToUse="True">
+    <Price baseprice="1000" sold="false" />
+    <PreferredContainer secondary="ancientcrate_instruments_t3" amount="1" spawnprobability="0.01" />
+    <PreferredContainer secondary="ancientcrate_instruments_t4" amount="1" spawnprobability="0.01" />
+    <PreferredContainer secondary="ancientcrate_weapons_t4" amount="1" spawnprobability="0.01" />
+    <PreferredContainer secondary="talismancontainer_medieval" amount="1" spawnprobability="0.1" />
+    <Sprite texture="%ModDir%/Jobs/talisman.png" sourcerect="27,33,55,73" depth="0.55" origin="0.5,0.5" />
+    <Body radius="35" height="5" density="50" />
+    <LightComponent LightColor="100,100,195,60" Flicker="0.0" range="50" powerconsumption="0" IsOn="True" VulnerableToEMP="false">
+      <StatusEffect type="OnActive" targettype="This" conditionalcomparison="Or" interval="1.75">
+        <Conditional PhysicsBodyActive="eq true" />
+        <Conditional hastag="visiblecontainer" targetcontainer="true" />
+        <ParticleEmitter particle="ElectricShock" DistanceMin="0" DistanceMax="0" ParticleAmount="1" ScaleMin="0.1" ScaleMax="0.1" lifetimemultiplier="1.2" />
+      </StatusEffect>
+    </LightComponent>
+    <Holdable slots="Any,RightHand,LeftHand" controlpose="true" holdpos="40,-25" aimpos="60,0" handle1="-15,-10" handle2="5,1" holdangle="10" aimangle="0" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnBroken" target="This" disabledeltatime="true" delay="0.1">
+        <Sound file="%ModDir%/Sounds/talisman_break.ogg" range="900" />
+        <particleemitter particle="brownchunks" particleamount="10" velocitymin="0" velocitymax="400" anglemin="0" anglemax="360" scalemin="0.15" scalemax="0.3" />
+        <SpawnItem identifier="talisman_broken_copper" spawnposition="SameInventory" count="1" SpawnRotationType="None" SpawnIfInventoryFull="true" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+        <RemoveItem />
+      </StatusEffect>
+    </Holdable>
+    <RangedWeapon reload="3">
+      <StatusEffect type="OnUse" target="This" condition="-25" disabledeltatime="true" comparison="and" CanGiveMedicalSkill="false" allowwhenbroken="true">
+        <Conditional hasstatustag="neq safezone" targetcontainer="true"/>
+        <!-- Заглушка -->
+        <Sound file="%ModDir%/Sounds/Talisman_use.ogg" type="OnUse" range="900" frequencymultiplier="0.7" />
+        <SpawnCharacter speciesname="ghoul" count="3" AfflictionOnSpawn="Stun" AfflictionStrength="3" TotalMaxCount="10" Spread="75" InheritTeam="True" />
+        <ParticleEmitter particle="swirlysmoke" particleamount="20" scalemin="0.8" scalemax="1.3" velocitymin="30" velocitymax="300" anglemin="0" anglemax="360" distancemin="0" distancemax="0" lifetimemultiplier="0.25" colormultiplier="100,100,255,255" copyentityangle="false" />
+        <ParticleEmitter particle="ElectricShock" DistanceMin="0" DistanceMax="0" ParticleAmount="2" ScaleMin="0.35" ScaleMax="0.4" lifetimemultiplier="1.5" />
+        <Explosion range="400.0" force="0" disablefireeffects="true" smoke="false" flames="false" sparks="false" camerashake="7.0" camerashakerange="700" underwaterbubbles="false" playtinnitus="false" />
+      </StatusEffect>
+    </RangedWeapon>
+  </Item>
+  <Item name="Талисман 2" identifier="talisman_2" category="Misc" subcategory="Medieval" hideinmenus="true" Tags="smallitem,artefact,talisman" cargocontaineridentifier="metalcrate" scale="0.3" impactsoundtag="impact_gold" RequireAimToUse="True">
+    <Price baseprice="1000" sold="false" />
+    <PreferredContainer secondary="ancientcrate_instruments_t3" amount="1" spawnprobability="0.01" />
+    <PreferredContainer secondary="ancientcrate_instruments_t4" amount="1" spawnprobability="0.01" />
+    <PreferredContainer secondary="ancientcrate_weapons_t4" amount="1" spawnprobability="0.02" />
+    <PreferredContainer secondary="talismancontainer_medieval" amount="1" spawnprobability="0.1" />
+    <Sprite texture="%ModDir%/Jobs/talisman.png" sourcerect="93,33,83,81" depth="0.55" origin="0.5,0.5" />
+    <Body radius="35" density="50" />
+    <LightComponent LightColor="50,195,50,60" Flicker="0.0" range="50" powerconsumption="0" IsOn="True" VulnerableToEMP="false"></LightComponent>
+    <Holdable slots="Any,RightHand,LeftHand" controlpose="true" holdpos="40,-25" aimpos="60,0" handle1="-15,-10" handle2="5,1" holdangle="10" aimangle="0" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnBroken" target="This" disabledeltatime="true" delay="0.1">
+        <Sound file="%ModDir%/Sounds/talisman_break.ogg" range="900" />
+        <particleemitter particle="brownchunks" particleamount="10" velocitymin="0" velocitymax="400" anglemin="0" anglemax="360" scalemin="0.15" scalemax="0.3" />
+        <SpawnItem identifier="talisman_broken_copper" spawnposition="SameInventory" count="1" SpawnRotationType="None" SpawnIfInventoryFull="true" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+        <RemoveItem />
+      </StatusEffect>
+    </Holdable>
+    <RangedWeapon reload="3">
+      <StatusEffect type="OnUse" target="This,Character" condition="-25" disabledeltatime="true" CanGiveMedicalSkill="false" allowwhenbroken="true">
+        <!-- Заглушка -->
+        <Sound file="%ModDir%/Sounds/Talisman_use_2.ogg" type="OnUse" range="900" />
+        <ReduceAffliction type="damage" amount="30" />
+        <ReduceAffliction type="bleeding" amount="30" />
+        <ReduceAffliction type="stun" amount="50" />
+        <ParticleEmitter particle="swirlysmoke" particleamount="15" scalemin="0.8" scalemax="1.3" velocitymin="30" velocitymax="300" anglemin="0" anglemax="360" distancemin="0" distancemax="0" lifetimemultiplier="0.25" colormultiplier="155,255,0,255" copyentityangle="false" />
+        <ParticleEmitter particle="ElectricShock" DistanceMin="0" DistanceMax="0" ParticleAmount="1" ScaleMin="0.3" ScaleMax="0.35" lifetimemultiplier="1.5" colormultiplier="65,255,0,255" />
+        <Explosion range="400.0" force="0" disablefireeffects="true" smoke="false" flames="false" sparks="false" camerashake="3.0" camerashakerange="700" underwaterbubbles="false" playtinnitus="false" flashrange="900" flashduration="3.5" flashcolor="105,255,0,255" />
+      </StatusEffect>
+    </RangedWeapon>
+  </Item>
+  <Item name="Талисман 3" identifier="talisman_3" category="Misc" subcategory="Medieval" hideinmenus="true" Tags="smallitem,artefact,talisman" cargocontaineridentifier="metalcrate" scale="0.3" impactsoundtag="impact_gold" RequireAimToUse="True">
+    <Price baseprice="1000" sold="false" />
+    <PreferredContainer secondary="ancientcrate_instruments_t3" amount="1" spawnprobability="0.01" />
+    <PreferredContainer secondary="ancientcrate_instruments_t4" amount="1" spawnprobability="0.01" />
+    <PreferredContainer secondary="ancientcrate_weapons_t4" amount="1" spawnprobability="0.01" />
+    <PreferredContainer secondary="talismancontainer_medieval" amount="1" spawnprobability="0.1" />
+    <Sprite texture="%ModDir%/Jobs/talisman.png" sourcerect="185,15,70,102" depth="0.55" origin="0.5,0.5" />
+    <Body radius="35" height="15" density="50" />
+    <LightComponent LightColor="145,195,50,60" Flicker="0.0" range="50" powerconsumption="0" IsOn="True" VulnerableToEMP="false">
+      <StatusEffect type="OnActive" targettype="This" conditionalcomparison="Or" interval="0.3">
+        <Conditional PhysicsBodyActive="eq true" />
+        <Conditional hastag="visiblecontainer" targetcontainer="true" />
+        <ParticleEmitter particle="enchantment" AngleMax="360" ScaleMultiplier="0.25,0.25" Particleamount="1" ColorMultiplier="175,255,0,205" Distance="15" />
+      </StatusEffect>
+    </LightComponent>
+    <Holdable slots="Any,RightHand,LeftHand" controlpose="true" holdpos="40,-25" aimpos="60,0" handle1="-15,-10" handle2="5,1" holdangle="10" aimangle="0" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnBroken" target="This" disabledeltatime="true" delay="0.1">
+        <Sound file="%ModDir%/Sounds/talisman_break.ogg" range="900" />
+        <particleemitter particle="brownchunks" particleamount="10" velocitymin="0" velocitymax="400" anglemin="0" anglemax="360" scalemin="0.15" scalemax="0.3" />
+        <SpawnItem identifier="talisman_broken_copper" spawnposition="SameInventory" count="1" SpawnRotationType="None" SpawnIfInventoryFull="true" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+        <RemoveItem />
+      </StatusEffect>
+      <StatusEffect type="OnActive" target="NearbyCharacters,This" range="300" targets="ghost,ghost_red" disabledeltatime="true" interval="1">
+        <Affliction identifier="feardebuff" strength="1.5" />
+        <ParticleEmitter particle="nasonovsparkles" AngleMax="360" DistanceMin="35" DistanceMax="65" ScaleMultiplier="0.5,0.5" ParticleAmount="20" ColorMultiplier="255,255,0,255" lifetimemultiplier="1.5" />
+      </StatusEffect>
+    </Holdable>
+    <RangedWeapon reload="3">
+      <StatusEffect type="OnUse" target="This,Character" condition="-15" disabledeltatime="true" CanGiveMedicalSkill="false" allowwhenbroken="true">
+        <!-- Заглушка -->
+        <Sound file="%ModDir%/Sounds/Talisman_use.ogg" type="OnUse" range="900" />
+        <ReduceAffliction type="damageunique" amount="15" />
+        <ReduceAffliction type="poison" amount="70" />
+        <ReduceAffliction identifier="internaldamage" amount="15" />
+        <ParticleEmitter particle="enchantment" AngleMax="360" ScaleMultiplier="0.3,0.3" Particleamount="15" ColorMultiplier="95,255,0,205" Distancemin="25" Distancemax="45" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="NearbyCharacters,This" range="800" targets="ghost,ghost_red" disabledeltatime="true">
+        <Affliction identifier="mana_drain" strength="35" />
+        <Affliction identifier="feardebuff" strength="5" />
+        <ParticleEmitter particle="nasonovsparkles" AngleMax="360" DistanceMin="45" DistanceMax="95" ScaleMultiplier="0.5,0.5" ParticleAmount="35" ColorMultiplier="255,255,0,255" lifetimemultiplier="1.5" />
+      </StatusEffect>
+    </RangedWeapon>
+  </Item>
+  <Item name="Талисман 4" identifier="talisman_4" category="Misc" subcategory="Medieval" hideinmenus="true" Tags="smallitem,artefact,talisman" cargocontaineridentifier="metalcrate" scale="0.3" impactsoundtag="impact_gold" RequireAimToUse="True">
+    <Price baseprice="1000" sold="false" />
+    <PreferredContainer secondary="ancientcrate_instruments_t3" amount="1" spawnprobability="0.01" />
+    <PreferredContainer secondary="ancientcrate_instruments_t4" amount="1" spawnprobability="0.01" />
+    <PreferredContainer secondary="ancientcrate_weapons_t4" amount="1" spawnprobability="0.02" />
+    <PreferredContainer secondary="talismancontainer_medieval" amount="1" spawnprobability="0.1" />
+    <Sprite texture="%ModDir%/Jobs/talisman.png" sourcerect="24,139,65,65" depth="0.55" origin="0.5,0.5" />
+    <Body radius="35" density="50" />
+    <Holdable slots="Any,RightHand,LeftHand" controlpose="true" holdpos="40,-25" aimpos="60,0" handle1="-15,-10" handle2="5,1" holdangle="10" aimangle="0" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnBroken" target="This" disabledeltatime="true" delay="0.1">
+        <Sound file="%ModDir%/Sounds/talisman_break.ogg" range="900" />
+        <particleemitter particle="brownchunks" particleamount="10" velocitymin="0" velocitymax="400" anglemin="0" anglemax="360" scalemin="0.15" scalemax="0.3" />
+        <SpawnItem identifier="talisman_broken_copper" spawnposition="SameInventory" count="1" SpawnRotationType="None" SpawnIfInventoryFull="true" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+        <RemoveItem />
+      </StatusEffect>
+    </Holdable>
+    <RangedWeapon reload="3">
+      <StatusEffect type="OnUse" target="This,Character" condition="-15" disabledeltatime="true" CanGiveMedicalSkill="false" allowwhenbroken="true">
+        <!-- Заглушка -->
+        <Sound file="%ModDir%/Sounds/Talisman_use_2.ogg" type="OnUse" range="900" frequencymultiplier="1.7" />
+        <Affliction identifier="talisman_shield" amount="30" />
+        <ParticleEmitter particle="enchantment" AngleMax="360" ScaleMultiplier="0.3,0.3" Particleamount="15" ColorMultiplier="95,105,255,205" Distancemin="45" Distancemax="55" />
+      </StatusEffect>
+    </RangedWeapon>
+  </Item>
+  <Item name="Талисман 5" identifier="talisman_5" category="Misc" subcategory="Medieval" hideinmenus="true" Tags="smallitem,artefact,talisman" cargocontaineridentifier="metalcrate" scale="0.3" impactsoundtag="impact_gold" RequireAimToUse="True">
+    <Price baseprice="1000" sold="false" />
+    <PreferredContainer secondary="ancientcrate_instruments_t3" amount="1" spawnprobability="0.01" />
+    <PreferredContainer secondary="ancientcrate_instruments_t4" amount="1" spawnprobability="0.01" />
+    <PreferredContainer secondary="ancientcrate_weapons_t4" amount="1" spawnprobability="0.01" />
+    <PreferredContainer secondary="talismancontainer_medieval" amount="1" spawnprobability="0.125" />
+    <Sprite texture="%ModDir%/Jobs/talisman.png" sourcerect="111,126,93,113" depth="0.55" origin="0.5,0.5" />
+    <Body radius="35" density="50" />
+    <Holdable slots="Any,RightHand,LeftHand" controlpose="true" holdpos="40,-25" aimpos="60,0" handle1="-15,-10" handle2="5,1" holdangle="10" aimangle="0" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnBroken" target="This" disabledeltatime="true" delay="0.1">
+        <Sound file="%ModDir%/Sounds/talisman_break.ogg" range="900" />
+        <particleemitter particle="brownchunks" particleamount="10" velocitymin="0" velocitymax="400" anglemin="0" anglemax="360" scalemin="0.15" scalemax="0.3" />
+        <SpawnItem identifier="talisman_broken_copper" spawnposition="SameInventory" count="1" SpawnRotationType="None" SpawnIfInventoryFull="true" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+        <RemoveItem />
+      </StatusEffect>
+    </Holdable>
+    <RangedWeapon reload="3">
+      <StatusEffect type="OnUse" target="This,Character" condition="-25" disabledeltatime="true" CanGiveMedicalSkill="false" allowwhenbroken="true">
+        <!-- Заглушка -->
+        <Sound file="%ModDir%/Sounds/bell2.ogg" type="OnUse" range="850" frequencymultiplier="2" />
+        <Affliction identifier="talisman_invisible" amount="30" />
+        <ParticleEmitter particle="enchantment" AngleMax="360" ScaleMultiplier="0.5,0.5" Particleamount="15" ColorMultiplier="255,255,255,205" Distancemin="50" Distancemax="250" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Character" disabledeltatime="true" duration="1.5" CanGiveMedicalSkill="false" allowwhenbroken="true">
+        <ParticleEmitter particle="enchantment" AngleMax="360" ScaleMultiplier="0.5,0.5" Particlespersecond="15" ColorMultiplier="255,255,255,205" Distancemin="50" Distancemax="120" />
+      </StatusEffect>
+    </RangedWeapon>
+  </Item>
+  <Item name="Талисман 6" identifier="talisman_6" category="Misc" subcategory="Medieval" hideinmenus="true" Tags="smallitem,artefact,talisman" cargocontaineridentifier="metalcrate" scale="0.3" impactsoundtag="impact_gold" RequireAimToUse="True">
+    <Price baseprice="1000" sold="false" />
+    <PreferredContainer secondary="ancientcrate_instruments_t3" amount="1" spawnprobability="0.01" />
+    <PreferredContainer secondary="ancientcrate_instruments_t4" amount="1" spawnprobability="0.01" />
+    <PreferredContainer secondary="ancientcrate_weapons_t4" amount="1" spawnprobability="0.02" />
+    <PreferredContainer secondary="talismancontainer_medieval" amount="1" spawnprobability="0.1" />
+    <Sprite texture="%ModDir%/Jobs/talisman.png" sourcerect="216,130,70,93" depth="0.55" origin="0.5,0.5" />
+    <Body radius="35" density="50" />
+    <LightComponent LightColor="140,140,45,70" Flicker="0.0" range="50" powerconsumption="0" IsOn="True" VulnerableToEMP="false" />
+    <Holdable slots="Any,RightHand,LeftHand" controlpose="true" holdpos="40,-25" aimpos="60,0" handle1="-15,-10" handle2="5,1" holdangle="10" aimangle="0" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnContained" target="Character" interval="2" disabledeltatime="true" setvalue="true">
+        <Conditional ishuman="true" />
+        <Affliction identifier="talisman_antifire" amount="3" />
+      </StatusEffect>
+      <StatusEffect type="OnContained" target="This" interval="1" condition="-0.02" disabledeltatime="true">
+        <Conditional ishuman="true" targetcontainer="true"/>
+      </StatusEffect>
+      <StatusEffect type="OnContained" target="This" interval="1" condition="-0.01" disabledeltatime="true" comparison="and">
+        <Conditional ishuman="true" targetcontainer="true" targetgrandparent="true"/>
+        <Conditional hastag="talismancontainer" targetcontainer="true"/>
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" disabledeltatime="true" delay="0.1">
+        <Sound file="%ModDir%/Sounds/talisman_break.ogg" range="900" />
+        <particleemitter particle="brownchunks" particleamount="10" velocitymin="0" velocitymax="400" anglemin="0" anglemax="360" scalemin="0.15" scalemax="0.3" />
+        <SpawnItem identifier="talisman_broken_copper" spawnposition="SameInventory" count="1" SpawnRotationType="None" SpawnIfInventoryFull="true" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+        <RemoveItem />
+      </StatusEffect>
+    </Holdable>
+    <RangedWeapon reload="0.5"></RangedWeapon>
+  </Item>
+  <Item name="Талисман 7" identifier="talisman_7" category="Misc" subcategory="Medieval" hideinmenus="true" Tags="smallitem,artefact,talisman" cargocontaineridentifier="metalcrate" scale="0.3" impactsoundtag="impact_gold" RequireAimToUse="True">
+    <Price baseprice="1000" sold="false" />
+    <PreferredContainer secondary="ancientcrate_instruments_t3" amount="1" spawnprobability="0.01" />
+    <PreferredContainer secondary="ancientcrate_instruments_t4" amount="1" spawnprobability="0.01" />
+    <PreferredContainer secondary="ancientcrate_weapons_t4" amount="1" spawnprobability="0.01" />
+    <PreferredContainer secondary="talismancontainer_medieval" amount="1" spawnprobability="0.1" />
+    <Sprite texture="%ModDir%/Jobs/talisman.png" sourcerect="28,243,73,74" depth="0.55" origin="0.5,0.5" />
+    <Body radius="35" density="50" />
+    <LightComponent LightColor="195,60,60,90" Flicker="0.2" range="100" powerconsumption="0" IsOn="True" VulnerableToEMP="false">
+      <StatusEffect type="OnActive" targettype="This" conditionalcomparison="Or" interval="8.2">
+        <Conditional PhysicsBodyActive="eq true" />
+        <Conditional hastag="visiblecontainer" targetcontainer="true" />
+        <ParticleEmitter particle="ElectricShock" DistanceMin="0" DistanceMax="0" ParticleAmount="1" ScaleMin="0.1" ScaleMax="0.17" lifetimemultiplier="1.2" colormultiplier="255,0,0,255" />
+      </StatusEffect>
+    </LightComponent>
+    <Holdable slots="Any,RightHand,LeftHand" controlpose="true" holdpos="40,-25" aimpos="60,0" handle1="-15,-10" handle2="5,1" holdangle="10" aimangle="0" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnBroken" target="This" disabledeltatime="true" delay="0.1">
+        <Sound file="%ModDir%/Sounds/talisman_break.ogg" range="900" />
+        <particleemitter particle="brownchunks" particleamount="10" velocitymin="0" velocitymax="400" anglemin="0" anglemax="360" scalemin="0.15" scalemax="0.3" />
+        <SpawnItem identifier="talisman_broken_copper" spawnposition="SameInventory" count="1" SpawnRotationType="None" SpawnIfInventoryFull="true" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+        <RemoveItem />
+      </StatusEffect>
+    </Holdable>
+    <RangedWeapon reload="3">
+      <StatusEffect type="OnUse" target="This,Character" condition="-15" disabledeltatime="true" CanGiveMedicalSkill="false" allowwhenbroken="true">
+        <!-- Заглушка -->
+        <Sound file="%ModDir%/Sounds/Talisman_use_2.ogg" type="OnUse" range="900" frequencymultiplier="0.8" />
+        <ParticleEmitter particle="enchantment" AngleMax="360" ScaleMultiplier="0.4,0.4" Particleamount="30" ColorMultiplier="255,0,0,205" Distancemin="45" Distancemax="105" />
+        <Explosion range="800.0" force="0" disablefireeffects="true" smoke="false" flames="false" sparks="false" camerashake="0.0" playtinnitus="false" flashrange="1000" flashduration="1.5" flashcolor="255,0,0,255" damagefalloff="false">
+          <Affliction identifier="feardebuff" strength="300" />
+          <Affliction identifier="incrementalstun" strength="30" />
+          <Affliction identifier="slow" strength="300" />
+          <Affliction identifier="meleeattacked" strength="300" />
+        </Explosion>
+      </StatusEffect>
+    </RangedWeapon>
+  </Item>
+  <Item name="Талисман 8" identifier="talisman_8" category="Misc" subcategory="Medieval" hideinmenus="true" Tags="smallitem,artefact,talisman" cargocontaineridentifier="metalcrate" scale="0.3" impactsoundtag="impact_gold" RequireAimToUse="True">
+    <Price baseprice="1000" sold="false" />
+    <PreferredContainer secondary="ancientcrate_instruments_t3" amount="1" spawnprobability="0.01" />
+    <PreferredContainer secondary="ancientcrate_instruments_t4" amount="1" spawnprobability="0.01" />
+    <PreferredContainer secondary="ancientcrate_weapons_t4" amount="1" spawnprobability="0.01" />
+    <PreferredContainer secondary="talismancontainer_medieval" amount="1" spawnprobability="0.1" />
+    <Sprite texture="%ModDir%/Jobs/talisman.png" sourcerect="30,322,71,72" depth="0.55" origin="0.5,0.5" />
+    <Body radius="35" density="50" />
+    <LightComponent LightColor="170,145,50,70" Flicker="0.0" range="50" powerconsumption="0" IsOn="True" VulnerableToEMP="false"></LightComponent>
+    <Holdable slots="Any,RightHand,LeftHand" controlpose="true" holdpos="40,-25" aimpos="60,0" handle1="-15,-10" handle2="5,1" holdangle="10" aimangle="0" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnBroken" target="This" disabledeltatime="true" delay="0.1">
+        <Sound file="%ModDir%/Sounds/talisman_break.ogg" range="900" />
+        <particleemitter particle="brownchunks" particleamount="10" velocitymin="0" velocitymax="400" anglemin="0" anglemax="360" scalemin="0.15" scalemax="0.3" />
+        <SpawnItem identifier="talisman_broken_copper" spawnposition="SameInventory" count="1" SpawnRotationType="None" SpawnIfInventoryFull="true" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+        <RemoveItem />
+      </StatusEffect>
+    </Holdable>
+    <RangedWeapon reload="3">
+      <StatusEffect type="OnUse" target="This,Character" condition="-25" disabledeltatime="true" CanGiveMedicalSkill="false" allowwhenbroken="true">
+        <!-- Заглушка -->
+        <Sound file="%ModDir%/Sounds/Talisman_use.ogg" type="OnUse" range="900" />
+        <ReduceAffliction type="stun" amount="500" />
+        <Affliction identifier="adrenalinerush" strength="30" />
+        <ParticleEmitter particle="ElectricShock" DistanceMin="0" DistanceMax="0" ParticleAmount="1" ScaleMin="0.3" ScaleMax="0.35" lifetimemultiplier="1.5" colormultiplier="0,255,255,255" />
+        <Explosion range="400.0" force="0" disablefireeffects="true" smoke="false" flames="false" sparks="false" camerashake="3.0" camerashakerange="700" underwaterbubbles="false" playtinnitus="false" flashrange="900" flashduration="2.5" flashcolor="255,255,0,255" />
+      </StatusEffect>
+    </RangedWeapon>
+  </Item>
+  <Item name="Талисман 9" identifier="talisman_9" category="Misc" subcategory="Medieval" hideinmenus="true" Tags="smallitem,artefact,talisman" cargocontaineridentifier="metalcrate" scale="0.3" impactsoundtag="impact_gold" RequireAimToUse="True">
+    <Price baseprice="1000" sold="false" />
+    <PreferredContainer secondary="ancientcrate_instruments_t3" amount="1" spawnprobability="0.01" />
+    <PreferredContainer secondary="ancientcrate_instruments_t4" amount="1" spawnprobability="0.01" />
+    <PreferredContainer secondary="ancientcrate_weapons_t4" amount="1" spawnprobability="0.01" />
+    <PreferredContainer secondary="talismancontainer_medieval" amount="1" spawnprobability="0.1" />
+    <Sprite texture="%ModDir%/Jobs/talisman.png" sourcerect="121,273,79,85" depth="0.55" origin="0.5,0.5" />
+    <Body radius="35" density="50" />
+    <LightComponent LightColor="110,115,255,70" Flicker="0.0" range="50" powerconsumption="0" IsOn="True" VulnerableToEMP="false"></LightComponent>
+    <Holdable slots="Any,RightHand,LeftHand" controlpose="true" holdpos="40,-25" aimpos="60,0" handle1="-15,-10" handle2="5,1" holdangle="10" aimangle="0" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnBroken" target="This" disabledeltatime="true" delay="0.1">
+        <Sound file="%ModDir%/Sounds/talisman_break.ogg" range="900" />
+        <particleemitter particle="brownchunks" particleamount="10" velocitymin="0" velocitymax="400" anglemin="0" anglemax="360" scalemin="0.15" scalemax="0.3" />
+        <SpawnItem identifier="talisman_broken_copper" spawnposition="SameInventory" count="1" SpawnRotationType="None" SpawnIfInventoryFull="true" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+        <RemoveItem />
+      </StatusEffect>
+    </Holdable>
+    <RangedWeapon reload="3">
+      <StatusEffect type="OnUse" target="This,Character" condition="-10" disabledeltatime="true" CanGiveMedicalSkill="false" allowwhenbroken="true">
+        <!-- Заглушка -->
+        <Sound file="%ModDir%/Sounds/Talisman_use.ogg" type="OnUse" range="900" frequencymultiplier="2" />
+        <Affliction identifier="wellrested" strength="300" />
+        <ParticleEmitter particle="enchantment" AngleMax="360" ScaleMultiplier="0.3,0.3" Particleamount="35" ColorMultiplier="100,100,255,205" Distancemin="25" Distancemax="45" />
+      </StatusEffect>
+    </RangedWeapon>
+  </Item>
+  <Item name="Талисман 10" identifier="talisman_10" category="Misc" subcategory="Medieval" hideinmenus="true" Tags="smallitem,artefact,talisman" cargocontaineridentifier="metalcrate" scale="0.3" impactsoundtag="impact_gold" RequireAimToUse="True">
+    <Price baseprice="500" sold="false" />
+    <PreferredContainer secondary="ancientcrate_instruments_t3" amount="1" spawnprobability="0.01" />
+    <PreferredContainer secondary="ancientcrate_instruments_t4" amount="1" spawnprobability="0.01" />
+    <PreferredContainer secondary="ancientcrate_weapons_t4" amount="1" spawnprobability="0.01" />
+    <PreferredContainer secondary="talismancontainer_medieval" amount="1" spawnprobability="0.1" />
+    <Sprite texture="%ModDir%/Jobs/talisman.png" sourcerect="219,243,74,71" depth="0.55" origin="0.5,0.5" />
+    <Body radius="35" density="50" />
+    <LightComponent LightColor="200,200,155,70" Flicker="0.0" range="50" powerconsumption="0" IsOn="True" VulnerableToEMP="false"></LightComponent>
+    <Holdable slots="Any,RightHand,LeftHand" controlpose="true" holdpos="40,-25" aimpos="60,0" handle1="-15,-10" handle2="5,1" holdangle="10" aimangle="0" msg="ItemMsgPickUpSelect" />
+    <RangedWeapon reload="0.5">
+      <StatusEffect type="OnUse" target="This,Character" condition="-1000" disabledeltatime="true" interval="0.5" CanGiveMedicalSkill="false" allowwhenbroken="true">
+        <!-- Заглушка -->
+        <Affliction identifier="stun" strength="0.5" />
+        <Affliction identifier="concussion" strength="10" />
+        <Affliction identifier="talisman_amnesia" strength="100" />
+        <RefundTalents />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" disabledeltatime="true">
+        <Explosion range="400.0" force="0" disablefireeffects="true" smoke="false" flames="false" sparks="false" camerashake="5.0" camerashakerange="700" underwaterbubbles="false" playtinnitus="false" flashrange="1200" flashduration="3.5" flashcolor="255,255,0,225" />
+        <Sound file="%ModDir%/Sounds/Refund_level.ogg" type="OnUse" range="1500" />
+        <ParticleEmitter particle="enchantment" AngleMax="180" ScaleMultiplier="0.5,0.5" Particleamount="45" ColorMultiplier="100,100,255,205" Distancemin="50" Distancemax="120" />
+        <particleemitter particle="brownchunks" particleamount="10" velocitymin="0" velocitymax="400" anglemin="0" anglemax="360" scalemin="0.15" scalemax="0.3" />
+        <ParticleEmitter particle="MistSmoke" particleamount="8" anglemin="0" anglemax="360" distancemin="0" distancemax="0" velocitymin="0" velocitymax="20" scalemin="0.7" scalemax="1.5" />
+        <SpawnItem identifier="talisman_broken_copper" spawnposition="SameInventory" count="1" SpawnRotationType="None" SpawnIfInventoryFull="true" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+        <RemoveItem />
+      </StatusEffect>
+    </RangedWeapon>
+  </Item>
+  <Item name="Талисман 11" identifier="talisman_11" category="Misc" subcategory="Medieval" hideinmenus="true" Tags="smallitem,artefact,talisman" cargocontaineridentifier="metalcrate" scale="0.3" impactsoundtag="impact_gold" RequireAimToUse="True" impacttolerance="5">
+    <Price baseprice="1000" sold="false" />
+    <PreferredContainer secondary="ancientcrate_instruments_t3" amount="1" spawnprobability="0.01" />
+    <PreferredContainer secondary="ancientcrate_instruments_t4" amount="1" spawnprobability="0.01" />
+    <PreferredContainer secondary="ancientcrate_weapons_t4" amount="1" spawnprobability="0.01" />
+    <PreferredContainer secondary="talismancontainer_medieval" amount="1" spawnprobability="0.03" />
+    <Sprite texture="%ModDir%/Jobs/talisman.png" sourcerect="221,324,80,76" depth="0.55" origin="0.5,0.5" />
+    <Body height="40" width="40" density="50" />
+    <LightComponent LightColor="100,100,195,60" Flicker="0.0" range="50" powerconsumption="0" IsOn="True" VulnerableToEMP="false">
+      <StatusEffect type="OnActive" targettype="This" conditionalcomparison="Or" interval="1.75">
+        <Conditional PhysicsBodyActive="eq true" />
+        <Conditional hastag="visiblecontainer" targetcontainer="true" />
+        <ParticleEmitter particle="ElectricShock" DistanceMin="0" DistanceMax="0" ParticleAmount="1" ScaleMin="0.1" ScaleMax="0.1" lifetimemultiplier="1.2" />
+      </StatusEffect>
+    </LightComponent>
+    <Throwable characterusable="true" slots="Any,RightHand,LeftHand" throwforce="3.0" aimpos="20,10" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnSecondaryUse" target="This" delay="0.2" setvalue="true">
+        <Use targetitemcomponent="ItemComponent" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" target="This" interval="1" duration="8" tags="safezone" setvalue="true">
+        <Conditional hasstatustag="eq safezone" targetcontainer="true"/>
+      </StatusEffect>
+      <!-- Remove the item when fully used -->
+      <StatusEffect type="OnBroken" target="This">
+        <Conditional hasstatustag="neq safezone"/>
+        <SpawnItem identifier="talisman_11_2" spawnposition="SameInventory" count="1" SpawnRotationType="None" SpawnIfInventoryFull="true" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+        <SpawnItem identifier="talisman_broken_copper" spawnposition="SameInventory" count="1" SpawnRotationType="None" SpawnIfInventoryFull="true" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+        <RemoveItem />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <Conditional hasstatustag="eq safezone"/>
+        <SpawnItem identifier="talisman_broken_copper" spawnposition="SameInventory" count="1" SpawnRotationType="None" SpawnIfInventoryFull="true" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+        <RemoveItem />
+      </StatusEffect>
+    </Throwable>
+    <!-- Activating the ItemComponent starts the timer -->
+    <ItemComponent IsActive="false" CharacterUsable="true">
+      <StatusEffect type="OnImpact" targettype="This" IsActive="true" DontCleanUp="true" IsDangerous="true" comparison="AND" condition="-1">
+        <Conditional IsActive="false" targetitemcomponent="ItemComponent" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" targettype="This" setvalue="true" spread="359" launchimpulse="3.0">
+        <Use targetitemcomponent="Projectile" />
+      </StatusEffect>
+      <!--reduce condition by 1 to mark the user as the one responsible for the item breaking and exploding -->
+      <StatusEffect type="OnUse" targettype="This" IsActive="true" DontCleanUp="true" IsDangerous="true" comparison="AND" condition="-1">
+        <Conditional IsActive="false" targetitemcomponent="ItemComponent" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" targettype="This" Condition="-20">
+        <Sound file="%ModDir%/Sounds/danger_extreme.ogg" range="1000" frequencymultiplier="2.5" loop="true" />
+        <ParticleEmitter particle="enchantment" AngleMax="360" ScaleMultiplier="0.4,0.4" Particlespersecond="20" ColorMultiplier="255,0,0,205" Distancemin="45" Distancemax="105" />
+      </StatusEffect>
+    </ItemComponent>
+    <Projectile characterusable="false" spread="359" launchimpulse="3.0" sticktocharacters="false">
+      <Attack structuredamage="0" targetforce="2" itemdamage="0" severlimbsprobability="0.05">
+        <Affliction identifier="stun" strength="0.2" />
+        <Affliction identifier="slow" strength="50" />
+        <Affliction identifier="blunttrauma" strength="6" />
+        <StatusEffect type="OnUse" target="UseTarget">
+          <Conditional entitytype="eq Character" />
+          <Sound file="Content/Items/Weapons/Smack1.ogg" selectionmode="random" range="500" />
+          <Sound file="Content/Items/Weapons/Smack2.ogg" range="500" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="Limb" targetLimbs="Head" disabledeltatime="true">
+          <Affliction identifier="blunttrauma" strength="12" />
+          <Affliction identifier="stun" strength="0.5" />
+        </StatusEffect>
+        <StatusEffect type="OnUse" target="UseTarget">
+          <Conditional entitytype="eq Structure" />
+          <Conditional hastag="eq door" />
+          <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="3" velocitymin="-10" velocitymax="-50" scalemin="0.5" scalemax="1" />
+        </StatusEffect>
+      </Attack>
+    </Projectile>
+  </Item>
+  <Item name="Портал сосала" identifier="talisman_11_2" health="100" hideinmenus="true" category="Material" subcategory="Medieval" Tags="magicspell" canbepicked="true" noninteractable="true" description="" cargocontaineridentifier="metalcrate" scale="0.35" spritecolor="250,150,150,255">
+    <InventoryIcon texture="%ModDir%/Jobs/Portal.png" sourcerect="0,0,497,505" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Structure/sign.png" sourcerect="128,1028,497,505" depth="0.65" origin="0.5,0.5" />
+    <DecorativeSprite name="Портал" texture="%ModDir%/Jobs/Portal.png" sourcerect="0,0,497,505" depth="0.55" origin="0.5,0.5" rotationspeed="1200" />
+    <Body height="500" width="500" friction="100" density="0" gravityscale="0.0" />
+    <Projectile characterusable="false" launchimpulse="0" hitscan="false" removeonhit="true">
+      <Attack structuredamage="0" itemdamage="0" targetforce="8" penetration="0.0" severlimbsprobability="0.0" />
+      <StatusEffect type="Always" target="This" condition="-20">
+        <ParticleEmitter particle="ElectricShock" DistanceMin="0" DistanceMax="0" Particlespersecond="2" ScaleMin="0.4" ScaleMax="0.7" lifetimemultiplier="1.2" colormultiplier="255,0,0,255" />
+        <ParticleEmitter particle="enchantment" AngleMax="360" ScaleMultiplier="0.5,0.5" Particlespersecond="30" ColorMultiplier="255,0,0,205" Distancemin="15" Distancemax="105" />
+      </StatusEffect>
+      <StatusEffect type="OnPicked" target="This">
+        <RemoveItem />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="8" velocitymin="200" velocitymax="200" scalemin="0.5" scalemax="1" />
+        <Sound file="%ModDir%/Sounds/Talisman_use_2.ogg" type="OnUse" range="1500" frequencymultiplier="1" />
+        <SpawnCharacter speciesname="sosal" count="1" AfflictionOnSpawn="Stun" AfflictionStrength="1" TotalMaxCount="10" Spread="0" InheritTeam="False" />
+        <ParticleEmitter particle="swirlysmoke" particleamount="20" scalemin="0.8" scalemax="1.3" velocitymin="30" velocitymax="300" anglemin="0" anglemax="360" distancemin="0" distancemax="0" lifetimemultiplier="0.25" colormultiplier="255,0,0,255" copyentityangle="false" />
+        <ParticleEmitter particle="ElectricShock" DistanceMin="0" DistanceMax="0" ParticleAmount="2" ScaleMin="0.35" ScaleMax="0.4" lifetimemultiplier="1.5" colormultiplier="255,0,0,255" />
+        <Explosion range="400.0" force="0" disablefireeffects="true" smoke="false" flames="false" sparks="false" camerashake="7.0" camerashakerange="700" underwaterbubbles="false" playtinnitus="false" />
+        <RemoveItem />
+      </StatusEffect>
+      <StatusEffect type="Always" target="This" scale="+0.05">
+        <Sound file="%ModDir%/Sounds/danger_extreme.ogg" range="1200" frequencymultiplier="2.2" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="Always" target="This" interval="1.0" disabledeltatime="true">
+        <Sound file="%ModDir%/Sounds/flamearrow_01.ogg" volume="0.7" range="700" frequencymultiplier="0.6" />
+        <ParticleEmitter particle="swirlysmoke" particleamount="15" scalemin="0.8" scalemax="1.3" velocitymin="30" velocitymax="300" anglemin="0" anglemax="360" distancemin="0" distancemax="0" lifetimemultiplier="0.3" colormultiplier="255,0,0,255" copyentityangle="false" />
+        <Explosion range="500.0" force="0" disablefireeffects="true" smoke="false" underwaterbubble="false" flames="false" sparks="false" camerashake="0.0" playtinnitus="false" flashrange="800" flashduration="0.9" flashcolor="255,55,55,255" />
+      </StatusEffect>
+      <StatusEffect type="Always" target="This" delay="0.4" interval="1.7" disabledeltatime="true">
+        <Sound file="%ModDir%/Sounds/lightningshothit01.ogg" volume="0.7" range="700" frequencymultiplier="1" />
+        <ParticleEmitter particle="swirlysmoke" particleamount="15" scalemin="0.8" scalemax="1.3" velocitymin="30" velocitymax="300" anglemin="0" anglemax="360" distancemin="0" distancemax="0" lifetimemultiplier="0.3" colormultiplier="255,0,255,255" copyentityangle="false" />
+        <Explosion range="500.0" force="0" disablefireeffects="true" smoke="false" underwaterbubble="false" flames="false" sparks="false" camerashake="0.0" playtinnitus="false" flashrange="800" flashduration="0.9" flashcolor="255,55,255,255" />
+      </StatusEffect>
+    </Projectile>
+    <LightComponent LightColor="255,0,0,255" Flicker="0.0" range="400" powerconsumption="0" IsOn="True" VulnerableToEMP="false"></LightComponent>
+  </Item>
+  <Item name="Портал скелетов" identifier="talisman_11_3" health="100" hideinmenus="true" category="Material" subcategory="Medieval" Tags="magicspell" canbepicked="true" noninteractable="true" description="" cargocontaineridentifier="metalcrate" scale="0.35" spritecolor="250,100,255,255">
+    <InventoryIcon texture="%ModDir%/Jobs/Portal.png" sourcerect="0,0,497,505" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Structure/sign.png" sourcerect="167,1028,497,505" depth="0.65" origin="0.5,0.5" />
+    <DecorativeSprite name="Портал" texture="%ModDir%/Jobs/Portal.png" sourcerect="0,0,497,505" depth="0.55" origin="0.5,0.5" rotationspeed="1200" />
+    <Body height="500" width="500" friction="100" density="0" gravityscale="0.0" />
+    <Projectile characterusable="false" launchimpulse="0" hitscan="false" removeonhit="true">
+      <Attack structuredamage="0" itemdamage="0" targetforce="8" penetration="0.0" severlimbsprobability="0.0" />
+      <StatusEffect type="Always" target="This" condition="-20">
+        <ParticleEmitter particle="ElectricShock" DistanceMin="0" DistanceMax="0" Particlespersecond="2" ScaleMin="0.4" ScaleMax="0.7" lifetimemultiplier="1.2" colormultiplier="255,0,0,255" />
+        <ParticleEmitter particle="enchantment" AngleMax="360" ScaleMultiplier="0.5,0.5" Particlespersecond="30" ColorMultiplier="255,0,0,205" Distancemin="15" Distancemax="105" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="8" velocitymin="200" velocitymax="200" scalemin="0.5" scalemax="1" />
+        <Sound file="%ModDir%/Sounds/Talisman_use_2.ogg" type="OnUse" range="1500" frequencymultiplier="1" />
+        <SpawnCharacter speciesname="skeleton_robust" count="1" TotalMaxCount="10" Spread="40" InheritTeam="False" />
+        <SpawnCharacter speciesname="skeleton_hero" count="1" TotalMaxCount="10" Spread="0" InheritTeam="False" />
+        <SpawnCharacter speciesname="skeleton_crossbowmen" count="1" TotalMaxCount="10" Spread="40" InheritTeam="False" />
+        <SpawnCharacter speciesname="skeleton_skilled" count="2" TotalMaxCount="10" Spread="40" InheritTeam="False" />
+        <ParticleEmitter particle="swirlysmoke" particleamount="20" scalemin="0.8" scalemax="1.3" velocitymin="30" velocitymax="300" anglemin="0" anglemax="360" distancemin="0" distancemax="0" lifetimemultiplier="0.25" colormultiplier="255,0,0,255" copyentityangle="false" />
+        <ParticleEmitter particle="ElectricShock" DistanceMin="0" DistanceMax="0" ParticleAmount="2" ScaleMin="0.35" ScaleMax="0.4" lifetimemultiplier="1.5" colormultiplier="255,0,0,255" />
+        <Explosion range="400.0" force="0" disablefireeffects="true" smoke="false" flames="false" sparks="false" camerashake="7.0" camerashakerange="700" underwaterbubbles="false" playtinnitus="false" />
+        <RemoveItem />
+      </StatusEffect>
+      <StatusEffect type="Always" target="This" scale="+0.05">
+        <Sound file="%ModDir%/Sounds/danger_extreme.ogg" range="1200" frequencymultiplier="2.2" loop="true" />
+      </StatusEffect>
+      <StatusEffect type="Always" target="This" interval="1.0" disabledeltatime="true">
+        <Sound file="%ModDir%/Sounds/flamearrow_01.ogg" volume="0.7" range="700" frequencymultiplier="0.6" />
+        <ParticleEmitter particle="swirlysmoke" particleamount="15" scalemin="0.8" scalemax="1.3" velocitymin="30" velocitymax="300" anglemin="0" anglemax="360" distancemin="0" distancemax="0" lifetimemultiplier="0.3" colormultiplier="255,0,0,255" copyentityangle="false" />
+        <Explosion range="500.0" force="0" disablefireeffects="true" smoke="false" underwaterbubble="false" flames="false" sparks="false" camerashake="0.0" playtinnitus="false" flashrange="800" flashduration="0.9" flashcolor="255,55,55,255" />
+      </StatusEffect>
+      <StatusEffect type="Always" target="This" delay="0.4" interval="1.7" disabledeltatime="true">
+        <Sound file="%ModDir%/Sounds/lightningshothit01.ogg" volume="0.7" range="700" frequencymultiplier="1" />
+        <ParticleEmitter particle="swirlysmoke" particleamount="15" scalemin="0.8" scalemax="1.3" velocitymin="30" velocitymax="300" anglemin="0" anglemax="360" distancemin="0" distancemax="0" lifetimemultiplier="0.3" colormultiplier="255,0,255,255" copyentityangle="false" />
+        <Explosion range="500.0" force="0" disablefireeffects="true" smoke="false" underwaterbubble="false" flames="false" sparks="false" camerashake="0.0" playtinnitus="false" flashrange="800" flashduration="0.9" flashcolor="255,55,255,255" />
+      </StatusEffect>
+    </Projectile>
+    <LightComponent LightColor="255,0,155,255" Flicker="0.0" range="400" powerconsumption="0" IsOn="True" VulnerableToEMP="false"></LightComponent>
+  </Item>
+  <Item name="Портал" identifier="portal_decorative" health="100" category="Misc" subcategory="Medieval" Tags="magicspell" canbepicked="true" damagedbyexplosions="true" noninteractable="true" description="" cargocontaineridentifier="metalcrate" scale="0.5">
+    <InventoryIcon texture="%ModDir%/Jobs/Portal.png" sourcerect="0,0,497,505" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Structure/sign.png" sourcerect="191,1037,497,505" depth="0.65" origin="0.5,0.5" />
+    <DecorativeSprite name="Портал" texture="%ModDir%/Jobs/Portal.png" sourcerect="0,0,497,505" depth="0.55" origin="0.5,0.5" rotationspeed="800">
+      <IsActiveConditional ison="true" targetitemcomponent="LightComponent"/>
+    </DecorativeSprite>
+    <ItemComponent characterusable="false">
+      <StatusEffect type="Always" target="This">
+        <Conditional ison="true"/>
+        <Sound file="%ModDir%/Sounds/danger_extreme.ogg" range="1200" frequencymultiplier="2.2" loop="true" />
+        <ParticleEmitter particle="ElectricShock" DistanceMin="0" DistanceMax="0" Particlespersecond="2" ScaleMin="0.4" ScaleMax="0.7" lifetimemultiplier="1.2" colormultiplier="255,0,0,255" />
+        <ParticleEmitter particle="enchantment" AngleMax="360" ScaleMultiplier="0.5,0.5" Particlespersecond="30" ColorMultiplier="255,0,0,205" Distancemin="15" Distancemax="105" />
+      </StatusEffect>
+      <StatusEffect type="Always" target="This" interval="1.0" disabledeltatime="true">
+        <Conditional ison="true"/>
+        <Sound file="%ModDir%/Sounds/flamearrow_01.ogg" volume="0.7" range="700" frequencymultiplier="0.6" />
+        <ParticleEmitter particle="swirlysmoke" particleamount="15" scalemin="0.8" scalemax="1.3" velocitymin="30" velocitymax="300" anglemin="0" anglemax="360" distancemin="0" distancemax="0" lifetimemultiplier="0.3" colormultiplier="255,0,0,255" copyentityangle="false" />
+        <Explosion range="500.0" force="0" disablefireeffects="true" smoke="false" flames="false" underwaterbubble="false" sparks="false" camerashake="0.0" playtinnitus="false" flashrange="800" flashduration="0.9" flashcolor="255,55,55,255" />
+      </StatusEffect>
+      <StatusEffect type="Always" target="This" delay="0.4" interval="1.7" disabledeltatime="true">
+        <Conditional ison="true"/>
+        <Sound file="%ModDir%/Sounds/lightningshothit01.ogg" volume="0.7" range="700" frequencymultiplier="1" />
+        <ParticleEmitter particle="swirlysmoke" particleamount="15" scalemin="0.8" scalemax="1.3" velocitymin="30" velocitymax="300" anglemin="0" anglemax="360" distancemin="0" distancemax="0" lifetimemultiplier="0.3" colormultiplier="255,0,255,255" copyentityangle="false" />
+        <Explosion range="500.0" force="0" disablefireeffects="true" smoke="false" flames="false" underwaterbubble="false" sparks="false" camerashake="0.0" playtinnitus="false" flashrange="800" flashduration="0.9" flashcolor="255,55,255,255" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="8" velocitymin="200" velocitymax="200" scalemin="0.5" scalemax="1" />
+        <ParticleEmitter particle="swirlysmoke" particleamount="20" scalemin="0.8" scalemax="1.3" velocitymin="30" velocitymax="300" anglemin="0" anglemax="360" distancemin="0" distancemax="0" lifetimemultiplier="0.25" colormultiplier="255,0,0,255" copyentityangle="false" />
+        <ParticleEmitter particle="ElectricShock" DistanceMin="0" DistanceMax="0" ParticleAmount="2" ScaleMin="0.35" ScaleMax="0.4" lifetimemultiplier="1.5" colormultiplier="255,0,0,255" />
+        <Explosion range="400.0" force="0" disablefireeffects="true" smoke="false" flames="false" sparks="false" camerashake="7.0" camerashakerange="700" underwaterbubbles="false" playtinnitus="false" />
+        <RemoveItem />
+      </StatusEffect>
+    </ItemComponent>
+    <ConnectionPanel selectkey="Action" canbeselected="true" hudpriority="10">
+        <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+        <RequiredItem items="screwdriver" type="Equipped" />
+        <input name="toggle" displayname="connection.togglestate" />
+        <input name="set_state" displayname="connection.setstate" />
+      </ConnectionPanel>
+    <LightComponent LightColor="255,0,155,255" Flicker="0.0" range="400" powerconsumption="0" IsOn="True" VulnerableToEMP="false"></LightComponent>
+  </Item>
+  <Item name="Портал к торговцам" identifier="portal_tostation" health="100" category="Misc" subcategory="Medieval" Tags="magicspell" canbepicked="true" damagedbyexplosions="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" spritecolor="155,100,255,255">
+    <InventoryIcon texture="%ModDir%/Jobs/Portal.png" sourcerect="0,0,497,505" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Structure/sign.png" sourcerect="191,1037,497,505" depth="0.65" origin="0.5,0.5" />
+    <DecorativeSprite name="Портал" texture="%ModDir%/Jobs/Portal.png" sourcerect="0,0,497,505" depth="0.55" origin="0.5,0.5" rotationspeed="800">
+      <IsActiveConditional ison="true" targetitemcomponent="LightComponent"/>
+    </DecorativeSprite>
+    <Controller allowingameediting="false" UserPos="0.0, 0.0" direction="Right" canbeselected="true" AllowSelectingWhenSelectedByBot="true" AllowSelectingWhenSelectedByOther="true" msg="ItemMsgInteractSelect">
+      <StatusEffect type="OnActive" target="Character,This" eventtargettag="traveler" interval="3">
+        <Conditional ison="true"/>
+        <TriggerEvent identifier="mechantstation_teleport" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" target="This">
+        <Conditional ison="true"/>
+        <sound file="%ModDir%/Sounds/shard3cast.ogg" range="700.0" volume="1" loop="true"/>
+      </StatusEffect>
+    </Controller>
+    <ItemComponent characterusable="false">
+      <StatusEffect type="Always" target="This">
+        <Conditional ison="true"/>
+        <Sound file="%ModDir%/Sounds/danger_extreme.ogg" range="1200" frequencymultiplier="2.2" loop="true" />
+        <ParticleEmitter particle="ElectricShock" DistanceMin="0" DistanceMax="0" Particlespersecond="2" ScaleMin="0.4" ScaleMax="0.7" lifetimemultiplier="1.2" colormultiplier="0,0,255,255" />
+        <ParticleEmitter particle="enchantment" AngleMax="360" ScaleMultiplier="0.5,0.5" Particlespersecond="20" ColorMultiplier="100,0,255,205" Distancemin="15" Distancemax="105" />
+      </StatusEffect>
+      <StatusEffect type="Always" target="This" interval="1.0" disabledeltatime="true">
+        <Conditional ison="true"/>
+        <Sound file="%ModDir%/Sounds/flamearrow_01.ogg" volume="0.7" range="700" frequencymultiplier="0.6" />
+        <ParticleEmitter particle="swirlysmoke" particleamount="15" scalemin="0.8" scalemax="1.3" velocitymin="30" velocitymax="300" anglemin="0" anglemax="360" distancemin="0" distancemax="0" lifetimemultiplier="0.3" colormultiplier="255,0,0,255" copyentityangle="false" />
+        <Explosion range="500.0" force="0" disablefireeffects="true" smoke="false" flames="false" underwaterbubble="false" sparks="false" camerashake="0.0" playtinnitus="false" flashrange="800" flashduration="0.9" flashcolor="155,55,55,255" />
+      </StatusEffect>
+      <StatusEffect type="Always" target="This" delay="0.4" interval="1.7" disabledeltatime="true">
+        <Conditional ison="true"/>
+        <Sound file="%ModDir%/Sounds/lightningshothit01.ogg" volume="0.7" range="700" frequencymultiplier="1" />
+        <ParticleEmitter particle="swirlysmoke" particleamount="15" scalemin="0.8" scalemax="1.3" velocitymin="30" velocitymax="300" anglemin="0" anglemax="360" distancemin="0" distancemax="0" lifetimemultiplier="0.3" colormultiplier="255,0,255,255" copyentityangle="false" />
+        <Explosion range="500.0" force="0" disablefireeffects="true" smoke="false" flames="false" underwaterbubble="false" sparks="false" camerashake="0.0" playtinnitus="false" flashrange="800" flashduration="0.9" flashcolor="155,55,255,255" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="8" velocitymin="200" velocitymax="200" scalemin="0.5" scalemax="1" />
+        <ParticleEmitter particle="swirlysmoke" particleamount="20" scalemin="0.8" scalemax="1.3" velocitymin="30" velocitymax="300" anglemin="0" anglemax="360" distancemin="0" distancemax="0" lifetimemultiplier="0.25" colormultiplier="255,0,255,255" copyentityangle="false" />
+        <ParticleEmitter particle="ElectricShock" DistanceMin="0" DistanceMax="0" ParticleAmount="2" ScaleMin="0.35" ScaleMax="0.4" lifetimemultiplier="1.5" colormultiplier="255,0,255,255" />
+        <Explosion range="400.0" force="0" disablefireeffects="true" smoke="false" flames="false" sparks="false" camerashake="7.0" camerashakerange="700" underwaterbubbles="false" playtinnitus="false" />
+        <RemoveItem />
+      </StatusEffect>
+    </ItemComponent>
+    <ConnectionPanel selectkey="Action" canbeselected="true" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate" />
+      <input name="set_state" displayname="connection.setstate" />
+    </ConnectionPanel>
+    <LightComponent LightColor="155,0,255,255" Flicker="0.0" range="400" powerconsumption="0" IsOn="True" VulnerableToEMP="false" allowingameediting="false"></LightComponent>
+  </Item>
+  <Item name="Портал от торговцев" identifier="portal_tosub" health="100" category="Misc" subcategory="Medieval" Tags="magicspell" canbepicked="true" damagedbyexplosions="true" description="" cargocontaineridentifier="metalcrate" scale="0.5" spritecolor="155,100,255,255">
+    <InventoryIcon texture="%ModDir%/Jobs/Portal.png" sourcerect="0,0,497,505" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Structure/sign.png" sourcerect="191,1037,497,505" depth="0.65" origin="0.5,0.5" />
+    <DecorativeSprite name="Портал" texture="%ModDir%/Jobs/Portal.png" sourcerect="0,0,497,505" depth="0.55" origin="0.5,0.5" rotationspeed="800">
+      <IsActiveConditional ison="true" targetitemcomponent="LightComponent"/>
+    </DecorativeSprite>
+    <Controller allowingameediting="false" UserPos="0.0, 0.0" direction="Right" canbeselected="true" AllowSelectingWhenSelectedByBot="true" AllowSelectingWhenSelectedByOther="true" msg="ItemMsgInteractSelect">
+      <StatusEffect type="OnActive" target="Character" eventtargettag="traveler" interval="3">
+        <TriggerEvent identifier="mechantstation_teleport_back" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" target="This">
+        <sound file="%ModDir%/Sounds/shard3cast.ogg" range="700.0" volume="1" loop="true"/>
+      </StatusEffect>
+    </Controller>
+    <ItemComponent characterusable="false">
+      <StatusEffect type="Always" target="This">
+        <Sound file="%ModDir%/Sounds/danger_extreme.ogg" range="1200" frequencymultiplier="2.2" loop="true" />
+        <ParticleEmitter particle="ElectricShock" DistanceMin="0" DistanceMax="0" Particlespersecond="2" ScaleMin="0.4" ScaleMax="0.7" lifetimemultiplier="1.2" colormultiplier="0,0,255,255" />
+        <ParticleEmitter particle="enchantment" AngleMax="360" ScaleMultiplier="0.5,0.5" Particlespersecond="20" ColorMultiplier="100,0,255,205" Distancemin="15" Distancemax="105" />
+      </StatusEffect>
+      <StatusEffect type="Always" target="This" interval="1.0" disabledeltatime="true">
+        <Sound file="%ModDir%/Sounds/flamearrow_01.ogg" volume="0.7" range="700" frequencymultiplier="0.6" />
+        <ParticleEmitter particle="swirlysmoke" particleamount="15" scalemin="0.8" scalemax="1.3" velocitymin="30" velocitymax="300" anglemin="0" anglemax="360" distancemin="0" distancemax="0" lifetimemultiplier="0.3" colormultiplier="255,0,0,255" copyentityangle="false" />
+        <Explosion range="500.0" force="0" disablefireeffects="true" smoke="false" flames="false" underwaterbubble="false" sparks="false" camerashake="0.0" playtinnitus="false" flashrange="800" flashduration="0.9" flashcolor="155,55,55,255" />
+      </StatusEffect>
+      <StatusEffect type="Always" target="This" delay="0.4" interval="1.7" disabledeltatime="true">
+        <Sound file="%ModDir%/Sounds/lightningshothit01.ogg" volume="0.7" range="700" frequencymultiplier="1" />
+        <ParticleEmitter particle="swirlysmoke" particleamount="15" scalemin="0.8" scalemax="1.3" velocitymin="30" velocitymax="300" anglemin="0" anglemax="360" distancemin="0" distancemax="0" lifetimemultiplier="0.3" colormultiplier="255,0,255,255" copyentityangle="false" />
+        <Explosion range="500.0" force="0" disablefireeffects="true" smoke="false" flames="false" underwaterbubble="false" sparks="false" camerashake="0.0" playtinnitus="false" flashrange="800" flashduration="0.9" flashcolor="155,55,255,255" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="8" velocitymin="200" velocitymax="200" scalemin="0.5" scalemax="1" />
+        <ParticleEmitter particle="swirlysmoke" particleamount="20" scalemin="0.8" scalemax="1.3" velocitymin="30" velocitymax="300" anglemin="0" anglemax="360" distancemin="0" distancemax="0" lifetimemultiplier="0.25" colormultiplier="255,0,255,255" copyentityangle="false" />
+        <ParticleEmitter particle="ElectricShock" DistanceMin="0" DistanceMax="0" ParticleAmount="2" ScaleMin="0.35" ScaleMax="0.4" lifetimemultiplier="1.5" colormultiplier="255,0,255,255" />
+        <Explosion range="400.0" force="0" disablefireeffects="true" smoke="false" flames="false" sparks="false" camerashake="7.0" camerashakerange="700" underwaterbubbles="false" playtinnitus="false" />
+        <RemoveItem />
+      </StatusEffect>
+    </ItemComponent>
+    <LightComponent LightColor="155,0,255,255" Flicker="0.0" range="400" powerconsumption="0" IsOn="True" VulnerableToEMP="false" allowingameediting="false"></LightComponent>
+  </Item>
+</Items>
