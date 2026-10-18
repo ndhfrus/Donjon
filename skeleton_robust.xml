@@ -1,0 +1,68 @@
+﻿<Character nameidentifier="skeleton" SpeciesName="skeleton_robust" inherit="skeleton_skilled">
+  <inventory arrowslot="5" accessiblebyowner="True" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="1">
+    <Item equip="true" slot="InnerClothes,Card" Identifier="chainmailfullwreckederc" />
+    <Item equip="true" slot="Head" Identifier="ironhelmetheavywrecked" />
+    <Item equip="true" slot="Headset" Identifier="clothhardhelmeterc_wrecked" />
+    <Item equip="true" slot="OuterClothes" Identifier="ironchestplatewrecked" />
+    <Item equip="true" slot="RightHand,LeftHand" Identifier="twohandedmacesteel_rusted" />
+    <Item equip="true" slot="HealthInterface" Identifier="clothwaffenrok_ruined" />
+    <Item equip="true" amount="2" Identifier="bone" />
+    <Item equip="true" amount="1" Identifier="moneyiteminstanterc" />
+  </inventory>
+  <inventory arrowslot="5" accessiblebyowner="True" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="1">
+    <Item equip="true" slot="InnerClothes,Card" Identifier="chainmailfullwreckederc" />
+    <Item equip="true" slot="Head" Identifier="ironhelmetredwrecked" />
+    <Item equip="true" slot="Headset" Identifier="clothhardhelmeterc_wrecked" />
+    <Item equip="true" slot="OuterClothes" Identifier="copperchestplatewrecked2" />
+    <Item equip="true" slot="LeftHand" Identifier="steelshield_small" />
+    <Item equip="true" slot="RightHand" Identifier="spikedmace_rusted" />
+    <Item equip="true" slot="HealthInterface" Identifier="clothwaffenrok_ruined" />
+    <Item equip="true" amount="2" Identifier="bone" />
+    <Item equip="true" amount="1" Identifier="moneyiteminstanterc" />
+  </inventory>
+  <inventory arrowslot="5" accessiblebyowner="True" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="1">
+    <Item equip="true" slot="InnerClothes,Card" Identifier="chainmailfullwreckederc" />
+    <Item equip="true" slot="Head" Identifier="copperhelmet_wrecked2" />
+    <Item equip="true" slot="Headset" Identifier="chainhelmeterc_wrecked" />
+    <Item equip="true" slot="OuterClothes" Identifier="copperchestplatewrecked2" />
+    <Item equip="true" slot="RightHand,LeftHand" Identifier="twohandedmacesteel_rusted" />
+    <Item equip="true" amount="2" Identifier="bone" />
+    <Item equip="true" amount="1" Identifier="moneyiteminstanterc" />
+  </inventory>
+  <inventory arrowslot="5" accessiblebyowner="True" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="1">
+    <Item equip="true" slot="InnerClothes" Identifier="clothclotheserc_wrecked" />
+    <Item equip="true" slot="Head" Identifier="copperhelmet_wrecked2" />
+    <Item equip="true" slot="Headset" Identifier="clothhardhelmeterc_wrecked" />
+    <Item equip="true" slot="OuterClothes" Identifier="copperchestplatewrecked2" />
+    <Item equip="true" slot="Card" Identifier="wreckplatearmor2erc" />
+    <Item equip="true" slot="LeftHand" Identifier="steelshield_small" />
+    <Item equip="true" slot="RightHand" Identifier="falchion_steel_rusted" />
+    <Item equip="true" amount="2" Identifier="bone" />
+    <Item equip="true" amount="1" Identifier="moneyiteminstanterc" />
+  </inventory>
+  <inventory arrowslot="5" accessiblebyowner="True" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="1">
+    <Item equip="true" slot="InnerClothes" Identifier="clothclotheserc_wrecked" />
+    <Item equip="true" slot="Head" Identifier="copperhelmet_wrecked2" />
+    <Item equip="true" slot="Headset" Identifier="clothhardhelmeterc_wrecked" />
+    <Item equip="true" slot="OuterClothes" Identifier="copperchestplatewrecked2" />
+    <Item equip="true" slot="Card" Identifier="wreckplatearmor2erc" />
+    <Item equip="true" slot="RightHand,LeftHand" Identifier="twohandedswordiron_rusted" />
+    <Item equip="true" amount="2" Identifier="bone" />
+    <Item equip="true" amount="1" Identifier="moneyiteminstanterc" />
+    <Item equip="true" slot="HealthInterface" Identifier="clothkolet_wrecked_erc" />
+  </inventory>
+  <inventory arrowslot="5" accessiblebyowner="True" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="1">
+    <Item equip="true" slot="InnerClothes" Identifier="clothclotheserc_wrecked" />
+    <Item equip="true" slot="Head" Identifier="ironhelmetheavywrecked" />
+    <Item equip="true" slot="Headset" Identifier="chainhelmeterc_wrecked" />
+    <Item equip="true" slot="OuterClothes" Identifier="ironchestplatewrecked" />
+    <Item equip="true" slot="Card" Identifier="wreckplatearmor2erc" />
+    <Item equip="true" slot="RightHand" Identifier="mace_steel_rusted" />
+    <Item equip="true" amount="2" Identifier="bone" />
+    <Item equip="true" amount="1" Identifier="moneyiteminstanterc" />
+    <Item equip="true" slot="HealthInterface" Identifier="clothkolet_wrecked_erc" />
+  </inventory>
+  <StatusEffect type="OnDeconstructed" target="Character">
+    <SpawnItem identifiers="bone" spawnposition="ThisInventory" count="2" probablity="1" />
+  </StatusEffect>
+</Character>

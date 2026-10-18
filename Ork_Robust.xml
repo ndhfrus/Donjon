@@ -1,0 +1,21 @@
+﻿<Character SpeciesName="ork_robust" inherit="ork">
+  <inventory arrowslot="6" accessiblebyowner="True" Slots="Card, Head, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="1">
+    <Item equip="true" slot="Head" Identifier="orkarmor_1_helmet_erc" />
+    <Item equip="true" slot="OuterClothes" Identifier="orkarmor_1_erc" />
+    <Item equip="true" slot="Card" Identifier="orkarmor_1_2_erc" />
+    <Item equip="true" slot="RightHand,LeftHand" Identifier="hammer_ork_1" />
+  </inventory>
+  <inventory arrowslot="6" accessiblebyowner="True" Slots="Card, Head, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="1">
+    <Item equip="true" slot="Head" Identifier="orkarmor_1_helmet_erc" />
+    <Item equip="true" slot="OuterClothes" Identifier="orkarmor_1_erc" />
+    <Item equip="true" slot="Card" Identifier="orkarmor_1_2_erc" />
+    <Item equip="true" slot="RightHand,LeftHand" Identifier="bigaxe_ork_1" />
+  </inventory>
+  <inventory arrowslot="6" accessiblebyowner="True" Slots="Card, Head, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="1">
+    <Item equip="true" slot="Head" Identifier="orkarmor_1_helmet_erc" />
+    <Item equip="true" slot="OuterClothes" Identifier="orkarmor_1_erc" />
+    <Item equip="true" slot="Card" Identifier="orkarmor_1_2_erc" />
+    <Item equip="true" slot="RightHand" Identifier="axe_ork_1" />
+    <Item equip="true" slot="LeftHand" Identifier="axe_ork_1" />
+  </inventory>
+</Character>

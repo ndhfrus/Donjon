@@ -1,0 +1,99 @@
+﻿<Override>
+  <Character SpeciesName="Ghoul_fat" Tags="" SpeciesTranslationOverride="" DisplayName="" Group="ghoul" Humanoid="True" HasInfo="False" CanInteract="True" CanClimb="True" ForceSlowClimbing="False" Husk="True" HuskedSpecies="" NonHuskedSpecies="" UseHuskAppendage="False" NeedsAir="False" NeedsWater="False" UseHumanAI="False" IsMachine="False" CanSpeak="False" ShowHealthBar="True" UseBossHealthBar="False" Noise="300" Visibility="300" BloodDecal="blackblood" BleedParticleAir="blackblooddrop" BleedParticleWater="blackwaterblood" BleedParticleMultiplier="1" CanEat="True" EatingSpeed="10" UsePathFinding="True" PathFinderPriority="1" HideInSonar="False" HideInThermalGoggles="True" SonarDisruption="0" DistantSonarRange="0" DisableDistance="25000" SoundInterval="10" DrawLast="False" AITurretPriority="1" AISlowTurretPriority="1" DespawnContainer="" MusicType="monster" MusicCommonness="1" MusicRangeMultiplier="1" UnlockKillAchievementForWholeCrew="False">
+    <ragdolls folder="default" />
+    <animations folder="default" />
+    <damageemitter drawontop="True" Particle="gib" AngleMin="0" AngleMax="360" ScaleMin="0.25" ScaleMax="0.5" VelocityMin="50" VelocityMax="300" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="10" HighQualityCollisionDetection="False" CopyEntityAngle="False" />
+    <bloodemitter Particle="blood" AngleMin="0" AngleMax="0" ScaleMin="0.5" ScaleMax="1" VelocityMin="0" VelocityMax="0" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="10" HighQualityCollisionDetection="False" CopyEntityAngle="False" />
+    <bloodemitter Particle="waterblood" AngleMin="0" AngleMax="0" ScaleMin="1" ScaleMax="1" VelocityMin="0" VelocityMax="0" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="1" HighQualityCollisionDetection="False" CopyEntityAngle="False" />
+    <gibemitter Particle="gib" AngleMin="0" AngleMax="360" ScaleMin="1" ScaleMax="1" VelocityMin="200" VelocityMax="700" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="20" HighQualityCollisionDetection="False" CopyEntityAngle="False" />
+    <gibemitter Particle="heavygib" AngleMin="0" AngleMax="360" ScaleMin="1" ScaleMax="1" VelocityMin="50" VelocityMax="500" EmitInterval="0" ParticlesPerSecond="0" ParticleAmount="10" HighQualityCollisionDetection="False" CopyEntityAngle="False" />
+    <health minvitality="0" Vitality="130" DoesBleed="True" CrushDepth="Infinity" UseHealthWindow="False" BleedingReduction="10" BurnReduction="0.5" ConstantHealthRegeneration="0.5" HealthRegenerationWhenEating="0" StunImmunity="False" PoisonImmunity="False" PoisonVulnerability="0.5" EmpVulnerability="0" ApplyMovementPenalties="True" DieFromBeheading="True" AllowSeveringLegs="False" ApplyAfflictionColors="False" Immunities="">
+      <Limb name="Head">
+        <VitalityMultiplier type="damage" multiplier="1" />
+        <VitalityMultiplier type="burn" multiplier="2" />
+        <VitalityMultiplier type="stun" multiplier="2" />
+      </Limb>
+      <Limb name="Torso">
+        <VitalityMultiplier type="burn" multiplier="2" />
+      </Limb>
+      <Limb name="LeftArm">
+        <VitalityMultiplier type="damage" multiplier="0.5" />
+        <VitalityMultiplier type="burn" multiplier="2" />
+        <VitalityMultiplier type="stun" multiplier="2" />
+      </Limb>
+      <Limb name="RightArm">
+        <VitalityMultiplier type="damage" multiplier="0.5" />
+        <VitalityMultiplier type="burn" multiplier="2" />
+        <VitalityMultiplier type="stun" multiplier="2" />
+      </Limb>
+      <Limb name="LeftLeg">
+        <VitalityMultiplier type="damage" multiplier="0.5" />
+        <VitalityMultiplier type="burn" multiplier="2" />
+      </Limb>
+      <Limb name="RightLeg">
+        <VitalityMultiplier type="damage" multiplier="0.5" />
+        <VitalityMultiplier type="burn" multiplier="2" />
+      </Limb>
+    </health>
+    <sound File="%ModDir%/Characters/Ghoul/ghoul_idle_01.ogg" State="Attack" Range="1000" Volume="1" Tags="" />
+    <sound File="%ModDir%/Characters/Ghoul/ghoul_idle_02.ogg" State="Attack" Range="1000" Volume="1" Tags="" />
+    <sound File="%ModDir%/Characters/Ghoul/ghoul_idle_03.ogg" State="Attack" Range="1000" Volume="1" Tags="" />
+    <sound File="%ModDir%/Characters/Ghoul/ghoul_idle_04.ogg" State="Attack" Range="1000" Volume="1" Tags="" />
+    <sound File="%ModDir%/Characters/Ghoul/ghoul_idle_05.ogg" State="Attack" Range="1000" Volume="1" Tags="" />
+    <sound File="%ModDir%/Characters/Ghoul/ghoul_idle_01.ogg" State="Idle" Range="1000" Volume="1" Tags="" />
+    <sound File="%ModDir%/Characters/Ghoul/ghoul_idle_02.ogg" State="Idle" Range="1000" Volume="1" Tags="" />
+    <sound File="%ModDir%/Characters/Ghoul/ghoul_idle_03.ogg" State="Idle" Range="1000" Volume="1" Tags="" />
+    <sound File="%ModDir%/Characters/Ghoul/ghoul_idle_04.ogg" State="Idle" Range="1000" Volume="1" Tags="" />
+    <sound File="%ModDir%/Characters/Ghoul/ghoul_idle_05.ogg" State="Idle" Range="1000" Volume="1" Tags="" />
+    <sound File="%ModDir%/Characters/Ghoul/ghoul_hurt_01.ogg" State="Damage" Range="1000" Volume="1" Tags="" />
+    <sound File="%ModDir%/Characters/Ghoul/ghoul_hurt_02.ogg" State="Damage" Range="1000" Volume="1" Tags="" />
+    <sound File="%ModDir%/Characters/Ghoul/ghoul_hurt_03.ogg" State="Damage" Range="1000" Volume="1" Tags="" />
+    <sound File="%ModDir%/Characters/Ghoul/ghoul_hurt_04.ogg" State="Damage" Range="1000" Volume="1" Tags="" />
+    <sound File="%ModDir%/Characters/Ghoul/ghoul_death_01.ogg" State="Die" Range="1000" Volume="1" Tags="" />
+    <sound File="%ModDir%/Characters/Ghoul/ghoul_death_02.ogg" State="Die" Range="1000" Volume="1" Tags="" />
+    <sound File="%ModDir%/Characters/Ghoul/ghoul_death_03.ogg" State="Die" Range="1000" Volume="1" Tags="" />
+    <ai playdead="false" CombatStrength="100" Sight="0.3" Hearing="1.2" MaxPerceptionDistance="-1" AggressionHurt="150" AggressionGreed="5" FleeHealthThreshold="0" AttackWhenProvoked="True" AvoidGunfire="False" DamageThreshold="0" AvoidTime="3" MinFleeTime="20" AggressiveBoarding="True" EnforceAggressiveBehaviorForMissions="True" TargetOuterWalls="False" RandomAttack="True" CanOpenDoors="True" UsePathFindingToGetInside="True" KeepDoorsClosed="False" AvoidAbyss="True" StayInAbyss="True" PatrolFlooded="True" PatrolDry="True" StartAggression="0" MaxAggression="100" AggressionCumulation="0" WallTargetingMethod="Target" PlayDeadProbability="0.0">
+      <target Tag="decoy" State="Attack" Priority="100" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="True" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+      <target Tag="provocative" State="Attack" Priority="100" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="True" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+      <target Tag="weapon" State="Attack" Priority="100" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="True" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+      <target Tag="nasonov" State="Attack" Priority="100" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="True" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+      <target Tag="crawler" State="Attack" Priority="100" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+      <target Tag="human" State="Attack" Priority="80" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+      <target Tag="monstercall" State="Observe" Priority="40" ReactDistance="100000" AttackDistance="500" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="True" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+      <target Tag="sonar" State="Attack" Priority="30" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="True" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+      <target Tag="room" State="Attack" Priority="10" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+      <target Tag="turret" State="Attack" Priority="1" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="True" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+      <target Tag="swarmfeeder" State="Idle" Priority="0" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="True" IgnoreOutside="True" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="True" IgnoreIncapacitated="True" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    </ai>
+    <inventory arrowslot="5" Slots="Card, Headset, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Bag, Any, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="True" Commonness="1" />
+    <StatusEffect type="OnDeconstructed" target="Character">
+      <SpawnItem identifiers="humanmeat2_erc" spawnposition="ThisInventory" count="2" probablity="1" />
+      <SpawnItem identifiers="bone" spawnposition="ThisInventory" count="2" probablity="1" />
+      <SpawnItem identifiers="poop" spawnposition="ThisInventory" count="2" probablity="1" />
+    </StatusEffect>
+    <StatusEffect type="OnDeath" target="This" duration="1">
+      <particleemitter particle="brownchunks" particlespersecond="10" velocitymin="100" velocitymax="200" anglemin="0" anglemax="360" scalemin="0.5" scalemax="0.9" colormultiplier="141,30,30,255" copyentityangle="false" />
+      <ParticleEmitter particle="bloodsplash" anglemin="0" anglemax="360" particlespersecond="30" velocitymin="0" velocitymax="700" scalemin="0.5" scalemax="1.5" copyentityangle="false" />
+      <ParticleEmitter particle="vomitsplash" copyentityangle="true" anglemin="-20" anglemax="20" particlespersecond="50" velocitymin="150" velocitymax="300" scalemin="0.4" scalemax="0.6" />
+    </StatusEffect>
+    <StatusEffect type="OnDeath" target="This" delay="1">
+      <Explosion range="300.0" structuredamage="0" severlimbsprobability="30" force="8.0" playtinnitus="false" itemdamage="60" flames="false" sparks="false" smoke="false">
+        <Affliction identifier="explosiondamage" strength="80" />
+        <Affliction identifier="acidburn" strength="40" />
+        <Affliction identifier="stun" strength="1.5" />
+        <Affliction identifier="incrementalstun" strength="40" />
+      </Explosion>
+      <Sound file="%ModDir%/Characters/Ghoul_fat/ghoul_death_explosion_01.ogg" selectionmode="random" range="1000" />
+      <Sound file="%ModDir%/Characters/Ghoul_fat/ghoul_death_explosion_02.ogg" selectionmode="random" range="1000" />
+      <Sound file="%ModDir%/Characters/Ghoul_fat/ghoul_death_explosion_03.ogg" selectionmode="random" range="1000" />
+      <ParticleEmitter particle="vomitsplash" copyentityangle="false" anglemin="0" anglemax="359" particleamount="50" velocitymin="350" velocitymax="600" scalemin="0.4" scalemax="0.6" />
+      <particleemitter particle="whitegoosplash" particleamount="1" velocitymin="0" velocitymax="300" anglemin="0" anglemax="360" scalemin="0.8" scalemax="1.7" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="true" colormultiplier="180,30,30,255" />
+      <particleemitter particle="brownchunks" particleamount="50" velocitymin="300" velocitymax="700" anglemin="0" anglemax="360" scalemin="0.5" scalemax="0.9" colormultiplier="141,30,30,255" copyentityangle="false" />
+      <ParticleEmitter particle="bloodsplash" anglemin="0" anglemax="360" particleamount="20" velocitymin="0" velocitymax="700" scalemin="0.5" scalemax="1.5" copyentityangle="false" />
+      <ParticleEmitter particle="blooddrop" anglemin="0" anglemax="360" particleamount="10" velocitymin="0" velocitymax="700" scalemin="0.5" scalemax="1.5" copyentityangle="false" />
+    </StatusEffect>
+    <StatusEffect type="OnDeath" target="This" delay="2">
+      <RemoveCharacter />
+    </StatusEffect>
+  </Character>
+</Override>

@@ -1,0 +1,75 @@
+﻿<Character SpeciesName="Ghost" Tags="" SpeciesTranslationOverride="" DisplayName="" Group="ancientalien" Humanoid="False" HasInfo="False" CanInteract="True" CanClimb="True" ForceSlowClimbing="False" Husk="False" HuskedSpecies="" NonHuskedSpecies="" UseHuskAppendage="False" NeedsAir="False" NeedsWater="False" UseHumanAI="False" IsMachine="False" CanSpeak="True" ShowHealthBar="True" UseBossHealthBar="False" Noise="0" Visibility="100" BloodDecal="blood" BleedParticleAir="blooddrop" BleedParticleWater="waterblood" BleedParticleMultiplier="0" CanEat="True" EatingSpeed="1" UsePathFinding="True" PathFinderPriority="1" HideInSonar="True" HideInThermalGoggles="True" SonarDisruption="0" DistantSonarRange="0" DisableDistance="15000" SoundInterval="10" DrawLast="False" AITurretPriority="1" AISlowTurretPriority="1" DespawnContainer="" MusicType="monster" MusicCommonness="1" MusicRangeMultiplier="1" UnlockKillAchievementForWholeCrew="False">
+  <ragdolls folder="%ModDir%/Characters/Ghost/Ragdolls/" />
+  <animations folder="%ModDir%/Characters/Ghost/Animations/" />
+  <health Vitality="100" DoesBleed="False" CrushDepth="Infinity" UseHealthWindow="False" BleedingReduction="0" BurnReduction="0.1" ConstantHealthRegeneration="0.05" HealthRegenerationWhenEating="0" StunImmunity="True" PoisonImmunity="True" PoisonVulnerability="0" EmpVulnerability="0" ApplyMovementPenalties="False" DieFromBeheading="True" AllowSeveringLegs="False" ApplyAfflictionColors="False" Immunities="damage,damageunique,bleeding,bloodloss,onfireerc,electricshock">
+    <Limb name="Head">
+      <Sprite texture="Content/UI/Health/MedUIAtlas.png" sourcerect="1,0,126,374" highlightarea="41,0,45,54" />
+      <VitalityMultiplier type="damage" multiplier="0" />
+    </Limb>
+    <Limb name="Torso">
+      <Sprite texture="Content/UI/Health/MedUIAtlas.png" sourcerect="631,0,126,374" highlightarea="29,56,70,134" />
+      <VitalityMultiplier type="damage" multiplier="0" />
+    </Limb>
+    <Limb name="LeftArm">
+      <Sprite texture="Content/UI/Health/MedUIAtlas.png" sourcerect="379,0,126,374" highlightarea="1,69,27,140" />
+      <VitalityMultiplier type="damage" multiplier="0" />
+    </Limb>
+    <Limb name="RightArm">
+      <Sprite texture="Content/UI/Health/MedUIAtlas.png" sourcerect="127,0,126,374" highlightarea="100,69,27,140" />
+      <VitalityMultiplier type="damage" multiplier="0" />
+    </Limb>
+  </health>
+  <Inventory Slots="Any" AccessibleWhenAlive="False" Commonness="1" />
+  <sound File="%ModDir%/Characters/Ghost/wraith_default-01.ogg" State="Idle" Range="900" Volume="1" Tags="" />
+  <sound File="%ModDir%/Characters/Ghost/wraith_default-02.ogg" State="Idle" Range="900" Volume="1" Tags="" />
+  <sound File="%ModDir%/Characters/Ghost/wraith_default-03.ogg" State="Idle" Range="900" Volume="1" Tags="" />
+  <sound File="%ModDir%/Characters/Ghost/wraith_default-04.ogg" State="Idle" Range="900" Volume="1" Tags="" />
+  <sound File="%ModDir%/Characters/Ghost/wraith_attack-01.ogg" State="Attack" Range="1400" Volume="1" Tags="" />
+  <sound File="%ModDir%/Characters/Ghost/wraith_attack-02.ogg" State="Attack" Range="1400" Volume="1" Tags="" />
+  <sound File="%ModDir%/Characters/Ghost/wraith_attack-03.ogg" State="Attack" Range="1400" Volume="1" Tags="" />
+  <sound File="%ModDir%/Characters/Ghost/wraith_attack-04.ogg" State="Attack" Range="1400" Volume="1" Tags="" />
+  <sound File="%ModDir%/Characters/Ghost/wraith_death-01.ogg" State="Die" Range="1600" Volume="1" Tags="" />
+  <sound File="%ModDir%/Characters/Ghost/wraith_death-02.ogg" State="Die" Range="1600" Volume="1" Tags="" />
+  <sound File="%ModDir%/Characters/Ghost/wraith_death-03.ogg" State="Die" Range="1600" Volume="1" Tags="" />
+  <sound File="%ModDir%/Characters/Ghost/wraith_damaged-01.ogg" State="Damage" Range="1000" Volume="1" Tags="" />
+  <sound File="%ModDir%/Characters/Ghost/wraith_damaged-02.ogg" State="Damage" Range="2000" Volume="1" Tags="" />
+  <ai CombatStrength="800" Sight="1" Hearing="0" MaxPerceptionDistance="-1" AggressionHurt="100" AggressionGreed="10" FleeHealthThreshold="0" AttackWhenProvoked="True" AvoidGunfire="False" DamageThreshold="0" AvoidTime="3" MinFleeTime="20" AggressiveBoarding="False" EnforceAggressiveBehaviorForMissions="True" TargetOuterWalls="True" RandomAttack="False" CanOpenDoors="False" UsePathFindingToGetInside="False" KeepDoorsClosed="False" AvoidAbyss="True" StayInAbyss="False" PatrolFlooded="False" PatrolDry="False" StartAggression="0" MaxAggression="100" AggressionCumulation="0" WallTargetingMethod="Target" PlayDeadProbability="0">
+    <target Tag="salt_powder" State="Avoid" Priority="500" ReactDistance="700" AttackDistance="700" Timer="0" IgnoreContained="True" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="True" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <target Tag="human" State="Attack" Priority="100" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="True" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="700" SweepStrength="10" SweepSpeed="0.5" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <target Tag="stronger" State="Attack" Priority="100" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="True" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="700" SweepStrength="10" SweepSpeed="0.5" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <target Tag="weaker" State="Attack" Priority="100" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="True" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="700" SweepStrength="10" SweepSpeed="0.5" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <target Tag="monstercall" State="Observe" Priority="40" ReactDistance="100000" AttackDistance="500" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="True" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <target Tag="totem" State="Observe" Priority="30" ReactDistance="100000" AttackDistance="500" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="True" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+    <target Tag="newtarget4" State="Eat" Priority="0" ReactDistance="0" AttackDistance="0" Timer="0" IgnoreContained="False" IgnoreInside="False" IgnoreOutside="False" IgnoreTargetInside="False" IgnoreTargetOutside="False" IgnoreIfNotInSameSub="False" IgnoreIncapacitated="False" Threshold="0" ThresholdMin="-1" ThresholdMax="-1" PerceptionDistanceMultiplier="1" MaxPerceptionDistance="-1" Offset="0,0" AttackPattern="Straight" PrioritizeSubCenter="False" SweepDistance="0" SweepStrength="10" SweepSpeed="1" CircleStartDistance="5000" IgnoreTargetSize="False" CircleRotationSpeed="1" DynamicCircleRotationSpeed="False" CircleRandomRotationFactor="0" CircleStrikeDistanceMultiplier="5" CircleMaxRandomOffset="0" />
+  </ai>
+  <StatusEffect type="OnSpawn" target="This" disabledeltatime="true">
+    <Explosion range="100.0" force="0" disablefireeffects="true" smoke="false" flames="false" sparks="false" camerashake="0.0" playtinnitus="false" flashrange="800" flashduration="1.5" flashcolor="255,0,255,255" />
+    <ParticleEmitter particle="swirlysmoke" particleamount="40" scalemin="0.5" scalemax="0.9" velocitymin="100" velocitymax="500" anglemin="0" anglemax="360" distancemin="0" distancemax="0" lifetimemultiplier="0.25" colormultiplier="255,0,255,255" copyentityangle="false" />
+    <Sound file="%ModDir%/Sounds/spiritcast.ogg" selectionmode="random" range="1200" />
+    <ParticleEmitter particle="enchantment" AngleMax="360" DistanceMin="50" DistanceMax="90" ScaleMultiplier="0.6,0.6" EmitInterval="1" ParticleAmount="15" Distance="80" ColorMultiplier="255,0,255,255" />
+  </StatusEffect>
+  <StatusEffect type="OnActive" target="NearbyCharacters" range="450" interval="1" disabledeltatime="true" targettags="human">
+    <Affliction identifier="feardebuff" strength="0.8" />
+  </StatusEffect>
+  <StatusEffect type="OnActive" target="This" interval="1" disabledeltatime="true">
+    <Conditional isplayer="true" />
+    <Affliction identifier="mana_drain" strength="0.75" />
+  </StatusEffect>
+  <StatusEffect type="OnDeath" target="This" disabledeltatime="true">
+    <ParticleEmitter particle="swirlysmoke" particleamount="40" scalemin="1" scalemax="1.5" velocitymin="50" velocitymax="100" anglemin="0" anglemax="360" distancemin="0" distancemax="50" lifetimemultiplier="0.35" colormultiplier="255,255,255,255" copyentityangle="false" />
+  </StatusEffect>
+  <StatusEffect type="OnDeath" target="NearbyCharacters" range="800" disabledeltatime="true">
+    <GiveExperience amount="100" />
+  </StatusEffect>
+  <StatusEffect type="OnDeath" target="This" disabledeltatime="true" spawnItemRandomly="true">
+    <SpawnItem identifier="shard_1" spawnposition="SameInventory" count="1" SpawnRotationType="None" spread="100" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+    <SpawnItem identifier="shard_2" spawnposition="SameInventory" count="1" SpawnRotationType="None" spread="100" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+    <SpawnItem identifier="shard_3" spawnposition="SameInventory" count="1" SpawnRotationType="None" spread="100" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+    <SpawnItem identifier="shard_4" spawnposition="SameInventory" count="1" SpawnRotationType="None" spread="100" SpawnIfNotInInventory="True" SpawnIfCantBeContained="True" />
+  </StatusEffect>
+  <StatusEffect type="OnDeath" target="This" disabledeltatime="true" delay="0.7">
+    <Sound file="%ModDir%/Sounds/thorn1.ogg" volume="1.5" range="1700" />
+    <DropContainedItems />
+    <RemoveCharacter />
+  </StatusEffect>
+</Character>
